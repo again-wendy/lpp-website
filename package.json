@@ -1,7 +1,7 @@
 {
   "name": "ffm-dashboard-test",
   "version": "1.0.0",
-  "description": "Test for FFM Dashboarding",
+  "description": "LAKRAN Procurement Professionals website",
   "main": "app.js",
   "scripts": {
     "test": "test"

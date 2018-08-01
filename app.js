@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/strategy', (req, res) => {
+    res.render('strategy');
+});
+
 // Startup server
 var port =  3000;
 app.listen(port, () => {

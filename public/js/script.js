@@ -74,6 +74,7 @@ function heightElements() {
 
     // Set all reasons same height
     var howHeight = $("#reasons .block-reasons .how").height();
+    console.log(howHeight);
     $("#reasons .block-reasons .why").css("height", howHeight + "px");
     $("#reasons .block-reasons .what").css("height", howHeight + "px");
 
@@ -81,6 +82,18 @@ function heightElements() {
     var heightText = $("#footer .footer-text").height();
     $("#map").css("height", heightText + "px");
 }
+
+// When page is loaded set interval to change the reasons
+var reasonIndex = 2;
+var reasonInterval = setInterval(function() {
+    if (reasonIndex < 4) {
+        selectReason(undefined, reasonIndex);
+        reasonIndex += 1;
+    } else {
+        selectReason(undefined, 1);
+        reasonIndex = 1;
+    }
+}, 8000);
 
 // Set reason to first one
 selectReason(undefined, 1);

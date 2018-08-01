@@ -2,6 +2,9 @@
     "menu": {
         "ourreasons": "Our reasons",
         "ourservices": "Our services",
-        "jobsnewsletter": "Jobs and newsletter"
+        "jobsnewsletter": "Jobs and newsletter",
+        "jobs": "Jobs",
+        "blog": "Blog",
+        "contact": "Contact"
     }
 }

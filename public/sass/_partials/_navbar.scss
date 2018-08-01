@@ -141,8 +141,8 @@
                     text-align: center;
                     cursor: pointer;
                     &:hover, &:focus, &:active {
-                        background: $secondary;
-                        color: $dark-grey;
+                        background: $linear-gradient;
+                        color: white;
                     }
                     @media (max-width: 1070px) {
                         font-size: 1rem;
@@ -162,62 +162,7 @@
     }
 }
 
-#simple-navbar {
-    height: 4vh;
-    .left-menu {
-        width: 100%;
-        height: 4vh;
-        padding-top: 10px;
-        a {
-            text-decoration: none;
-            padding-top: 10px;
-        }
-    }
-    @media(max-height: 850px) {
-        height: 5vh;
-        .left-menu {
-            height: 5vh;
-            padding-top: 14px;
-        }
-    }
-    @media(max-height: 780px) {
-        .left-menu {
-            padding-top: 10px;
-        }
-    }
-    @media(max-height: 680px) {
-        height: 6vh;
-        .left-menu {
-            height: 6vh;
-            padding-top: 12px;
-        }
-    }
-    @media(max-height: 610px) {
-        height: 8vh;
-        .left-menu {
-            height: 8vh;
-            padding-top: 16px;
-        }
-    }
-    @media (max-height: 565px) {
-        .left-menu {
-            padding-top: 14px;
-        }
-    }
-    @media (max-height: 500px) {
-        .left-menu {
-            padding-top: 12px;
-        }
-    }
-    @media (max-height: 450px) {
-        .left-menu {
-            padding-top: 10px;
-        }
-    }
-}
-
-#nav-bar.sticky,
-#simple-navbar {
+#nav-bar.sticky {
     position: fixed;
     top: 0;
     width: 100%;

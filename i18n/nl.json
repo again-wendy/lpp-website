@@ -2,6 +2,9 @@
     "menu": {
         "ourreasons": "Onze redenen",
         "ourservices": "Onze diensten",
-        "jobsnewsletter": "Jobs en nieuwsbrief"
+        "jobsnewsletter": "Jobs en nieuwsbrief",
+        "jobs": "Jobs",
+        "blog": "Blog",
+        "contact": "Contact"
     }
 }

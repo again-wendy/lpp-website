@@ -14,6 +14,11 @@ $dark-grey-light: lighten($dark-grey, 15%);
 
 $success: #006922;
 
+// Gradients
+$linear-gradient: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
+$circle-gradient-grey: radial-gradient(#eaeaea, #d4d5d5, #858588, #6b6c6c);
+$circle-gradient: radial-gradient(#ffef23, #ee7616, #eb6232);
+
 // Numbers
 $hero-height: 91vh;
 $nav-height: 9vh;

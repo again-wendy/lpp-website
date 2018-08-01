@@ -6,13 +6,16 @@
             cursor: pointer;
             padding: 0;
             &:hover .circle, &:focus .circle, &:active .circle, .circle.active {
-                background-color: $primary;
+                background: $circle-gradient;
                 .svg-inline--fa {
                     color: white;
                 }
             }
+            &:hover .block-title, &:focus .block-title, &:active .block-title, .block-title.active {
+                background: $primary;
+            }
             .circle {
-                background-color: $light-grey;
+                background: $secondary;
                 width: 80%;
                 margin: 0 auto;
                 border-radius: 50%;
@@ -28,7 +31,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    color: $dark-grey;
+                    color: white;
                     @media (max-width: 1330px) {
                         font-size: 6rem;
                     }
@@ -41,7 +44,7 @@
                 width: 80%;
                 margin: 0 auto;
                 text-align: center;
-                background: $primary;
+                background: $secondary;
                 padding: 10px 0;
                 position: relative;
                 top: -12%;
@@ -58,7 +61,7 @@
             }
             .block-title.active {
                 @media(max-width: 480px) {
-                    background: $primary-dark;
+                    background: $secondary;
                 }
             }
         }
@@ -76,7 +79,8 @@
             position: relative;
             .text-block {
                 width: 47%;
-                overflow: hidden;
+                //overflow: hidden;
+                height: 100%;
                 @media (max-width: 480px) {
                     width: 100%;
                 }
@@ -89,10 +93,11 @@
                     color: white;
                 }
                 p {
-                    background: $light-grey;
+                    background: white;
                     margin: 0;
                     padding: 20px 45px 20px 20px;
                     height: 100%;
+                    border: 2px solid $primary;
                     @media (max-width: 480px) {
                         padding-right: 30px;
                     }
@@ -103,7 +108,7 @@
             }
             .icon-block {
                 width: 15%;
-                background: $light-grey;
+                background: $primary;
                 border-radius: 50%;
                 position: absolute;
                 left: 50%;
@@ -118,6 +123,7 @@
                     position: absolute;
                     top: 50%;
                     left: 50%;
+                    color: white;
                     transform: translate(-50%, -50%);
                     @media (max-width: 868px) {
                         font-size: 3rem;
