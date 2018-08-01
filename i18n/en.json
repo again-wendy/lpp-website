@@ -1,1 +1,7 @@
-{}
+{
+    "menu": {
+        "ourreasons": "Our reasons",
+        "ourservices": "Our services",
+        "jobsnewsletter": "Jobs and newsletter"
+    }
+}

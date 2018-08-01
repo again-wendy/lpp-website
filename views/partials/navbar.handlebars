@@ -1,0 +1,31 @@
+<nav id="nav-bar">
+    <div class="left-menu">
+        <img onclick="menuClick('#hero-slider')" src="./public/images/lakran-procurement-professionals.png" alt="LAKRAN Procurement Professionals">
+    </div>
+    <div class="right-menu">
+        <div class="mobile-toggle" onclick="toggleMobileMenu()">
+            <div class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-items">
+            <li class="menu-item menu-item-1">
+                <a onclick="menuClick('#reasons')">{{ tl.menu.ourreasons }}</a>
+            </li>
+            <li class="menu-item menu-item-2">
+                <a onclick="menuClick('#solutions')">{{ tl.menu.ourservices }}</a>
+            </li>
+            <li class="menu-item menu-item-3">
+                <a onclick="menuClick('#technology')">Blog</a>
+            </li>
+            <li class="menu-item menu-item-4">
+                <a onclick="menuClick('#careers')">Jobs</a>
+            </li>
+            <li class="menu-item menu-item-5">
+                <a onclick="menuClick('#mailing')">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>

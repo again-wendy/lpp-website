@@ -1,0 +1,157 @@
+#reasons {
+    .all-reasons {
+        justify-content: space-between;
+        .column {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            &:hover .circle, &:focus .circle, &:active .circle, .circle.active {
+                background-color: $primary;
+                .svg-inline--fa {
+                    color: white;
+                }
+            }
+            .circle {
+                background-color: $light-grey;
+                width: 80%;
+                margin: 0 auto;
+                border-radius: 50%;
+                position: relative;
+                transition: background-color 0.8s;
+                @media (max-width: 480px) {
+                    display: none;
+                }
+                .svg-inline--fa {
+                    font-size: 8rem;
+                    display: inline-block;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $dark-grey;
+                    @media (max-width: 1330px) {
+                        font-size: 6rem;
+                    }
+                    @media (max-width: 930px) {
+                        font-size: 4.2rem;
+                    }
+                }
+            }
+            .block-title {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                background: $primary;
+                padding: 10px 0;
+                position: relative;
+                top: -12%;
+                h4 {
+                    margin: 0;
+                    color: white;
+                    @media(max-width: 768px) {
+                        font-size: 1.5rem;
+                    }
+                }
+                @media (max-width: 480px) {
+                    width: 95%;
+                }
+            }
+            .block-title.active {
+                @media(max-width: 480px) {
+                    background: $primary-dark;
+                }
+            }
+        }
+        .why .circle, .why .block-title {
+            margin: 0;
+        }
+        .what .circle, .what .block-title {
+            margin: 0 0 0 auto;
+        }
+    }
+    .block-reasons {
+        .block-reason {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .text-block {
+                width: 47%;
+                overflow: hidden;
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+
+                h4 {
+                    background: $primary;
+                    margin: 0;
+                    padding: 8px 0;
+                    text-align: center;
+                    color: white;
+                }
+                p {
+                    background: $light-grey;
+                    margin: 0;
+                    padding: 20px 45px 20px 20px;
+                    height: 100%;
+                    @media (max-width: 480px) {
+                        padding-right: 30px;
+                    }
+                    @media (max-width: 360px) {
+                        padding-right: 20px;
+                    }
+                }
+            }
+            .icon-block {
+                width: 15%;
+                background: $light-grey;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                @media (max-width: 480px) {
+                    display: none;
+                }
+                img, span, .svg-inline--fa {
+                    // height: 60%;
+                    font-size: 4rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @media (max-width: 868px) {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 538px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .image-block {
+                width: 47%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                //360
+                @media (max-width: 480px) {
+                    display: none;
+                }
+            }
+        }
+        .why .image-block {
+            background-image: url('../images/why.jpg');
+        }
+        .why .icon-block img {
+            margin-left: 2%;
+            @media (max-width: 360px) {
+                margin-left: 5%;
+            }
+        }
+        .what .image-block {
+            background-image: url('../images/what.jpg');
+        }
+        .how .image-block {
+            background-image: url('../images/how.jpg');
+        }
+    }
+}

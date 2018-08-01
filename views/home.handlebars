@@ -2,7 +2,12 @@
     <div class="slide-container">
         <ul>
             <li class="myslides slide-1">
-                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <img class="logo" src="./public/images/lakran-procurement-professionals.png" alt="LAKRAN Procurement Professionals">
+                <div class="logo-text">
+                    <span class="title">LAKRAN</span>
+                    <span class="subtitle-1">Procurement</span>
+                    <span class="subtitle-2">Professionals</span>
+                </div>
                 <div class="text">Digitalisering van inhuurprocessen om de juiste strategische keuzes te kunnen maken</div>
                 <div class="buttons">
                     <a onclick="scrollToReason('why')" class="btn-white-transparent-xl">Onze redenen</a><br />
@@ -10,7 +15,12 @@
                 </div>
             </li>
             <li class="myslides slide-2">
-                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <img class="logo" src="./public/images/lakran-procurement-professionals.png" alt="LAKRAN Procurement Professionals">
+                <div class="logo-text">
+                    <span class="title">LAKRAN</span>
+                    <span class="subtitle-1">Procurement</span>
+                    <span class="subtitle-2">Professionals</span>
+                </div>
                 <div class="text">Wij bieden verschillende vormen dienstverlening aan om jou op weg te helpen</div>
                 <div class="buttons">
                     <a onclick="scrollToReason('what')" href="#reasons" class="btn-white-transparent-xl">Onze redenen</a><br />
@@ -18,7 +28,12 @@
                 </div>
             </li>
             <li class="myslides slide-3">
-                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <img class="logo" src="./public/images/lakran-procurement-professionals.png" alt="LAKRAN Procurement Professionals">
+                <div class="logo-text">
+                    <span class="title">LAKRAN</span>
+                    <span class="subtitle-1">Procurement</span>
+                    <span class="subtitle-2">Professionals</span>
+                </div>
                 <div class="text">Stretch your flex; <br/> Zet jij de juiste stappen? <br/> Is jouw bedrijf voldoende wendbaar?</div>
                 <div class="buttons">
                     <a onclick="scrollToReason('how')" href="#reasons" class="btn-white-transparent-xl">Onze redenen</a><br />
@@ -29,34 +44,28 @@
     </div>
 </div>
 
-<nav id="nav-bar">
-    <div class="left-menu">
-        <img onclick="menuClick('#hero-slider')" src="./public/images/lakran-vms-services-logo.png" alt="LAKRAN Vender Management Services">
-    </div>
-    <div class="right-menu">
-        <div class="mobile-toggle" onclick="toggleMobileMenu()">
-            <div class="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <ul class="menu-items">
-            <li class="menu-item menu-item-1">
-                <a onclick="menuClick('#reasons')">Onze redenen</a>
-            </li>
-            <li class="menu-item menu-item-2">
-                <a onclick="menuClick('#solutions')">Onze dienstverlening</a>
-            </li>
-            <li class="menu-item menu-item-3">
-                <a onclick="menuClick('#technology')">Technologie</a>
-            </li>
-            <li class="menu-item menu-item-4">
-                <a onclick="menuClick('#careers')">Vacatures</a>
-            </li>
-            <li class="menu-item menu-item-5">
-                <a onclick="menuClick('#mailing')">Mailing list</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+{{> navbar}}
+
+{{> ourreasons}}
+
+<!-- Coffee banner -->
+
+{{> ourservices}}
+
+{{> partnerships}}
+
+<!-- Keep learning banner -->
+
+{{> blogs}}
+
+{{> whitepapers}}
+
+{{> wow}}
+
+<!-- Tie Banner -->
+
+{{> jobsnewsletter}}
+
+{{> contact}}
+
+{{> footer}}
