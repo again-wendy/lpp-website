@@ -1,0 +1,228 @@
+#nav-bar,
+#simple-navbar {
+    height: $nav-height;
+    background-color: $lighter-grey;
+    z-index: 9999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+        height: $landscape-nav-height;
+    }
+    .left-menu {
+        width: 25%;
+        padding: 8px 0 8px 35px;
+        height: $nav-height;
+        float: left;
+        @media (max-width: 900px) {
+            width: 15%;
+        }
+        @media (max-width: 768px) {
+            width: 49%;
+        }
+        @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+            height: $landscape-nav-height;
+            padding: 4px 0 4px 35px;
+        }
+        img {
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+    .right-menu {
+        display: inline-block;
+        width: 74%;
+        height: $nav-height;
+        padding-right: 20px;
+        @media (max-width: 900px) {
+            width: 84%;
+        }
+        @media (max-width: 768px) {
+            width: 49%;
+        }
+        @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+            height: $landscape-nav-height;
+        }
+        .mobile-toggle {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: $nav-height;
+            font-size: 1.4rem;
+            @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+                height: $landscape-nav-height;
+            }
+            .nav-icon {
+                width: 40px;
+                height: 25px;
+                position: relative;
+                transform: rotate(0deg);
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+                span {
+                    display: block;
+                    position: absolute;
+                    height: 4px;
+                    width: 100%;
+                    background: $dark-grey;
+                    border-radius: 9px;
+                    opacity: 1;
+                    left: 0;
+                    transform: rotate(0deg);
+                    transition: .25s ease-in-out;
+                    &:nth-child(1) {
+                        top: 0px;
+                        transform-origin: left center;
+                    }
+                    &:nth-child(2) {
+                        top: 10px;
+                        transform-origin: left center;
+                    }
+                    &:nth-child(3) {
+                        top: 20px;
+                        transform-origin: left center;
+                    }
+                }
+            }
+            .nav-icon.open span {
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: -3px;
+                    left: 8px;
+                }
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 26px;
+                    left: 8px;
+                }
+            }
+            @media(min-width: 769px) {
+                display: none;
+            }
+        }
+        .menu-items {
+            height: $nav-height;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            position: relative;
+            padding-left: 0;
+            @media(max-width: 768px) {
+                position: absolute;
+                background: $lighter-grey;
+                flex-direction: column;
+                height: auto;
+                align-items: stretch;
+                right: 25px;
+                z-index: 9999;
+                padding-left: 40px;
+            }
+            @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+                height: auto;
+            }
+            .menu-item {
+                @media(max-width: 768px) {
+                    padding: 12px 35px 12px 0;
+                    &:last-child {
+                        padding-bottom: 16px;
+                    }
+                }
+                a {
+                    color: $dark-grey;
+                    font-family: $font-bold;
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    height: 100%;
+                    padding: 3vh 15px;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover, &:focus, &:active {
+                        background: $secondary;
+                        color: $dark-grey;
+                    }
+                    @media (max-width: 1070px) {
+                        font-size: 1rem;
+                        padding: 3vh 10px;
+                    }
+                    @media (max-width: 790px) {
+                        font-size: 0.9rem;
+                        padding: 3vh 8px;
+                    }
+                    @media(max-width: 768px) {
+                        text-align: left;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#simple-navbar {
+    height: 4vh;
+    .left-menu {
+        width: 100%;
+        height: 4vh;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            padding-top: 10px;
+        }
+    }
+    @media(max-height: 850px) {
+        height: 5vh;
+        .left-menu {
+            height: 5vh;
+            padding-top: 14px;
+        }
+    }
+    @media(max-height: 780px) {
+        .left-menu {
+            padding-top: 10px;
+        }
+    }
+    @media(max-height: 680px) {
+        height: 6vh;
+        .left-menu {
+            height: 6vh;
+            padding-top: 12px;
+        }
+    }
+    @media(max-height: 610px) {
+        height: 8vh;
+        .left-menu {
+            height: 8vh;
+            padding-top: 16px;
+        }
+    }
+    @media (max-height: 565px) {
+        .left-menu {
+            padding-top: 14px;
+        }
+    }
+    @media (max-height: 500px) {
+        .left-menu {
+            padding-top: 12px;
+        }
+    }
+    @media (max-height: 450px) {
+        .left-menu {
+            padding-top: 10px;
+        }
+    }
+}
+
+#nav-bar.sticky,
+#simple-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: $nav-height;
+    @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
+        margin-bottom: $landscape-nav-height;
+    }
+}

@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: $font-normal;
+    font-size: 16px;
+    color: $dark-grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+strong {
+    font-family: $font-bold;
+}
+
+.flash.flash-success {
+    text-align: center;
+    color: $success;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    @media(max-width: 1100px) {
+        width: 65%;
+    }
+    @media(max-width: 900px) {
+        width: 70%;
+    }
+    @media(max-width: 768px) {
+        width: 85%;
+    }
+}
+
+h1 {
+    font-family: $font-xbold;
+    font-size: 3rem;
+}
+h2 {
+    font-family: $font-xbold;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: $font-xbold;
+    font-size: 2rem;
+}
+h4 {
+    font-family: $font-bold;
+    font-size: 2rem;
+}
+h5 {
+    font-family: $font-bold;
+    font-size: 1.8rem;
+}
+h6 {
+    font-family: $font-bold;
+    font-size: 1.5rem;
+}
+
+a,
+a:visited {
+    color: $dark-grey;
+    font-family: $font-bold;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: $dark-grey-light;
+}
+
+a.green-link,
+a.green-link:visited {
+    color: $primary;
+}
+
+a.green-link:focus,
+a.green-link:hover,
+a.green-link:active {
+    color: $primary-dark;
+}
+
+a.link-light,
+a.link-light:visited {
+    color: $secondary;
+}
+
+a.link-light:focus,
+a.link-light:hover,
+a.link-light:active {
+    color: $secondary-dark;
+}
+
+input, textarea {
+    padding: 6px;
+    border: 1px solid $light-grey-dark;
+    width: 100%;
+    margin: 6px 0 8px 0;
+}
+
+label {
+    font-family: $font-bold;
+}
+
+%btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-family: $font-bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 0.8s;
+    text-decoration: none;
+}
+
+.btn-white-transparent {
+    @extend %btn;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px solid white;
+    color: $dark-grey; 
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.btn-white-transparent-xl {
+    @extend .btn-white-transparent;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $primary-dark;
+        border-color: $primary-dark;
+        color: white;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $primary-light;
+        border-color: $primary-light;
+    }
+}
+
+.btn-primary-xl {
+    @extend .btn-primary;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+}
+
+a.btn-primary {
+    color: white;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    color: $dark-grey;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $secondary-light;
+        border-color: $secondary-light;
+    }
+}
+
+.btn-secondary-xl {
+    @extend .btn-secondary;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+}
+
+.btn-dark-grey {
+    @extend %btn;
+    background-color: $dark-grey;
+    border: 1px solid $dark-grey;
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $dark-grey-light;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: rgba(43, 43, 43, 0.6);
+    }
+}
+
+.btn-dark-grey-xl {
+    @extend .btn-dark-grey;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    .column {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.entire-width {
+    width: 100%;
+}
