@@ -73,10 +73,11 @@ function heightElements() {
     heightIconBlock('active');
 
     // Set all reasons same height
-    var howHeight = $("#reasons .block-reasons .how").height();
-    console.log(howHeight);
-    $("#reasons .block-reasons .why").css("height", howHeight + "px");
-    $("#reasons .block-reasons .what").css("height", howHeight + "px");
+    var howHeight = $("#reasons .block-reasons .how .text-block").innerHeight();
+    // $("#reasons .block-reasons .why .text-block").css("height", howHeight + "px");
+    // $("#reasons .block-reasons .why .image-block").css("height", howHeight + "px");
+    // $("#reasons .block-reasons .what .text-block").css("height", howHeight + "px");
+    // $("#reasons .block-reasons .what .image-block").css("height", howHeight + "px");
 
     // Set height of map so its the same as the text
     var heightText = $("#footer .footer-text").height();

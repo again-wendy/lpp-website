@@ -1,0 +1,54 @@
+.banner-scroll {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    //Specific for iOS devices
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        background-attachment: scroll;
+    }
+    @media only screen and (max-width: 768px) {
+        background-attachment: scroll;
+    }
+    .banner-text {
+        color: white;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    img {
+        position: relative;
+    }
+    .banner-text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h2{
+            font-size: 3.2rem;
+        }
+    }
+}
+
+// .banner-keep-learning {
+//     background-image: url('../images/');
+// }
+
+// .banner-tie {
+//     background-image: url('../images/');
+// }
