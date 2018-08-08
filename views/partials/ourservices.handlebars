@@ -1,5 +1,9 @@
 <section id="ourservices">
-    <div class="container">
+    <div class="coffee-daphne">
+        <img class="with-cloud" src="./public/images/daphne/daphnemetaroma.svg" alt="Daphne">
+        <img class="without-cloud" src="./public/images/daphne/daphnezonderaroma.svg" alt="Daphne">
+    </div>
+    <div class="container container-puzzle">
         <h2 class="section-title">{{ tl.menu.ourservices }}</h2>
         <div class="title-border"></div>
         <div class="puzzles">
@@ -8,7 +12,18 @@
             </div>
         </div>
     </div>
-    <div class="coffee-daphne">
-        <img src="./public/images/daphne/daphnemetaroma.svg" alt="Daphne">
+    <div class="container">
+        <div class="section-text">
+            <div class="left-text">
+                <h4>{{ tl.ourservices.lefttitle }}</h4>
+                <p>{{ tl.ourservices.lefttext }}</p>
+                <button class="btn-primary-gradient">{{ tl.ourservices.leftbtn }}</button>
+            </div>
+            <div class="right-text">
+                <h4>{{ tl.ourservices.righttitle }}</h4>
+                <p>{{ tl.ourservices.righttext }}</p>
+                <button class="btn-primary-invert">{{ tl.ourservices.rightbtn }}</button>
+            </div>
+        </div>
     </div>
 </section>

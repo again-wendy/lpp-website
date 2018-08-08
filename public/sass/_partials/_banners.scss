@@ -45,9 +45,13 @@
     }
 }
 
-// .banner-keep-learning {
-//     background-image: url('../images/');
-// }
+.banner-keep-learning {
+    width: 100%;
+    position: relative;
+    img {
+        position: relative;
+    }
+}
 
 // .banner-tie {
 //     background-image: url('../images/');

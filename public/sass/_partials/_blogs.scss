@@ -1,0 +1,38 @@
+#blogs {
+    .blog-container {
+        @include displayFlex;
+        @include prefix(justify-content, spacebetween, webkit moz o);
+        .blog {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            @include prefix(flex, 1 1 0, webkit moz o);
+            @include displayFlex;
+            .blog-title {
+                font-size: 1.4rem;
+                position: relative;
+                z-index: 2;
+                color: white;
+                margin: 0;
+                padding: 30px 20px;
+                font-family: $font-bold;
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                @include prefix(align-self, flex-start, webkit moz o);
+                background: linear-gradient(
+                    90deg, 
+                    rgba(255, 239, 35, 0.5) 0%, 
+                    rgba(238, 118, 22, 0.5) 15%, 
+                    rgba(235, 98, 50, 0.5) 65%, 
+                    rgba(228, 53, 46, 0.5) 95%);
+            }
+            &:nth-child(even) {
+                .blog-title {
+                    @include prefix(align-self, flex-end, webkit moz o);
+                }
+            }
+        }
+    }
+}

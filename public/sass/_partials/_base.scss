@@ -182,6 +182,60 @@ a.btn-primary {
     color: white;
 }
 
+.btn-primary-gradient {
+    @extend %btn;
+    background: $linear-gradient;
+    border: none;
+    color: white;
+    &:hover,
+    &:focus,
+    &:active {
+        background: $linear-gradient-turned;
+        border: none;
+        color: white;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $primary-light;
+        border: none;
+    }
+}
+
+.btn-primary-invert {
+    @extend %btn;
+    background-color: white;
+    color: $primary;
+    position: relative;
+    border: none;
+    padding: 5px 11px;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $primary-light;
+        border: none;
+        color: white;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $primary-light;
+        border: none;
+    }
+}
+
+.btn-primary-invert::before {
+    content: '';
+    background-image: $linear-gradient;
+    padding: 2px;
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
 .btn-secondary {
     @extend %btn;
     background-color: $secondary;

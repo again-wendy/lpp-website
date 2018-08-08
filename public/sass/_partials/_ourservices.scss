@@ -1,38 +1,92 @@
 #ourservices {
     position: relative;
-    .container {
-        width: 50%;
+    padding-top: 28%;
+    @media(max-width: 900px) {
+        padding-top: 50px;
+    }
+    .container-puzzle {
+        width: 40%;
         @media(max-width: 1100px) {
-            width: 55%;
+            width: 40%;
         }
         @media(max-width: 900px) {
-            width: 65%;
+            width: 50%;
         }
         @media(max-width: 768px) {
             width: 75%;
         }
     }
     .puzzles {
+        z-index: 10;
         .whole-puzzle {
             #svgpuzzle {
-                .puzzle-piece {
+                .hover-img {
+                    display: none;
+                }
+                #strategy-rect {
+                    fill: rgba(243, 146, 0, 1);
+                    transition: all 0.4s;
                     cursor: pointer;
-                    transition: all 0.4s ease-in;
-                    opacity: 1;
-                    &:hover, &:active, &:focus, &.active {
-                        opacity: 0.5;
+                    &:hover, &:focus, &:active, &.active {
+                        fill: rgba(243, 146, 0, 0.5);
                     }
+                }
+                .icon {
+                    font-family: 'FontAwesome';
+                }
+                .icon-management, .icon-solutioning {
+                    font-family: 'FontAwesomeSolid';
                 }
             }
         }
     }
     .coffee-daphne {
         position: absolute;
-        right: 20%;
-        top: 30%;
+        left: 0;
+        top: -20%;
+        z-index: 1;
+        @media(max-width: 900px) {
+            left: auto;
+            right: 10%;
+            top: auto;
+            bottom: 15%;
+        }
         img {
-            width: 200%;
             max-width: none;
+        }
+        .with-cloud {
+            @media(max-width: 900px) {
+                display: none;
+            }
+        }
+        .without-cloud {
+            display: none;
+            @media(max-width: 900px) {
+                display: inline;
+                width: 180%;
+            }
+        }
+    }
+    .section-text {
+        @include displayFlex;
+        @include prefix(justify-content, center, webkit moz o);
+        .left-text {
+            text-align: right;
+            margin-right: 10px;
+            @include prefix(flex, 1 1 0, webkit moz o);
+        }
+        .right-text {
+            margin-left: 10px;
+            @include prefix(flex, 1 1 0, webkit moz o);
+        }
+        h4 {
+            color: $primary;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            font-family: $font-xbold;
+        }
+        p {
+            margin-top: 5px;
         }
     }
 }

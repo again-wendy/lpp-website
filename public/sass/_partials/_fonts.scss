@@ -70,3 +70,25 @@
 		 font-weight: normal;
 		 font-style: normal;
 }
+
+@font-face {
+	font-family: 'FontAwesomeSolid';
+	src: url('../fonts/fa-solid-900.eot');
+	src: url('../fonts/fa-solid-900.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/fa-solid-900.woff2') format('woff2'),
+		 url('../fonts/fa-solid-900.woff') format('woff'),
+		 url('../fonts/fa-solid-900.ttf') format('truetype');
+		 font-weight: normal;
+		 font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesomeBrands';
+	src: url('../fonts/fa-brands-400.eot');
+	src: url('../fonts/fa-brands-400.eot#iefix') format('embedded-opentype'),
+		 url('../fonts/fa-brands-400.woff2') format('woff2'),
+		 url('../fonts/fa-brands-400.woff') format('woff'),
+		 url('../fonts/fa-brands-400.ttf') format('truetype');
+		 font-weight: normal;
+		 font-style: normal;
+}

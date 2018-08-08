@@ -6,5 +6,25 @@
         "jobs": "Jobs",
         "blog": "Blog",
         "contact": "Contact"
+    },
+    "ourservices": {
+        "lefttitle": "Strategy as a Service",
+        "lefttext": "Waar moet je nu op in gaan zetten wanneer je de komende jaren specifieke doelstellingen met inkoop, account payable en dus P2P wilt bereiken?",
+        "leftbtn": "Meer weten?",
+        "righttitle": "Geslaagde klant case",
+        "righttext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "rightbtn": "Meer weten?"
+    },
+    "partners": {
+        "choose": "LAKRAN Procurement Professionals heeft verschillende partners. Ga op een logo staan voor meer informatie.",
+        "sapinfo": "Hier komt info over SAP",
+        "coupainfo": "Hier komt info over Coupa",
+        "baswareinfo": "Hier komt info over Basware",
+        "aribainfo": "Hier komt info over SAP Ariba",
+        "zycusinfo": "Hier komt info over Zycus",
+        "esizeinfo": "Hier komt info over Esize",
+        "fieldglassinfo": "Hier komt info over SAP Fieldglass",
+        "proactiveinfo": "Hier komt info over ProActive",
+        "synertradeinfo": "Hier komt info over Synertrade"
     }
 }

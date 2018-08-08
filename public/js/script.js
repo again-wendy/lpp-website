@@ -31,7 +31,22 @@ $(document).ready(function() {
     // Set height for different elements and show/hide mobile menu
     heightElements();
     heightIconBlock('why');
+
+    // Set Daphne
+    setWidthDaphne();
+
+    setBlogImages();
 });
+
+$(window).resize(function() {
+    setWidthDaphne();
+});
+
+// Set with of coffee Daphne
+function setWidthDaphne() {
+    var winWidth = $(window).width();
+    $('#ourservices .coffee-daphne .with-cloud').css('width', winWidth + 'px');
+}
 
 // Scroll to menu item
 function menuClick(name) {
@@ -128,4 +143,110 @@ function selectReason($event, reason) {
     } else {
         setReasons('why');
     }
+}
+
+// Make scrollbar for partner logo's
+// http://jsfiddle.net/artuc/rGLsG/3/
+$(function() {
+    var carousel = $('#partnerships .scroll-bar ul');
+    var carouselChild = carousel.find('li');
+    var clickCount = 0;
+
+    // Set carousel width so it won't wrap
+    itemWidth = carousel.find('li:first').width();
+
+    // Place the child elements to their original locations
+    refreshChildPosition();
+
+    // Set interval so logo's move every 8 seconds
+    var logoInterval = setInterval(next, 8000);
+
+    // Set the event handlers for the buttons
+    $('#partnerships .next').click(next);
+
+    $('#partnerships .prev').click(prev);
+
+    // Set the hover of the logo's
+    $('#partnerships .scroll-bar li').hover(
+        function() {
+            refreshPartnerImages();
+            clearInterval(logoInterval);
+            var classes = $(this).find('.logo').attr('class');
+            var brand = classes.replace('logo ', '');
+            partnerMouseEnter(brand);
+        },
+        function() { }
+    )
+
+    function next() {
+        clickCount++;
+
+        // Animate the slider to left as item width
+        carousel.finish().animate({
+            left: '-=' + itemWidth
+        }, 300, function(){
+            // Find the first item and append it as the last item
+            lastItem = carousel.find('li:first');
+            lastItem.remove().appendTo(carousel);
+            lastItem.css('left', ((carouselChild.length - 1) * (itemWidth)) + (clickCount * itemWidth));
+        });
+    }
+
+    function prev() {
+        clickCount--;
+
+        lastItem = carousel.find('li:last');
+        lastItem.remove().prependTo(carousel);
+
+        lastItem.css('left', itemWidth * clickCount);
+        carousel.finish().animate({
+            left: '+=' + itemWidth
+        }, 300);
+    }
+
+    function refreshChildPosition() {
+        carouselChild.each(function() {
+            $(this).css('left', itemWidth * carouselChild.index($(this)));
+        });
+    }
+
+    function refreshChildPositionNext() {
+        carouselChild.each(function() {
+            leftVal = parseInt($(this).css('left'));
+        });
+    }
+
+    function partnerMouseEnter(name) {
+        $('#partnerships .scroll-bar .' + name).attr('src', './public/images/partners/' + name + '-color.png');
+        $('#partnerships .partner-info .info').hide();
+        $('#partnerships .partner-info .base').hide();
+        $('#partnerships .partner-info .' + name).show();
+    }
+
+    function refreshPartnerImages() {
+        $('#partnerships .scroll-bar .sap').attr('src', './public/images/partners/sap-bw.png');
+        $('#partnerships .scroll-bar .coupa').attr('src', './public/images/partners/coupa-bw.png');
+        $('#partnerships .scroll-bar .basware').attr('src', './public/images/partners/basware-bw.png');
+        $('#partnerships .scroll-bar .ariba').attr('src', './public/images/partners/ariba-bw.png');
+        $('#partnerships .scroll-bar .zycus').attr('src', './public/images/partners/zycus-bw.png');
+        $('#partnerships .scroll-bar .esize').attr('src', './public/images/partners/esize-bw.png');
+        $('#partnerships .scroll-bar .fieldglass').attr('src', './public/images/partners/fieldglass-bw.png');
+        $('#partnerships .scroll-bar .proactive').attr('src', './public/images/partners/proactive-bw.png');
+        $('#partnerships .scroll-bar .synertrade').attr('src', './public/images/partners/synertrade-bw.png');
+    }
+});
+
+// Get blogs from WordPress
+function getBlogs() {
+    $.getJSON("blogs", function(data) {
+        var items = data;
+        console.log(items);
+    });
+}
+
+function setBlogImages() {
+    $('#blogs .blog-container .blog').each(function() {
+        var url = $(this).data('img');
+        $(this).css("background-image", "url('" + url + "')");
+    });
 }

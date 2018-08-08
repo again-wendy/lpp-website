@@ -3,6 +3,7 @@ const bodyParser        = require('body-parser');
 const exphbs            = require('express-handlebars');
 const path              = require('path');
 const i18n              = require('i18n-express');
+const request           = require('request');
 
 const app = express();
 
@@ -26,11 +27,25 @@ app.use(i18n({
 
 // Set routes
 app.get('/', (req, res) => {
-    res.render('home');
+    request('http://localhost:8888/newlpp/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+    var temp = JSON.parse(body) 
+    temp = temp.slice(0, 4);   
+    temp = getFeaturedImage(temp);
+    res.render('home', {
+            blogs: temp
+        });
+    });
 });
 
 app.get('/strategy', (req, res) => {
     res.render('strategy');
+});
+
+// Get de latest four blogsposts from WordPress
+app.get('/blogs', (req, res) => {
+    request('http://localhost:8888/newlpp/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+        res.send(JSON.parse(body));
+    });
 });
 
 // Startup server
@@ -38,3 +53,11 @@ var port =  3000;
 app.listen(port, () => {
     console.log('Server started...');
 });
+
+const getFeaturedImage = (arr) => {
+    for(var i = 0; i < arr.length; i++) {
+        var img = arr[i]._embedded['wp:featuredmedia'][0].source_url;
+        arr[i].img = img;
+    }
+    return arr;
+}
