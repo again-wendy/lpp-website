@@ -1,9 +1,11 @@
+// Base styles
 @import '_partials/fonts';
 @import '_partials/variables';
 @import '_partials/base';
 @import '_partials/mixins';
 @import '_partials/banners';
 
+// Home page sections
 @import '_partials/hero-slider';
 @import '_partials/navbar';
 @import '_partials/sections';
@@ -11,4 +13,8 @@
 @import '_partials/ourservices';
 @import '_partials/partnerships';
 @import '_partials/blogs';
+@import '_partials/whitepapers';
+@import '_partials/wow';
+@import '_partials/jobs';
+@import '_partials/contact';
 @import '_partials/footer';

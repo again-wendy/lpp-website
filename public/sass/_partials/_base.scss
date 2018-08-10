@@ -66,24 +66,25 @@ h6 {
 
 a,
 a:visited {
-    color: $dark-grey;
+    color: $primary;
     font-family: $font-bold;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: $dark-grey-light;
+    color: $primary-light;
 }
 
-a.green-link,
-a.green-link:visited {
+a.primary-link,
+a.primary-link:visited {
     color: $primary;
+    text-decoration: none;
 }
 
-a.green-link:focus,
-a.green-link:hover,
-a.green-link:active {
+a.primary-link:focus,
+a.primary-link:hover,
+a.primary-link:active {
     color: $primary-dark;
 }
 

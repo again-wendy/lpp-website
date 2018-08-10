@@ -1,4 +1,11 @@
 {
+    "slider": {
+        "ourreasons": "Onze redenen",
+        "ourservices": "Onze diensten",
+        "slide1title": "Some text",
+        "slide2title": "Some text",
+        "slide3title": "Some text"
+    },
     "menu": {
         "ourreasons": "Onze redenen",
         "ourservices": "Onze diensten",
@@ -6,6 +13,15 @@
         "jobs": "Jobs",
         "blog": "Blog",
         "contact": "Contact"
+    },
+    "ourreasons": {
+        "whytext1": "Onze missie is simpel. Meebouwen aan het procurement succes van jouw organisatie. In dit domein zijn de dagelijkse operationele inkoop-, ontvangs- en factuurprocessen in veel organisaties gedigitaliseerd, in sommige gevallen geautomatiseerd, maar nog veel te vaak niet volledig geoptimaliseerd. Wij richten ons niet slechts op de operationele kant, maar geven ook contractmanagement, sourcing en spend analyse de benodigde aandacht. Wij staan ervoor dat die business case in jouw organisatie gaat slagen!",
+        "whytext2": "Onze core values zijn dan ook; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency en Great experiences. Meer weten over al onze ",
+        "howtext1": "We geloven in oplossingen die verder gaan dan de standaard. Onze diversiteit aan professionals bieden kennis en kunde om jouw procurement obstakels te overwinnen. Dit doen we door optimaal gebruik te maken van digitale innovatie. Door slimme inzet van technologie kunnen we samen meer waarde creëren in een eerlijke supply chain.",
+        "howtext2": "Ons dagelijkse doel bestaat uit veranderend denken binnen procurement en finance. Dit doen we middels onze Way of Working. Maak kennis met ",
+        "howtext3": ", onze visie op Design Thinking. ",
+        "whattext1": "Al meer dan 10 jaar levert LAKRAN Procurement Professionals verbeteringen in het procurement domein. Wij zijn een go-to adviserende schakel tussen inkopende organisaties en softwarehuizen die procurement oplossingen leveren. Dit doen we door middel van business consultancy en software onafhankelijke technologische kennis.",
+        "whattext2": "Onze diensten zijn verpakt in onze procurement blockx: "
     },
     "ourservices": {
         "lefttitle": "Strategy as a Service",
@@ -26,5 +42,22 @@
         "fieldglassinfo": "Hier komt info over SAP Fieldglass",
         "proactiveinfo": "Hier komt info over ProActive",
         "synertradeinfo": "Hier komt info over Synertrade"
+    },
+    "blogs": {
+        "more": "Bekijk meer blogposts"
+    },
+    "whitepapers": {
+        "more": "Bekijk meer whitepapers"
+    },
+    "jobs": {
+        "jobs": "Jobs",
+        "jobtext": "Bekijk onze vacatures!",
+        "viewjobs": "Vacatures",
+        "mailinglist": "Mail lijst",
+        "mailingtext": "Schrijf je in voor onze nieuwsbrief!",
+        "signup": "Inschrijven"
+    },
+    "contact": {
+        "fastcontact": "Snel in contact"
     }
 }

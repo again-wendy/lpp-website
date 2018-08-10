@@ -1,0 +1,20 @@
+#contact {
+    .section-container {
+        @include displayFlex;
+        .footer-item {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            &.left-side {
+                .title {
+                    margin: 0;
+                    font-family: $font-normal;
+                }
+            }
+            &.right-side {
+                height: 100%;
+                #map {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

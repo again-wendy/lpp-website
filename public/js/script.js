@@ -36,7 +36,39 @@ $(document).ready(function() {
     setWidthDaphne();
 
     setBlogImages();
+
+    blogHover();
+
+    copyright();
 });
+
+function copyright() {
+    var year = (new Date()).getFullYear();
+    var html = `<p class="copyright">&copy; LAKRAN Procurement Professionals ${year}</p>`;
+    $('footer .container').prepend(html);
+}
+
+function blogHover() {
+    $('#blogs .blog').hover(
+        function() {
+            var blogHeight = $(this).innerHeight();
+            var titleHeight = $(this).find('.blog-title').height();
+            var top = (blogHeight / 2) - (titleHeight / 2);
+            $(this).find('.blog-title').animate({
+                height: "100%",
+                paddingTop: top + 'px'
+            }, 400);
+        },
+        function() {
+            var height = $(this).find('.blog-title h3').height() + 60;
+            $(this).find('.blog-title').animate({
+                height: height + 'px',
+                paddingTop: '30px',
+                paddingBottom: '30px'
+            }, 400);
+        }
+    );
+}
 
 $(window).resize(function() {
     setWidthDaphne();
@@ -88,9 +120,9 @@ function heightElements() {
     heightIconBlock('active');
 
     // Set all reasons same height
-    var howHeight = $("#reasons .block-reasons .how .text-block").innerHeight();
-    // $("#reasons .block-reasons .why .text-block").css("height", howHeight + "px");
-    // $("#reasons .block-reasons .why .image-block").css("height", howHeight + "px");
+    var howHeight = $("#reasons .block-reasons .why .text-block").innerHeight();
+    // $("#reasons .block-reasons .how .text-block").css("height", howHeight + "px");
+    // $("#reasons .block-reasons .how .image-block").css("height", howHeight + "px");
     // $("#reasons .block-reasons .what .text-block").css("height", howHeight + "px");
     // $("#reasons .block-reasons .what .image-block").css("height", howHeight + "px");
 
@@ -249,4 +281,18 @@ function setBlogImages() {
         var url = $(this).data('img');
         $(this).css("background-image", "url('" + url + "')");
     });
+}
+
+// Google Maps
+var map;
+function initMap() {
+    var lakran = {lat: 51.987260, lng: 5.908726};
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: lakran,
+        zoom: 15,
+    });
+    // var marker = new google.maps.Marker({
+    //     position: lakran,
+    //     map: map
+    // });
 }

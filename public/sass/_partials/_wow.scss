@@ -1,0 +1,249 @@
+#wow {
+    .svg-cls-2 {
+        fill: $wowsvg-darkgrey-color;
+    }
+    
+    .backhair {
+        fill: $wowsvg-backhair-color;
+    }
+    
+    .skin {
+        fill: $wowsvg-skin-color;
+    }
+    
+    .eye-white,
+    .teeth-white,
+    .reflection-white {
+        fill: $wowsvg-whiteparts;
+    }
+    
+    .svg-cls-10,
+    .svg-cls-23,
+    .svg-cls-25 {
+        fill: none;
+    }
+    
+    .svg-cls-10 {
+        stroke: #d6a26c;
+    }
+    
+    .svg-cls-10,
+    .svg-cls-23,
+    .svg-cls-25 {
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+    }
+    
+    .eye-white,
+    .svg-cls-23 {
+        stroke: $wowsvg-darkskin-color;
+    }
+    
+    .svg-cls-12 {
+        fill: $wowsvg-upperlip-color;
+    }
+    
+    .svg-cls-13 {
+        fill: $wowsvg-shirt-color;
+    }
+    
+    .eye-black {
+        fill: $wowsvg-black-color;
+    }
+    
+    .svg-cls-25 {
+        stroke: $wowsvg-black-color;
+    }
+    
+    .eyebrows {
+        fill: $wowsvg-eyebrow-color;
+    }
+    
+    .shadows {
+        fill: $wowsvg-shadow-color;
+        opacity: .5;
+    }
+    
+    .svg-lakran-orange {
+        fill: $wowsvg-hex-orange-color;
+    }
+    
+    .svg-cls-44 {
+        fill: $wowsvg-hex-green-color;
+    }
+    
+    .svg-cls-45 {
+        fill: $wowsvg-hex-yellow-color;
+    }
+    
+    
+    .text-letter {
+        font-family: $font-xbold;
+        font-weight: 700;
+    }
+    
+    .text-zin,
+    .text-letter {
+        font-size: 11.595px;
+        fill: $wowsvg-text-color;
+    }
+    
+    .text-zin {
+        font-family: MyriadPro-Regular, Myriad Pro;
+    }
+    
+    .eye {
+      animation: squeeze 2.4s infinite;
+    }
+    
+    .neckdark {
+      animation: pulse 3s infinite;
+    }
+    
+    .upperlip,  .mouth-inside {
+        animation: smile 5s infinite;
+    }
+    
+    .black-parts {
+        animation: onsmilehide 15s infinite;
+    }
+    
+    .underlip {
+        animation: smileunderlip 15s infinite;
+    }
+    
+    .arrow {
+        animation: bounce 5s infinite;
+        cursor: pointer;
+    }
+    
+    .daphne-moving-svg {
+      padding-left: 30px;
+    }
+    
+    
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10 & IE11 CSS styles go here */
+      .daphne-moving-svg {
+        height: 300px;
+      }
+    }
+    
+    .wow-overlay {
+        opacity: 0.7;
+        fill: $wowsvg-hex-overlay-color;
+        stroke-width: 1;
+        stroke: $wowsvg-hex-stroke-color;
+    }
+    
+    svg #hexagon:hover,
+    svg #hexagon:focus,
+    svg #hexagon:active {
+      .wow-overlay {
+          opacity: 0.9;
+          fill: $wowsvg-hex-overlay-color;
+          stroke-width: 3;
+          stroke: $wowsvg-hex-stroke-color;
+          transition: all 0.3s;
+          cursor: pointer;
+      }
+    }
+    
+    .body-daphne a {
+      text-decoration: none;
+    }
+    
+    .maak-kennis text {
+      fill-opacity: 0;
+    }
+    
+    
+    
+    svg .body-daphne:hover,
+    svg .body-daphne:focus,
+    svg .body-daphne:active {
+      cursor: pointer;
+      .maak-kennis text {
+        fill-opacity: 1;
+        transition: all 0.3s;
+      }
+    
+    }
+    
+    /*blink*/
+    @keyframes squeeze {
+      90% {
+        transform: none;
+        animation-timing-function: ease-in;
+      }
+      93% {
+        transform: translateY(95px) scaleY(0.2);
+      }
+      100% {
+        animation-timing-function: ease-out;
+      }
+    }
+    
+    /*smile*/
+    @keyframes smileunderlip {
+      10% {
+        transform: none;
+        animation-timing-function: ease-in;
+      }
+      20%, 30% {
+        transform: translateY(-2px) translateX(-17px) scaleX(1.1);
+      }
+    
+      60% {
+        animation-timing-function: ease-out;
+        transform: none;
+      }
+    }
+    
+    @keyframes onsmilehide {
+      10% {
+        opacity:1;
+        animation-timing-function: ease-in;
+      }
+      20%, 30% {
+        opacity:0;
+      }
+    
+      60% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+      }
+    }
+      
+    /*breath*/
+    @keyframes pulse {
+      from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    
+      50% {
+        -webkit-transform: translate(-3px,-5px) scale3d(1.015, 1.015, 1.015);
+        transform: translate(-3px,-5px) scale3d(1.015, 1.015, 1.015);
+      }
+    
+      to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+    
+    
+    /*bounce*/
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-25px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+#jobsnewsletter {
+    .section-container {
+        @include displayFlex;
+        .item {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            border: 2px solid $primary;
+            .item-title {
+                color: white;
+                background: $primary;
+                padding: 4px 5px;
+                margin: 0;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            p {
+                margin: 15px;
+            }
+            button {
+                width: calc(100% - 30px);
+                margin: 0 15px 15px 15px;
+            }
+        }
+        .jobs {
+            margin-right: 10px;
+        }
+        .newsletter {
+            margin-left: 10px;
+        }
+    }
+}

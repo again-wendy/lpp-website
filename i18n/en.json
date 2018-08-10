@@ -1,4 +1,11 @@
 {
+    "slider": {
+        "ourreasons": "Our reasons",
+        "ourservices": "Our services",
+        "slide1title": "Some text",
+        "slide2title": "Some text",
+        "slide3title": "Some text"
+    },
     "menu": {
         "ourreasons": "Our reasons",
         "ourservices": "Our services",
@@ -6,6 +13,15 @@
         "jobs": "Jobs",
         "blog": "Blog",
         "contact": "Contact"
+    },
+    "ourreasons": {
+        "whytext1": "Our mission is simple. Building on the procurement success of your organization. In this domain, the daily operational purchasing, receipt and invoice processes have been digitized in many organizations, in some cases automated, but far too often not fully optimized. We not only focus on the operational side, but also give the necessary attention to contract management, sourcing and spend analysis. We guarantee that this business case will succeed in your organization!",
+        "whytext2": "Our core values are therefore; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency and Great experiences. Learn more about our ",
+        "howtext1": "We believe in solutions that go beyond the standard. Our diversity of professionals offer knowledge and skills to overcome your procurement obstacles. We do this by making optimum use of digital innovation. Through the smart use of technology, together we can create more value in a fair supply chain.",
+        "howtext2": "Our daily goal consists of changing thinking within procurement and finance. We do this through our Way of Working. meet",
+        "howtext3": ", our vision on Design Thinking.",
+        "whattext1": "For more than 10 years LAKRAN Procurement Professionals has been supplying improvements in the procurement domain. We are a go-to advisory link between purchasing organizations and software houses that deliver procurement solutions. We do this through business consultancy and software independent technological knowledge.",
+        "whattext2": "Our services are packaged in our procurement blockx: "
     },
     "ourservices": {
         "lefttitle": "Strategy as a Service",
@@ -26,5 +42,22 @@
         "fieldglassinfo": "Here comes info about SAP Fieldglass",
         "proactiveinfo": "Here comes info about ProActive",
         "synertradeinfo": "Here comes info about Synertrade"
+    },
+    "blogs": {
+        "more": "View more blogposts"
+    },
+    "whitepapers": {
+        "more": "View more whitepapers"
+    },
+    "jobs": {
+        "jobs": "Jobs",
+        "jobtext": "View our vacancies!",
+        "viewjobs": "Vacancies",
+        "mailinglist": "Mailing list",
+        "mailingtext": "Sign up for our newsletter!",
+        "signup": "Sign up"
+    },
+    "contact": {
+        "fastcontact": "Quickly in touch"
     }
 }

@@ -1,0 +1,69 @@
+#whitepapers {
+    .container {
+        width: 75%;
+    }
+    .section-container {
+        @include displayFlex;
+        .whitepaper {
+            position: relative;
+            padding: 20px 100px;
+            text-decoration: none;
+            @include prefix(flex, 1 1 0, webkit moz o);
+            @include displayFlex;
+            .title {
+                font-size: 1.4rem;
+                font-family: $font-bold;
+                text-align: center;
+                color: white;
+                margin: 0;
+                z-index: 2;
+                @include prefix(align-self, center, webkit moz o);
+            }
+            .gradient {
+                position: absolute;
+                width: 90px;
+                height: 100%;
+                right: 0;
+                top: 0;
+                transition: width 0.4s;
+                z-index: 1;
+                background: linear-gradient(
+                    90deg, 
+                    rgba(255, 239, 35, 0.4) 0%, 
+                    rgba(238, 118, 22, 0.4) 20%, 
+                    rgba(235, 98, 50, 0.4) 65%, 
+                    rgba(228, 53, 46, 0.4) 95%);
+            }
+            &:hover, &:focus, &:active, &.active {
+                .gradient {
+                    width: 100%;
+                }
+            }
+        }
+        .dashboarding {
+            margin-right: 10px;
+            background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),
+                url('../images/cockpit-cut.jpg')
+                no-repeat
+                50% 90%;
+        }
+        .fiori {
+            margin-left: 10px;
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),
+                url('../images/landscape-cut.jpg')
+                no-repeat
+                0% 10%;
+        }
+    }
+    .view-more {
+        margin-top: 40px;
+    }
+}

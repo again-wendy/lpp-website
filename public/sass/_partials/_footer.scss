@@ -1,0 +1,24 @@
+footer {
+    background: $dark-grey;
+    color: white;
+    .container {
+        width: 100%;
+        padding: 20px 0;
+        .copyright {
+            width: 45%;
+            float: left;
+            font-size: 0.8rem;
+            margin: 0 0 0 15%;
+            padding-top: 9px;
+        }
+        .companies {
+            width: 37%;
+            display: inline-block;
+            text-align: right;
+            margin-right: 3%;
+            .company {
+                width: 25px;
+            }
+        }
+    }
+}
