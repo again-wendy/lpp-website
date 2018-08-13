@@ -24,8 +24,14 @@
         "whattext2": "Onze diensten zijn verpakt in onze procurement blockx: "
     },
     "ourservices": {
-        "lefttitle": "Strategy as a Service",
-        "lefttext": "Waar moet je nu op in gaan zetten wanneer je de komende jaren specifieke doelstellingen met inkoop, account payable en dus P2P wilt bereiken?",
+        "strategytitle": "Strategy as a Service",
+        "insightstitle": "Insights as a Service",
+        "solutioningtitle": "Solutioning as a Service",
+        "managementtitle": "Management as a Service",
+        "strategytext": "Onze professionals nodig voor het laten slagen van jouw Business Case?",
+        "insightstext": "Een loepzuiver beeld van jouw input, throughput en output nodig?",
+        "solutioningtext": "Onafhankelijke software-experts nodig voor een succesvolle transformatie?",
+        "managementtext": "Procurement is heldere communicatie en duidelijke doelen stellen, toch?",
         "leftbtn": "Meer weten?",
         "righttitle": "Geslaagde klant case",
         "righttext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
@@ -49,6 +55,13 @@
     "whitepapers": {
         "more": "Bekijk meer whitepapers"
     },
+    "wow": {
+        "alinea1": "LAKRAN Procurement Professionals laat je kennismaken met WOW, oftewel Way of Working! Onze eigen visie op Design Thinking. ",
+        "alinea2": "Je hoort het misschien niet zo vaak; Design Thinking in de inkoop branche. Toch kan het veel toegevoegde waarde bieden. Design Thinking is namelijk niet alleen denken, het is een mindset, een manier van doen, toegepast door ons team van professionals.",
+        "alinea3": "Lees meer over onze denkwijze op onze",
+        "link": "WOW pagina!",
+        "whoisdaphne": "Wie is Daphne?"
+    },
     "jobs": {
         "jobs": "Jobs",
         "jobtext": "Bekijk onze vacatures!",
@@ -59,5 +72,8 @@
     },
     "contact": {
         "fastcontact": "Snel in contact"
+    },
+    "strategypage": {
+        "pagetitle": "Strategy as a Service"
     }
 }

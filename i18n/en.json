@@ -24,8 +24,14 @@
         "whattext2": "Our services are packaged in our procurement blockx: "
     },
     "ourservices": {
-        "lefttitle": "Strategy as a Service",
-        "lefttext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+        "strategytitle": "Strategy as a Service",
+        "insightstitle": "Insights as a Service",
+        "solutioningtitle": "Solutioning as a Service",
+        "managementtitle": "Management as a Service",
+        "strategytext": "Need our professionals to succeed your Business Case?",
+        "insightstext": "Need a clear image of your input, throughput and output?",
+        "solutioningtext": "Do independent software experts need a successful transformation?",
+        "managementtext": "Procurement is clear communication and set clear goals, right?",
         "leftbtn": "Want to know more?",
         "righttitle": "Successful customer case",
         "righttext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
@@ -49,6 +55,13 @@
     "whitepapers": {
         "more": "View more whitepapers"
     },
+    "wow": {
+        "alinea1": "LAKRAN Procurement Professionals introduces you to WOW, or Way of Working! Our own vision on Design Thinking.",
+        "alinea2": "You may not hear it that often; Design Thinking in the procurement branch. Yet it can offer a lot of added value. Design Thinking is not only thinking, it is a mindset, a way of doing, applied by our team of professionals.",
+        "alinea3": "Read more about our thinking on our",
+        "link": "WOW page!",
+        "whoisdaphne": "Who is Daphne?"
+    },
     "jobs": {
         "jobs": "Jobs",
         "jobtext": "View our vacancies!",
@@ -59,5 +72,8 @@
     },
     "contact": {
         "fastcontact": "Quickly in touch"
+    },
+    "strategypage": {
+        "pagetitle": "Strategy as a Service"
     }
 }

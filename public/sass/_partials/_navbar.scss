@@ -140,7 +140,7 @@
                     padding: 3vh 15px;
                     text-align: center;
                     cursor: pointer;
-                    &:hover, &:focus, &:active {
+                    &:hover, &:focus, &:active, &.active {
                         background: $linear-gradient;
                         color: white;
                     }

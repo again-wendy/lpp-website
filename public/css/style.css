@@ -975,10 +975,11 @@ a.btn-primary, a.btn-primary-xl {
   cursor: pointer;
 }
 /* line 143, ../sass/_partials/_navbar.scss */
-#nav-bar .right-menu .menu-items .menu-item a:hover, #nav-bar .right-menu .menu-items .menu-item a:focus, #nav-bar .right-menu .menu-items .menu-item a:active,
+#nav-bar .right-menu .menu-items .menu-item a:hover, #nav-bar .right-menu .menu-items .menu-item a:focus, #nav-bar .right-menu .menu-items .menu-item a:active, #nav-bar .right-menu .menu-items .menu-item a.active,
 #simple-navbar .right-menu .menu-items .menu-item a:hover,
 #simple-navbar .right-menu .menu-items .menu-item a:focus,
-#simple-navbar .right-menu .menu-items .menu-item a:active {
+#simple-navbar .right-menu .menu-items .menu-item a:active,
+#simple-navbar .right-menu .menu-items .menu-item a.active {
   background: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
   color: white;
 }
@@ -1328,6 +1329,8 @@ section.full-screen .container {
 /* line 7, ../sass/_partials/_ourservices.scss */
 #ourservices .container-puzzle {
   width: 40%;
+  z-index: 10;
+  position: relative;
 }
 @media (max-width: 1100px) {
   /* line 7, ../sass/_partials/_ourservices.scss */
@@ -1347,33 +1350,43 @@ section.full-screen .container {
     width: 75%;
   }
 }
-/* line 19, ../sass/_partials/_ourservices.scss */
+/* line 21, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles {
   z-index: 10;
 }
-/* line 23, ../sass/_partials/_ourservices.scss */
+/* line 25, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle .hover-img {
   display: none;
 }
-/* line 26, ../sass/_partials/_ourservices.scss */
+/* line 28, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect {
   fill: #f39200;
   transition: all 0.4s;
   cursor: pointer;
 }
-/* line 30, ../sass/_partials/_ourservices.scss */
+/* line 32, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:hover, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:focus, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:active, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect.active {
   fill: rgba(243, 146, 0, 0.5);
 }
-/* line 34, ../sass/_partials/_ourservices.scss */
+/* line 36, ../sass/_partials/_ourservices.scss */
+#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.strategy,
+#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.management {
+  fill: #f39200;
+}
+/* line 40, ../sass/_partials/_ourservices.scss */
+#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.insights,
+#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.solutioning {
+  fill: #ed7b12;
+}
+/* line 44, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle .icon {
   font-family: 'FontAwesome';
 }
-/* line 37, ../sass/_partials/_ourservices.scss */
+/* line 47, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle .icon-management, #ourservices .puzzles .whole-puzzle #svgpuzzle .icon-solutioning {
   font-family: 'FontAwesomeSolid';
 }
-/* line 43, ../sass/_partials/_ourservices.scss */
+/* line 53, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne {
   position: absolute;
   left: 0;
@@ -1381,7 +1394,7 @@ section.full-screen .container {
   z-index: 1;
 }
 @media (max-width: 900px) {
-  /* line 43, ../sass/_partials/_ourservices.scss */
+  /* line 53, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne {
     left: auto;
     right: 10%;
@@ -1389,28 +1402,28 @@ section.full-screen .container {
     bottom: 15%;
   }
 }
-/* line 54, ../sass/_partials/_ourservices.scss */
+/* line 64, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne img {
   max-width: none;
 }
 @media (max-width: 900px) {
-  /* line 57, ../sass/_partials/_ourservices.scss */
+  /* line 67, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne .with-cloud {
     display: none;
   }
 }
-/* line 62, ../sass/_partials/_ourservices.scss */
+/* line 72, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne .without-cloud {
   display: none;
 }
 @media (max-width: 900px) {
-  /* line 62, ../sass/_partials/_ourservices.scss */
+  /* line 72, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne .without-cloud {
     display: inline;
     width: 180%;
   }
 }
-/* line 70, ../sass/_partials/_ourservices.scss */
+/* line 80, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text {
   display: -webkit-box;
   display: -moz-box;
@@ -1422,7 +1435,7 @@ section.full-screen .container {
   -o-justify-content: center;
   justify-content: center;
 }
-/* line 73, ../sass/_partials/_ourservices.scss */
+/* line 83, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .left-text {
   text-align: right;
   margin-right: 10px;
@@ -1431,7 +1444,11 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 78, ../sass/_partials/_ourservices.scss */
+/* line 87, ../sass/_partials/_ourservices.scss */
+#ourservices .section-text .left-text .insights, #ourservices .section-text .left-text .solutioning, #ourservices .section-text .left-text .management {
+  display: none;
+}
+/* line 91, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .right-text {
   margin-left: 10px;
   -webkit-flex: 1 1 0;
@@ -1439,14 +1456,14 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 82, ../sass/_partials/_ourservices.scss */
+/* line 95, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text h4 {
   color: #ef7c14;
   font-size: 1.2rem;
   margin-bottom: 5px;
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
-/* line 88, ../sass/_partials/_ourservices.scss */
+/* line 101, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text p {
   margin-top: 5px;
 }
@@ -1677,123 +1694,136 @@ section.full-screen .container {
   /*bounce*/
 }
 /* line 2, ../sass/_partials/_wow.scss */
+#wow .daphne-moving-svg {
+  width: 70%;
+  margin-left: 15%;
+}
+/* line 6, ../sass/_partials/_wow.scss */
+#wow .wow-text {
+  text-align: center;
+}
+/* line 8, ../sass/_partials/_wow.scss */
+#wow .wow-text .btn-primary-gradient {
+  margin-right: 15px;
+}
+/* line 12, ../sass/_partials/_wow.scss */
 #wow .svg-cls-2 {
   fill: #595a5c;
 }
-/* line 6, ../sass/_partials/_wow.scss */
+/* line 16, ../sass/_partials/_wow.scss */
 #wow .backhair {
   fill: #de9b3d;
 }
-/* line 10, ../sass/_partials/_wow.scss */
+/* line 20, ../sass/_partials/_wow.scss */
 #wow .skin {
   fill: #efbd7f;
 }
-/* line 14, ../sass/_partials/_wow.scss */
+/* line 24, ../sass/_partials/_wow.scss */
 #wow .eye-white,
 #wow .teeth-white,
 #wow .reflection-white {
   fill: white;
 }
-/* line 20, ../sass/_partials/_wow.scss */
+/* line 30, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10,
 #wow .svg-cls-23,
 #wow .svg-cls-25 {
   fill: none;
 }
-/* line 26, ../sass/_partials/_wow.scss */
+/* line 36, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10 {
   stroke: #d6a26c;
 }
-/* line 30, ../sass/_partials/_wow.scss */
+/* line 40, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10,
 #wow .svg-cls-23,
 #wow .svg-cls-25 {
   stroke-miterlimit: 10;
   stroke-width: .25px;
 }
-/* line 37, ../sass/_partials/_wow.scss */
+/* line 47, ../sass/_partials/_wow.scss */
 #wow .eye-white,
 #wow .svg-cls-23 {
   stroke: #ce9e6c;
 }
-/* line 42, ../sass/_partials/_wow.scss */
+/* line 52, ../sass/_partials/_wow.scss */
 #wow .svg-cls-12 {
   fill: #ad5557;
 }
-/* line 46, ../sass/_partials/_wow.scss */
+/* line 56, ../sass/_partials/_wow.scss */
 #wow .svg-cls-13 {
   fill: #2cc0d2;
 }
-/* line 50, ../sass/_partials/_wow.scss */
+/* line 60, ../sass/_partials/_wow.scss */
 #wow .eye-black {
   fill: #231f20;
 }
-/* line 54, ../sass/_partials/_wow.scss */
+/* line 64, ../sass/_partials/_wow.scss */
 #wow .svg-cls-25 {
   stroke: #231f20;
 }
-/* line 58, ../sass/_partials/_wow.scss */
+/* line 68, ../sass/_partials/_wow.scss */
 #wow .eyebrows {
   fill: #d49132;
 }
-/* line 62, ../sass/_partials/_wow.scss */
+/* line 72, ../sass/_partials/_wow.scss */
 #wow .shadows {
   fill: #5e4021;
   opacity: .5;
 }
-/* line 67, ../sass/_partials/_wow.scss */
+/* line 77, ../sass/_partials/_wow.scss */
 #wow .svg-lakran-orange {
   fill: #ef7c14;
 }
-/* line 71, ../sass/_partials/_wow.scss */
+/* line 81, ../sass/_partials/_wow.scss */
 #wow .svg-cls-44 {
   fill: #c0d438;
 }
-/* line 75, ../sass/_partials/_wow.scss */
+/* line 85, ../sass/_partials/_wow.scss */
 #wow .svg-cls-45 {
   fill: #e5d741;
 }
-/* line 80, ../sass/_partials/_wow.scss */
+/* line 90, ../sass/_partials/_wow.scss */
 #wow .text-letter {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
-/* line 85, ../sass/_partials/_wow.scss */
+/* line 95, ../sass/_partials/_wow.scss */
 #wow .text-zin,
 #wow .text-letter {
   font-size: 11.595px;
   fill: #5a5b5c;
 }
-/* line 91, ../sass/_partials/_wow.scss */
+/* line 101, ../sass/_partials/_wow.scss */
 #wow .text-zin {
   font-family: MyriadPro-Regular, Myriad Pro;
 }
-/* line 95, ../sass/_partials/_wow.scss */
+/* line 105, ../sass/_partials/_wow.scss */
 #wow .eye {
   animation: squeeze 2.4s infinite;
 }
-/* line 99, ../sass/_partials/_wow.scss */
+/* line 109, ../sass/_partials/_wow.scss */
 #wow .neckdark {
   animation: pulse 3s infinite;
 }
-/* line 103, ../sass/_partials/_wow.scss */
+/* line 113, ../sass/_partials/_wow.scss */
 #wow .upperlip, #wow .mouth-inside {
   animation: smile 5s infinite;
 }
-/* line 107, ../sass/_partials/_wow.scss */
+/* line 117, ../sass/_partials/_wow.scss */
 #wow .black-parts {
   animation: onsmilehide 15s infinite;
 }
-/* line 111, ../sass/_partials/_wow.scss */
+/* line 121, ../sass/_partials/_wow.scss */
 #wow .underlip {
   animation: smileunderlip 15s infinite;
 }
-/* line 115, ../sass/_partials/_wow.scss */
+/* line 125, ../sass/_partials/_wow.scss */
 #wow .arrow {
   animation: bounce 5s infinite;
   cursor: pointer;
 }
-/* line 120, ../sass/_partials/_wow.scss */
+/* line 130, ../sass/_partials/_wow.scss */
 #wow .daphne-moving-svg {
   padding-left: 30px;
 }
@@ -1802,19 +1832,19 @@ section.full-screen .container {
   #wow {
     /* IE10 & IE11 CSS styles go here */
   }
-  /* line 127, ../sass/_partials/_wow.scss */
+  /* line 137, ../sass/_partials/_wow.scss */
   #wow .daphne-moving-svg {
     height: 300px;
   }
 }
-/* line 132, ../sass/_partials/_wow.scss */
+/* line 142, ../sass/_partials/_wow.scss */
 #wow .wow-overlay {
   opacity: 0.7;
   fill: white;
   stroke-width: 1;
   stroke: #ef7c14;
 }
-/* line 142, ../sass/_partials/_wow.scss */
+/* line 152, ../sass/_partials/_wow.scss */
 #wow svg #hexagon:hover .wow-overlay,
 #wow svg #hexagon:focus .wow-overlay,
 #wow svg #hexagon:active .wow-overlay {
@@ -1825,21 +1855,21 @@ section.full-screen .container {
   transition: all 0.3s;
   cursor: pointer;
 }
-/* line 152, ../sass/_partials/_wow.scss */
+/* line 162, ../sass/_partials/_wow.scss */
 #wow .body-daphne a {
   text-decoration: none;
 }
-/* line 156, ../sass/_partials/_wow.scss */
+/* line 166, ../sass/_partials/_wow.scss */
 #wow .maak-kennis text {
   fill-opacity: 0;
 }
-/* line 162, ../sass/_partials/_wow.scss */
+/* line 172, ../sass/_partials/_wow.scss */
 #wow svg .body-daphne:hover,
 #wow svg .body-daphne:focus,
 #wow svg .body-daphne:active {
   cursor: pointer;
 }
-/* line 166, ../sass/_partials/_wow.scss */
+/* line 176, ../sass/_partials/_wow.scss */
 #wow svg .body-daphne:hover .maak-kennis text,
 #wow svg .body-daphne:focus .maak-kennis text,
 #wow svg .body-daphne:active .maak-kennis text {
@@ -2007,6 +2037,61 @@ footer .container .companies {
   margin-right: 3%;
 }
 /* line 19, ../sass/_partials/_footer.scss */
+footer .container .companies a {
+  text-decoration: none;
+}
+/* line 22, ../sass/_partials/_footer.scss */
 footer .container .companies .company {
   width: 25px;
+}
+
+/* line 1, ../sass/_partials/_service-pages.scss */
+.service-page {
+  position: relative;
+}
+/* line 3, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service {
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+/* line 7, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services .active {
+  padding: 30px 6px;
+  background: #ef7c14;
+  color: white;
+  font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
+  width: 120px;
+  text-align: center;
+}
+/* line 19, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services .notactive {
+  transform: rotateZ(-90deg);
+  padding: 3px 8px;
+  border: 2px solid #ef7c14;
+  background: white;
+  transform-origin: 3px 3px;
+}
+/* line 25, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services .notactive:hover, .service-page .choose-service .services .notactive:focus, .service-page .choose-service .services .notactive:active {
+  background: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
+}
+/* line 27, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services .notactive:hover a, .service-page .choose-service .services .notactive:focus a, .service-page .choose-service .services .notactive:active a {
+  color: white;
+}
+/* line 31, ../sass/_partials/_service-pages.scss */
+.service-page .choose-service .services .notactive a {
+  text-decoration: none;
+}
+/* line 37, ../sass/_partials/_service-pages.scss */
+.service-page .page-title {
+  text-align: center;
+  color: #ef7c14;
 }

@@ -1,4 +1,14 @@
 #wow {
+    .daphne-moving-svg {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .wow-text {
+        text-align: center;
+        .btn-primary-gradient {
+            margin-right: 15px;
+        }
+    }
     .svg-cls-2 {
         fill: $wowsvg-darkgrey-color;
     }

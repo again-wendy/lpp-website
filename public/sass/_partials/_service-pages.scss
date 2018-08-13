@@ -1,0 +1,45 @@
+.service-page {
+    position: relative;
+    .choose-service {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        .services {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .active {
+                padding: 30px 6px;
+                background: $primary;
+                color: white;
+                font-family: $font-bold;
+                width: 120px;
+                text-align: center;
+            }
+            .notactive {
+                transform: rotateZ(-90deg);
+                padding: 3px 8px;
+                border: 2px solid $primary;
+                background: white;
+                transform-origin: 3px 3px;
+                &:hover, &:focus, &:active {
+                    background: $linear-gradient;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .page-title {
+        text-align: center;
+        color: $primary;
+    }
+}
+
+#strategy-page {
+
+}

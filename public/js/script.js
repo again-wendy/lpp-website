@@ -35,12 +35,24 @@ $(document).ready(function() {
     // Set Daphne
     setWidthDaphne();
 
+    puzzleHover();
+
     setBlogImages();
 
     blogHover();
 
     copyright();
+
+    setActiveNavItem();
 });
+
+function setActiveNavItem() {
+    var url = window.location.pathname;
+    if(url.indexOf('as-a-service') > -1) {
+        // Set our services as active
+        $('#nav-bar .menu-item-2 a').addClass('active');
+    }
+}
 
 function copyright() {
     var year = (new Date()).getFullYear();
@@ -177,6 +189,20 @@ function selectReason($event, reason) {
     }
 }
 
+// Hover services puzzle pieces
+function puzzleHover() {
+    $('#svgpuzzle .puzzle-piece').hover(
+        function() {
+            var classes = $(this).attr('class');
+            var service = classes.replace('puzzle-piece ', '');
+            $('#ourservices .left-text .text').hide();
+            $('#ourservices .left-text .' + service).show();
+        }, function() {
+
+        }
+    );
+}
+
 // Make scrollbar for partner logo's
 // http://jsfiddle.net/artuc/rGLsG/3/
 $(function() {
@@ -286,13 +312,15 @@ function setBlogImages() {
 // Google Maps
 var map;
 function initMap() {
-    var lakran = {lat: 51.987260, lng: 5.908726};
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: lakran,
-        zoom: 15,
-    });
-    // var marker = new google.maps.Marker({
-    //     position: lakran,
-    //     map: map
-    // });
+    if($('#map').length) {
+        var lakran = {lat: 51.987260, lng: 5.908726};
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: lakran,
+            zoom: 15,
+        });
+        var marker = new google.maps.Marker({
+            position: lakran,
+            map: map
+        });
+    }
 }

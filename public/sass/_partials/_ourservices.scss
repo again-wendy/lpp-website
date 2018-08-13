@@ -6,6 +6,8 @@
     }
     .container-puzzle {
         width: 40%;
+        z-index: 10;
+        position: relative;
         @media(max-width: 1100px) {
             width: 40%;
         }
@@ -30,6 +32,14 @@
                     &:hover, &:focus, &:active, &.active {
                         fill: rgba(243, 146, 0, 0.5);
                     }
+                }
+                .puzzle-piece.strategy,
+                .puzzle-piece.management {
+                    fill: #f39200;
+                }
+                .puzzle-piece.insights,
+                .puzzle-piece.solutioning {
+                    fill: #ed7b12;
                 }
                 .icon {
                     font-family: 'FontAwesome';
@@ -74,6 +84,9 @@
             text-align: right;
             margin-right: 10px;
             @include prefix(flex, 1 1 0, webkit moz o);
+            .insights, .solutioning, .management {
+                display: none;
+            }
         }
         .right-text {
             margin-left: 10px;

@@ -27,7 +27,7 @@ app.use(i18n({
 
 // Set routes
 app.get('/', (req, res) => {
-    request('http://localhost:8888/newlpp/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+    request('http://simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
     var temp = JSON.parse(body) 
     temp = temp.slice(0, 4);   
     temp = getFeaturedImage(temp);
@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/strategy', (req, res) => {
+app.get('/strategy-as-a-service', (req, res) => {
     res.render('strategy');
 });
 
