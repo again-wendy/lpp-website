@@ -208,7 +208,17 @@ label {
 }
 
 /* line 113, ../sass/_partials/_base.scss */
-.btn-white-transparent, .btn-white-transparent-xl, .btn-primary, .btn-primary-xl, .btn-primary-gradient, .btn-primary-invert, .btn-secondary, .btn-secondary-xl, .btn-dark-grey, .btn-dark-grey-xl {
+.btn-white-transparent, .btn-white-transparent-xl,
+.btn-white-transparent-xl:visited,
+.btn-white-transparent:visited, .btn-primary, .btn-primary-xl,
+.btn-primary-xl:visited,
+.btn-primary:visited, .btn-primary-gradient,
+.btn-primary-gradient:visited, .btn-primary-invert,
+.btn-primary-invert:visted, .btn-secondary, .btn-secondary-xl,
+.btn-secondary-xl:visited,
+.btn-secondary:visited, .btn-dark-grey, .btn-dark-grey-xl,
+.btn-dark-grey-xl:visited,
+.btn-dark-grey:visited {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -229,98 +239,141 @@ label {
 }
 
 /* line 133, ../sass/_partials/_base.scss */
-.btn-white-transparent, .btn-white-transparent-xl {
+.btn-white-transparent, .btn-white-transparent-xl,
+.btn-white-transparent-xl:visited,
+.btn-white-transparent:visited,
+.btn-white-transparent-xl:visited {
   background-color: rgba(255, 255, 255, 0.6);
   border: 3px solid white;
   color: #2b2b2b;
 }
-/* line 138, ../sass/_partials/_base.scss */
-.btn-white-transparent:hover, .btn-white-transparent-xl:hover, .btn-white-transparent:focus, .btn-white-transparent-xl:focus, .btn-white-transparent:active, .btn-white-transparent-xl:active {
+/* line 139, ../sass/_partials/_base.scss */
+.btn-white-transparent:hover, .btn-white-transparent-xl:hover, .btn-white-transparent:focus, .btn-white-transparent-xl:focus, .btn-white-transparent:active, .btn-white-transparent-xl:active,
+.btn-white-transparent:visited:hover,
+.btn-white-transparent-xl:visited:hover,
+.btn-white-transparent:visited:focus,
+.btn-white-transparent-xl:visited:focus,
+.btn-white-transparent:visited:active,
+.btn-white-transparent-xl:visited:active {
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 143, ../sass/_partials/_base.scss */
-.btn-white-transparent:disabled, .btn-white-transparent-xl:disabled, .btn-white-transparent[disabled], [disabled].btn-white-transparent-xl {
+/* line 144, ../sass/_partials/_base.scss */
+.btn-white-transparent:disabled, .btn-white-transparent-xl:disabled, .btn-white-transparent[disabled], [disabled].btn-white-transparent-xl,
+.btn-white-transparent:visited:disabled,
+.btn-white-transparent-xl:visited:disabled,
+.btn-white-transparent:visited[disabled],
+.btn-white-transparent-xl:visited[disabled] {
   cursor: not-allowed;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 150, ../sass/_partials/_base.scss */
-.btn-white-transparent-xl {
+/* line 151, ../sass/_partials/_base.scss */
+.btn-white-transparent-xl,
+.btn-white-transparent-xl:visited {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 156, ../sass/_partials/_base.scss */
-.btn-primary, .btn-primary-xl {
+/* line 158, ../sass/_partials/_base.scss */
+.btn-primary, .btn-primary-xl,
+.btn-primary-xl:visited,
+.btn-primary:visited,
+.btn-primary-xl:visited {
   background-color: #ef7c14;
   border: 1px solid #ef7c14;
   color: white;
 }
-/* line 161, ../sass/_partials/_base.scss */
-.btn-primary:hover, .btn-primary-xl:hover, .btn-primary:focus, .btn-primary-xl:focus, .btn-primary:active, .btn-primary-xl:active {
+/* line 164, ../sass/_partials/_base.scss */
+.btn-primary:hover, .btn-primary-xl:hover, .btn-primary:focus, .btn-primary-xl:focus, .btn-primary:active, .btn-primary-xl:active,
+.btn-primary:visited:hover,
+.btn-primary-xl:visited:hover,
+.btn-primary:visited:focus,
+.btn-primary-xl:visited:focus,
+.btn-primary:visited:active,
+.btn-primary-xl:visited:active {
   background-color: #ab570c;
   border-color: #ab570c;
   color: white;
 }
-/* line 168, ../sass/_partials/_base.scss */
-.btn-primary:disabled, .btn-primary-xl:disabled, .btn-primary[disabled], [disabled].btn-primary-xl {
+/* line 171, ../sass/_partials/_base.scss */
+.btn-primary:disabled, .btn-primary-xl:disabled, .btn-primary[disabled], [disabled].btn-primary-xl,
+.btn-primary:visited:disabled,
+.btn-primary-xl:visited:disabled,
+.btn-primary:visited[disabled],
+.btn-primary-xl:visited[disabled] {
   cursor: not-allowed;
   background-color: #f4a45c;
   border-color: #f4a45c;
 }
 
-/* line 176, ../sass/_partials/_base.scss */
-.btn-primary-xl {
+/* line 179, ../sass/_partials/_base.scss */
+.btn-primary-xl,
+.btn-primary-xl:visited {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 182, ../sass/_partials/_base.scss */
-a.btn-primary, a.btn-primary-xl {
+/* line 186, ../sass/_partials/_base.scss */
+a.btn-primary, a.btn-primary-xl,
+a.btn-primary-xl:visited,
+a.btn-primary:visited,
+a.btn-primary-xl:visited {
   color: white;
 }
 
-/* line 186, ../sass/_partials/_base.scss */
-.btn-primary-gradient {
+/* line 191, ../sass/_partials/_base.scss */
+.btn-primary-gradient,
+.btn-primary-gradient:visited {
   background: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
   border: none;
   color: white;
 }
-/* line 191, ../sass/_partials/_base.scss */
-.btn-primary-gradient:hover, .btn-primary-gradient:focus, .btn-primary-gradient:active {
+/* line 197, ../sass/_partials/_base.scss */
+.btn-primary-gradient:hover, .btn-primary-gradient:focus, .btn-primary-gradient:active,
+.btn-primary-gradient:visited:hover,
+.btn-primary-gradient:visited:focus,
+.btn-primary-gradient:visited:active {
   background: linear-gradient(90deg, #e4352e 0%, #eb6232 15%, #ee7616 65%, #ffef23 95%);
   border: none;
   color: white;
 }
-/* line 198, ../sass/_partials/_base.scss */
-.btn-primary-gradient:disabled, .btn-primary-gradient[disabled] {
+/* line 204, ../sass/_partials/_base.scss */
+.btn-primary-gradient:disabled, .btn-primary-gradient[disabled],
+.btn-primary-gradient:visited:disabled,
+.btn-primary-gradient:visited[disabled] {
   cursor: not-allowed;
   background-color: #f4a45c;
   border: none;
 }
 
-/* line 206, ../sass/_partials/_base.scss */
-.btn-primary-invert {
+/* line 212, ../sass/_partials/_base.scss */
+.btn-primary-invert,
+.btn-primary-invert:visted {
   background-color: white;
   color: #ef7c14;
   position: relative;
   border: none;
   padding: 5px 11px;
 }
-/* line 213, ../sass/_partials/_base.scss */
-.btn-primary-invert:hover, .btn-primary-invert:focus, .btn-primary-invert:active {
+/* line 220, ../sass/_partials/_base.scss */
+.btn-primary-invert:hover, .btn-primary-invert:focus, .btn-primary-invert:active,
+.btn-primary-invert:visted:hover,
+.btn-primary-invert:visted:focus,
+.btn-primary-invert:visted:active {
   background-color: #f4a45c;
   border: none;
   color: white;
 }
-/* line 220, ../sass/_partials/_base.scss */
-.btn-primary-invert:disabled, .btn-primary-invert[disabled] {
+/* line 227, ../sass/_partials/_base.scss */
+.btn-primary-invert:disabled, .btn-primary-invert[disabled],
+.btn-primary-invert:visted:disabled,
+.btn-primary-invert:visted[disabled] {
   cursor: not-allowed;
   background-color: #f4a45c;
   border: none;
 }
 
-/* line 228, ../sass/_partials/_base.scss */
+/* line 235, ../sass/_partials/_base.scss */
 .btn-primary-invert::before {
   content: '';
   background-image: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
@@ -333,60 +386,88 @@ a.btn-primary, a.btn-primary-xl {
   height: 100%;
 }
 
-/* line 240, ../sass/_partials/_base.scss */
-.btn-secondary, .btn-secondary-xl {
+/* line 247, ../sass/_partials/_base.scss */
+.btn-secondary, .btn-secondary-xl,
+.btn-secondary-xl:visited,
+.btn-secondary:visited,
+.btn-secondary-xl:visited {
   background-color: #858588;
   border: 1px solid #858588;
   color: #2b2b2b;
 }
-/* line 245, ../sass/_partials/_base.scss */
-.btn-secondary:hover, .btn-secondary-xl:hover, .btn-secondary:focus, .btn-secondary-xl:focus, .btn-secondary:active, .btn-secondary-xl:active {
+/* line 253, ../sass/_partials/_base.scss */
+.btn-secondary:hover, .btn-secondary-xl:hover, .btn-secondary:focus, .btn-secondary-xl:focus, .btn-secondary:active, .btn-secondary-xl:active,
+.btn-secondary:visited:hover,
+.btn-secondary-xl:visited:hover,
+.btn-secondary:visited:focus,
+.btn-secondary-xl:visited:focus,
+.btn-secondary:visited:active,
+.btn-secondary-xl:visited:active {
   background-color: #5f5f61;
   border-color: #5f5f61;
 }
-/* line 251, ../sass/_partials/_base.scss */
-.btn-secondary:disabled, .btn-secondary-xl:disabled, .btn-secondary[disabled], [disabled].btn-secondary-xl {
+/* line 259, ../sass/_partials/_base.scss */
+.btn-secondary:disabled, .btn-secondary-xl:disabled, .btn-secondary[disabled], [disabled].btn-secondary-xl,
+.btn-secondary:visited:disabled,
+.btn-secondary-xl:visited:disabled,
+.btn-secondary:visited[disabled],
+.btn-secondary-xl:visited[disabled] {
   cursor: not-allowed;
   background-color: #acacae;
   border-color: #acacae;
 }
 
-/* line 259, ../sass/_partials/_base.scss */
-.btn-secondary-xl {
+/* line 267, ../sass/_partials/_base.scss */
+.btn-secondary-xl,
+.btn-secondary-xl:visited {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 265, ../sass/_partials/_base.scss */
-.btn-dark-grey, .btn-dark-grey-xl {
+/* line 274, ../sass/_partials/_base.scss */
+.btn-dark-grey, .btn-dark-grey-xl,
+.btn-dark-grey-xl:visited,
+.btn-dark-grey:visited,
+.btn-dark-grey-xl:visited {
   background-color: #2b2b2b;
   border: 1px solid #2b2b2b;
   color: white;
 }
-/* line 270, ../sass/_partials/_base.scss */
-.btn-dark-grey:hover, .btn-dark-grey-xl:hover, .btn-dark-grey:focus, .btn-dark-grey-xl:focus, .btn-dark-grey:active, .btn-dark-grey-xl:active {
+/* line 280, ../sass/_partials/_base.scss */
+.btn-dark-grey:hover, .btn-dark-grey-xl:hover, .btn-dark-grey:focus, .btn-dark-grey-xl:focus, .btn-dark-grey:active, .btn-dark-grey-xl:active,
+.btn-dark-grey:visited:hover,
+.btn-dark-grey-xl:visited:hover,
+.btn-dark-grey:visited:focus,
+.btn-dark-grey-xl:visited:focus,
+.btn-dark-grey:visited:active,
+.btn-dark-grey-xl:visited:active {
   background-color: #515151;
 }
-/* line 275, ../sass/_partials/_base.scss */
-.btn-dark-grey:disabled, .btn-dark-grey-xl:disabled, .btn-dark-grey[disabled], [disabled].btn-dark-grey-xl {
+/* line 285, ../sass/_partials/_base.scss */
+.btn-dark-grey:disabled, .btn-dark-grey-xl:disabled, .btn-dark-grey[disabled], [disabled].btn-dark-grey-xl,
+.btn-dark-grey:visited:disabled,
+.btn-dark-grey-xl:visited:disabled,
+.btn-dark-grey:visited[disabled],
+.btn-dark-grey-xl:visited[disabled] {
   cursor: not-allowed;
   background-color: rgba(43, 43, 43, 0.6);
 }
 
-/* line 282, ../sass/_partials/_base.scss */
-.btn-dark-grey-xl {
+/* line 292, ../sass/_partials/_base.scss */
+.btn-dark-grey-xl,
+.btn-dark-grey-xl:visited {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 288, ../sass/_partials/_base.scss */
+/* line 299, ../sass/_partials/_base.scss */
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   width: 100%;
 }
-/* line 293, ../sass/_partials/_base.scss */
+/* line 304, ../sass/_partials/_base.scss */
 .row .column {
   flex-basis: 0;
   flex-grow: 1;
@@ -394,12 +475,12 @@ a.btn-primary, a.btn-primary-xl {
   padding: 15px;
 }
 
-/* line 301, ../sass/_partials/_base.scss */
+/* line 312, ../sass/_partials/_base.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 305, ../sass/_partials/_base.scss */
+/* line 316, ../sass/_partials/_base.scss */
 .entire-width {
   width: 100%;
 }

@@ -130,7 +130,8 @@ label {
     text-decoration: none;
 }
 
-.btn-white-transparent {
+.btn-white-transparent,
+.btn-white-transparent:visited {
     @extend %btn;
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px solid white;
@@ -147,13 +148,15 @@ label {
     }
 }
 
-.btn-white-transparent-xl {
+.btn-white-transparent-xl,
+.btn-white-transparent-xl:visited {
     @extend .btn-white-transparent;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:visited {
     @extend %btn;
     background-color: $primary;
     border: 1px solid $primary;
@@ -173,17 +176,20 @@ label {
     }
 }
 
-.btn-primary-xl {
+.btn-primary-xl,
+.btn-primary-xl:visited {
     @extend .btn-primary;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-a.btn-primary {
+a.btn-primary,
+a.btn-primary:visited {
     color: white;
 }
 
-.btn-primary-gradient {
+.btn-primary-gradient,
+.btn-primary-gradient:visited {
     @extend %btn;
     background: $linear-gradient;
     border: none;
@@ -203,7 +209,8 @@ a.btn-primary {
     }
 }
 
-.btn-primary-invert {
+.btn-primary-invert,
+.btn-primary-invert:visted {
     @extend %btn;
     background-color: white;
     color: $primary;
@@ -237,7 +244,8 @@ a.btn-primary {
     height: 100%;
 }
 
-.btn-secondary {
+.btn-secondary,
+.btn-secondary:visited {
     @extend %btn;
     background-color: $secondary;
     border: 1px solid $secondary;
@@ -256,13 +264,15 @@ a.btn-primary {
     }
 }
 
-.btn-secondary-xl {
+.btn-secondary-xl,
+.btn-secondary-xl:visited {
     @extend .btn-secondary;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-.btn-dark-grey {
+.btn-dark-grey,
+.btn-dark-grey:visited {
     @extend %btn;
     background-color: $dark-grey;
     border: 1px solid $dark-grey;
@@ -279,7 +289,8 @@ a.btn-primary {
     }
 }
 
-.btn-dark-grey-xl {
+.btn-dark-grey-xl,
+.btn-dark-grey-xl:visited {
     @extend .btn-dark-grey;
     padding: 15px 20px;
     font-size: 1.4rem;
