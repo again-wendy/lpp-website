@@ -14,6 +14,14 @@
         "blog": "Blog",
         "contact": "Contact"
     },
+    "wowmenu": {
+        "home": "Home",
+        "welcome": "Welkom",
+        "discover": "Ontdekken",
+        "roadmap": "Stappenplan",
+        "whitepapersblogs": "Whitepapers & Blogs",
+        "contact": "Contact"
+    },
     "ourreasons": {
         "whytext1": "Onze missie is simpel. Meebouwen aan het procurement succes van jouw organisatie. In dit domein zijn de dagelijkse operationele inkoop-, ontvangs- en factuurprocessen in veel organisaties gedigitaliseerd, in sommige gevallen geautomatiseerd, maar nog veel te vaak niet volledig geoptimaliseerd. Wij richten ons niet slechts op de operationele kant, maar geven ook contractmanagement, sourcing en spend analyse de benodigde aandacht. Wij staan ervoor dat die business case in jouw organisatie gaat slagen!",
         "whytext2": "Onze core values zijn dan ook; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency en Great experiences. Meer weten over al onze ",
@@ -71,9 +79,50 @@
         "signup": "Inschrijven"
     },
     "contact": {
-        "fastcontact": "Snel in contact"
+        "fastcontact": "Snel in contact",
+        "knowmore": "Wil je hier meer over weten of heb je een andere vraag?",
+        "fillemail": "Vul dan jouw email adres in en wij nemen zo snel mogelijk contact met je op!",
+        "names": "Voor- en achternaam",
+        "email": "Email",
+        "send": "Verstuur",
+        "sentsuccess": "Je aanvraag is succesvol verzonden!"
     },
     "strategypage": {
-        "pagetitle": "Strategy as a Service"
+        "pagetitle": "Strategy as a Service",
+        "lefttext": "Waar moet je nu op in gaan zetten wanneer je de komende jaren specifieke doelstellingen wilt bereiken? Veel optimalisaties vallen in duigen. Wij denken dat dit ligt aan het feit dat een onderscheidend kader en de juiste visie ontbreekt. In de praktijk blijkt het iets anders te zijn dan het enkel laten volgen in de strategie van procurement of finance. De strategie van IT, HR, marketing en al die andere gebruikers van het vak telt ook zwaar. Daarnaast zijn er trends in de markt op technologisch en bedrijfskundig vlak die ook een grote rol spelen.",
+        "righttext": "Wij kunnen je informeren over bestaande trends, je begeleiden in het opstellen van een door jouw organisatie gedragen visie of een advies geven over het juiste inrichtingsplan. Gewoon net even samen dat stapje verder denken en daardoor zelf die sprong groter maken.",
+        "moreinfo": "Meer info",
+        "workshop": "Strategy workshop",
+        "package": "Pakket selectie",
+        "channel": "Kanalen strategie",
+        "cwm": "Contingent Workforce Management"
+    },
+    "insightspage": {
+        "pagetitle": "Insights as a Service",
+        "lefttext": "Business Intelligence, het opbouwen van inzicht in je proces en organisatie, de bron voor bijsturing van je proces en aanpak. Logisch en noodzakelijk, maar in de praktijk niet zo eenvoudig wanneer procurement een overkoepelende functie van verschillende afdelingen blijkt te zijn. Hoe doen wij de dingen eigenlijk die we doen, en hoe doen anderen dat? Gewoon de oogkleppen af en gaan begrijpen waar en hoe je moet sturen op procurement.",
+        "righttext": "Onze Procurement Control Room bestaat uit een business intelligence platform (alles in de cloud natuurlijk), waarin wij onze kennis rondom data-analyse en dashboarding hebben gebundeld. Binnen dit platform stellen wij verschillende standaard dashboards ter beschikking om beter te sturen op procurement performance. De PCR dashboards geven je snel inzicht in de spend- en contractinformatie, waardecreatie en process performance. Het ultieme hulpstuk bij intelligenter inkopen dus.",
+        "moreinfo": "Meer info",
+        "spend": "Spend dashboard",
+        "contract": "Contract dashboard",
+        "value": "Value dashboard",
+        "compliance": "Compliance management"
+    },
+    "solutioningpage": {
+        "pagetitle": "Solutioning as a Service",
+        "lefttext": "Bestaande software oplossingen verbeteren of vervangen? Zoveel mensen, zoveel wensen, en dat geldt zeker waar die mensen samen organisaties vormen. Als die wensen resulteren in een enorm aantal software oplossingen. Hoe vind je dan je weg? Hoe maak je de juiste keuze op basis van culturele, budgettaire en functionele ‘fit’ met jouw organisatie? ",
+        "righttext": "Sinds de komst van cloud-oplossingen is ook de keuzevrijheid groter geworden. Logische stap dus dat ook wij meegroeien in al die kennis en ons portfolio breed houden, juist om voor jullie purchasing simpel te maken. Er zijn maar weinig software oplossingen in deze markt die wij niet kennen. In alle onderstaande oplossingen zijn onze consultants bekend, hebben we een uitgebreid netwerk van relaties en kunnen dus ook voor jullie succes net het verschil maken. ",
+        "moreinfo": "Meer info",
+        "integration": "Integration Services",
+        "transformation": "Transformation Services",
+        "transition": "Transition Services"
+    },
+    "managementpage": {
+        "pagetitle": "Management as a Service",
+        "lefttext": "Hoe moet je eigenlijk managen op “continuous improvement” binnen procurement? Kan ik efficiënter zijn door mijn inkoopdesk of accounts payable taken uit te besteden? De dagelijkse praktijk, het managen van leveranciers en processen, maar ook het continue verbeteren van die situatie. Als je doelen en keuzes helder zijn, kunnen wij ook zorgen dat het een en ander goed operationeel wordt ingeregeld. ",
+        "righttext": "Dat inregelen begint bij een goede projectvoering in de transformatiefase en loopt door in de transitiefase. Wij kunnen je helpen met de juiste aanpak, het maken van plannen en natuurlijk de uitvoering. We ervoor dat jouw plannen tot een succes worden gemaakt. ",
+        "moreinfo": "Meer info",
+        "compliance": "Compliance management",
+        "transformation": "Transformation Services",
+        "transition": "Transition Services"
     }
 }

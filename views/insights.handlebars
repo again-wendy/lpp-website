@@ -1,0 +1,63 @@
+{{> navbar}}
+
+<div id="insights-page" class="service-page">
+    <div class="choose-service">
+        <ul class="services">
+            <li class="notactive strategy">
+                <a href="/strategy-as-a-service">Strategy</a>
+            </li>
+            <li class="active insights">
+                {{ tl.ourservices.insightstitle }}
+            </li>
+            <li class="notactive solutioning">
+                <a href="/solutioning-as-a-service">Solutioning</a>
+            </li>
+            <li class="notactive management">
+                <a href="/management-as-a-service">Management</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container page-text">
+        <h2 class="page-title">{{ tl.insightspage.pagetitle }}</h2>
+        <div class="paragraph">
+            <p class="left-text">
+                {{ tl.insightspage.lefttext }}
+            </p>
+            <p class="right-text">
+                {{ tl.insightspage.righttext }}
+            </p>
+        </div>
+
+        <div class="service-circles">
+            <div class="circle">
+                <a class="service-circle circle-1">
+                    <h4 class="circle-title">{{ tl.insightspage.spend }}</h4><br />
+                    <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-2">
+                    <h4 class="circle-title">{{ tl.insightspage.contract }}</h4><br />
+                    <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-3">
+                    <h4 class="circle-title">{{ tl.insightspage.value }}</h4><br />
+                    <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-4">
+                    <h4 class="circle-title">{{ tl.insightspage.compliance }}</h4><br />
+                    <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> contact-extended}}
+
+{{> footer}}

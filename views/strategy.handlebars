@@ -6,20 +6,55 @@
             <li class="active">
                 {{ tl.ourservices.strategytitle }}
             </li>
-            <li class="notactive">
+            <li class="notactive insights">
                 <a href="/insights-as-a-service">Insights</a>
             </li>
-            <li class="notactive">
+            <li class="notactive solutioning">
                 <a href="/solutioning-as-a-service">Solutioning</a>
             </li>
-            <li class="notactive">
+            <li class="notactive management">
                 <a href="/management-as-a-service">Management</a>
             </li>
         </ul>
     </div>
     
-    <div class="container">
+    <div class="container page-text">
         <h2 class="page-title">{{ tl.strategypage.pagetitle }}</h2>
+        <div class="paragraph">
+            <p class="left-text">
+                {{ tl.strategypage.lefttext }}
+            </p>
+            <p class="right-text">
+                {{ tl.strategypage.righttext }}
+            </p>
+        </div>
+
+        <div class="service-circles">
+            <div class="circle">
+                <a class="service-circle circle-1">
+                    <h4 class="circle-title">{{ tl.strategypage.workshop }}</h4><br />
+                    <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-2">
+                    <h4 class="circle-title">{{ tl.strategypage.package }}</h4><br />
+                    <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-3">
+                    <h4 class="circle-title">{{ tl.strategypage.channel }}</h4><br />
+                    <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+            <div class="circle">
+                <a class="service-circle circle-4">
+                    <h4 class="circle-title">{{ tl.strategypage.cwm }}</h4><br />
+                    <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 

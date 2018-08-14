@@ -13,7 +13,8 @@
                 background: $primary;
                 color: white;
                 font-family: $font-bold;
-                width: 120px;
+                width: 130px;
+                height: 100px;
                 text-align: center;
             }
             .notactive {
@@ -22,6 +23,9 @@
                 border: 2px solid $primary;
                 background: white;
                 transform-origin: 3px 3px;
+                width: 130px;
+                position: relative;
+                text-align: center;
                 &:hover, &:focus, &:active {
                     background: $linear-gradient;
                     a {
@@ -34,12 +38,176 @@
             }
         }
     }
-    .page-title {
-        text-align: center;
-        color: $primary;
+    .page-text {
+        .page-title {
+            text-align: center;
+            color: $primary;
+        }
+        .paragraph {
+            @include displayFlex;
+            p {
+                @include prefix(flex, 1 1 0, webkit moz o);
+            }
+            .left-text {
+                margin-right: 10px;
+            }
+            .right-text {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .service-circles {
+        @include displayFlex;
+        margin-top: 30px;
+        .circle {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            padding: 0 20px;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            .service-circle {
+                background: $secondary;
+                text-align: center;
+                display: block;
+                border-radius: 50%;
+                color: white;
+                position: relative;
+                cursor: pointer;
+                &:hover, &:active, &:focus, &.active {
+                    background: linear-gradient(45deg, #ffef23 10%, #ee7616 25%, #eb6232 75%, #e4352e 95%);
+                }
+                .circle-title {
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                p {
+                    font-size: 0.8rem;
+                    margin: 0;
+                    position: relative;
+                    top: 55%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
     }
 }
 
 #strategy-page {
+    .choose-service {
+        .services {
+            .insights {
+                top: 123px;
+            }
+            .solutioning {
+                top: 220px;
+            }
+            .management {
+                top: 320px;
+            }
+        }
+    }
+}
 
+#insights-page {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 100px;
+                position: relative;
+            }
+            .solutioning {
+                top: 222px;
+            }
+            .management {
+                top: 322px;
+            }
+        }
+    }
+}
+
+#solutioning-page {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 225px;
+            }
+            .solutioning {
+                top: 200px;
+                position: relative;
+            }
+            .management {
+                top: 322px;
+            }
+        }
+    }
+    .page-text {
+        .software-logos {
+            margin-top: 60px;
+            img {
+                width: 19%;
+                max-width: 19%;
+                margin: 0 1%;
+                &:first-child {
+                    margin-left: 0;
+                    width: 12%;
+                    max-width: 12%;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .service-circle {
+        .circle-title {
+            font-size: 1.2rem;
+            top: 8%;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+#management-page {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 225px;
+            }
+            .solutioning {
+                top: 325px;
+            }
+            .management {
+                top: 300px;
+                position: relative;
+            }
+        }
+    }
+    .service-circle {
+        .circle-title {
+            font-size: 1.2rem;
+            top: 8%;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
 }

@@ -1,3 +1,27 @@
 <section id="contact-extended">
-    Meer weten?
+    <div class="contact-text">
+        <h3>{{ tl.contact.knowmore }}</h3>
+        <p>{{ tl.contact.fillemail }}</p>
+        {{#if messages.success}}
+            <p class="flash flash-success">{{ tl.contact.sentsuccess }}</p>
+        {{/if}}
+    </div>
+    <div class="contact-banner">
+        <form method="POST" action="/contactform">
+            <input type="text" name="names" placeholder="{{ tl.contact.names }}">
+            <input type="email" name="email" placeholder="{{ tl.contact.email }}">
+            <p class="antispam">Leave this empty: <input type="text" name="url"></p>
+            <input type="submit" class="btn-primary-gradient" value="{{ tl.contact.send }}">
+        </form>
+        {{> contactsvg}}
+        <div class="person">
+            <div class="name">
+                <h4 class="names"></h4>
+                <h5 class="title"></h5>
+            </div>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
 </section>

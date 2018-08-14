@@ -21,8 +21,11 @@ strong {
 }
 
 .flash.flash-success {
-    text-align: center;
+    text-align: left;
     color: $success;
+    font-family: $font-bold;
+    font-size: 1.2rem;
+    position: relative;
 }
 
 .container {
@@ -130,12 +133,14 @@ label {
     text-decoration: none;
 }
 
-.btn-white-transparent,
-.btn-white-transparent:visited {
+.btn-white-transparent {
     @extend %btn;
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px solid white;
     color: $dark-grey; 
+    &:visited {
+        color: $dark-grey;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -148,19 +153,20 @@ label {
     }
 }
 
-.btn-white-transparent-xl,
-.btn-white-transparent-xl:visited {
+.btn-white-transparent-xl {
     @extend .btn-white-transparent;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-.btn-primary,
-.btn-primary:visited {
+.btn-primary {
     @extend %btn;
     background-color: $primary;
     border: 1px solid $primary;
     color: white;
+    &:visited {
+        color: white;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -176,24 +182,24 @@ label {
     }
 }
 
-.btn-primary-xl,
-.btn-primary-xl:visited {
+.btn-primary-xl {
     @extend .btn-primary;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-a.btn-primary,
-a.btn-primary:visited {
+a.btn-primary {
     color: white;
 }
 
-.btn-primary-gradient,
-.btn-primary-gradient:visited {
+.btn-primary-gradient {
     @extend %btn;
     background: $linear-gradient;
     border: none;
     color: white;
+    &:visited {
+        color: white;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -209,14 +215,16 @@ a.btn-primary:visited {
     }
 }
 
-.btn-primary-invert,
-.btn-primary-invert:visted {
+.btn-primary-invert {
     @extend %btn;
     background-color: white;
     color: $primary;
     position: relative;
     border: none;
     padding: 5px 11px;
+    &:visited {
+        color: $primary;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -244,12 +252,14 @@ a.btn-primary:visited {
     height: 100%;
 }
 
-.btn-secondary,
-.btn-secondary:visited {
+.btn-secondary {
     @extend %btn;
     background-color: $secondary;
     border: 1px solid $secondary;
     color: $dark-grey;
+    &:visited {
+        color: $dark-grey;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -264,19 +274,20 @@ a.btn-primary:visited {
     }
 }
 
-.btn-secondary-xl,
-.btn-secondary-xl:visited {
+.btn-secondary-xl {
     @extend .btn-secondary;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
 
-.btn-dark-grey,
-.btn-dark-grey:visited {
+.btn-dark-grey {
     @extend %btn;
     background-color: $dark-grey;
     border: 1px solid $dark-grey;
     color: white;
+    &:visited {
+        color: white;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -289,8 +300,7 @@ a.btn-primary:visited {
     }
 }
 
-.btn-dark-grey-xl,
-.btn-dark-grey-xl:visited {
+.btn-dark-grey-xl {
     @extend .btn-dark-grey;
     padding: 15px 20px;
     font-size: 1.4rem;

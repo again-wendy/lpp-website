@@ -18,3 +18,71 @@
         }
     }
 }
+
+#contact-extended {
+    margin-top: 80px;
+    position: relative;
+    padding-bottom: 0;
+    .contact-text {
+        width: 65%;
+        padding-left: 80px;
+        position: absolute;
+        top: 70px;
+        h3 {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+    }
+    #contactsvg {
+        top: 5px;
+        position: relative;
+    }
+    .contact-banner {
+        position: relative;
+        form {
+            position: absolute;
+            top: 34%;
+            width: 65%;
+            padding-left: 60px;
+            z-index: 10;
+            input {
+                width: 38%;
+                margin-right: 2%;
+                padding: 10px 8px;
+                border-radius: 8px;
+                border: none;
+            }
+            input[type="submit"] {
+                width: 18%;
+                margin-right: 0;
+                cursor: pointer;
+            }
+            .antispam {
+                display: none;
+            }
+        }
+        .person {
+            color: white;
+            padding-left: 60px;
+            overflow: hidden;
+            .name {
+                position: absolute;
+                bottom: 18%;
+                .names {
+                    font-family: $font-xbold;
+                    margin: 0;
+                }
+                .title {
+                    margin: 5px 0 0 0;
+                    font-family: $font-normal;
+                }
+            }
+            .image {
+                position: absolute;
+                width: 50%;
+                right: 0;
+                top: 8px;
+            }
+        }
+    }
+}

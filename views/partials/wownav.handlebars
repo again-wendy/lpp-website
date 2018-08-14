@@ -1,0 +1,34 @@
+<nav id="nav-bar" class="wow">
+    <div class="left-menu">
+        <img onclick="menuClick('#hero-slider')" src="./public/images/logos/lakran_presents_wow.svg" alt="LAKRAN Procurement Professionals">
+    </div>
+    <div class="right-menu">
+        <div class="mobile-toggle" onclick="toggleMobileMenu()">
+            <div class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-items">
+            <li class="menu-item menu-item-1">
+                <a href="/">{{ tl.wowmenu.home }}</a>
+            </li>
+            <li class="menu-item menu-item-2">
+                <a onclick="menuClick('#welcome')">{{ tl.wowmenu.welcome }}</a>
+            </li>
+            <li class="menu-item menu-item-3">
+                <a onclick="menuClick('#discover')">{{ tl.wowmenu.discover }}</a>
+            </li>
+            <li class="menu-item menu-item-4">
+                <a onclick="menuClick('#roadmap')">{{ tl.wowmenu.roadmap }}</a>
+            </li>
+            <li class="menu-item menu-item-5">
+                <a onclick="menuClick('#whitepapersblogs')">{{ tl.wowmenu.whitepapersblogs }}</a>
+            </li>
+            <li class="menu-item menu-item-6">
+                <a onclick="menuClick('#contact')">{{ tl.wowmenu.contact }}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

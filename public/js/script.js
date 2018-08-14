@@ -44,6 +44,8 @@ $(document).ready(function() {
     copyright();
 
     setActiveNavItem();
+
+    randomContactImage();
 });
 
 function setActiveNavItem() {
@@ -141,6 +143,13 @@ function heightElements() {
     // Set height of map so its the same as the text
     var heightText = $("#footer .footer-text").height();
     $("#map").css("height", heightText + "px");
+
+    // Set height circles on services pages
+    if( $('.service-page').length ) {
+        var wCircle = $('.service-page .service-circles .circle').width();
+        $('.service-page .service-circle').css('width', wCircle + 'px');
+        $('.service-page .service-circle').css('height', wCircle + 'px');
+    }
 }
 
 // When page is loaded set interval to change the reasons
@@ -298,7 +307,6 @@ $(function() {
 function getBlogs() {
     $.getJSON("blogs", function(data) {
         var items = data;
-        console.log(items);
     });
 }
 
@@ -323,4 +331,52 @@ function initMap() {
             map: map
         });
     }
+}
+
+// Show random person in the extended contact section
+function randomContactImage() {
+    if( $('#contact-extended').length ) {
+        var num = Math.floor( (Math.random() * 10) + 1 );
+        switch(num) {
+            case 1:
+                setContactImage('Babs Hessing', 'Consultant', 'babs');
+                break;
+            case 2:
+                setContactImage('Bart van Beek', 'Consultant', 'bart');
+                break;
+            case 3:
+                setContactImage('Efisio Caredda', 'Principal Consultant', 'efisio');
+                break;
+            case 4: 
+                setContactImage('Ellis Mendelsohn', 'Consultant', 'ellis');
+                break;
+            case 5:
+                setContactImage('Herman Ursinus', 'Managing Director', 'herman');
+                break;
+            case 6:
+                setContactImage('Lieske van den Berg', 'Consultant', 'lieske');
+                break;
+            case 7:
+                setContactImage('Luis Gomez', 'Consultant', 'luis')
+                break;
+            case 8:
+                setContactImage('Minke Mensink', 'Director LAKRAN VMS Services', 'minke');
+                break;
+            case 9: 
+                setContactImage('René Berns', 'Managing consultant', 'rene');
+                break;
+            case 10:
+                setContactImage('Sander Hollings', 'Recruiter', 'sander');
+                break;
+            default:
+                setContactImage('René Berns', 'Managing consultant', 'rene');
+        }
+    }
+}
+
+// Set name, function and img filename for a person in the extended contact version
+function setContactImage(name, title, img) {
+    $('#contact-extended .person .names').text(name);
+    $('#contact-extended .person .title').text(title);
+    $('#contact-extended .person .image img').attr('src', './public/images/persons/' + img + '.png');
 }
