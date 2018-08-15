@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    // Load right flag in menu to set language
+    if(checkLang().indexOf("nl") != -1) {
+        $("#language").append('<a onclick="setLang(\'en\')"><img src="./public/images/en.png" alt="English"></a>');
+        Cookies.set("ulang", "nl");
+    } else {
+        $("#language").append('<a onclick="setLang(\'nl\')"><img src="./public/images/nl.png" alt="Nederlands"></a>');
+        Cookies.set("ulang", "en");
+    }
+
     // Code for the hero images slider on homepage
     $(".slide-container").unslider({
         arrows: {
@@ -12,14 +21,16 @@ $(document).ready(function() {
 
     // Make navbar sticky when its top of screen
     $(window).bind("scroll", function() {
-        var aboveNav = $("#hero-slider").height();
-        var contentHeight = $("#nav-bar").height() + 96;
-        if($(window).scrollTop() > aboveNav) {
-            $("#nav-bar").addClass("sticky");
-            $("#reasons").css("margin-top", contentHeight + "px");
-        } else {
-            $("#nav-bar").removeClass("sticky");
-            $("#reasons").css("margin-top", "96px");
+        if( $('#hero-slider').length ) {
+            var aboveNav = $("#hero-slider").height();
+            var contentHeight = $("#nav-bar").height() + 96;
+            if($(window).scrollTop() > aboveNav) {
+                $("#nav-bar").addClass("sticky");
+                $("#reasons").css("margin-top", contentHeight + "px");
+            } else {
+                $("#nav-bar").removeClass("sticky");
+                $("#reasons").css("margin-top", "96px");
+            }
         }
     });
 
@@ -32,21 +43,71 @@ $(document).ready(function() {
     heightElements();
     heightIconBlock('why');
 
-    // Set Daphne
+    // Fire functions
     setWidthDaphne();
-
     puzzleHover();
-
     setBlogImages();
-
     blogHover();
-
     copyright();
-
     setActiveNavItem();
-
     randomContactImage();
+
+    // WOW LANDINGSPAGE
+    var hoveredListItem = 0;
+    if( $('.landingspage').length ) {
+        $('.header-item').hover(
+            function() {
+                $(this).parent().find('.overlay').css('background-color', 'rgba(255, 255, 255, 0.9)');
+            },
+            function() {
+                $(this).parent().find('.overlay').css('background-color', 'rgba(255, 255, 255, 0.7)');
+            }
+        );
+
+	    $('.text-item').hide();
+        $('.text-default').show();
+        
+        $('.header-item').hover(function() {
+            $('.text-item').hide();
+            checkClassNum($(this).attr('class'));
+        }, function() { });
+    
+        $('.header-img > img').click(function() {
+            $('.header-item').removeClass('active');
+            $('.text-item').hide();
+            $('.header-item').connections('remove');
+            $('.text-default').show();
+        });
+
+        $('#inpage_scroll_btn').click(function() {
+            $(document).scrollTo('#welkom', 300);
+        });
+
+        placeBlogHoverText();
+    }
 });
+
+// Check the language
+function checkLang() {
+    var userLang = navigator.language || navigator.userLanguage;
+    var url = window.location.href;
+    if( url.indexOf("?clang=") == -1 ) {
+        return userLang;
+    } else {
+        return url.substr(-2, 2);
+    }
+}
+
+// Set the language
+function setLang($event) {
+    var url = window.location.href;
+    if( url.indexOf("?clang=") == -1 ) {
+        window.location.href = url + "?clang=" + $event;
+    } else {
+        var tempUrl = url.substr(0, url.length - 2);
+        window.location.href = tempUrl + $event;
+    }
+}
 
 function setActiveNavItem() {
     var url = window.location.pathname;
@@ -379,4 +440,92 @@ function setContactImage(name, title, img) {
     $('#contact-extended .person .names').text(name);
     $('#contact-extended .person .title').text(title);
     $('#contact-extended .person .image img').attr('src', './public/images/persons/' + img + '.png');
+}
+
+// WOW LANDINGSPAGE
+function checkClassNum(str) {
+	if( str.indexOf('item-1') > 0 ) {
+		hoveredListItem = 1;
+	} else if( str.indexOf('item-2') > 0 ) {
+		hoveredListItem = 2;
+	} else if( str.indexOf('item-3') > 0 ) {
+		hoveredListItem = 3;
+	} else if( str.indexOf('item-4') > 0 ) {
+		hoveredListItem = 4;
+	} else if( str.indexOf('item-5') > 0 ) {
+		hoveredListItem = 5;
+	} else if( str.indexOf('item-6') > 0 ) {
+		hoveredListItem = 6;
+	} else {
+		hoveredListItem = 0;
+	}
+	getTextField();
+}
+
+function getTextField() {
+	if( hoveredListItem != 0 ) {
+		$('.header-item').removeClass('active');
+		$('.header-item').connections('remove');
+		$('.text-' + hoveredListItem).show();
+		$('.item-' + hoveredListItem).addClass('active');
+ 		$('.text-' + hoveredListItem + ' > .con').connections({ to: '.item-' + hoveredListItem});
+ 	} else {
+ 		$('.text-default').show();
+ 	}
+}
+
+function hideTextField() {
+	$('.text-' + hoveredListItem).hide();
+	$('.header-item').connections('remove');
+	hoveredListItem = 0;
+	$('.text-default').show();
+}
+
+function placeBlogHoverText() {  
+    $('.g-empathy').hover(
+        function() {
+            $('.blog-hovertitle').html("Empathy. Stage 1:<br>Empathy map" );
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
+    $('.g-daphne').hover(
+        function(){
+            if( Cookies.get("ulang") == "nl" ) {
+                $('.blog-hovertitle').html("LAKRAN presents WOW:<br>Maak kennis met…" ); 
+            } else {
+                $('.blog-hovertitle').html("LAKRAN presents WOW:<br>Meet…" ); 
+            }
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
+    $('.g-define').hover(
+        function(){
+            $('.blog-hovertitle').html( "Define. Stage 2:<br>Define map" );
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
+    $('.g-ideate').hover(
+        function(){
+            $('.blog-hovertitle').html( "Ideate. Stage 3:<br> Ideate map" );
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
+    $('.g-prototype').hover(
+        function(){
+            $('.blog-hovertitle').html( "Prototype. Stage 4:<br> Prototype map" );
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
+    $('.g-test').hover(
+        function(){
+            $('.blog-hovertitle').html( "Test. Stage 5:<br> Test map" );
+        }, function() {
+            $('.blog-hovertitle').html("");
+        }
+    );
 }

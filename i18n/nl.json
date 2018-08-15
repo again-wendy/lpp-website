@@ -124,5 +124,37 @@
         "compliance": "Compliance management",
         "transformation": "Transformation Services",
         "transition": "Transition Services"
+    },
+    "wowpage": {
+        "hovertext": "Hover met je muis op een tegel hier rechts, op een design thinking onderdeel, om er meer over te lezen!",
+        "headerempathy": "Je leert het vraagstuk en je doelgroep goed kennen. Je bekijkt het \"dilemma\" vanuit allerlei hoeken. Je spreekt vervolgens met de doelgroep en legt hun cultuur en invloeden vast in een",
+        "headerdefine": "Je gaat het overkoepelende vraagstuk achterhalen. Je gaat in gesprek met verschillende stakeholders en legt problemen, vraagstellingen en inzichten vast in een",
+        "headerideate": "Je categoriseert alle resultaten. De overeenkomsten zet je bij elkaar, om zo clusters te vormen en op basis hiervan ontwikkel je out of the box ideeën voor het overkoepelende vraagstuk. Leg dit vast in de",
+        "headerprototype": "Je zet clusters om naar tastbare oplossingen. Denk realistisch; is het rendabel en haalbaar? Leg de kasnrijke ideeën en concrete concepten vast in de",
+        "headertest": "Je test de kansrijke en concrete prototypes. Je betrekt belangrijke stakeholders en kiest uiteindelijk voor de best mogelijke oplossing. Leg de ervaringen vast in de",
+        "headerlakran": "Deze landingspage is een product van LAKRAN Procurement Professionals. Een go-to adviserende schakel tussen inkopende organisaties en softwarehuizen die P2P oplossingen leveren. Bekijk onze website door op het LAKRAN logo te klikken!",
+        "tagline": "is een denkwijze van",
+        "welcome": {
+            "title": "Hee, daar ben je!",
+            "subtitle1": "Wat leuk!",
+            "alinea1": "Je bent op de landingspage van LAKRAN presents WOW, onze visie op Design Thinking. Fijn dat jouw interesse gewekt is! Wellicht zit je nu lekker aan een bakje koffie met een concreet vraagstuk of bekijk je deze pagina zonder enige context. Wat je redenen ook zijn, maak kennis met de visie van",
+            "alinea2": "Ik hoop dat je de informatie vindt waarnaar je op zoek bent en dat je bezoek aan onze site bijdraagt aan jouw succes!",
+            "subtitle2": "Kennismaken met LAKRAN presents WOW",
+            "alinea3": "introduceert WOW, oftewel de",
+            "alinea4": "Je hoort het misschien niet zo vaak; Design Thinking in de inkoop branche. Toch voegt het veel toe. Design Thinking is namelijk niet alleen denken, het is een mindset toegepast door ons team van professionals.",
+            "alinea5": "Zelf kun je nu ook gebruik maken van ons",
+            "alinea6": "Het kan je ver opweg helpen bij vraagstukken of uitdagingen. Bijvoorbeeld binnen procurement, maar ook daarbuiten. Deze methode is behulpzaam bij allerlei soorten scenario’s. Het helpt je om op nieuwe manieren naar vraagstukken en uitdagingen te kijken. Dit resulteert in verassende out of the box inzichten en acties, omarmt door jouw team. Het is niet alleen denken, maar ook doen!"
+        },
+        "discover": {
+            "title": "Lekker ontdekken!",
+            "alinea1": "Deze pagina neemt je stap voor stap mee in de WOW denkwijze. Je vindt hier het uitgebreide stappenplan met ondersteunende visuals. LAKRAN presents WOW is bedoeld om je te helpen jouw vraagstukken aan te pakken. Kijk rond op deze pagina of zocht je toevallig één van onze andere bedrijven?",
+            "goto": "Ga naar"
+        },
+        "roadmap": {
+            "subtitle": "Klik op een stap om er meer over te leren!"
+        },
+        "wb": {
+            "subtitle": "Lees onze whitepapers en blogs over Design Thinking en WOW LAKRAN"
+        }
     }
 }

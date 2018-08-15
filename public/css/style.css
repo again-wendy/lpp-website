@@ -1034,8 +1034,13 @@ a.btn-primary, a.btn-primary-xl {
     padding: 0;
   }
 }
+/* line 162, ../sass/_partials/_navbar.scss */
+#nav-bar .right-menu .menu-items .lang img,
+#simple-navbar .right-menu .menu-items .lang img {
+  width: 25px;
+}
 
-/* line 165, ../sass/_partials/_navbar.scss */
+/* line 170, ../sass/_partials/_navbar.scss */
 #nav-bar.sticky {
   position: fixed;
   top: 0;
@@ -1043,7 +1048,7 @@ a.btn-primary, a.btn-primary-xl {
   margin-bottom: 9vh;
 }
 @media (max-width: 1024px) and (max-height: 485px) and (orientation: landscape) {
-  /* line 165, ../sass/_partials/_navbar.scss */
+  /* line 170, ../sass/_partials/_navbar.scss */
   #nav-bar.sticky {
     margin-bottom: 14vh;
   }
@@ -1051,7 +1056,7 @@ a.btn-primary, a.btn-primary-xl {
 
 /* line 1, ../sass/_partials/_sections.scss */
 section {
-  padding: 50px 0;
+  padding: 80px 0;
   border-bottom: 1px solid #ececec;
 }
 /* line 4, ../sass/_partials/_sections.scss */
@@ -2038,34 +2043,51 @@ section.full-screen .container {
   height: 100%;
 }
 
-/* line 22, ../sass/_partials/_contact.scss */
+/* line 23, ../sass/_partials/_contact.scss */
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 29, ../sass/_partials/_contact.scss */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 38, ../sass/_partials/_contact.scss */
 #contact-extended {
   margin-top: 80px;
   position: relative;
   padding-bottom: 0;
 }
-/* line 26, ../sass/_partials/_contact.scss */
+/* line 42, ../sass/_partials/_contact.scss */
 #contact-extended .contact-text {
   width: 65%;
   padding-left: 80px;
   position: absolute;
   top: 70px;
 }
-/* line 31, ../sass/_partials/_contact.scss */
+/* line 47, ../sass/_partials/_contact.scss */
 #contact-extended .contact-text h3 {
   font-size: 1.6rem;
   margin: 0;
 }
-/* line 36, ../sass/_partials/_contact.scss */
+/* line 52, ../sass/_partials/_contact.scss */
 #contact-extended #contactsvg {
   top: 5px;
   position: relative;
 }
-/* line 40, ../sass/_partials/_contact.scss */
+/* line 56, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner {
   position: relative;
 }
-/* line 42, ../sass/_partials/_contact.scss */
+/* line 58, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner form {
   position: absolute;
   top: 34%;
@@ -2073,7 +2095,7 @@ section.full-screen .container {
   padding-left: 60px;
   z-index: 10;
 }
-/* line 48, ../sass/_partials/_contact.scss */
+/* line 64, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner form input {
   width: 38%;
   margin-right: 2%;
@@ -2081,38 +2103,38 @@ section.full-screen .container {
   border-radius: 8px;
   border: none;
 }
-/* line 55, ../sass/_partials/_contact.scss */
+/* line 71, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner form input[type="submit"] {
   width: 18%;
   margin-right: 0;
   cursor: pointer;
 }
-/* line 60, ../sass/_partials/_contact.scss */
+/* line 76, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner form .antispam {
   display: none;
 }
-/* line 64, ../sass/_partials/_contact.scss */
+/* line 80, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person {
   color: white;
   padding-left: 60px;
   overflow: hidden;
 }
-/* line 68, ../sass/_partials/_contact.scss */
+/* line 84, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name {
   position: absolute;
   bottom: 18%;
 }
-/* line 71, ../sass/_partials/_contact.scss */
+/* line 87, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name .names {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-/* line 75, ../sass/_partials/_contact.scss */
+/* line 91, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name .title {
   margin: 5px 0 0 0;
   font-family: "ZwoOT", Helvetica, Arial, sans-serif;
 }
-/* line 80, ../sass/_partials/_contact.scss */
+/* line 96, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .image {
   position: absolute;
   width: 50%;
@@ -2391,4 +2413,986 @@ footer .container .companies .company {
 /* line 209, ../sass/_partials/_service-pages.scss */
 #management-page .service-circle p {
   font-size: 1rem;
+}
+
+/* line 1, ../sass/_partials/_wowpage.scss */
+.landingspage {
+  font-family: "ZwoOT", Helvetica, Arial, sans-serif;
+  /*
+          Navigation
+  */
+  /*
+      Header
+  */
+  /* hexagons*/
+  /*lines*/
+  /*Speech bubble*/
+  /*first article*/
+  /*
+  Banners
+  */
+  /*
+  Hexagon article 3
+  */
+  /*
+  Whitepapers & blogs
+  */
+  /*
+  Tagline
+  */
+  /*
+      IE AND EDGE FIX
+  */
+}
+/* line 3, ../sass/_partials/_wowpage.scss */
+.landingspage h1, .landingspage h2, .landingspage h3, .landingspage h4, .landingspage h5, .landingspage h6 {
+  font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
+}
+/* line 6, ../sass/_partials/_wowpage.scss */
+.landingspage section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+/* line 10, ../sass/_partials/_wowpage.scss */
+.landingspage .block-title {
+  color: #ef7c14;
+  font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1px;
+}
+/* line 17, ../sass/_partials/_wowpage.scss */
+.landingspage hr.limegreen {
+  border-top-color: #C3C750;
+}
+/* line 20, ../sass/_partials/_wowpage.scss */
+.landingspage hr.title-border {
+  height: 2px;
+  background-color: #2b2b2b;
+  width: 50%;
+  margin-left: 25%;
+}
+@media (max-width: 768px) {
+  /* line 20, ../sass/_partials/_wowpage.scss */
+  .landingspage hr.title-border {
+    background-color: #EAD82B;
+  }
+}
+/* line 29, ../sass/_partials/_wowpage.scss */
+.landingspage #whitepapers-blogs {
+  padding-top: 0px;
+}
+/* line 32, ../sass/_partials/_wowpage.scss */
+.landingspage .block-title {
+  color: #ef7c14;
+  font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1px;
+}
+@media (max-width: 768px) {
+  /* line 32, ../sass/_partials/_wowpage.scss */
+  .landingspage .block-title {
+    color: #ef7c14;
+  }
+}
+@media (max-width: 500px) {
+  /* line 32, ../sass/_partials/_wowpage.scss */
+  .landingspage .block-title {
+    font-size: 23px;
+  }
+}
+/* line 45, ../sass/_partials/_wowpage.scss */
+.landingspage .block-title.title-blue {
+  color: #33BCD1;
+}
+@media (max-width: 768px) {
+  /* line 45, ../sass/_partials/_wowpage.scss */
+  .landingspage .block-title.title-blue {
+    color: #ef7c14;
+  }
+}
+/* line 51, ../sass/_partials/_wowpage.scss */
+.landingspage .block-title.title-limegreen {
+  color: #C3C750;
+}
+/* line 54, ../sass/_partials/_wowpage.scss */
+.landingspage .block-title.title-yellow {
+  color: #EAD82B;
+}
+/* line 62, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav {
+  height: 55px;
+  background-color: white;
+  z-index: 999999;
+  position: initial;
+  /*initial*/
+}
+/* line 69, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage.home .landingspage-nav {
+  position: fixed;
+}
+/* line 73, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage .main-navigation .menu {
+  display: none;
+}
+@media (min-width: 769px) {
+  /* line 73, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage .main-navigation .menu {
+    display: block;
+  }
+  /* line 77, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage .main-navigation .menu li {
+    line-height: 53px;
+    display: list-item;
+    width: auto;
+    max-width: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 87, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage .nav-bar .module-group {
+    width: auto;
+  }
+}
+@media (max-width: 769px) {
+  /* line 93, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage #site-navigation .module.left {
+    padding-left: 1%;
+  }
+}
+/* line 99, ../sass/_partials/_wowpage.scss */
+.landingspage #site-navigation.landingspage-nav .module.left .logo {
+  height: 45px;
+  width: auto;
+  margin-top: 0;
+  border: none;
+}
+/* line 105, ../sass/_partials/_wowpage.scss */
+.landingspage #site-navigation.landingspage-nav .module.left a {
+  padding: 0;
+}
+/* line 112, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav .menu li a, .landingspage .landingspage-nav .menu li a:visited {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+}
+/* line 119, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav .menu li a:hover,
+.landingspage .landingspage-nav .menu li a:focus,
+.landingspage .landingspage-nav .menu .current-menu-item a,
+.landingspage .landingspage-nav .menu li:hover > a,
+.landingspage .landingspage-nav .menu li:hover:after {
+  color: #ef7c14;
+  border-bottom: 3px solid #2b2b2b;
+  text-decoration: none;
+}
+/* line 130, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu {
+  padding-top: 15px;
+  position: relative;
+  display: block;
+}
+@media (min-width: 769px) {
+  /* line 130, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-nav #slide-menu {
+    display: none;
+  }
+}
+/* line 137, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .fa {
+  color: #ef7c14;
+  font-size: 26px;
+  float: right;
+}
+/* line 142, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .fa-caret-up {
+  padding: 3px 5px;
+  border: 1px solid #ececec;
+  border-left: none;
+  z-index: 99999;
+  background-color: white;
+  position: absolute;
+  right: 0;
+}
+/* line 151, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .mobile-nav {
+  background-color: #2b2b2b;
+  color: white;
+  list-style: none;
+  z-index: 9999;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #ececec;
+}
+/* line 162, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .mobile-nav li {
+  float: none;
+  width: 150px;
+  background: linear-gradient(#38b7cd, #2d90a0);
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+/* line 168, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .mobile-nav li:last-child {
+  margin-bottom: 0;
+}
+/* line 171, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-nav #slide-menu .mobile-nav li a {
+  color: white;
+  display: block;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  /* line 181, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-nav > .container {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+  /* line 186, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-nav .module.left.site-title-container {
+    width: auto;
+  }
+}
+/* line 195, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img {
+  display: none;
+}
+/* line 199, ../sass/_partials/_wowpage.scss */
+.landingspage .header-mobile {
+  display: block;
+}
+/* line 203, ../sass/_partials/_wowpage.scss */
+.landingspage .mobile-menu a {
+  color: white;
+  display: block;
+  padding: 4% 4% 4% 10%;
+  margin-top: 5px;
+  font-size: 35px;
+}
+/* line 209, ../sass/_partials/_wowpage.scss */
+.landingspage .mobile-menu a span {
+  float: right;
+}
+/* line 212, ../sass/_partials/_wowpage.scss */
+.landingspage .mobile-menu a:last-child {
+  margin-bottom: 5px;
+}
+/* line 217, ../sass/_partials/_wowpage.scss */
+.landingspage .mobile-menu-1 a {
+  background: linear-gradient(#EE8B13, #EE6B13);
+}
+/* line 221, ../sass/_partials/_wowpage.scss */
+.landingspage .mobile-menu-2 a {
+  background: linear-gradient(#C5CF0F, #AAB411);
+}
+@media (min-width: 769px) {
+  /* line 226, ../sass/_partials/_wowpage.scss */
+  .landingspage .header-img {
+    position: relative;
+    display: block;
+  }
+  /* line 230, ../sass/_partials/_wowpage.scss */
+  .landingspage .header-mobile {
+    display: none;
+  }
+  /* line 233, ../sass/_partials/_wowpage.scss */
+  .landingspage .desktop-sections {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  /* line 239, ../sass/_partials/_wowpage.scss */
+  .landingspage .desktop-sections {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  /* line 245, ../sass/_partials/_wowpage.scss */
+  .landingspage .mobile-menu a {
+    font-size: 25px;
+  }
+}
+/* line 250, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img {
+  top: 9vh;
+}
+/* line 255, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 35%;
+  list-style-type: none;
+}
+/* line 261, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item h2,
+.landingspage .header-img .header-text .text-item p,
+.landingspage .header-img .header-text .text-item.text-default h4 {
+  color: white;
+  font-weight: bold;
+}
+/* line 267, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item.text-default h4 {
+  padding: 15px;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+/* line 273, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item h2 {
+  padding-bottom: 12px;
+  margin: 0 0 24px 0;
+}
+/* line 277, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item hr {
+  height: 2px;
+  background-color: white;
+  float: left;
+  width: calc(100% - 4px);
+  margin: 0 0 24px 0;
+}
+/* line 284, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item p {
+  font-family: "ZwoOT", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding-right: 10px;
+}
+/* line 289, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item span {
+  color: transparent;
+  float: right;
+  margin-top: -45px;
+}
+/* line 295, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img .header-text .text-item.text-6 h2 {
+  font-family: "Lifestyle M54", Helvetica, Arial, sans-serif;
+}
+/* line 299, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img #inpage_scroll_btn {
+  background: transparent;
+  border: none;
+  font-size: 90px;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  color: #333;
+  line-height: 1;
+}
+/* line 311, ../sass/_partials/_wowpage.scss */
+.landingspage .header-img #inpage_scroll_btn span.fa {
+  animation: bounce 2s infinite;
+  color: white;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+/* line 330, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage .text-item a {
+  color: #ef7c14;
+}
+/* line 336, ../sass/_partials/_wowpage.scss */
+.landingspage .svg-text-line, .landingspage .svg-text-line-ie {
+  transform: rotate3d(0, 3, 4, 16deg);
+  -webkit-transform: rotate3d(0, 3, 4, 16deg);
+  -ms-transform: rotate3d(0, 3, 4, 16deg);
+}
+/* line 346, ../sass/_partials/_wowpage.scss */
+.landingspage .header-item:hover .overlay,
+.landingspage .header-item:focus .overlay,
+.landingspage .header-item:active .overlay {
+  fill: white;
+  fill-opacity: 0.9;
+  stroke-width: 3;
+  transition: all 0.3s;
+}
+/* line 354, ../sass/_partials/_wowpage.scss */
+.landingspage #grid {
+  position: absolute;
+  margin: 0 auto;
+  width: 27%;
+  left: 63%;
+  top: 19%;
+  padding: 0;
+}
+/* line 361, ../sass/_partials/_wowpage.scss */
+.landingspage #grid .header-item.item-1 .line {
+  stroke: #ef7c14;
+}
+/* line 364, ../sass/_partials/_wowpage.scss */
+.landingspage #grid .svg-text-line-ie {
+  display: none;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 370, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid {
+    top: -2%;
+  }
+  /* line 372, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line-ie {
+    display: block;
+  }
+  /* line 375, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line {
+    display: none;
+  }
+}
+@supports (-ms-accelerator: true) {
+  /* line 383, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line-ie {
+    display: block;
+  }
+  /* line 386, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line {
+    display: none;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* line 394, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line-ie {
+    display: block;
+  }
+  /* line 397, ../sass/_partials/_wowpage.scss */
+  .landingspage #grid .svg-text-line {
+    display: none;
+  }
+}
+/* line 403, ../sass/_partials/_wowpage.scss */
+.landingspage .clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 410, ../sass/_partials/_wowpage.scss */
+.landingspage .connection {
+  border: 2px solid white;
+}
+/* line 415, ../sass/_partials/_wowpage.scss */
+.landingspage .bubble {
+  border: 3px solid #ececec;
+  border-radius: 58px;
+  padding: 20px 60px;
+  text-align: center;
+  position: relative;
+}
+/* line 421, ../sass/_partials/_wowpage.scss */
+.landingspage .bubble::after, .landingspage .bubble::before {
+  display: block;
+  content: "\0020";
+  position: absolute;
+  border: 30px solid transparent;
+  border-left: 0;
+  width: 0;
+  height: 0;
+  border-right-color: white;
+  overflow: hidden;
+  bottom: 10%;
+  left: -29px;
+  z-index: 2;
+}
+/* line 436, ../sass/_partials/_wowpage.scss */
+.landingspage .bubble::before {
+  border-right-color: #ececec;
+  left: -33px;
+  z-index: 1;
+}
+/* line 443, ../sass/_partials/_wowpage.scss */
+.landingspage #welcome {
+  background-image: url("../images/daphne/daphne-hoofd.png");
+  background-repeat: no-repeat;
+  background-position: 1% 93%;
+  background-size: 15%;
+  margin: 140px 0 40px 0;
+  border-bottom: 0;
+}
+@media (max-width: 992px) {
+  /* line 1, ../sass/_partials/_wowpage.scss */
+  .landingspage {
+    /*Speech bubble*/
+  }
+  /* line 454, ../sass/_partials/_wowpage.scss */
+  .landingspage .bubble {
+    border: none;
+  }
+  /* line 457, ../sass/_partials/_wowpage.scss */
+  .landingspage .bubble::after,
+  .landingspage .bubble::before {
+    border: none;
+  }
+  /* line 461, ../sass/_partials/_wowpage.scss */
+  .landingspage #welcome {
+    background-size: 12%;
+    background-position: 6% 4%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 468, ../sass/_partials/_wowpage.scss */
+  .landingspage #welcome {
+    background-position: 6% 18%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 474, ../sass/_partials/_wowpage.scss */
+  .landingspage #welcome {
+    background-position: 4% 10%;
+  }
+}
+/* line 479, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage-mobile-header {
+  background: linear-gradient(#E6D42A, #cebd18);
+  color: white;
+  display: block;
+  padding: 6% 4% 5% 10%;
+  margin-top: -59px;
+  margin-bottom: 10%;
+  font-size: 35px;
+  line-height: 24px;
+  font-weight: 600;
+}
+@media (min-width: 769px) {
+  /* line 479, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-mobile-header {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  /* line 479, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-mobile-header {
+    font-size: 25px;
+  }
+}
+/* line 498, ../sass/_partials/_wowpage.scss */
+.landingspage .article {
+  text-align: center;
+  margin: 50px;
+}
+/* line 503, ../sass/_partials/_wowpage.scss */
+.landingspage .speechbubble-margin {
+  margin-top: 5%;
+}
+/* line 507, ../sass/_partials/_wowpage.scss */
+.landingspage .sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+/* line 513, ../sass/_partials/_wowpage.scss */
+.landingspage #companies {
+  margin-bottom: 100px;
+}
+/* line 515, ../sass/_partials/_wowpage.scss */
+.landingspage #companies .comp-img {
+  width: 40%;
+  margin: 20px auto 0 auto;
+}
+@media (max-width: 1100px) {
+  /* line 515, ../sass/_partials/_wowpage.scss */
+  .landingspage #companies .comp-img {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 515, ../sass/_partials/_wowpage.scss */
+  .landingspage #companies .comp-img {
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  /* line 515, ../sass/_partials/_wowpage.scss */
+  .landingspage #companies .comp-img {
+    width: 90%;
+  }
+}
+/* line 527, ../sass/_partials/_wowpage.scss */
+.landingspage #companies .comp-img a {
+  float: left;
+  width: 13.67%;
+  height: 100%;
+  margin: 0 1.5%;
+  position: relative;
+}
+/* line 534, ../sass/_partials/_wowpage.scss */
+.landingspage #companies .comp-img .overlay {
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+/* line 542, ../sass/_partials/_wowpage.scss */
+.landingspage #companies .comp-img .overlay:hover, .landingspage #companies .comp-img .overlay:focus, .landingspage #companies .comp-img .overlay:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 991px) {
+  /* line 534, ../sass/_partials/_wowpage.scss */
+  .landingspage #companies .comp-img .overlay {
+    display: none;
+  }
+}
+/* line 557, ../sass/_partials/_wowpage.scss */
+.landingspage .banner {
+  height: 260px;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 563, ../sass/_partials/_wowpage.scss */
+.landingspage .wow-banner-1 {
+  background-image: url("../images/banners/header_img.jpg");
+  background-attachment: fixed;
+}
+@media only screen and (max-device-width: 1024px) {
+  /* line 563, ../sass/_partials/_wowpage.scss */
+  .landingspage .wow-banner-1 {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 768px) {
+  /* line 563, ../sass/_partials/_wowpage.scss */
+  .landingspage .wow-banner-1 {
+    background-attachment: scroll;
+  }
+}
+/* line 574, ../sass/_partials/_wowpage.scss */
+.landingspage .wow-banner-2 {
+  background-image: url("../images/banners/stappenplan.jpg");
+  background-attachment: fixed;
+}
+@media only screen and (max-device-width: 1024px) {
+  /* line 574, ../sass/_partials/_wowpage.scss */
+  .landingspage .wow-banner-2 {
+    background-attachment: scroll;
+  }
+}
+/* line 582, ../sass/_partials/_wowpage.scss */
+.landingspage .wow-banner-3 {
+  background-image: url("../images/banners/wall.jpg");
+  border-top: 1.5px solid #EAD82B;
+  background-attachment: fixed;
+}
+@media only screen and (max-device-width: 1024px) {
+  /* line 582, ../sass/_partials/_wowpage.scss */
+  .landingspage .wow-banner-3 {
+    background-attachment: scroll;
+  }
+}
+/* line 592, ../sass/_partials/_wowpage.scss */
+.landingspage #whitepapersblogs .hexagons-article-4 {
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 595, ../sass/_partials/_wowpage.scss */
+.landingspage #whitepapersblogs .hexagons-article-4 .blok {
+  -webkit-flex: 2 1 0;
+  -moz-flex: 2 1 0;
+  -o-flex: 2 1 0;
+  flex: 2 1 0;
+}
+/* line 598, ../sass/_partials/_wowpage.scss */
+.landingspage #whitepapersblogs .hexagons-article-4 .blog-hovertitle {
+  -webkit-flex: 1 1 0;
+  -moz-flex: 1 1 0;
+  -o-flex: 1 1 0;
+  flex: 1 1 0;
+}
+/* line 607, ../sass/_partials/_wowpage.scss */
+.landingspage .stappenplan-svg-text {
+  font-size: 21.38px;
+  fill: #1D1D1B;
+}
+/* line 612, ../sass/_partials/_wowpage.scss */
+.landingspage a.stappenplan-svg-link,
+.landingspage a.stappenplan-svg-link:hover,
+.landingspage a.stappenplan-svg-link:focus,
+.landingspage a.stappenplan-svg-link:active {
+  text-decoration: none;
+}
+/* line 619, ../sass/_partials/_wowpage.scss */
+.landingspage .stappenplan-svg-overlay {
+  fill: white;
+  opacity: 0.7;
+  stroke: #C9D311;
+  stroke-width: 1;
+}
+/* line 629, ../sass/_partials/_wowpage.scss */
+.landingspage .stappenplan-svg-item:hover .stappenplan-svg-overlay,
+.landingspage .stappenplan-svg-item:active .stappenplan-svg-overlay,
+.landingspage .stappenplan-svg-item:focus .stappenplan-svg-overlay {
+  fill: white;
+  opacity: 0.9;
+  stroke-width: 3;
+  transition: all 0.3s;
+}
+/* line 637, ../sass/_partials/_wowpage.scss */
+.landingspage #roadmap p.ondertitel,
+.landingspage #whitepapersblogs p.ondertitel {
+  font-size: 18px;
+}
+/* line 642, ../sass/_partials/_wowpage.scss */
+.landingspage #roadmap button.btn.btn-grijs.link-label {
+  margin-top: 8%;
+}
+/* line 646, ../sass/_partials/_wowpage.scss */
+.landingspage .btn.btn-grijs.link-label:active,
+.landingspage .btn.btn-grijs.link-label:hover,
+.landingspage .btn.btn-grijs.link-label:focus {
+  background: #5D5D5F !important;
+  border: 2px solid #5D5D5F !important;
+}
+/* line 659, ../sass/_partials/_wowpage.scss */
+.landingspage .whitepapers-svg-item:hover .whitepapers-svg-overlay,
+.landingspage .whitepapers-svg-item:active .whitepapers-svg-overlay,
+.landingspage .whitepapers-svg-item:focus .whitepapers-svg-overlay {
+  fill: white;
+  opacity: 0.9;
+  stroke-width: 3;
+  transition: all 0.3s;
+}
+/* line 665, ../sass/_partials/_wowpage.scss */
+.landingspage .whitepapers-svg-item:hover .whitepapers-svg-text,
+.landingspage .whitepapers-svg-item:active .whitepapers-svg-text,
+.landingspage .whitepapers-svg-item:focus .whitepapers-svg-text {
+  fill: #EAD82B;
+}
+/* line 668, ../sass/_partials/_wowpage.scss */
+.landingspage .whitepapers-svg-item:hover a,
+.landingspage .whitepapers-svg-item:active a,
+.landingspage .whitepapers-svg-item:focus a {
+  text-decoration: none;
+}
+/* line 676, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-svg-item:hover .blog-svg-overlay,
+.landingspage .blog-svg-item:active .blog-svg-overlay,
+.landingspage .blog-svg-item:focus .blog-svg-overlay {
+  fill: #585757;
+  fill-opacity: 0.9;
+  stroke-width: 3;
+  transition: all 0.3s;
+}
+/* line 682, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-svg-item:hover .blog-svg-overlay-white,
+.landingspage .blog-svg-item:active .blog-svg-overlay-white,
+.landingspage .blog-svg-item:focus .blog-svg-overlay-white {
+  fill: white;
+  fill-opacity: 0.9;
+  stroke-width: 3;
+  transition: all 0.3s;
+}
+/* line 688, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-svg-item:hover .alle-blogs-svg-text,
+.landingspage .blog-svg-item:active .alle-blogs-svg-text,
+.landingspage .blog-svg-item:focus .alle-blogs-svg-text {
+  fill: #EAD82B;
+}
+/* line 691, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-svg-item:hover .blog-svg-text,
+.landingspage .blog-svg-item:active .blog-svg-text,
+.landingspage .blog-svg-item:focus .blog-svg-text {
+  fill: white;
+}
+/* line 694, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-svg-item:hover a,
+.landingspage .blog-svg-item:active a,
+.landingspage .blog-svg-item:focus a {
+  text-decoration: none;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 1, ../sass/_partials/_wowpage.scss */
+  .landingspage {
+    /* IE10+ CSS */
+  }
+  /* line 701, ../sass/_partials/_wowpage.scss */
+  .landingspage .blok-whitepapers,
+  .landingspage .blok-blogs {
+    height: 500px;
+  }
+  /* line 705, ../sass/_partials/_wowpage.scss */
+  .landingspage .blok-stappenplan {
+    height: 300px;
+  }
+}
+/* line 711, ../sass/_partials/_wowpage.scss */
+.landingspage .blog-hovertitle {
+  position: relative;
+  display: none;
+  font-weight: 600;
+  color: #585757;
+  font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 991px) {
+  /* line 720, ../sass/_partials/_wowpage.scss */
+  .landingspage .blog-hovertitle {
+    top: 130px;
+    display: block;
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+@media (min-width: 1100px) {
+  /* line 729, ../sass/_partials/_wowpage.scss */
+  .landingspage .blog-hovertitle {
+    top: 150px;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1350px) {
+  /* line 738, ../sass/_partials/_wowpage.scss */
+  .landingspage .blog-hovertitle {
+    top: 190px;
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+/* line 747, ../sass/_partials/_wowpage.scss */
+.landingspage svg.hex-hover .hex-blog-text {
+  fill: #585757;
+}
+/* line 750, ../sass/_partials/_wowpage.scss */
+.landingspage svg.hex-hover .hex-article-4.hex-blog-overlay {
+  fill-opacity: 0.4;
+  fill: white;
+}
+/* line 757, ../sass/_partials/_wowpage.scss */
+.landingspage svg.hex-hover:hover .hex-blog-text, .landingspage svg.hex-hover:hover .wb-text, .landingspage svg.hex-hover:focus .hex-blog-text, .landingspage svg.hex-hover:focus .wb-text, .landingspage svg.hex-hover:active .hex-blog-text, .landingspage svg.hex-hover:active .wb-text {
+  fill: white;
+  fill-opacity: 1;
+}
+/* line 761, ../sass/_partials/_wowpage.scss */
+.landingspage svg.hex-hover:hover .hex-article-4.hex-blog-overlay, .landingspage svg.hex-hover:focus .hex-article-4.hex-blog-overlay, .landingspage svg.hex-hover:active .hex-article-4.hex-blog-overlay {
+  fill: #585757;
+  fill-opacity: 0.9;
+}
+/* line 772, ../sass/_partials/_wowpage.scss */
+.landingspage .tagline {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* line 776, ../sass/_partials/_wowpage.scss */
+.landingspage .tagline span {
+  color: #ef7c14;
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  /* line 781, ../sass/_partials/_wowpage.scss */
+  .landingspage .tagline-mobile {
+    display: none;
+  }
+}
+/* line 787, ../sass/_partials/_wowpage.scss */
+.landingspage .contact-block {
+  text-align: center;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  /* line 787, ../sass/_partials/_wowpage.scss */
+  .landingspage .contact-block {
+    display: none;
+  }
+}
+/* line 796, ../sass/_partials/_wowpage.scss */
+.landingspage #contact h2.block-title {
+  color: #2b2b2b;
+}
+/* line 799, ../sass/_partials/_wowpage.scss */
+.landingspage #contact .landingspage-mobile-header {
+  background: linear-gradient(#B2B2B3, #87878A);
+}
+/* line 807, ../sass/_partials/_wowpage.scss */
+.landingspage .landingspage hr.title-border {
+  margin-left: 0% \9;
+  /*IE8 fix*/
+  *margin-left: 0%;
+  /*IE7 fix*/
+  _margin-left: 0%;
+  /*IE6 fix*/
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 1, ../sass/_partials/_wowpage.scss */
+  .landingspage {
+    /* IE10+ CSS */
+  }
+  /* line 816, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage hr.title-border {
+    margin-left: 0%;
+  }
+}
+@supports (-ms-accelerator: true) {
+  /* line 1, ../sass/_partials/_wowpage.scss */
+  .landingspage {
+    /* IE Edge 12+ CSS */
+  }
+  /* line 823, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage hr.title-border {
+    margin-left: 0%;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  /* line 829, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage hr.title-border {
+    margin-left: 0%;
+  }
+}
+/* line 834, ../sass/_partials/_wowpage.scss */
+.landingspage .inAppPopup {
+  display: none;
+}
+@media (max-width: 768px) {
+  /* line 839, ../sass/_partials/_wowpage.scss */
+  .landingspage .overlay1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  /* line 852, ../sass/_partials/_wowpage.scss */
+  .landingspage .inAppPopup {
+    background-color: white;
+    padding-top: 25%;
+    padding-bottom: 9%;
+    display: block;
+  }
+  /* line 859, ../sass/_partials/_wowpage.scss */
+  .landingspage .closePopup {
+    margin-top: -43px;
+    opacity: 0.7;
+  }
+  /* line 864, ../sass/_partials/_wowpage.scss */
+  .landingspage .inAppPopup .content p {
+    margin-bottom: 0px;
+  }
+  /* line 868, ../sass/_partials/_wowpage.scss */
+  .landingspage .landingspage-nav {
+    position: fixed;
+  }
 }

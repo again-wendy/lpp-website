@@ -1,3 +1,174 @@
-{{> wownav}}
+<div class="landingspage">
+    {{> wownav}}
 
-{{> footer}}
+    <div id="header" class="header-img">
+        <img src="./public/images/backgrounds/landingspage.jpg" alt="WOW Header">
+        <ul class="header-text">
+            <li class="text-item text-default">
+                <h4>{{ tl.wowpage.hovertext }}</h4>
+            </li>
+            <li class="text-item text-1">
+                <h2>Empathy</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headerempathy }} <a href="/stappenplan?wow-pagename=empathy">Empathy map</a>.</p>
+            </li>
+            <li class="text-item text-2">
+                <h2>Define</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headerdefine }} <a href="/stappenplan?wow-pagename=define">Define map</a>.</p>
+            </li>
+            <li class="text-item text-3">
+                <h2>Ideate</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headerideate }} <a href="/stappenplan?wow-pagename=ideate">Ideate map</a>.</p>
+            </li>
+            <li class="text-item text-4">
+                <h2>Prototype</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headerprototype }} <a href="/stappenplan?wow-pagename=prototype">Prototype map</a>.</p>
+            </li>
+            <li class="text-item text-5">
+                <h2>Test</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headertest }} <a href="/stappenplan?wow-pagename=test">Test map</a>.</p>
+            </li>
+            <li class="text-item text-6">
+                <h2>LAKRAN</h2>
+                <hr /><span class="con">-</span>
+                <p>{{ tl.wowpage.headerlakran }}</p>
+            </li>
+        </ul>
+
+        {{> wowheadersvg}}
+
+        <button id="inpage_scroll_btn">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div> <!-- /#header -->
+
+    <div class="header-mobile">
+        <div class="header-img-mobile-1">
+            <img src="./public/images/backgrounds/landingspage-mobile.png" alt="Header image mobile">
+        </div>
+        <div class="mobile-menu mobile-menu-1">
+            <a href="/stappenplan?wow-pagename=empathy" class="empathy">Empathy <span class="fa fa-chevron-right"></span></a>
+            <a href="/stappenplan?wow-pagename=define" class="define">Define <span class="fa fa-chevron-right"></span></a>
+            <a href="/stappenplan?wow-pagename=ideate" class="ideate">Ideate <span class="fa fa-chevron-right"></span></a>
+            <a href="/stappenplan?wow-pagename=prototype" class="prototype">Prototype <span class="fa fa-chevron-right"></span></a>
+            <a href="/stappenplan?wow-pagename=test" class="test">Test <span class="fa fa-chevron-right"></span></a>
+        </div>
+        <div class="header-img-mobile-2">
+            <img src="./public/images/backgrounds/landingspage-tablet.png" alt="Header image tablet">
+        </div>
+        <div class="mobile-menu mobile-menu-2">
+            <a href="http://simplifyingpurchasing.com/whitepapers/" target="_blank">Whitepapers <span class="fa fa-chevron-right"></span></a>
+            <a href="http://simplifyingpurchasing.com/blog" target="_blank">Blogs <span class="fa fa-chevron-right"></span></a>
+        </div>
+    </div> <!-- /.header-mobile -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="landingspage-mobile-header">{{ tl.wowmenu.welcome }}</div>
+                <div class="testimonial">
+                    <div class="bubble">
+                        <h2 class="block-title speechbubble-margin">{{ tl.wowpage.welcome.title }}</h2>
+                        <h4 class="sub-title">{{ tl.wowpage.welcome.subtitle1 }}</h4>
+                        <p>{{ tl.wowpage.welcome.alinea1 }} <a href="/" target="_blank">LAKRAN</a></p>
+                        <p>{{ tl.wowpage.welcome.alinea2 }}</p>
+                        <h4 class="sub-title">{{ tl.wowpage.welcome.subtitle2 }}</h4>
+                        <p><a href="/" target="_blank">LAKRAN Procurement Professionals</a> {{ tl.wowpage.welcome.alinea3 }} <strong>Way of Working</strong>!</p>
+                        <p>{{ tl.wowpage.welcome.alinea4 }}</p>
+                        <p>{{ tl.wowpage.welcome.alinea5 }} <a href="/stappenplan">{{ tl.wowmenu.roadmap }}</a></p>
+                        <p>{{ tl.wowpage.welcome.alinea6 }}</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#welcome -->
+
+        <div class="banner wow-banner-1"></div>
+
+        <section id="discover">
+            <div class="landingspage-mobile-header">{{ tl.wowmenu.discover }}</div>
+            <div class="container">
+                <div class="article article-2">
+                    <h2 class="block-title title-blue">{{ tl.wowpage.discover.title }}</h2>
+                    <p>{{ tl.wowpage.discover.alinea1 }}</p>
+                    <div id="companies" class="inner">
+                        <div class="comp-img">
+                            <a title="{{ tl.wowpage.discover.goto }} LAKRAN Commerce Group" href="http://lakran.com" target="_blank">
+                                <img src="./public/images/logos/lakrangr-applogo.png" alt="LAKRAN Commerce Group">
+                                <div class="overlay"></div>
+                            </a>
+                            <a title="{{ tl.wowpage.discover.goto }} LAKRAN Procurement Professionals" href="/" target="_blank">
+                                <img src="./public/images/lakran-procurement-professionals.png" alt="LAKRAN Procurement Professionals">
+                                <div class="overlay"></div>
+                            </a>
+                            <a title="{{ tl.wowpage.discover.goto }} LAKRAN VMS Services" href="http://lakranvmsservices.com" target="_blank">
+                                <img src="./public/images/logos/lakran-vms-services-logo.png" alt="LAKRAN VMS Services">
+                                <div class="overlay"></div>
+                            </a>
+                            <a title="{{ tl.wowpage.discover.goto }} AGAIN by LAKRAN" href="http://again.nl" target="_blank">
+                                <img src="./public/images/logos/again-applogo.png" alt="AGAIN by LAKRAN">
+                                <div class="overlay"></div>
+                            </a>
+                            <a title="{{ tl.wowpage.discover.goto }} Stichting AGAIN" href="http://lakran.com/again-stichting" target="_blank">
+                                <img src="./public/images/logos/against-applogo.png" alt="Stichting AGAIN">
+                                <div class="overlay"></div>
+                            </a>
+                            <a title="{{ tl.wowpage.discover.goto }} FlexForceMonkey" href="http://flexforcemonkey.com" target="_blank">
+                                <img src="./public/images/logos/ffm-applogo.png" alt="FlexForceMonkey">
+                                <div class="overlay"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#discover -->
+
+    <div class="desktop-sections">
+        <div class="banner wow-banner-2"></div>
+        <section id="roadmap">
+            <div class="article article-3">
+                <h2 class="block-title title-limegreen">{{ tl.wowmenu.roadmap }}</h2>
+                <p class="subtitle">{{ tl.wowpage.roadmap.subtitle }}</p>
+                <br />
+            
+                <div class="container">
+                    <div class="blok-stappenplan">
+                        {{> roadmapsvg}}
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#roadmap -->
+
+        <section id="whitepapersblogs">
+            <div class="article article-4">
+                <h2 class="block-title title-yellow">{{ tl.wowmenu.whitepapersblogs }}</h2>
+                <p class="subtitle">{{ tl.wowpage.wb.subtitle }}</p>
+                <div class="hexagons-article-4">
+                    <div class="blok blok-whitepapers">
+                        {{> whitepapersvg}}
+                    </div>
+                    <p class="blog-hovertitle"></p>
+                    <div class="blok blok-blogs">
+                        {{> blogssvg}}
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /#whitepapersblogs -->
+
+        <div class="banner wow-banner-3"></div>
+
+        <section id="tagline">
+            <div class="tagline tagline-desktop">
+                <h5 class="tagline">
+                    <span>LAKRAN presents WOW</span> {{ tl.wowpage.tagline }} <span>LAKRAN Procurement Professionals</span>
+                </h5>
+            </div>
+        </section> <!-- /#tagline -->
+
+        {{> contact}}
+    </div> <!-- /.desktop-sections -->
+
+    {{> footer}}
+</div>
