@@ -91,6 +91,13 @@ $(document).ready(function() {
     }
 });
 
+// When window is resized, calculate heights and widths again
+$(window).resize(function() {
+    setWidthDaphne();
+    heightElements();
+    heightIconBlock('why');
+});
+
 // Check if user accepted cookies and show banner if not
 function checkConsent() {
     if( Cookies.get("cookies-consent") != "true" ) {
@@ -171,10 +178,6 @@ function blogHover() {
     );
 }
 
-$(window).resize(function() {
-    setWidthDaphne();
-});
-
 // Set with of coffee Daphne
 function setWidthDaphne() {
     var winWidth = $(window).width();
@@ -183,11 +186,16 @@ function setWidthDaphne() {
 
 // Scroll to menu item
 function menuClick(name) {
-    $("html, body").animate({
-        scrollTop: $(name).offset().top - 120
-    }, 1000);
-    if($(window).width() < 769) {
-        toggleMobileMenu();
+    // Check if homepage
+    if( window.location.pathname == "/" == true ) {
+        $("html, body").animate({
+            scrollTop: $(name).offset().top - 120
+        }, 1000);
+        if($(window).width() < 769) {
+            toggleMobileMenu();
+        }
+    } else {
+        window.location.href = "/" + name;
     }
 }
 
@@ -222,10 +230,12 @@ function heightElements() {
 
     // Set all reasons same height
     var howHeight = $("#reasons .block-reasons .why .text-block").innerHeight();
-    // $("#reasons .block-reasons .how .text-block").css("height", howHeight + "px");
-    // $("#reasons .block-reasons .how .image-block").css("height", howHeight + "px");
-    // $("#reasons .block-reasons .what .text-block").css("height", howHeight + "px");
-    // $("#reasons .block-reasons .what .image-block").css("height", howHeight + "px");
+    var titleHeight = $("#reasons .block-reasons .why .text-block h4").innerHeight();
+    var textHeight = howHeight - titleHeight;
+    $("#reasons .block-reasons .how .text-block").css("height", textHeight + "px");
+    $("#reasons .block-reasons .how .image-block").css("height", howHeight + "px");
+    $("#reasons .block-reasons .what .text-block").css("height", textHeight + "px");
+    $("#reasons .block-reasons .what .image-block").css("height", howHeight + "px");
 
     // Set height of map so its the same as the text
     var heightText = $("#footer .footer-text").height();
