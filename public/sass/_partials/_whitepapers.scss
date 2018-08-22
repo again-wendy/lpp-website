@@ -4,12 +4,20 @@
     }
     .section-container {
         @include displayFlex;
+        @media(max-width: 950px) {
+            @include prefix(flex-direction, column, webkit moz o);
+        }
         .whitepaper {
             position: relative;
             padding: 20px 100px;
             text-decoration: none;
             @include prefix(flex, 1 1 0, webkit moz o);
             @include displayFlex;
+            @media(max-width: 950px) {
+                height: 200px;
+                display: block;
+                padding: 50px;
+            }
             .title {
                 font-size: 1.4rem;
                 font-family: $font-bold;
@@ -50,6 +58,10 @@
                 url('../images/cockpit-cut.jpg')
                 no-repeat
                 50% 90%;
+            @media(max-width: 950px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
         .fiori {
             margin-left: 10px;
@@ -61,6 +73,9 @@
                 url('../images/landscape-cut.jpg')
                 no-repeat
                 0% 10%;
+            @media(max-width: 950px) {
+                margin-left: 0;
+            }
         }
     }
     .view-more {

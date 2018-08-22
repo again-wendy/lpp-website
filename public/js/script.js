@@ -3,6 +3,11 @@ $(document).ready(function() {
     $("#cookie").hide();
     checkConsent();
 
+    // Don't show mobile menu on page load
+    if($(window).width() < 769) {
+        $("#nav-bar .right-menu .menu-items").hide();
+    }
+
     // Load right flag in menu to set language
     if(checkLang().indexOf("nl") != -1) {
         $("#language").append('<a onclick="setLang(\'en\')"><img src="./public/images/en.png" alt="English"></a>');
@@ -95,11 +100,31 @@ $(document).ready(function() {
     }
 });
 
+// Mobile menu toggle
+function toggleMobileMenu() {
+    var menu = $("#nav-bar .right-menu .menu-items");
+    var icon = $("#nav-bar .right-menu .mobile-toggle .nav-icon");
+    if( menu.css("display") === "none" ) {
+        // open menu and change icon to cross
+        menu.slideDown();
+        icon.addClass("open");
+    } else {
+        // close menu and change icon to bars
+        menu.slideUp();
+        icon.removeClass("open");
+    }
+}
+
 // When window is resized, calculate heights and widths again
 $(window).resize(function() {
     setWidthDaphne();
     heightElements();
     heightIconBlock('why');
+    if($(window).width() < 769) {
+        $("#nav-bar .right-menu .menu-items").hide();
+    } else {
+        $("#nav-bar .right-menu .menu-items").show();
+    }
 });
 
 // Check if user accepted cookies and show banner if not

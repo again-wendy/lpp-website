@@ -1223,7 +1223,7 @@ section.full-screen .container {
   position: relative;
   transition: background-color 0.8s;
 }
-@media (max-width: 480px) {
+@media (max-width: 530px) {
   /* line 17, ../sass/_partials/_ourreasons.scss */
   #reasons .all-reasons .column .circle {
     display: none;
@@ -1272,16 +1272,16 @@ section.full-screen .container {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 530px) {
   /* line 43, ../sass/_partials/_ourreasons.scss */
   #reasons .all-reasons .column .block-title {
     width: 95%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 530px) {
   /* line 62, ../sass/_partials/_ourreasons.scss */
   #reasons .all-reasons .column .block-title.active {
-    background: #858588;
+    background: #ef7c14;
   }
 }
 /* line 68, ../sass/_partials/_ourreasons.scss */
@@ -1303,13 +1303,19 @@ section.full-screen .container {
   width: 47%;
   height: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  /* line 80, ../sass/_partials/_ourreasons.scss */
+  #reasons .block-reasons .block-reason .text-block {
+    width: 67%;
+  }
+}
+@media (max-width: 530px) {
   /* line 80, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .text-block {
     width: 100%;
   }
 }
-/* line 88, ../sass/_partials/_ourreasons.scss */
+/* line 89, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .block-reason .text-block h4 {
   background: #ef7c14;
   margin: 0;
@@ -1317,7 +1323,7 @@ section.full-screen .container {
   text-align: center;
   color: white;
 }
-/* line 95, ../sass/_partials/_ourreasons.scss */
+/* line 96, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .block-reason .text-block p {
   background: white;
   margin: 0;
@@ -1326,18 +1332,18 @@ section.full-screen .container {
   border: 2px solid #ef7c14;
 }
 @media (max-width: 480px) {
-  /* line 95, ../sass/_partials/_ourreasons.scss */
+  /* line 96, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .text-block p {
     padding-right: 30px;
   }
 }
 @media (max-width: 360px) {
-  /* line 95, ../sass/_partials/_ourreasons.scss */
+  /* line 96, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .text-block p {
     padding-right: 20px;
   }
 }
-/* line 109, ../sass/_partials/_ourreasons.scss */
+/* line 110, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .block-reason .icon-block {
   width: 15%;
   background: #ef7c14;
@@ -1347,13 +1353,19 @@ section.full-screen .container {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 480px) {
-  /* line 109, ../sass/_partials/_ourreasons.scss */
+@media (max-width: 767px) {
+  /* line 110, ../sass/_partials/_ourreasons.scss */
+  #reasons .block-reasons .block-reason .icon-block {
+    left: 70%;
+  }
+}
+@media (max-width: 530px) {
+  /* line 110, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .icon-block {
     display: none;
   }
 }
-/* line 120, ../sass/_partials/_ourreasons.scss */
+/* line 124, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .block-reason .icon-block img, #reasons .block-reasons .block-reason .icon-block span, #reasons .block-reasons .block-reason .icon-block .svg-inline--fa {
   font-size: 4rem;
   position: absolute;
@@ -1363,49 +1375,55 @@ section.full-screen .container {
   transform: translate(-50%, -50%);
 }
 @media (max-width: 868px) {
-  /* line 120, ../sass/_partials/_ourreasons.scss */
+  /* line 124, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .icon-block img, #reasons .block-reasons .block-reason .icon-block span, #reasons .block-reasons .block-reason .icon-block .svg-inline--fa {
     font-size: 3rem;
   }
 }
 @media (max-width: 538px) {
-  /* line 120, ../sass/_partials/_ourreasons.scss */
+  /* line 124, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .icon-block img, #reasons .block-reasons .block-reason .icon-block span, #reasons .block-reasons .block-reason .icon-block .svg-inline--fa {
     font-size: 2rem;
   }
 }
-/* line 136, ../sass/_partials/_ourreasons.scss */
+/* line 140, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .block-reason .image-block {
   width: 47%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media (max-width: 480px) {
-  /* line 136, ../sass/_partials/_ourreasons.scss */
+@media (max-width: 767px) {
+  /* line 140, ../sass/_partials/_ourreasons.scss */
+  #reasons .block-reasons .block-reason .image-block {
+    width: 27%;
+  }
+}
+@media (max-width: 530px) {
+  /* line 140, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .block-reason .image-block {
     display: none;
   }
 }
-/* line 147, ../sass/_partials/_ourreasons.scss */
+/* line 153, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .why .image-block {
   background-image: url("../images/why.jpg");
 }
-/* line 150, ../sass/_partials/_ourreasons.scss */
+/* line 156, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .why .icon-block img {
   margin-left: 2%;
 }
 @media (max-width: 360px) {
-  /* line 150, ../sass/_partials/_ourreasons.scss */
+  /* line 156, ../sass/_partials/_ourreasons.scss */
   #reasons .block-reasons .why .icon-block img {
     margin-left: 5%;
   }
 }
-/* line 156, ../sass/_partials/_ourreasons.scss */
+/* line 162, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .what .image-block {
   background-image: url("../images/what.jpg");
 }
-/* line 159, ../sass/_partials/_ourreasons.scss */
+/* line 165, ../sass/_partials/_ourreasons.scss */
 #reasons .block-reasons .how .image-block {
   background-image: url("../images/how.jpg");
 }
@@ -1512,7 +1530,13 @@ section.full-screen .container {
     width: 180%;
   }
 }
-/* line 77, ../sass/_partials/_ourservices.scss */
+@media (max-width: 767px) {
+  /* line 69, ../sass/_partials/_ourservices.scss */
+  #ourservices .coffee-daphne .without-cloud {
+    display: none;
+  }
+}
+/* line 80, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text {
   display: -webkit-box;
   display: -moz-box;
@@ -1524,7 +1548,7 @@ section.full-screen .container {
   -o-justify-content: center;
   justify-content: center;
 }
-/* line 80, ../sass/_partials/_ourservices.scss */
+/* line 83, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .left-text {
   text-align: right;
   margin-right: 10px;
@@ -1533,11 +1557,11 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 84, ../sass/_partials/_ourservices.scss */
+/* line 87, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .left-text .insights, #ourservices .section-text .left-text .solutioning, #ourservices .section-text .left-text .management {
   display: none;
 }
-/* line 88, ../sass/_partials/_ourservices.scss */
+/* line 91, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .right-text {
   margin-left: 10px;
   -webkit-flex: 1 1 0;
@@ -1545,14 +1569,14 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 92, ../sass/_partials/_ourservices.scss */
+/* line 95, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text h4 {
   color: #ef7c14;
   font-size: 1.2rem;
   margin-bottom: 5px;
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
-/* line 98, ../sass/_partials/_ourservices.scss */
+/* line 101, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text p {
   margin-top: 5px;
 }
@@ -1717,7 +1741,16 @@ section.full-screen .container {
   display: -webkit-flex;
   display: flex;
 }
-/* line 7, ../sass/_partials/_whitepapers.scss */
+@media (max-width: 950px) {
+  /* line 5, ../sass/_partials/_whitepapers.scss */
+  #whitepapers .section-container {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* line 10, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .whitepaper {
   position: relative;
   padding: 20px 100px;
@@ -1732,7 +1765,15 @@ section.full-screen .container {
   display: -webkit-flex;
   display: flex;
 }
-/* line 13, ../sass/_partials/_whitepapers.scss */
+@media (max-width: 950px) {
+  /* line 10, ../sass/_partials/_whitepapers.scss */
+  #whitepapers .section-container .whitepaper {
+    height: 200px;
+    display: block;
+    padding: 50px;
+  }
+}
+/* line 21, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .whitepaper .title {
   font-size: 1.4rem;
   font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
@@ -1745,7 +1786,7 @@ section.full-screen .container {
   -o-align-self: center;
   align-self: center;
 }
-/* line 22, ../sass/_partials/_whitepapers.scss */
+/* line 30, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .whitepaper .gradient {
   position: absolute;
   width: 90px;
@@ -1756,21 +1797,34 @@ section.full-screen .container {
   z-index: 1;
   background: linear-gradient(90deg, rgba(255, 239, 35, 0.4) 0%, rgba(238, 118, 22, 0.4) 20%, rgba(235, 98, 50, 0.4) 65%, rgba(228, 53, 46, 0.4) 95%);
 }
-/* line 38, ../sass/_partials/_whitepapers.scss */
+/* line 46, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .whitepaper:hover .gradient, #whitepapers .section-container .whitepaper:focus .gradient, #whitepapers .section-container .whitepaper:active .gradient, #whitepapers .section-container .whitepaper.active .gradient {
   width: 100%;
 }
-/* line 43, ../sass/_partials/_whitepapers.scss */
+/* line 51, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .dashboarding {
   margin-right: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/cockpit-cut.jpg") no-repeat 50% 90%;
 }
-/* line 54, ../sass/_partials/_whitepapers.scss */
+@media (max-width: 950px) {
+  /* line 51, ../sass/_partials/_whitepapers.scss */
+  #whitepapers .section-container .dashboarding {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+/* line 66, ../sass/_partials/_whitepapers.scss */
 #whitepapers .section-container .fiori {
   margin-left: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/landscape-cut.jpg") no-repeat 0% 10%;
 }
-/* line 66, ../sass/_partials/_whitepapers.scss */
+@media (max-width: 950px) {
+  /* line 66, ../sass/_partials/_whitepapers.scss */
+  #whitepapers .section-container .fiori {
+    margin-left: 0;
+  }
+}
+/* line 81, ../sass/_partials/_whitepapers.scss */
 #whitepapers .view-more {
   margin-top: 40px;
 }

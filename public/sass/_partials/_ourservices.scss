@@ -72,6 +72,9 @@
                 display: inline;
                 width: 180%;
             }
+            @media(max-width: 767px) {
+                display: none;
+            }
         }
     }
     .section-text {
