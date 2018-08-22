@@ -106,11 +106,19 @@ function acceptCookies() {
 
 // Check the language
 function checkLang() {
+    var cookieLang = Cookies.get("ulang");
     var userLang = navigator.language || navigator.userLanguage;
     var url = window.location.href;
-    if( url.indexOf("?clang=") == -1 ) {
+    // Check if language is set in cookies
+    if( cookieLang != undefined ) {
+        return cookieLang;
+    } 
+    // Get language from browser language
+    else if( url.indexOf("?clang=") == -1 ) {
         return userLang;
-    } else {
+    } 
+    // Get language from url
+    else {
         return url.substr(-2, 2);
     }
 }
@@ -118,6 +126,7 @@ function checkLang() {
 // Set the language
 function setLang($event) {
     var url = window.location.href;
+    Cookies.set("ulang", $event);
     if( url.indexOf("?clang=") == -1 ) {
         window.location.href = url + "?clang=" + $event;
     } else {
