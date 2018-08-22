@@ -1,0 +1,21 @@
+#cookie {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    padding: 25px;
+    background: rgba(236, 236, 236, 0.8);
+    width: 45%;
+    .cookie-banner {
+        .title {
+            margin: 0 0 10px 0;
+            font-size: 1.6rem;
+        }
+        .text {
+            margin: 0 0 25px 0;
+        }
+        a {
+            margin-right: 10px;
+        }
+    }
+}

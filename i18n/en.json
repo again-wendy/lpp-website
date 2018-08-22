@@ -1,4 +1,11 @@
 {
+    "cookie": {
+        "title": "How we use cookies",
+        "text": "We use functional cookies for optimal functioning of our website. In addition, we use Google Analytics to collect anonymized data to gain insight into our visitor statistics. We use these to improve our website.",
+        "btn": "Ok, I understand",
+        "moreinfo": "More information about cookies",
+        "link": "https://cookiesandyou.com/"
+    },
     "slider": {
         "ourreasons": "Our reasons",
         "ourservices": "Our services",

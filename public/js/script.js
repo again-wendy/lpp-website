@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    // Cookie consent
+    $("#cookie").hide();
+    checkConsent();
+
     // Load right flag in menu to set language
     if(checkLang().indexOf("nl") != -1) {
         $("#language").append('<a onclick="setLang(\'en\')"><img src="./public/images/en.png" alt="English"></a>');
@@ -86,6 +90,19 @@ $(document).ready(function() {
         placeBlogHoverText();
     }
 });
+
+// Check if user accepted cookies and show banner if not
+function checkConsent() {
+    if( Cookies.get("cookies-consent") != "true" ) {
+        $("#cookie").delay( 1000 ).fadeIn();
+    }
+}
+
+// Accept cookies
+function acceptCookies() {
+    Cookies.set("cookies-consent", "true");
+    $("#cookie").delay( 500 ).fadeOut();
+}
 
 // Check the language
 function checkLang() {
@@ -265,6 +282,7 @@ function puzzleHover() {
         function() {
             var classes = $(this).attr('class');
             var service = classes.replace('puzzle-piece ', '');
+            service = service.replace(' overlay', '');
             $('#ourservices .left-text .text').hide();
             $('#ourservices .left-text .' + service).show();
         }, function() {

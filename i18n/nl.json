@@ -1,4 +1,11 @@
 {
+    "cookie": {
+        "title": "Hoe wij cookies gebruiken",
+        "text": "Wij plaatsen functionele cookies voor een optimale werking van onze website. Daarnaast gebruiken wij Google Analytics om geanonimiseerde gegevens te verzamelen om inzicht te krijgen in bezoekersstatistieken. Dit gebruiken wij weer om de website te verbeteren.",
+        "btn": "Oke, ik begrijp het",
+        "moreinfo": "Meer informatie over cookies",
+        "link": "https://www.consumentenbond.nl/internet-privacy/wat-zijn-cookies"
+    },
     "slider": {
         "ourreasons": "Onze redenen",
         "ourservices": "Onze diensten",

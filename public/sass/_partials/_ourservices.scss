@@ -25,20 +25,12 @@
                 .hover-img {
                     display: none;
                 }
-                #strategy-rect {
-                    fill: rgba(243, 146, 0, 1);
-                    transition: all 0.4s;
-                    cursor: pointer;
-                    &:hover, &:focus, &:active, &.active {
-                        fill: rgba(243, 146, 0, 0.5);
-                    }
-                }
-                .puzzle-piece.strategy,
-                .puzzle-piece.management {
+                .strategy.overlay,
+                .management.overlay {
                     fill: #f39200;
                 }
-                .puzzle-piece.insights,
-                .puzzle-piece.solutioning {
+                .insights.overlay,
+                .solutioning.overlay {
                     fill: #ed7b12;
                 }
                 .icon {
@@ -46,6 +38,11 @@
                 }
                 .icon-management, .icon-solutioning {
                     font-family: 'FontAwesomeSolid';
+                }
+                .puzzle-piece.overlay {
+                    &:hover, &:focus, &:active, &.active {
+                        opacity: 0;
+                    }
                 }
             }
         }

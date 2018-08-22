@@ -54,42 +54,17 @@
     <meta name="og:site_name" content="{{ title }}">
     <meta name="fb:admins" content="184172875337875">
     <meta name="og:type" content="website">
-    <!-- COOKIE CONSENT -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-        window.cookieconsent.initialise({
-            palette: {
-                popup: {
-                    background: "#2b2b2b",
-                    text: "#ffffff"
-                },
-                button: {
-                    background: "#0482b3",
-                    text: "#ffffff"
-                }
-            },
-            container: document.getElementById("cookie"),
-            theme: "edgeless",
-            position: "bottom-left",
-            content: {
-                message: "{{ translation.cookie.BANNER_TEXT }}",
-                dismiss: "{{ translation.cookie.DISMISS }}",
-                link: "{{ translation.cookie.LEARN_MORE }}"
-            },
-            onPopupOpen: function() {
-                document.getElementById("cookie").style.display = "block";
-            },
-            onPopupClose: function() {
-                document.getElementById("cookie").style.display = "none";
-            }
-        });
-    });
-    </script>
 </head>
 <body>
-    <div id="cookie"></div>
+
+    <div id="cookie">
+        <div class="cookie-banner">
+            <h4 class="title">{{ tl.cookie.title }}</h4>
+            <p class="text">{{ tl.cookie.text }}</p>
+            <a class="btn-primary-gradient" target="_blank" href="{{ tl.cookie.link }}">{{ tl.cookie.moreinfo }}</a>
+            <button class="btn-primary-invert" onclick="acceptCookies()">{{ tl.cookie.btn }}</button>
+        </div>
+    </div>
 
     {{{body}}}
 
@@ -99,9 +74,6 @@
     <script src="./public/js/unslider.min.js"></script>
     <script src="./public/js/jquery.connections.js"></script>
     <script src="./public/js/script.js"></script>
-    <!-- Cookie Consent -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEowOjQBEELnGLo4v_KLxrd23GUEL6Sus&callback=initMap" async defer></script>
 </body>

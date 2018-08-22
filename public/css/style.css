@@ -500,6 +500,30 @@ a.btn-primary, a.btn-primary-xl {
   position: relative;
 }
 
+/* line 1, ../sass/_partials/_cookie.scss */
+#cookie {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  padding: 25px;
+  background: rgba(236, 236, 236, 0.8);
+  width: 45%;
+}
+/* line 10, ../sass/_partials/_cookie.scss */
+#cookie .cookie-banner .title {
+  margin: 0 0 10px 0;
+  font-size: 1.6rem;
+}
+/* line 14, ../sass/_partials/_cookie.scss */
+#cookie .cookie-banner .text {
+  margin: 0 0 25px 0;
+}
+/* line 17, ../sass/_partials/_cookie.scss */
+#cookie .cookie-banner a {
+  margin-right: 10px;
+}
+
 /* line 1, ../sass/_partials/_hero-slider.scss */
 #hero-slider {
   position: relative;
@@ -1391,34 +1415,28 @@ section.full-screen .container {
   display: none;
 }
 /* line 28, ../sass/_partials/_ourservices.scss */
-#ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect {
+#ourservices .puzzles .whole-puzzle #svgpuzzle .strategy.overlay,
+#ourservices .puzzles .whole-puzzle #svgpuzzle .management.overlay {
   fill: #f39200;
-  transition: all 0.4s;
-  cursor: pointer;
 }
 /* line 32, ../sass/_partials/_ourservices.scss */
-#ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:hover, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:focus, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect:active, #ourservices .puzzles .whole-puzzle #svgpuzzle #strategy-rect.active {
-  fill: rgba(243, 146, 0, 0.5);
-}
-/* line 36, ../sass/_partials/_ourservices.scss */
-#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.strategy,
-#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.management {
-  fill: #f39200;
-}
-/* line 40, ../sass/_partials/_ourservices.scss */
-#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.insights,
-#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.solutioning {
+#ourservices .puzzles .whole-puzzle #svgpuzzle .insights.overlay,
+#ourservices .puzzles .whole-puzzle #svgpuzzle .solutioning.overlay {
   fill: #ed7b12;
 }
-/* line 44, ../sass/_partials/_ourservices.scss */
+/* line 36, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle .icon {
   font-family: 'FontAwesome';
 }
-/* line 47, ../sass/_partials/_ourservices.scss */
+/* line 39, ../sass/_partials/_ourservices.scss */
 #ourservices .puzzles .whole-puzzle #svgpuzzle .icon-management, #ourservices .puzzles .whole-puzzle #svgpuzzle .icon-solutioning {
   font-family: 'FontAwesomeSolid';
 }
-/* line 53, ../sass/_partials/_ourservices.scss */
+/* line 43, ../sass/_partials/_ourservices.scss */
+#ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.overlay:hover, #ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.overlay:focus, #ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.overlay:active, #ourservices .puzzles .whole-puzzle #svgpuzzle .puzzle-piece.overlay.active {
+  opacity: 0;
+}
+/* line 50, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne {
   position: absolute;
   left: 0;
@@ -1426,7 +1444,7 @@ section.full-screen .container {
   z-index: 1;
 }
 @media (max-width: 900px) {
-  /* line 53, ../sass/_partials/_ourservices.scss */
+  /* line 50, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne {
     left: auto;
     right: 10%;
@@ -1434,28 +1452,28 @@ section.full-screen .container {
     bottom: 15%;
   }
 }
-/* line 64, ../sass/_partials/_ourservices.scss */
+/* line 61, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne img {
   max-width: none;
 }
 @media (max-width: 900px) {
-  /* line 67, ../sass/_partials/_ourservices.scss */
+  /* line 64, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne .with-cloud {
     display: none;
   }
 }
-/* line 72, ../sass/_partials/_ourservices.scss */
+/* line 69, ../sass/_partials/_ourservices.scss */
 #ourservices .coffee-daphne .without-cloud {
   display: none;
 }
 @media (max-width: 900px) {
-  /* line 72, ../sass/_partials/_ourservices.scss */
+  /* line 69, ../sass/_partials/_ourservices.scss */
   #ourservices .coffee-daphne .without-cloud {
     display: inline;
     width: 180%;
   }
 }
-/* line 80, ../sass/_partials/_ourservices.scss */
+/* line 77, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text {
   display: -webkit-box;
   display: -moz-box;
@@ -1467,7 +1485,7 @@ section.full-screen .container {
   -o-justify-content: center;
   justify-content: center;
 }
-/* line 83, ../sass/_partials/_ourservices.scss */
+/* line 80, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .left-text {
   text-align: right;
   margin-right: 10px;
@@ -1476,11 +1494,11 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 87, ../sass/_partials/_ourservices.scss */
+/* line 84, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .left-text .insights, #ourservices .section-text .left-text .solutioning, #ourservices .section-text .left-text .management {
   display: none;
 }
-/* line 91, ../sass/_partials/_ourservices.scss */
+/* line 88, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text .right-text {
   margin-left: 10px;
   -webkit-flex: 1 1 0;
@@ -1488,14 +1506,14 @@ section.full-screen .container {
   -o-flex: 1 1 0;
   flex: 1 1 0;
 }
-/* line 95, ../sass/_partials/_ourservices.scss */
+/* line 92, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text h4 {
   color: #ef7c14;
   font-size: 1.2rem;
   margin-bottom: 5px;
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
-/* line 101, ../sass/_partials/_ourservices.scss */
+/* line 98, ../sass/_partials/_ourservices.scss */
 #ourservices .section-text p {
   margin-top: 5px;
 }
