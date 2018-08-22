@@ -137,7 +137,7 @@
         "headerempathy": "Je leert het vraagstuk en je doelgroep goed kennen. Je bekijkt het \"dilemma\" vanuit allerlei hoeken. Je spreekt vervolgens met de doelgroep en legt hun cultuur en invloeden vast in een",
         "headerdefine": "Je gaat het overkoepelende vraagstuk achterhalen. Je gaat in gesprek met verschillende stakeholders en legt problemen, vraagstellingen en inzichten vast in een",
         "headerideate": "Je categoriseert alle resultaten. De overeenkomsten zet je bij elkaar, om zo clusters te vormen en op basis hiervan ontwikkel je out of the box ideeën voor het overkoepelende vraagstuk. Leg dit vast in de",
-        "headerprototype": "Je zet clusters om naar tastbare oplossingen. Denk realistisch; is het rendabel en haalbaar? Leg de kasnrijke ideeën en concrete concepten vast in de",
+        "headerprototype": "Je zet clusters om naar tastbare oplossingen. Denk realistisch; is het rendabel en haalbaar? Leg de kansrijke ideeën en concrete concepten vast in de",
         "headertest": "Je test de kansrijke en concrete prototypes. Je betrekt belangrijke stakeholders en kiest uiteindelijk voor de best mogelijke oplossing. Leg de ervaringen vast in de",
         "headerlakran": "Deze landingspage is een product van LAKRAN Procurement Professionals. Een go-to adviserende schakel tussen inkopende organisaties en softwarehuizen die P2P oplossingen leveren. Bekijk onze website door op het LAKRAN logo te klikken!",
         "tagline": "is een denkwijze van",
@@ -163,5 +163,9 @@
         "wb": {
             "subtitle": "Lees onze whitepapers en blogs over Design Thinking en WOW LAKRAN"
         }
+    },
+    "popup": {
+        "text": "Wil je op de hoogte blijven? Schrijf je dan in voor onze nieuwsbrief!",
+        "btn": "Ja! Ik wil me graag inschrijven"
     }
 }

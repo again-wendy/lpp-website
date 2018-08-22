@@ -131,5 +131,41 @@
         "integration": "Integration Services",
         "transformation": "Transformation Services",
         "transition": "Transition Services"
+    },
+    "wowpage": {
+        "hovertext": "Hover with your mouse on a tile here on the right, on a design thinking part, to read more about it!",
+        "headerempathy": "You get to know the problem and your target group well. You look at the \"dilemma\" from all angles. You then speak to the target group and record their culture and influences in a",
+        "headerdefine": "You are going to figure out the overarching issue. You engage in conversation with various stakeholders and record problems, questions and insights in a",
+        "headerideate": "You categorize all results. You put the agreements together, to form clusters and on this basis you develop out of the box ideas for the overarching issue. Record this in the",
+        "headerprototype": "You convert clusters into tangible solutions. Think realistic; is it cost-effective and feasible? Capture the cash-rich ideas and concrete concepts in the",
+        "headertest": "You test the promising and concrete prototypes. You involve important stakeholders and ultimately opt for the best possible solution. Record the experiences in the",
+        "headerlakran": "This landing page is a product of LAKRAN Procurement Professionals. A go-to advisory link between purchasing organizations and software houses that provide P2P solutions. View our website by clicking on the LAKRAN logo!",
+        "tagline": "is a way of thinking",
+        "welcome": {
+            "title": "Hey, there you are!",
+            "subtitle1": "What fun!",
+            "alinea1": "You are on the landing page of LAKRAN presents WOW, our vision on Design Thinking. Thank you for your interest! Perhaps you are now enjoying a cup of coffee with a specific question or viewing this page without any context. Whatever your reasons, get to know the vision of",
+            "alinea2": "I hope you find the information you are looking for and that your visit to our site contributes to your success!",
+            "subtitle2": "Meet LAKRAN presents WOW",
+            "alinea3": "introduces WOW, or the",
+            "alinea4": "You may not hear it that often; Design Thinking in the procurement branch. Yet it adds a lot. Design Thinking is not only thinking, it is a mindset applied by our team of professionals.",
+            "alinea5": "You can now also use us yourself",
+            "alinea6": "It can help you on your way to issues or challenges. For example within procurement, but also outside of it. This method is helpful in all kinds of scenarios. It helps you to look at issues and challenges in new ways. This results in surprising out of the box insights and actions, embraced by your team. It is not only thinking, but also doing!"
+        },
+        "discover": {
+            "title": "Discover it!",
+            "alinea1": "This page takes you step by step in the WOW way of thinking. You will find here the comprehensive step-by-step plan with supporting visuals. LAKRAN presents WOW is meant to help you tackle your issues. Look around on this page or did you happen to be looking for one of our other companies?",
+            "goto": "Go to"
+        },
+        "roadmap": {
+            "subtitle": "Click on a step to learn more about it!"
+        },
+        "wb": {
+            "subtitle": "Read our whitepapers and blogs about Design Thinking and WOW LAKRAN"
+        }
+    },
+    "popup": {
+        "text": "Do you want to stay informed? Then sign up for our newsletter!",
+        "btn": "Yes! I would like to sign up"
     }
 }

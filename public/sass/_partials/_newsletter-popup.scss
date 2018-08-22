@@ -1,0 +1,32 @@
+#newsletter-popup {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    background: $light-grey;
+    width: 35%;
+    .popup {
+        text-align: center;
+        position: relative;
+        padding: 25px;
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: $dark-grey;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        img {
+            position: absolute;
+            width: 25%;
+            left: 50%;
+            top: -2em;
+            transform: translateX(-50%);
+        }
+        .text {
+            padding-top: 20px;
+            font-family: $font-bold;
+        }
+    }
+}

@@ -68,6 +68,17 @@
 
     {{{body}}}
 
+    <div id="newsletter-popup">
+        <div class="popup">
+            <a onclick="closeNewsletterPopup()" class="close">&times;</a>
+            <img src="./public/images/envelope.png" alt="Envelope">
+            <p class="text">{{ tl.popup.text }}</p>
+            <a href="http://eepurl.com/dv7Vwz" target="_blank" class="btn-primary-gradient">
+                {{ tl.popup.btn }}
+            </a>
+        </div>
+    </div>
+
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./public/js/js-cookie.js"></script>

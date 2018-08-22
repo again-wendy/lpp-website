@@ -503,25 +503,64 @@ a.btn-primary, a.btn-primary-xl {
 /* line 1, ../sass/_partials/_cookie.scss */
 #cookie {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   padding: 25px;
-  background: rgba(236, 236, 236, 0.8);
+  background: rgba(236, 236, 236, 0.95);
   width: 45%;
 }
-/* line 10, ../sass/_partials/_cookie.scss */
+/* line 11, ../sass/_partials/_cookie.scss */
 #cookie .cookie-banner .title {
   margin: 0 0 10px 0;
   font-size: 1.6rem;
 }
-/* line 14, ../sass/_partials/_cookie.scss */
+/* line 15, ../sass/_partials/_cookie.scss */
 #cookie .cookie-banner .text {
   margin: 0 0 25px 0;
 }
-/* line 17, ../sass/_partials/_cookie.scss */
+/* line 18, ../sass/_partials/_cookie.scss */
 #cookie .cookie-banner a {
   margin-right: 10px;
+}
+
+/* line 1, ../sass/_partials/_newsletter-popup.scss */
+#newsletter-popup {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
+  background: #ececec;
+  width: 35%;
+}
+/* line 8, ../sass/_partials/_newsletter-popup.scss */
+#newsletter-popup .popup {
+  text-align: center;
+  position: relative;
+  padding: 25px;
+}
+/* line 12, ../sass/_partials/_newsletter-popup.scss */
+#newsletter-popup .popup .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #2b2b2b;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* line 20, ../sass/_partials/_newsletter-popup.scss */
+#newsletter-popup .popup img {
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  top: -2em;
+  transform: translateX(-50%);
+}
+/* line 27, ../sass/_partials/_newsletter-popup.scss */
+#newsletter-popup .popup .text {
+  padding-top: 20px;
+  font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
 }
 
 /* line 1, ../sass/_partials/_hero-slider.scss */
@@ -2019,7 +2058,7 @@ section.full-screen .container {
   margin: 15px;
 }
 /* line 18, ../sass/_partials/_jobs.scss */
-#jobsnewsletter .section-container .item button {
+#jobsnewsletter .section-container .item a {
   width: calc(100% - 30px);
   margin: 0 15px 15px 15px;
 }

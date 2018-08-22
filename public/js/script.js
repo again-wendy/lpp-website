@@ -56,6 +56,10 @@ $(document).ready(function() {
     setActiveNavItem();
     randomContactImage();
 
+    // Newsletter popup
+    $("#newsletter-popup").hide();
+    showNewsletterPopup();
+
     // WOW LANDINGSPAGE
     var hoveredListItem = 0;
     if( $('.landingspage').length ) {
@@ -188,8 +192,14 @@ function setWidthDaphne() {
 function menuClick(name) {
     // Check if homepage
     if( window.location.pathname == "/" == true ) {
+        var offsetTop = 70;
+        if(name == "#ourservices") {
+            var padding = $(name).css("padding-top");
+            padding = Number(padding.replace("px", "")) - offsetTop;
+            offsetTop -= padding;
+        }
         $("html, body").animate({
-            scrollTop: $(name).offset().top - 120
+            scrollTop: $(name).offset().top - offsetTop
         }, 1000);
         if($(window).width() < 769) {
             toggleMobileMenu();
@@ -247,6 +257,14 @@ function heightElements() {
         $('.service-page .service-circle').css('width', wCircle + 'px');
         $('.service-page .service-circle').css('height', wCircle + 'px');
     }
+}
+
+// Scroll to right reason
+function scrollToReason($event) {
+    $("html, body").animate({
+        scrollTop: $("#reasons").offset().top - 50
+    }, 1000);
+    selectReason($event);
 }
 
 // When page is loaded set interval to change the reasons
@@ -448,6 +466,19 @@ function initMap() {
             map: map
         });
     }
+}
+
+// Open newsletter popup, after 6 sec, when there is no cookie for it
+function showNewsletterPopup() {
+    if( Cookies.get("newsletter") != "closed" ) {
+        $("#newsletter-popup").delay(6000).fadeIn();
+    }
+}
+
+// Close newsletter popup and set a cookie for one day
+function closeNewsletterPopup() {
+    $("#newsletter-popup").fadeOut();
+    Cookies.set("newsletter", "closed", { expires: 1 });
 }
 
 // Show random person in the extended contact section
