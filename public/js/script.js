@@ -346,14 +346,23 @@ $(function() {
     function next() {
         clickCount++;
 
-        // Animate the slider to left as item width
         carousel.finish().animate({
-            left: '-=' + itemWidth
-        }, 300, function(){
-            // Find the first item and append it as the last item
+            left : '-=' + itemWidth
+        },300, function(){
+            //Find the first item and append it as the last item.
             lastItem = carousel.find('li:first');
             lastItem.remove().appendTo(carousel);
-            lastItem.css('left', ((carouselChild.length - 1) * (itemWidth)) + (clickCount * itemWidth));
+            lastItem.css('left', ((carouselChild.length-1)*(itemWidth))+(clickCount*itemWidth));
+            lastItem.hover(
+                function() {
+                    refreshPartnerImages();
+                    clearInterval(logoInterval);
+                    var classes = $(this).find('.logo').attr('class');
+                    var brand = classes.replace('logo ', '');
+                    partnerMouseEnter(brand);
+                },
+                function(){}
+            )
         });
     }
 
@@ -367,6 +376,16 @@ $(function() {
         carousel.finish().animate({
             left: '+=' + itemWidth
         }, 300);
+        lastItem.hover(
+            function() {
+                refreshPartnerImages();
+                clearInterval(logoInterval);
+                var classes = $(this).find('.logo').attr('class');
+                var brand = classes.replace('logo ', '');
+                partnerMouseEnter(brand);
+            },
+            function(){}
+        )
     }
 
     function refreshChildPosition() {
