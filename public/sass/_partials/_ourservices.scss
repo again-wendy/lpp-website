@@ -80,10 +80,17 @@
     .section-text {
         @include displayFlex;
         @include prefix(justify-content, center, webkit moz o);
+        @media(max-width: 400px) {
+            @include prefix(flex-direction, column, webkit moz o);
+        }
         .left-text {
             text-align: right;
             margin-right: 10px;
             @include prefix(flex, 1 1 0, webkit moz o);
+            @media(max-width: 400px) {
+                text-align: center;
+                margin-right: 0;
+            }
             .insights, .solutioning, .management {
                 display: none;
             }
@@ -91,6 +98,10 @@
         .right-text {
             margin-left: 10px;
             @include prefix(flex, 1 1 0, webkit moz o);
+            @media(max-width: 400px) {
+                text-align: center;
+                margin-left: 0;
+            }
         }
         h4 {
             color: $primary;

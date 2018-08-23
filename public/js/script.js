@@ -531,7 +531,7 @@ function randomContactImage() {
         var num = Math.floor( (Math.random() * 10) + 1 );
         switch(num) {
             case 1:
-                setContactImage('Babs Hessing', 'Consultant', 'babs');
+                setContactImage('Babs Hessing', 'Consultant', 'babs-games');
                 break;
             case 2:
                 setContactImage('Bart van Beek', 'Consultant', 'bart');
