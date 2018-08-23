@@ -26,5 +26,14 @@
         .newsletter {
             margin-left: 10px;
         }
+        @media(max-width: 500px) {
+            @include prefix(flex-direction, column, webkit moz o);
+            .item {
+                margin: 0;
+            }
+            .jobs {
+                margin-bottom: 15px;
+            }
+        }
     }
 }

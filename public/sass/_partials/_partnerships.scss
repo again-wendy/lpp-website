@@ -35,6 +35,9 @@
     }
     .scroll {
         position: relative;
+        @media(max-width: 550px) {
+            display: none;
+        }
         .prev, .next {
             font-size: 1.5rem;
             color: $primary;
@@ -47,6 +50,28 @@
         }
         .next {
             right: -35px;
+        }
+    }
+    .mobile {
+        display: none;
+        @media(max-width: 550px) {
+            @include displayFlex;
+            @include prefix(flex-wrap, wrap, webkit moz o);
+            @include prefix(justify-content, center, webkit moz o);
+        }
+        .img-wrap {
+            width: 25%;
+            padding: 15px;
+            cursor: pointer;
+            @media(max-width: 480px) {
+                width: 33.333%;
+            }
+            @media(max-width: 400px) {
+                width: 50%;
+            }
+            .color {
+                display: none;
+            }
         }
     }
     .partner-info {

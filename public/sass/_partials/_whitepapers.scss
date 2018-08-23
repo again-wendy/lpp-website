@@ -41,6 +41,9 @@
                     rgba(238, 118, 22, 0.4) 20%, 
                     rgba(235, 98, 50, 0.4) 65%, 
                     rgba(228, 53, 46, 0.4) 95%);
+                @media(max-width: 950px) {
+                    display: none;
+                }
             }
             &:hover, &:focus, &:active, &.active {
                 .gradient {

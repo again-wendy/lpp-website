@@ -2,25 +2,35 @@ footer {
     background: $dark-grey;
     color: white;
     .container {
-        width: 100%;
         padding: 20px 0;
         .copyright {
-            width: 45%;
+            width: 60%;
             float: left;
             font-size: 0.8rem;
-            margin: 0 0 0 15%;
             padding-top: 9px;
+            margin: 0;
         }
         .companies {
-            width: 37%;
+            width: 40%;
             display: inline-block;
             text-align: right;
-            margin-right: 3%;
             a {
                 text-decoration: none;
             }
             .company {
                 width: 25px;
+            }
+        }
+        @media(max-width: 500px) {
+            .copyright {
+                width: 100%;
+                float: none;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .companies {
+                width: 100%;
+                text-align: center;
             }
         }
     }

@@ -29,6 +29,9 @@
 .banner {
     width: 100%;
     position: relative;
+    @media(max-width: 400px) {
+        display: none;
+    } 
     img {
         position: relative;
     }
@@ -39,8 +42,24 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
-        h2{
+        h2 {
             font-size: 3.2rem;
+        }
+    }
+}
+
+.banner.banner-coffee {
+    .banner-text h2 {
+        @media(max-width: 767px) {
+            margin: 0;
+            font-size: 2.6rem;
+        }
+        @media(max-width: 600px) {
+            font-size: 2rem;
+        }
+        @media(max-width: 480px) {
+            font-size: 1.6rem;
+            font-family: $font-bold;
         }
     }
 }

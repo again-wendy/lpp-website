@@ -1,6 +1,9 @@
 #contact {
     .section-container {
         @include displayFlex;
+        @media(max-width: 500px) {
+            @include prefix(flex-direction, column, webkit moz o);
+        }
         .footer-item {
             @include prefix(flex, 1 1 0, webkit moz o);
             &.left-side {

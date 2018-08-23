@@ -1,7 +1,13 @@
 #blogs {
     .blog-container {
         @include displayFlex;
-        @include prefix(justify-content, spacebetween, webkit moz o);
+        @include prefix(justify-content, space-between, webkit moz o);
+        @media(max-width: 767px) {
+            @include prefix(flex-wrap, wrap, webkit moz o);
+        }
+        @media(max-width: 630px) {
+            display: block;
+        }
         .blog {
             height: 380px;
             position: relative;
@@ -9,6 +15,14 @@
             text-decoration: none;
             @include prefix(flex, 1 1 0, webkit moz o);
             @include displayFlex;
+            @media(max-width: 767px) {
+                height: 300px;
+            }
+            @media(max-width: 630px) {
+                width: 80%;
+                height: 160px;
+                margin: 0 10% 10px 10%;
+            }
             .blog-title {
                 position: relative;
                 z-index: 2;
@@ -24,10 +38,20 @@
                     rgba(238, 118, 22, 0.5) 15%, 
                     rgba(235, 98, 50, 0.5) 65%, 
                     rgba(228, 53, 46, 0.5) 95%);
+                @media(max-width: 630px) {
+                    height: 100%;
+                    padding: 0 20px;
+                }
                 h3 {
                     font-size: 1.4rem;
                     font-family: $font-bold;
                     margin: 0;
+                    @media(max-width: 630px) {
+                        margin: auto 0;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
                 }
             }
             &:nth-child(even) {

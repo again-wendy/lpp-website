@@ -185,28 +185,6 @@ function copyright() {
     $('footer .container').prepend(html);
 }
 
-function blogHover() {
-    $('#blogs .blog').hover(
-        function() {
-            var blogHeight = $(this).innerHeight();
-            var titleHeight = $(this).find('.blog-title').height();
-            var top = (blogHeight / 2) - (titleHeight / 2);
-            $(this).find('.blog-title').animate({
-                height: "100%",
-                paddingTop: top + 'px'
-            }, 400);
-        },
-        function() {
-            var height = $(this).find('.blog-title h3').height() + 60;
-            $(this).find('.blog-title').animate({
-                height: height + 'px',
-                paddingTop: '30px',
-                paddingBottom: '30px'
-            }, 400);
-        }
-    );
-}
-
 // Set with of coffee Daphne
 function setWidthDaphne() {
     var winWidth = $(window).width();
@@ -366,8 +344,10 @@ $(function() {
     // Place the child elements to their original locations
     refreshChildPosition();
 
-    // Set interval so logo's move every 8 seconds
-    var logoInterval = setInterval(next, 8000);
+    // Set interval so logo's move every 8 seconds if window is bigger then 550px
+    if( $(window).width() > 550 ) {
+        var logoInterval = setInterval(next, 8000);
+    }
 
     // Set the event handlers for the buttons
     $('#partnerships .next').click(next);
@@ -375,16 +355,18 @@ $(function() {
     $('#partnerships .prev').click(prev);
 
     // Set the hover of the logo's
-    $('#partnerships .scroll-bar li').hover(
-        function() {
-            refreshPartnerImages();
-            clearInterval(logoInterval);
-            var classes = $(this).find('.logo').attr('class');
-            var brand = classes.replace('logo ', '');
-            partnerMouseEnter(brand);
-        },
-        function() { }
-    )
+    if( $(window).width() > 550 ) {
+        $('#partnerships .scroll-bar li').hover(
+            function() {
+                refreshPartnerImages();
+                clearInterval(logoInterval);
+                var classes = $(this).find('.logo').attr('class');
+                var brand = classes.replace('logo ', '');
+                partnerMouseEnter(brand);
+            },
+            function() { }
+        )
+    }
 
     function next() {
         clickCount++;
@@ -463,6 +445,19 @@ $(function() {
     }
 });
 
+function changePartnerLogo($event) {
+    var imgWrap = $("#partnerships .mobile .img-wrap");
+    imgWrap.find(".color").hide();
+    imgWrap.find(".bw").show();
+    imgWrap.find("." + $event + ".bw").hide();
+    imgWrap.find("." + $event + ".color").show();
+
+    var partnerInfo = $("#partnerships .partner-info");
+    partnerInfo.find(".info").hide();
+    partnerInfo.find(".base").hide();
+    partnerInfo.find("." + $event).show();
+}
+
 // Get blogs from WordPress
 function getBlogs() {
     $.getJSON("blogs", function(data) {
@@ -475,6 +470,30 @@ function setBlogImages() {
         var url = $(this).data('img');
         $(this).css("background-image", "url('" + url + "')");
     });
+}
+
+function blogHover() {
+    if( $(window).width() > 630 ) {
+        $('#blogs .blog').hover(
+            function() {
+                var blogHeight = $(this).innerHeight();
+                var titleHeight = $(this).find('.blog-title').height();
+                var top = (blogHeight / 2) - (titleHeight / 2);
+                $(this).find('.blog-title').animate({
+                    height: "100%",
+                    paddingTop: top + 'px'
+                }, 400);
+            },
+            function() {
+                var height = $(this).find('.blog-title h3').height() + 60;
+                $(this).find('.blog-title').animate({
+                    height: height + 'px',
+                    paddingTop: '30px',
+                    paddingBottom: '30px'
+                }, 400);
+            }
+        );
+    }
 }
 
 // Google Maps

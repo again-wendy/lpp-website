@@ -77,6 +77,11 @@
             display: flex;
             justify-content: space-between;
             position: relative;
+            &.active h4 {
+                @media(max-width: 530px) {
+                    display: none;
+                }
+            }
             .text-block {
                 width: 47%;
                 height: 100%;
