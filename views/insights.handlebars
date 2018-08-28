@@ -31,29 +31,77 @@
 
         <div class="service-circles">
             <div class="circle">
-                <a class="service-circle circle-1">
+                <a class="service-circle circle-1" onclick="openModal('#spend-modal')">
                     <h4 class="circle-title">{{ tl.insightspage.spend }}</h4><br />
                     <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-2">
+                <a class="service-circle circle-2" onclick="openModal('#contract-modal')">
                     <h4 class="circle-title">{{ tl.insightspage.contract }}</h4><br />
                     <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-3">
+                <a class="service-circle circle-3" onclick="openModal('#value-modal')">
                     <h4 class="circle-title">{{ tl.insightspage.value }}</h4><br />
                     <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-4">
+                <a class="service-circle circle-4" onclick="openModal('#compliance-modal')">
                     <h4 class="circle-title">{{ tl.insightspage.compliance }}</h4><br />
                     <p>{{ tl.insightspage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="spend-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.insightspage.modal.spendtitle }}</h2>
+            <a onclick="closeModal('#spend-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.insightspage.modal.spendtext }}
+        </div>
+    </div>
+</div>
+
+<div id="contract-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.insightspage.modal.contracttitle }}</h2>
+            <a onclick="closeModal('#contract-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.insightspage.modal.contracttext }}
+        </div>
+    </div>
+</div>
+
+<div id="value-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.insightspage.modal.valuetitle }}</h2>
+            <a onclick="closeModal('#value-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.insightspage.modal.valuetext }}
+        </div>
+    </div>
+</div>
+
+<div id="compliance-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.insightspage.modal.compliancetitle }}</h2>
+            <a onclick="closeModal('#compliance-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.insightspage.modal.compliancetext }}
         </div>
     </div>
 </div>

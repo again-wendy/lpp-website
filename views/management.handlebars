@@ -31,23 +31,59 @@
 
         <div class="service-circles">
             <div class="circle">
-                <a class="service-circle circle-1">
+                <a class="service-circle circle-1" onclick="openModal('#compliance-modal')">
                     <h4 class="circle-title">{{ tl.managementpage.compliance }}</h4><br />
                     <p>{{ tl.managementpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-2">
+                <a class="service-circle circle-2" onclick="openModal('#transformation-modal')">
                     <h4 class="circle-title">{{ tl.managementpage.transformation }}</h4><br />
                     <p>{{ tl.managementpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-3">
+                <a class="service-circle circle-3" onclick="openModal('#transition-modal')">
                     <h4 class="circle-title">{{ tl.managementpage.transition }}</h4><br />
                     <p>{{ tl.managementpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="compliance-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.managementpage.modal.compliancetitle }}</h2>
+            <a onclick="closeModal('#compliance-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.managementpage.modal.compliancetext }}
+        </div>
+    </div>
+</div>
+
+<div id="transformation-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.managementpage.modal.transformationtitle }}</h2>
+            <a onclick="closeModal('#transformation-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.managementpage.modal.transformationtext }}
+        </div>
+    </div>
+</div>
+
+<div id="transition-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.managementpage.modal.transitiontitle }}</h2>
+            <a onclick="closeModal('#transition-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.managementpage.modal.transitiontext }}
         </div>
     </div>
 </div>

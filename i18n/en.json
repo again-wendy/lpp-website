@@ -9,9 +9,12 @@
     "slider": {
         "ourreasons": "Our reasons",
         "ourservices": "Our services",
-        "slide1title": "Some text",
-        "slide2title": "Some text",
-        "slide3title": "Some text"
+        "slide1title": "\"It is possible to fly without motors, but not without knowledge and skill.\"",
+        "slide1author": "- Wilbur Wright",
+        "slide2title": "\"If opportunity doesn't knock, build a door.\"",
+        "slide2author": "- Milton Berle",
+        "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
+        "slide3author": "- Phil Pringle"
     },
     "menu": {
         "ourreasons": "Our reasons",
@@ -31,7 +34,7 @@
     },
     "ourreasons": {
         "whytext1": "Our mission is simple. Building on the procurement success of your organization. In this domain, the daily operational purchasing, receipt and invoice processes have been digitized in many organizations, in some cases automated, but far too often not fully optimized. We not only focus on the operational side, but also give the necessary attention to contract management, sourcing and spend analysis. We guarantee that this business case will succeed in your organization!",
-        "whytext2": "Our core values are therefore; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency and Great experiences. Learn more about our ",
+        "whytext2": "Our core values are therefore; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency and Great experiences. Learn more about our core values:",
         "howtext1": "We believe in solutions that go beyond the standard. Our diversity of professionals offer knowledge and skills to overcome your procurement obstacles. We do this by making optimum use of digital innovation. Through the smart use of technology, together we can create more value in a fair supply chain.",
         "howtext2": "Our daily goal consists of changing thinking within procurement and finance. We do this through our Way of Working. meet",
         "howtext3": ", our vision on Design Thinking.",
@@ -53,7 +56,7 @@
         "rightbtn": "Want to know more?"
     },
     "partners": {
-        "choose": "LAKRAN Procurement Professionals has multiple partners. Place your mouse on a logo to read more.",
+        "choose": "In all these solutions our consultants are known, we have an extensive network of relationships and can therefore make the difference for your success.",
         "sapinfo": "Here comes info about SAP",
         "coupainfo": "Here comes info about Coupa",
         "baswareinfo": "Here comes info about Basware",
@@ -94,6 +97,9 @@
         "send": "Send",
         "sentsuccess": "Your request has been successfully sent!"
     },
+    "corevalues": {
+        "title": "Onze core values"
+    },
     "strategypage": {
         "pagetitle": "Strategy as a Service",
         "lefttext": "What do you have to focus on when you want to achieve specific objectives in the coming years? Many optimizations fall apart. We think this is due to the lack of a distinctive framework and the right vision. In practice it turns out to be something different than just having it followed in the procurement of finance strategy. The strategy of IT, HR, marketing and all those other users of the profession also counts heavily. There are also trends in the market on technology and business level that also play a major role.",
@@ -102,7 +108,14 @@
         "workshop": "Strategy workshop",
         "package": "Package selection",
         "channel": "Channel strategy",
-        "cwm": "Contingent Workforce Management"
+        "modal": {
+            "workshoptitle": "Strategy workshop",
+            "workshoptext": "You know that you have to invest in procurement, on the road to a better defined future? Two days \"on the heath\" with multidisciplinary teams (procurement, finance, IT) and mixed with the internal client. Through our Way of Working, our own vision on Design Thinking, we take you from identifying the issue and lessons learned, through an inspiration session about market trends, to a clear picture and direct handles for your required change.",
+            "packagetitle": "Package selection",
+            "packagetext": "You want to select a (new) software package from the market to support (part of) your value chain? As simple as it seems, there are many pitfalls that we can prevent as procurement professionals. We help both contracting authorities and commercial organizations to the best fit.",
+            "channeltitle": "Channel strategy",
+            "channeltext": "Which purchasing category do I order via which supplier? By developing a channel strategy, we help to think about and record digital delivery paths through which requests, orders, receipts and invoices are settled. A good spend analysis is indispensable here."
+        }
     },
     "insightspage": {
         "pagetitle": "Insights as a Service",
@@ -112,7 +125,17 @@
         "spend": "Spend dashboard",
         "contract": "Contract dashboard",
         "value": "Value dashboard",
-        "compliance": "Compliance management"
+        "compliance": "Compliance management",
+        "modal": {
+            "spendtitle": "Spend dashboard",
+            "spendtext": "Provides insight into the expenses that run through your organization's system. It provides a good basis for, for example, shaping spend and supplier management.",
+            "contracttitle": "Contract dashboard",
+            "contracttext": "Provides insight into the contract information of your organization. In addition, the dashboard also offers the possibility to monitor contract compliance.",
+            "valuetitle": "Value dashboard",
+            "valuetext": "Provides insight into which buyer has contributed to spend reduction or cost optimization, which account plans have been made and how these have been implemented.",
+            "compliancetitle": "Compliance management",
+            "compliancetext": "Plans, business cases, policies that have to be complied with, that's where it starts. But how do you monitor every day whether the organization, the systems and suppliers comply with agreements to achieve your goals?"
+        }
     },
     "solutioningpage": {
         "pagetitle": "Insights as a Service",
@@ -121,7 +144,15 @@
         "moreinfo": "More info",
         "integration": "Integration Services",
         "transformation": "Transformation Services",
-        "transition": "Transition Services"
+        "transition": "Transition Services",
+        "modal": {
+            "integrationtitle": "Integration Services",
+            "integrationtext": "The future of \"managing value across different platforms and applications\" lies in sound integrations. Our integration architects and developers, in addition to understanding procurement, have extensive experience in various techniques, platforms and standards of integration.",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "The software has been bought, the final goals have been set and the organization is ready: nice, implement it! This is slightly more nuanced. Designing a good transformation is a complex radar work of possibilities, involvement and willingness to change your environment.",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "How do you ensure that the organization around you is actually going to do what is thought up and implemented? What makes people want to move with them? Simply explaining the buttons and screens is only one step, it is much more about recognizable data, fast service, feeling of necessity, etc."
+        }
     },
     "managementpage": {
         "pagetitle": "Management as a Service",
@@ -130,7 +161,15 @@
         "moreinfo": "More info",
         "integration": "Integration Services",
         "transformation": "Transformation Services",
-        "transition": "Transition Services"
+        "transition": "Transition Services",
+        "modal": {
+            "compliancetitle": "Compliance management",
+            "compliancetext": "Plans, business cases, policies that have to be complied with, that's where it starts. But how do you monitor every day whether the organization, the systems and suppliers comply with agreements to achieve your goals?",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "The software has been bought, the final goals have been set and the organization is ready: nice, implement it! This is slightly more nuanced. Designing a good transformation is a complex radar work of possibilities, involvement and willingness to change your environment.",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "How do you ensure that the organization around you is actually going to do what is thought up and implemented? What makes people want to move with them? Simply explaining the buttons and screens is only one step, it is much more about recognizable data, fast service, feeling of necessity, etc."
+        }
     },
     "wowpage": {
         "hovertext": "Hover with your mouse on a tile here on the right, on a design thinking part, to read more about it!",

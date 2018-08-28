@@ -1,0 +1,14 @@
+.corevalues {
+    .group-banner {
+        position: relative;
+        top: 5px;
+        .orange-banner {
+            height: 65px;
+            background: $primary;
+        }
+        .black-banner {
+            height: 15px;
+            background: black;
+        }
+    }
+}

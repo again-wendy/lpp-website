@@ -9,9 +9,12 @@
     "slider": {
         "ourreasons": "Onze redenen",
         "ourservices": "Onze diensten",
-        "slide1title": "Some text",
-        "slide2title": "Some text",
-        "slide3title": "Some text"
+        "slide1title": "\"It is possible to fly without motors, but not without knowledge and skill.\"",
+        "slide1author": "- Wilbur Wright",
+        "slide2title": "\"If opportunity doesn't knock, build a door.\"",
+        "slide2author": "- Milton Berle",
+        "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
+        "slide3author": "- Phil Pringle"
     },
     "menu": {
         "ourreasons": "Onze redenen",
@@ -31,7 +34,7 @@
     },
     "ourreasons": {
         "whytext1": "Onze missie is simpel. Meebouwen aan het procurement succes van jouw organisatie. In dit domein zijn de dagelijkse operationele inkoop-, ontvangs- en factuurprocessen in veel organisaties gedigitaliseerd, in sommige gevallen geautomatiseerd, maar nog veel te vaak niet volledig geoptimaliseerd. Wij richten ons niet slechts op de operationele kant, maar geven ook contractmanagement, sourcing en spend analyse de benodigde aandacht. Wij staan ervoor dat die business case in jouw organisatie gaat slagen!",
-        "whytext2": "Onze core values zijn dan ook; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency en Great experiences. Meer weten over al onze ",
+        "whytext2": "Onze core values zijn dan ook; Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency en Great experiences. Leer meer over onze core values:",
         "howtext1": "We geloven in oplossingen die verder gaan dan de standaard. Onze diversiteit aan professionals bieden kennis en kunde om jouw procurement obstakels te overwinnen. Dit doen we door optimaal gebruik te maken van digitale innovatie. Door slimme inzet van technologie kunnen we samen meer waarde creëren in een eerlijke supply chain.",
         "howtext2": "Ons dagelijkse doel bestaat uit veranderend denken binnen procurement en finance. Dit doen we middels onze Way of Working. Maak kennis met ",
         "howtext3": ", onze visie op Design Thinking. ",
@@ -53,7 +56,7 @@
         "rightbtn": "Meer weten?"
     },
     "partners": {
-        "choose": "LAKRAN Procurement Professionals heeft verschillende partners. Ga op een logo staan voor meer informatie.",
+        "choose": "In al deze oplossingen zijn onze consultants bekend, hebben we een uitgebreid netwerk van relaties en kunnen dus ook voor jullie succes net het verschil maken.",
         "sapinfo": "Hier komt info over SAP",
         "coupainfo": "Hier komt info over Coupa",
         "baswareinfo": "Hier komt info over Basware",
@@ -94,6 +97,9 @@
         "send": "Verstuur",
         "sentsuccess": "Je aanvraag is succesvol verzonden!"
     },
+    "corevalues": {
+        "title": "Onze core values"
+    },
     "strategypage": {
         "pagetitle": "Strategy as a Service",
         "lefttext": "Waar moet je nu op in gaan zetten wanneer je de komende jaren specifieke doelstellingen wilt bereiken? Veel optimalisaties vallen in duigen. Wij denken dat dit ligt aan het feit dat een onderscheidend kader en de juiste visie ontbreekt. In de praktijk blijkt het iets anders te zijn dan het enkel laten volgen in de strategie van procurement of finance. De strategie van IT, HR, marketing en al die andere gebruikers van het vak telt ook zwaar. Daarnaast zijn er trends in de markt op technologisch en bedrijfskundig vlak die ook een grote rol spelen.",
@@ -102,7 +108,14 @@
         "workshop": "Strategy workshop",
         "package": "Pakket selectie",
         "channel": "Kanalen strategie",
-        "cwm": "Contingent Workforce Management"
+        "modal": {
+            "workshoptitle": "Strategy workshop",
+            "workshoptext": "Je weet dat je moet investeren in procurement, op weg moet naar een beter gedefinieerde toekomst? Twee dagen “op de hei” met multidisciplinaire teams (procurement, finance, IT) en vermengd met de interne klant. Middels onze Way of Working, onze eigen visie op Design Thinking nemen we jullie mee van het identificeren van het vraagstuk en lessons learned, via een inspiratiesessie over markttrends, naar een helder beeld en directe handvaten voor je benodigde change.",
+            "packagetitle": "Pakket selectie",
+            "packagetext": "Jullie willen een (nieuw) software pakket gaan selecteren uit de markt om (een deel van) je waardeketen te ondersteunen? Hoe eenvoudig het ook lijkt, hier zitten vele valkuilen in die wij als procurement professionals kunnen voorkomen. Zowel aanbestedende diensten als commerciële organisaties helpen wij aan de beste ‘fit’.",
+            "channeltitle": "Kanalen strategie",
+            "channeltext": "Welke inkoopcategorie bestel ik via welke weg bij welke leverancier? Door het opstellen van een kanalenstrategie helpen wij bij het nadenken over en vastleggen van digitale bestelpaden waarlangs aanvragen, orders, ontvangsten en facturen worden afgewikkeld. Een goede spend analyse is hierbij onmisbaar."
+        }
     },
     "insightspage": {
         "pagetitle": "Insights as a Service",
@@ -112,7 +125,17 @@
         "spend": "Spend dashboard",
         "contract": "Contract dashboard",
         "value": "Value dashboard",
-        "compliance": "Compliance management"
+        "compliance": "Compliance management",
+        "modal": {
+            "spendtitle": "Spend dashboard",
+            "spendtext": "Geeft inzicht in de uitgaven die door het systeem van jouw organisatie lopen. Het biedt een mooie basis om bijvoorbeeld spend- en leveranciersmanagement vorm te geven. ",
+            "contracttitle": "Contract dashboard",
+            "contracttext": "Geeft inzicht in de contractinformatie van jouw organisatie. Daarnaast biedt het dashboard ook de mogelijkheid om de contract compliance te monitoren.",
+            "valuetitle": "Value dashboard",
+            "valuetext": "Geeft inzicht in welke inkoper heeft bijgedragen aan spend reductie of kostenoptimalisatie, welke accountplannen zijn gemaakt en hoe deze zijn uitgevoerd. ",
+            "compliancetitle": "Compliance management",
+            "compliancetext": "Plannen, business cases, beleid dat nageleefd moet worden, daar begint het. Maar hoe hou je nu dagelijks in de gaten of de organisatie, de systemen en leveranciers afspraken naleven om je doelstellingen te behalen? "
+        }
     },
     "solutioningpage": {
         "pagetitle": "Solutioning as a Service",
@@ -121,7 +144,15 @@
         "moreinfo": "Meer info",
         "integration": "Integration Services",
         "transformation": "Transformation Services",
-        "transition": "Transition Services"
+        "transition": "Transition Services",
+        "modal": {
+            "integrationtitle": "Integration Services",
+            "integrationtext": "De toekomst van \"waarde managen over verschillende platformen en applicaties heen\" ligt in gedegen integraties. Onze integratiearchitecten en -ontwikkelaars hebben, naast verstand van procurement, een uitgebreide ervaring in verschillende technieken, platformen en standaarden van integratie. ",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "De software is gekocht, de einddoelen zijn gesteld en de organisatie is er klaar voor: mooi, implementeren maar! Dit ligt net even wat genuanceerder. Het vormgeven van een goede transformatie is een complex radarwerk van mogelijkheden, betrokkenheid en veranderbereidheid van je omgeving.",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "Hoe zorg je nu dat de organisatie om je heen ook daadwerkelijk dat gaat doen wat bedacht en geïmplementeerd is? Wat maakt dat mensen willen meebewegen? Het simpelweg uitleggen van de knoppen en schermen is slechts één stapje, het gaat veel meer om herkenbare data, snelle service, voelen van noodzaak, etc. "
+        }
     },
     "managementpage": {
         "pagetitle": "Management as a Service",
@@ -130,7 +161,15 @@
         "moreinfo": "Meer info",
         "compliance": "Compliance management",
         "transformation": "Transformation Services",
-        "transition": "Transition Services"
+        "transition": "Transition Services",
+        "modal": {
+            "compliancetitle": "Compliance management",
+            "compliancetext": "Plannen, business cases, beleid dat nageleefd moet worden, daar begint het. Maar hoe hou je nu dagelijks in de gaten of de organisatie, de systemen en leveranciers afspraken naleven om je doelstellingen te behalen?",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "De software is gekocht, de einddoelen zijn gesteld en de organisatie is er klaar voor: mooi, implementeren maar! Dit ligt net even wat genuanceerder. Het vormgeven van een goede transformatie is een complex radarwerk van mogelijkheden, betrokkenheid en veranderbereidheid van je omgeving. ",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "Hoe zorg je nu dat de organisatie om je heen ook daadwerkelijk dat gaat doen wat bedacht en geïmplementeerd is? Wat maakt dat mensen willen meebewegen? Het simpelweg uitleggen van de knoppen en schermen is slechts één stapje, het gaat veel meer om herkenbare data, snelle service, voelen van noodzaak, etc. "
+        }
     },
     "wowpage": {
         "hovertext": "Hover met je muis op een tegel hier rechts, op een design thinking onderdeel, om er meer over te lezen!",

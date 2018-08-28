@@ -590,6 +590,54 @@ a.btn-primary, a.btn-primary-xl {
   font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
 }
 
+/* line 1, ../sass/_partials/_modal.scss */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 10vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 13, ../sass/_partials/_modal.scss */
+.modal .modal-content {
+  width: 60%;
+  margin: 0 auto;
+  background: white;
+}
+/* line 17, ../sass/_partials/_modal.scss */
+.modal .modal-content .modal-title {
+  position: relative;
+}
+/* line 19, ../sass/_partials/_modal.scss */
+.modal .modal-content .modal-title .title {
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+/* line 24, ../sass/_partials/_modal.scss */
+.modal .modal-content .modal-title .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #858588;
+}
+/* line 31, ../sass/_partials/_modal.scss */
+.modal .modal-content .modal-title .close:hover {
+  color: #5f5f61;
+}
+/* line 36, ../sass/_partials/_modal.scss */
+.modal .modal-content .modal-body {
+  padding: 20px;
+}
+
 /* line 1, ../sass/_partials/_hero-slider.scss */
 #hero-slider {
   position: relative;
@@ -3059,14 +3107,15 @@ footer .container .companies .company {
   width: 19%;
   max-width: 19%;
   margin: 0 1%;
+  cursor: pointer;
 }
-/* line 308, ../sass/_partials/_service-pages.scss */
+/* line 309, ../sass/_partials/_service-pages.scss */
 #solutioning-page .page-text .software-logos img:first-child {
   margin-left: 0;
   width: 12%;
   max-width: 12%;
 }
-/* line 313, ../sass/_partials/_service-pages.scss */
+/* line 314, ../sass/_partials/_service-pages.scss */
 #solutioning-page .page-text .software-logos img:last-child {
   margin-right: 0;
 }
@@ -3077,7 +3126,7 @@ footer .container .companies .company {
     max-width: 33%;
     margin: 1%;
   }
-  /* line 320, ../sass/_partials/_service-pages.scss */
+  /* line 321, ../sass/_partials/_service-pages.scss */
   #solutioning-page .page-text .software-logos img:first-child {
     width: 25%;
     max-width: 25%;
@@ -3090,129 +3139,153 @@ footer .container .companies .company {
     max-width: 47%;
     margin: 1%;
   }
-  /* line 329, ../sass/_partials/_service-pages.scss */
+  /* line 330, ../sass/_partials/_service-pages.scss */
   #solutioning-page .page-text .software-logos img:first-child {
     width: 30%;
     max-width: 30%;
   }
 }
-/* line 338, ../sass/_partials/_service-pages.scss */
+/* line 337, ../sass/_partials/_service-pages.scss */
+#solutioning-page .page-text .partner-info {
+  background: white;
+  padding: 15px 20px;
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 343, ../sass/_partials/_service-pages.scss */
+#solutioning-page .page-text .partner-info::before {
+  content: '';
+  background-image: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
+  padding: 3px;
+  top: -3px;
+  left: -3px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+/* line 354, ../sass/_partials/_service-pages.scss */
+#solutioning-page .page-text .partner-info .info {
+  display: none;
+}
+/* line 360, ../sass/_partials/_service-pages.scss */
 #solutioning-page .service-circle .circle-title {
   font-size: 1.2rem;
   top: 8%;
 }
-/* line 342, ../sass/_partials/_service-pages.scss */
+/* line 364, ../sass/_partials/_service-pages.scss */
 #solutioning-page .service-circle p {
   font-size: 1rem;
 }
 @media (max-width: 650px) {
-  /* line 347, ../sass/_partials/_service-pages.scss */
+  /* line 369, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles {
     display: block;
   }
-  /* line 349, ../sass/_partials/_service-pages.scss */
+  /* line 371, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles .circle {
     display: inline-block;
     width: 32%;
     padding: 0;
     margin-right: 1%;
   }
-  /* line 354, ../sass/_partials/_service-pages.scss */
+  /* line 376, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles .circle:last-child {
     margin-right: 0;
   }
 }
 @media (max-width: 530px) {
-  /* line 361, ../sass/_partials/_service-pages.scss */
+  /* line 383, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles {
     text-align: center;
   }
-  /* line 363, ../sass/_partials/_service-pages.scss */
+  /* line 385, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles .circle {
     width: 48%;
   }
 }
 @media (max-width: 380px) {
-  /* line 370, ../sass/_partials/_service-pages.scss */
+  /* line 392, ../sass/_partials/_service-pages.scss */
   #solutioning-page .service-circles .circle {
     width: 80%;
     margin-bottom: 15px;
   }
 }
 
-/* line 381, ../sass/_partials/_service-pages.scss */
+/* line 403, ../sass/_partials/_service-pages.scss */
 #management-page .choose-service .services .strategy {
   top: 125px;
 }
-/* line 384, ../sass/_partials/_service-pages.scss */
+/* line 406, ../sass/_partials/_service-pages.scss */
 #management-page .choose-service .services .insights {
   top: 225px;
 }
-/* line 387, ../sass/_partials/_service-pages.scss */
+/* line 409, ../sass/_partials/_service-pages.scss */
 #management-page .choose-service .services .solutioning {
   top: 325px;
 }
-/* line 390, ../sass/_partials/_service-pages.scss */
+/* line 412, ../sass/_partials/_service-pages.scss */
 #management-page .choose-service .services .management {
   top: 300px;
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 395, ../sass/_partials/_service-pages.scss */
+  /* line 417, ../sass/_partials/_service-pages.scss */
   #management-page .choose-service .services .strategy {
     top: 125px;
   }
-  /* line 398, ../sass/_partials/_service-pages.scss */
+  /* line 420, ../sass/_partials/_service-pages.scss */
   #management-page .choose-service .services .insights {
     top: 225px;
   }
-  /* line 401, ../sass/_partials/_service-pages.scss */
+  /* line 423, ../sass/_partials/_service-pages.scss */
   #management-page .choose-service .services .solutioning {
     top: 325px;
   }
-  /* line 404, ../sass/_partials/_service-pages.scss */
+  /* line 426, ../sass/_partials/_service-pages.scss */
   #management-page .choose-service .services .management {
     top: 425px;
   }
 }
-/* line 411, ../sass/_partials/_service-pages.scss */
+/* line 433, ../sass/_partials/_service-pages.scss */
 #management-page .service-circle .circle-title {
   font-size: 1.2rem;
   top: 8%;
 }
-/* line 415, ../sass/_partials/_service-pages.scss */
+/* line 437, ../sass/_partials/_service-pages.scss */
 #management-page .service-circle p {
   font-size: 1rem;
 }
 @media (max-width: 650px) {
-  /* line 420, ../sass/_partials/_service-pages.scss */
+  /* line 442, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles {
     display: block;
   }
-  /* line 422, ../sass/_partials/_service-pages.scss */
+  /* line 444, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles .circle {
     display: inline-block;
     width: 32%;
     padding: 0;
     margin-right: 1%;
   }
-  /* line 427, ../sass/_partials/_service-pages.scss */
+  /* line 449, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles .circle:last-child {
     margin-right: 0;
   }
 }
 @media (max-width: 530px) {
-  /* line 434, ../sass/_partials/_service-pages.scss */
+  /* line 456, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles {
     text-align: center;
   }
-  /* line 436, ../sass/_partials/_service-pages.scss */
+  /* line 458, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles .circle {
     width: 48%;
   }
 }
 @media (max-width: 380px) {
-  /* line 443, ../sass/_partials/_service-pages.scss */
+  /* line 465, ../sass/_partials/_service-pages.scss */
   #management-page .service-circles .circle {
     width: 80%;
     margin-bottom: 15px;
@@ -4199,4 +4272,20 @@ footer .container .companies .company {
   .landingspage .landingspage-nav {
     position: fixed;
   }
+}
+
+/* line 2, ../sass/_partials/_corevalues.scss */
+.corevalues .group-banner {
+  position: relative;
+  top: 5px;
+}
+/* line 5, ../sass/_partials/_corevalues.scss */
+.corevalues .group-banner .orange-banner {
+  height: 65px;
+  background: #ef7c14;
+}
+/* line 9, ../sass/_partials/_corevalues.scss */
+.corevalues .group-banner .black-banner {
+  height: 15px;
+  background: black;
 }

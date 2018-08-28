@@ -31,29 +31,59 @@
 
         <div class="service-circles">
             <div class="circle">
-                <a class="service-circle circle-1">
+                <a class="service-circle circle-1" onclick="openModal('#workshop-modal')">
                     <h4 class="circle-title">{{ tl.strategypage.workshop }}</h4><br />
                     <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-2">
+                <a class="service-circle circle-2" onclick="openModal('#package-modal')">
                     <h4 class="circle-title">{{ tl.strategypage.package }}</h4><br />
                     <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-3">
+                <a class="service-circle circle-3" onclick="openModal('#channel-modal')">
                     <h4 class="circle-title">{{ tl.strategypage.channel }}</h4><br />
                     <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
-            <div class="circle">
-                <a class="service-circle circle-4">
-                    <h4 class="circle-title">{{ tl.strategypage.cwm }}</h4><br />
-                    <p>{{ tl.strategypage.moreinfo }} <span class="fa fa-caret-down"></span></p>
-                </a>
-            </div>
+        </div>
+    </div>
+</div>
+
+<div id="workshop-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.strategypage.modal.workshoptitle }}</h2>
+            <a onclick="closeModal('#workshop-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.strategypage.modal.workshoptext }}
+        </div>
+    </div>
+</div>
+
+<div id="package-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h2 class="title">{{ tl.strategypage.modal.packagetitle }}</h2>
+            <a onclick="closeModal('#workshop-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.strategypage.modal.packagetext }}
+        </div>
+    </div>
+</div>
+
+<div id="channel-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h2 class="title">{{ tl.strategypage.modal.channeltitle }}</h2>
+            <a onclick="closeModal('#workshop-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.strategypage.modal.channeltext }}
         </div>
     </div>
 </div>

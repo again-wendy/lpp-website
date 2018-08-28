@@ -98,6 +98,13 @@ app.get('/management-as-a-service', (req, res) => {
     });
 });
 
+app.get('/core-values', (req, res) => {
+    res.render('corevalues', {
+        title: "Core values | LAKRAN",
+        desc: "The core values of LAKRAN Procurement Professionals"
+    });
+});
+
 app.get('/wow', (req, res) => {
     res.render('wowpage', {
         title: "LAKRAN presents WOW | LAKRAN",

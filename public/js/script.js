@@ -458,6 +458,15 @@ function changePartnerLogo($event) {
     partnerInfo.find("." + $event).show();
 }
 
+$("#solutioning-page .software-logos img").hover(
+    function() {
+        var name = $(this).attr("class");
+        $("#solutioning-page .partner-info .base").hide();
+        $("#solutioning-page .partner-info .info").hide();
+        $("#solutioning-page .partner-info ." + name).fadeIn();
+    }, function() {}
+)
+
 // Get blogs from WordPress
 function getBlogs() {
     $.getJSON("blogs", function(data) {
@@ -468,7 +477,7 @@ function getBlogs() {
 function setBlogImages() {
     $('#blogs .blog-container .blog').each(function() {
         var url = $(this).data('img');
-        $(this).css("background-image", "url('" + url + "')");
+        $(this).css("background", "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('" + url + "')");
     });
 }
 
@@ -512,6 +521,23 @@ function initMap() {
     }
 }
 
+// Open a modal
+function openModal(id) {
+    $(id).fadeIn();
+}
+
+// Close a modal
+function closeModal(id) {
+    $(id).fadeOut();
+}
+
+// Close modal when you click outside
+$(document).click(function(event) {
+    if($(event.target).closest(".modal").length) {
+        $("body").find(".modal").fadeOut();
+    }
+});
+
 // Open newsletter popup, after 6 sec, when there is no cookie for it
 function showNewsletterPopup() {
     if( Cookies.get("newsletter") != "closed" ) {
@@ -540,7 +566,7 @@ function randomContactImage() {
                 setContactImage('Efisio Caredda', 'Principal Consultant', 'efisio');
                 break;
             case 4: 
-                setContactImage('Ellis Mendelsohn', 'Consultant', 'ellis');
+                setContactImage('Ellis Mendelsohn', 'Consultant', 'ellis-bril');
                 break;
             case 5:
                 setContactImage('Herman Ursinus', 'Managing Director', 'herman');

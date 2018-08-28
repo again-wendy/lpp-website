@@ -30,32 +30,89 @@
         </div>
 
         <div class="software-logos">
-            <img src="./public/images/partners/sap-color.png" alt="SAP">
-            <img src="./public/images/partners/ariba-color.png" alt="SAP Ariba">
-            <img src="./public/images/partners/coupa-color.png" alt="Coupa">
-            <img src="./public/images/partners/basware-color.png" alt="Basware">
-            <img src="./public/images/partners/zycus-color.png" alt="Zycus">
+            <img class="sap" src="./public/images/partners/sap-color.png" alt="SAP">
+            <img class="ariba" src="./public/images/partners/ariba-color.png" alt="SAP Ariba">
+            <img class="coupa" src="./public/images/partners/coupa-color.png" alt="Coupa">
+            <img class="basware" src="./public/images/partners/basware-color.png" alt="Basware">
+            <img class="zycus" src="./public/images/partners/zycus-color.png" alt="Zycus">
+        </div>
+
+        <div class="partner-info">
+            <div class="base">
+                <p>{{ tl.partners.choose }}</p>
+            </div>
+            <div class="info sap">
+                <p>{{ tl.partners.sapinfo }}</p>
+            </div>
+            <div class="info coupa">
+                <p>{{ tl.partners.coupainfo }}</p>
+            </div>
+            <div class="info basware">
+                <p>{{ tl.partners.baswareinfo }}</p>
+            </div>
+            <div class="info ariba">
+                <p>{{ tl.partners.aribainfo }}</p>
+            </div>
+            <div class="info zycus">
+                <p>{{ tl.partners.zycusinfo }}</p>
+            </div>
         </div>
 
         <div class="service-circles">
             <div class="circle">
-                <a class="service-circle circle-1">
+                <a class="service-circle circle-1" onclick="openModal('#integration-modal')">
                     <h4 class="circle-title">{{ tl.solutioningpage.integration }}</h4><br />
                     <p>{{ tl.solutioningpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-2">
+                <a class="service-circle circle-2" onclick="openModal('#transformation-modal')">
                     <h4 class="circle-title">{{ tl.solutioningpage.transformation }}</h4><br />
                     <p>{{ tl.solutioningpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
             <div class="circle">
-                <a class="service-circle circle-3">
+                <a class="service-circle circle-3" onclick="openModal('#transition-modal')">
                     <h4 class="circle-title">{{ tl.solutioningpage.transition }}</h4><br />
                     <p>{{ tl.solutioningpage.moreinfo }} <span class="fa fa-caret-down"></span></p>
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="integration-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.solutioningpage.modal.integrationtitle }}</h2>
+            <a onclick="closeModal('#integration-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.solutioningpage.modal.integrationtext }}
+        </div>
+    </div>
+</div>
+
+<div id="transformation-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.solutioningpage.modal.transformationtitle }}</h2>
+            <a onclick="closeModal('#transformation-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.solutioningpage.modal.transformationtext }}
+        </div>
+    </div>
+</div>
+
+<div id="transition-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-title">
+            <h3 class="title">{{ tl.solutioningpage.modal.transitiontitle }}</h2>
+            <a onclick="closeModal('#transition-modal')" class="close">&times;</a>
+        </div>
+        <div class="modal-body">
+            {{ tl.solutioningpage.modal.transitiontext }}
         </div>
     </div>
 </div>
