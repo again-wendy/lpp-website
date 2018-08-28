@@ -71,7 +71,18 @@
         "more": "View more blogposts"
     },
     "whitepapers": {
-        "more": "View more whitepapers"
+        "title": "Whitepapers",
+        "fillemail": "Enter your email address so that we can send you the whitepaper",
+        "sendwp": "Send the whitepaper",
+        "sentsuccess": "The whitepaper has been sent to your email!",
+        "dashboarding": {
+            "title": "P2P Dashboarding and BI-trends",
+            "text": "Logically, \"P2P Dashboarding\" is of course setting up dashboards around Purchase to Pay. An important question you can ask yourself: how can you make optimal use of the use of dashboards? This whitepaper has been set up to help you on your way! We do this by providing insights on: Business Intelligence (BI) trends for 2017, the strategic role of purchasing and the direction of thinking surrounding the design of P2P Dashboarding. This white paper is only available in Dutch. An English version is being worked on!"
+        },
+        "fiori": {
+            "title": "A transition to Fiori, experiences and tips",
+            "text": "Fiori is here. Fiori is an extremely effective way to personalize and simplify your SAP applications. The transition from the SAP User Interface (UI) of classic screens and applications to Fiori and UI5 apps is, at this moment, a point of attention. SAP using organizations can deliver more user-friendly business applications with the transition. When is it interesting, what to think about, what are the pitfalls and what needs to be watched? This whitepaper is designed to give you a little push in the right direction. This white paper is only available in Dutch. An English version is being worked on!"
+        }
     },
     "wow": {
         "alinea1": "LAKRAN Procurement Professionals introduces you to WOW, or Way of Working! Our own vision on Design Thinking.",

@@ -8,6 +8,7 @@ const request           = require('request');
 const flash             = require('express-flash');
 const session           = require('express-session');
 const nodemailer        = require('nodemailer');
+const cookieParser      = require('cookie-parser');
 
 const app = express();
 const sessionStore = new session.MemoryStore;
@@ -22,6 +23,9 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+// Cookie Parser Middleware
+app.use(cookieParser(process.env.SECRET_KEY));
 
 // Session Middleware
 app.use(session({
@@ -142,6 +146,111 @@ app.post('/contactform', (req, res) => {
         });
     }
 });
+
+// Request for whitepapers
+// P2P Dashboarding en BI-trends
+app.post('/get-dashboarding-whitepaper', (req, res) => {
+    if(req.cookies.ulang == "nl") {
+        output = `
+            <h1>Hier is je whitepaper!</h1>
+            <p>Je hebt op de LAKRAN Procurement Professionals website een whitepaper aangevraagd. Hij zit als bijlage bij deze mail!</p>
+            <p>Heb je nog vragen? Neem gerust contact met ons op!</p>
+        `;
+        pathBook = './public/files/whitepaper-dashboarding-nl.pdf';
+    } else {
+        output = `
+            <h1>Here is your whitepaper!</h1>
+            <p>You've requested on the LAKRAN Procurement Professionals website a whitepaper. You can find it as an attachment!</p>
+            <p>Any questions? Don't hesitate to contact us!</p>
+        `;
+        pathBook = './public/files/whitepaper-dashboarding-en.pdf';
+    }
+
+    let helperOptions = {
+        from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
+        to: req.body.email,
+        subject: "LAKRAN Whitepaper",
+        text: "",
+        html: output,
+        attachments: [
+            {
+                path: pathBook
+            }
+        ]
+    }
+
+    if(req.body.url === "" && req.body.url.length == 0) {
+        transporter.sendMail(helperOptions, (error, info) => {
+            if(error) {
+                req.flash('error', 'Something went wrong: ' + error);
+            } else {
+                req.flash('success', 'You can find your whitepaper in your mailbox!');
+                res.redirect(req.get('referer') + '#whitepapers');
+            }
+        });
+        sendMailLakran("P2P Dashboarding", req.body.email);
+    }
+});
+
+// Een transitie naar Fiori, ervaringen en tips
+app.post('/get-fiori-whitepaper', (req, res) => {
+    if(req.cookies.ulang == "nl") {
+        output = `
+            <h1>Hier is je whitepaper!</h1>
+            <p>Je hebt op de LAKRAN Procurement Professionals website een whitepaper aangevraagd. Hij zit als bijlage bij deze mail!</p>
+            <p>Heb je nog vragen? Neem gerust contact met ons op!</p>
+        `;
+        pathBook = './public/files/whitepaper-fiori-nl.pdf';
+    } else {
+        output = `
+            <h1>Here is your whitepaper!</h1>
+            <p>You've requested on the LAKRAN Procurement Professionals website a whitepaper. You can find it as an attachment!</p>
+            <p>Any questions? Don't hesitate to contact us!</p>
+        `;
+        pathBook = './public/files/whitepaper-fiori-en.pdf';
+    }
+
+    let helperOptions = {
+        from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
+        to: req.body.email,
+        subject: "LAKRAN Whitepaper",
+        text: "",
+        html: output,
+        attachments: [
+            {
+                path: pathBook
+            }
+        ]
+    }
+
+    if(req.body.url === "" && req.body.url.length == 0) {
+        transporter.sendMail(helperOptions, (error, info) => {
+            if(error) {
+                req.flash('error', 'Something went wrong: ' + error);
+            } else {
+                req.flash('success', 'You can find your whitepaper in your mailbox!');
+                res.redirect(req.get('referer') + '#whitepapers');
+            }
+        });
+        sendMailLakran("Fiori", req.body.email);
+    }
+});
+
+const sendMailLakran = (subject, email) => {
+    let output = `
+        <p>${email} heeft de ${subject} whitepaper aangevraagd!</p>
+    `;
+
+    let helperOptions = {
+        from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
+        to: "wendy.dimmendaal@again.nl",
+        subject: "LAKRAN Whitepaper download",
+        text: "",
+        html: output
+    }
+
+    transporter.sendMail(helperOptions);
+}
 
 // Startup server
 var port =  3000;

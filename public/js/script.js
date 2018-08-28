@@ -534,7 +534,9 @@ function closeModal(id) {
 // Close modal when you click outside
 $(document).click(function(event) {
     if($(event.target).closest(".modal").length) {
-        $("body").find(".modal").fadeOut();
+        if(!$(event.target).is("input")) {
+            $("body").find(".modal").fadeOut();
+        }
     }
 });
 

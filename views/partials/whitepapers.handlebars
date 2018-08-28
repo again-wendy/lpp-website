@@ -1,16 +1,55 @@
 <section id="whitepapers">
     <div class="container">
-        <h2 class="section-title">Whitepapers</h2>
+        <h2 class="section-title">{{ tl.whitepapers.title }}</h2>
         <div class="title-border"></div>
+        {{#if messages.success}}
+            <p class="flash flash-success">{{ tl.whitepapers.sentsuccess }}</p>
+        {{/if}}
         <div class="section-container">
-            <a class="whitepaper dashboarding" href="/whitepaper/dashboarding">
-                <h3 class="title">P2P Dashboarding en BI-trends</h3>
+            <a class="whitepaper dashboarding" onclick="openModal('#dashboard-modal')">
+                <h3 class="title">{{ tl.whitepapers.dashboarding.title }}</h3>
                 <div class="gradient"></div>
             </a>
-            <a class="whitepaper fiori" href="/whitepaper/fiori">
-                <h3 class="title">Een transitie naar Fiori, ervaringen en tips</h3>
+            <a class="whitepaper fiori" onclick="openModal('#fiori-modal')">
+                <h3 class="title">{{ tl.whitepapers.fiori.title }}</h3>
                 <div class="gradient"></div>
             </a>
+        </div>
+    </div>
+
+    <div id="dashboard-modal" class="modal large">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h3 class="title">{{ tl.whitepapers.dashboarding.title }}</h2>
+                <a onclick="closeModal('#compliance-modal')" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                {{ tl.whitepapers.dashboarding.text }}
+                <form action="/get-dashboarding-whitepaper" method="POST">
+                    <p class="text-center">{{ tl.whitepapers.fillemail }}</p>
+                    <input type="email" name="email" placeholder="Email..">
+                    <p class="antispam">Leave this empty: <input type="text" name="url"></p>
+                    <input type="submit" class="btn-primary-gradient" value="{{ tl.whitepapers.sendwp }}">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="fiori-modal" class="modal large">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h3 class="title">{{ tl.whitepapers.fiori.title }}</h2>
+                <a onclick="closeModal('#compliance-modal')" class="close">&times;</a>
+            </div>
+            <div class="modal-body">
+                {{ tl.whitepapers.fiori.text }}
+                <form action="/get-fiori-whitepaper" method="POST">
+                    <p class="text-center">{{ tl.whitepapers.fillemail }}</p>
+                    <input type="email" name="email" placeholder="Email..">
+                    <p class="antispam">Leave this empty: <input type="text" name="url"></p>
+                    <input type="submit" class="btn-primary-gradient" value="{{ tl.whitepapers.sendwp }}">
+                </form>
+            </div>
         </div>
     </div>
 </section>

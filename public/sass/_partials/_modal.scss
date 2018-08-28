@@ -37,4 +37,9 @@
             padding: 20px;
         }
     }
+    &.large {
+        .modal-content {
+            width: 80%;
+        }
+    }
 }
