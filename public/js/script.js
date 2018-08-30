@@ -15,6 +15,7 @@ $(document).ready(function() {
     } else {
         $("#language").append('<a onclick="setLang(\'nl\')"><img src="./public/images/nl.png" alt="Nederlands"></a>');
         Cookies.set("ulang", "en");
+        hideBlogs();
     }
 
     // Code for the hero images slider on homepage
@@ -100,6 +101,12 @@ $(document).ready(function() {
     }
 });
 
+// Hide blogs for now when language is English
+function hideBlogs() {
+    $("#blogs").hide();
+    $(".menu-item-3").hide();
+}
+
 // Mobile menu toggle
 function toggleMobileMenu() {
     var menu = $("#nav-bar .right-menu .menu-items");
@@ -162,6 +169,8 @@ function checkLang() {
 // Set the language
 function setLang($event) {
     var url = window.location.href;
+    var path = window.location.pathname;
+    
     Cookies.set("ulang", $event);
     if( url.indexOf("?clang=") == -1 ) {
         window.location.href = url + "?clang=" + $event;
@@ -169,6 +178,8 @@ function setLang($event) {
         var tempUrl = url.substr(0, url.length - 2);
         window.location.href = tempUrl + $event;
     }
+    console.log(url);
+    console.log(path);
 }
 
 function setActiveNavItem() {
@@ -208,7 +219,7 @@ function menuClick(name) {
             toggleMobileMenu();
         }
     } else {
-        window.location.href = "/" + name;
+        window.location.href = "/";
     }
 }
 

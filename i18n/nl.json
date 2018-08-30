@@ -21,7 +21,7 @@
         "ourservices": "Onze diensten",
         "jobsnewsletter": "Jobs en nieuwsbrief",
         "jobs": "Jobs",
-        "blog": "Blog",
+        "blog": "Blogs",
         "contact": "Contact"
     },
     "wowmenu": {
@@ -61,11 +61,7 @@
         "coupainfo": "Hier komt info over Coupa",
         "baswareinfo": "Hier komt info over Basware",
         "aribainfo": "Hier komt info over SAP Ariba",
-        "zycusinfo": "Hier komt info over Zycus",
-        "esizeinfo": "Hier komt info over Esize",
-        "fieldglassinfo": "Hier komt info over SAP Fieldglass",
-        "proactiveinfo": "Hier komt info over ProActive",
-        "synertradeinfo": "Hier komt info over Synertrade"
+        "zycusinfo": "Hier komt info over Zycus"
     },
     "blogs": {
         "more": "Bekijk meer blogposts"

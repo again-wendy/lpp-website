@@ -61,11 +61,7 @@
         "coupainfo": "Here comes info about Coupa",
         "baswareinfo": "Here comes info about Basware",
         "aribainfo": "Here comes info about SAP Ariba",
-        "zycusinfo": "Here comes info about Zycus",
-        "esizeinfo": "Here comes info about Esize",
-        "fieldglassinfo": "Here comes info about SAP Fieldglass",
-        "proactiveinfo": "Here comes info about ProActive",
-        "synertradeinfo": "Here comes info about Synertrade"
+        "zycusinfo": "Here comes info about Zycus"
     },
     "blogs": {
         "more": "View more blogposts"
