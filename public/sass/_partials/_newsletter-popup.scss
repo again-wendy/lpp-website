@@ -19,14 +19,37 @@
         }
         img {
             position: absolute;
-            width: 25%;
+            width: 20%;
             left: 50%;
-            top: -2em;
+            top: -15px;
             transform: translateX(-50%);
         }
         .text {
             padding-top: 20px;
             font-family: $font-bold;
         }
+    }
+    @media (max-width: 1000px) {
+        .popup {
+            img {
+                width: 70px;
+                top: -12px;
+            }
+        }
+    }
+    @media (max-width: 835px) {
+        width: 45%;
+        .popup {
+            img {
+                width: 90px;
+                top: -12px;
+            }
+        }
+    }
+    @media (max-width: 685px) {
+        width: 55%;
+    }
+    @media (max-width: 600px) {
+        display: none;
     }
 }

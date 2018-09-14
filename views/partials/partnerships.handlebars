@@ -5,57 +5,37 @@
         <div class="scroll">
             <div class="scroll-bar">
                 <ul>
-                    <li><img class="logo sap" src="./public/images/partners/sap-bw.png" alt="SAP"></li>
-                    <li><img class="logo coupa" src="./public/images/partners/coupa-bw.png" alt="Coupa"></li>
-                    <li><img class="logo basware" src="./public/images/partners/basware-bw.png" alt="Basware"></li>
-                    <li><img class="logo ariba" src="./public/images/partners/ariba-bw.png" alt="Ariba"></li>
-                    <li><img class="logo zycus" src="./public/images/partners/zycus-bw.png" alt="Zycus"></li>
+                    <li><a href="https://www.sap.com/" target="_blank"><img class="logo sap" src="./public/images/partners/sap-bw.png" alt="SAP"></a></li>
+                    <li><a href="https://www.coupa.com/" target="_blank"><img class="logo coupa" src="./public/images/partners/coupa-bw.png" alt="Coupa"></a></li>
+                    <li><a href="https://www.basware.com/" target="_blank"><img class="logo basware" src="./public/images/partners/basware-bw.png" alt="Basware"></a></li>
+                    <li><a href="https://www.ariba.com/" target="_blank"><img class="logo ariba" src="./public/images/partners/ariba-bw.png" alt="Ariba"></a></li>
+                    <li><a href="https://www.zycus.com/" target="_blank"><img class="logo zycus" src="./public/images/partners/zycus-bw.png" alt="Zycus"></a></li>
                 </ul>
             </div>
             <a class='prev'>&#10094;</a>
             <a class='next'>&#10095;</a>
         </div>
         <div class="mobile">
-            <a class="img-wrap" onclick="changePartnerLogo('sap')">
+            <a class="img-wrap" href="https://www.sap.com/" target="_blank" onclick="changePartnerLogo('sap')">
                 <img class="logo sap bw" src="./public/images/partners/sap-bw.png" alt="SAP">
                 <img class="logo sap color" src="./public/images/partners/sap-color.png" alt="SAP">
             </a>
-            <a class="img-wrap" onclick="changePartnerLogo('coupa')">
+            <a class="img-wrap" href="https://www.coupa.com/" target="_blank" onclick="changePartnerLogo('coupa')">
                 <img class="logo coupa bw" src="./public/images/partners/coupa-bw.png" alt="Coupa">
                 <img class="logo coupa color" src="./public/images/partners/coupa-color.png" alt="Coupa">
             </a>
-            <a class="img-wrap" onclick="changePartnerLogo('basware')">
+            <a class="img-wrap" href="https://www.basware.com/" target="_blank" onclick="changePartnerLogo('basware')">
                 <img class="logo basware bw" src="./public/images/partners/basware-bw.png" alt="Basware">
                 <img class="logo basware color" src="./public/images/partners/basware-color.png" alt="Basware">
             </a>
-            <a class="img-wrap" onclick="changePartnerLogo('ariba')">
+            <a class="img-wrap" href="https://www.ariba.com/" target="_blank" onclick="changePartnerLogo('ariba')">
                 <img class="logo ariba bw" src="./public/images/partners/ariba-bw.png" alt="Ariba">
                 <img class="logo ariba color" src="./public/images/partners/ariba-color.png" alt="Ariba">
             </a>
-            <a class="img-wrap" onclick="changePartnerLogo('zycus')">
+            <a class="img-wrap" href="https://www.zycus.com/" target="_blank" onclick="changePartnerLogo('zycus')">
                 <img class="logo zycus bw" src="./public/images/partners/zycus-bw.png" alt="Zycus">
                 <img class="logo zycus color" src="./public/images/partners/zycus-color.png" alt="Zycus">
             </a>
-        </div>
-        <div class="partner-info">
-            <div class="base">
-                <p>{{ tl.partners.choose }}</p>
-            </div>
-            <div class="info sap">
-                <p>{{ tl.partners.sapinfo }}</p>
-            </div>
-            <div class="info coupa">
-                <p>{{ tl.partners.coupainfo }}</p>
-            </div>
-            <div class="info basware">
-                <p>{{ tl.partners.baswareinfo }}</p>
-            </div>
-            <div class="info ariba">
-                <p>{{ tl.partners.aribainfo }}</p>
-            </div>
-            <div class="info zycus">
-                <p>{{ tl.partners.zycusinfo }}</p>
-            </div>
         </div>
     </div>
 </section>

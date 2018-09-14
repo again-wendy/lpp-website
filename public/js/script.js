@@ -15,7 +15,7 @@ $(document).ready(function() {
     } else {
         $("#language").append('<a onclick="setLang(\'nl\')"><img src="./public/images/nl.png" alt="Nederlands"></a>');
         Cookies.set("ulang", "en");
-        hideBlogs();
+        hideBlogsWhitepapers();
     }
 
     // Code for the hero images slider on homepage
@@ -61,10 +61,32 @@ $(document).ready(function() {
     copyright();
     setActiveNavItem();
     randomContactImage();
+    setRoadmapStage();
 
     // Newsletter popup
     $("#newsletter-popup").hide();
     showNewsletterPopup();
+
+    // Countup on customer case pages
+    if( $(".customer-case").length ) {
+        $(".counter").each(function() {
+            var $this = $(this).find(".num");
+            var countTo = $this.attr('data-count');
+
+            $({countNum: $this.text()}).animate({
+                countNum: countTo
+            },{
+                duration: 1000,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            });
+        });
+    }
 
     // WOW LANDINGSPAGE
     var hoveredListItem = 0;
@@ -101,9 +123,10 @@ $(document).ready(function() {
     }
 });
 
-// Hide blogs for now when language is English
-function hideBlogs() {
+// Hide blogs and whitepaper for now when language is English
+function hideBlogsWhitepapers() {
     $("#blogs").hide();
+    $("#whitepapers").hide();
     $(".menu-item-3").hide();
 }
 
@@ -271,6 +294,10 @@ function heightElements() {
         $('.service-page .service-circle').css('width', wCircle + 'px');
         $('.service-page .service-circle').css('height', wCircle + 'px');
     }
+
+    // Set height circles on customer pages
+    var counterCircle = $('.customer-case .counter').innerWidth() + 20;
+    $('.customer-case .counter').css("height", counterCircle + "px");
 }
 
 // Scroll to right reason
@@ -551,9 +578,9 @@ $(document).click(function(event) {
     }
 });
 
-// Open newsletter popup, after 6 sec, when there is no cookie for it
+// Open newsletter popup, after 6 sec, when there is no cookie for it and if windowwidth is bigger than 600px
 function showNewsletterPopup() {
-    if( Cookies.get("newsletter") != "closed" ) {
+    if( Cookies.get("newsletter") != "closed" && $(window).width() > 600 ) {
         $("#newsletter-popup").delay(6000).fadeIn();
     }
 }
@@ -698,4 +725,33 @@ function placeBlogHoverText() {
             $('.blog-hovertitle').html("");
         }
     );
+}
+
+// WOW Roadmappage
+function getQueryString() {
+    var vars = [];
+    var hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+function setRoadmapStage() {
+    if( $('.roadmap-page') ) {
+        var queryStrings = getQueryString();
+        if( queryStrings.hasOwnProperty('step') ) {
+            var step = queryStrings.step;
+            $(".roadmap-page .section." + step).addClass('show');
+            $(".roadmap-page .stappenplan-hexagon .hexagon-stage-" + step).addClass("active-stage");
+            $("#slide-menu-stages .mobile-stages-nav ." + step).addClass("active");
+        }
+    }
+}
+
+function openRoadmapMobileMenu() {
+    $("#slide-menu-stages .mobile-stages-nav").slideToggle();
 }

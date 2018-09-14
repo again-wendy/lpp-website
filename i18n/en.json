@@ -14,7 +14,8 @@
         "slide2title": "\"If opportunity doesn't knock, build a door.\"",
         "slide2author": "- Milton Berle",
         "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
-        "slide3author": "- Phil Pringle"
+        "slide3author": "- Phil Pringle",
+        "scroll": "Scroll down"
     },
     "menu": {
         "ourreasons": "Our reasons",
@@ -102,7 +103,9 @@
         "names": "First and lastname",
         "email": "Email",
         "send": "Send",
-        "sentsuccess": "Your request has been successfully sent!"
+        "sentsuccess": "Your request has been successfully sent!",
+        "attention": "Attention!",
+        "addresschange": "Starting October 1st our visiting address is Meander 251"
     },
     "corevalues": {
         "title": "Onze core values"

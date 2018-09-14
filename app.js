@@ -83,10 +83,22 @@ app.get('/strategy-as-a-service', (req, res) => {
         desc: "What do you have to focus on when you want to achieve specific objectives in the coming years?"
     });
 });
+app.get('/klant-case-strategy', (req, res) => {
+    res.render('customer-strategy', {
+        title: "Customer case Strategy as a Service | LAKRAN",
+        desc: ""
+    });
+});
 app.get('/insights-as-a-service', (req, res) => {
     res.render('insights', {
         title: "Insights as a Service | LAKRAN",
         desc: "Our Procurement Control Room consists of a business intelligence platform (everything in the cloud, of course), in which we have combined our knowledge of data analysis and dashboarding."
+    });
+});
+app.get('/customer-case-insights', (req, res) => {
+    res.render('klant-insights', {
+        title: "Customer case Insights as a Service | LAKRAN",
+        desc: "Within our Insights proposition we do nice, beautiful things for our customers. Curious about our added value?"
     });
 });
 app.get('/solutioning-as-a-service', (req, res) => {
@@ -95,10 +107,22 @@ app.get('/solutioning-as-a-service', (req, res) => {
         desc: "Improve or replace existing software solutions? So many people, so many wishes, and that certainly applies where those people form organizations together."
     });
 });
+app.get('/customer-case-solutioning', (req, res) => {
+    res.render('klant-solutioning', {
+        title: "Customer case Solutioning as a Service | LAKRAN",
+        desc: ""
+    });
+});
 app.get('/management-as-a-service', (req, res) => {
     res.render('management', {
         title: "Management as a Service | LAKRAN",
         desc: "How should you actually manage \"continuous improvement\" within procurement?"
+    });
+});
+app.get('/customer-case-management', (req, res) => {
+    res.render('klant-management', {
+        title: "Customer case Management as a Service | LAKRAN",
+        desc: ""
     });
 });
 
@@ -114,6 +138,13 @@ app.get('/wow', (req, res) => {
         title: "LAKRAN presents WOW | LAKRAN",
         desc: "You may not hear it that often; Design Thinking in the procurement branch. Yet it adds a lot. Design Thinking is not only thinking, it is a mindset applied by our professional team."
     });
+});
+app.get('/roadmap', (req, res) => {
+    res.render('roadmap', {
+        title: "Roadmap WOW | LAKRAN",
+        desc: "Our roadmap to the Way of Working of LAKRAN",
+        step: req.query.step
+    })
 });
 
 // Extended contactform

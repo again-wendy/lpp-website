@@ -1,0 +1,181 @@
+.customer-case {
+    .quote {
+        width: 80%;
+        margin: 0 auto;
+        .inner {
+            position: relative;
+            background: $light-grey;
+            border-radius: 50%;
+            padding: 25px;
+            .svg-inline--fa {
+                color: $primary;
+                width: 5em;
+                height: 5em;
+            }
+            .text {
+                font-size: 2.2rem;
+                position: relative;
+                font-family: $font-bold;
+                left: 5%;
+                font-style: italic;
+                width: 85%;
+                text-align: center;
+            }
+            .fa-quote-left {
+                float: left;
+            }
+            .logo {
+                float: right;
+                width: 150px;
+                height: 150px;
+                background: white;
+                border-radius: 50%;
+                position: relative;
+                padding: 25px;
+                margin-top: -20px;
+                @include displayFlex;
+                @include prefix(justify-content, center, webkit moz o);
+                @include prefix(align-items, center, webkit moz o);
+                box-shadow: 5px 5px 10px $light-grey;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .name {
+                font-size: 1.8rem;
+                position: relative;
+                font-family: $font-bold;
+                left: 5%;
+                text-align: center;
+            }
+        }
+    }
+    .container {
+        margin-top: 60px;
+        @media (max-width: 950px) {
+            width: 90%;
+        }
+        .counters {
+            @include displayFlex;
+            @include prefix(justify-content, space-between, webkit moz o);
+            @include prefix(flex-wrap, wrap, webkit moz o);
+            .counter {
+                border: 10px solid $primary;
+                border-radius: 50%;
+                margin: 5px;
+                padding: 20px;
+                @include prefix(flex, 1 0 0, webkit moz o);
+                .name {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                h3 {
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+            }
+            @media (max-width: 830px) {
+                .counter {
+                    .name {
+                        margin-top: 18px;
+                        margin-bottom: 15px;
+                        font-size: 1.1rem;
+                    }
+                    h3 {
+                        margin-top: 0;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            @media (max-width: 975px) {
+                @include prefix(flex-wrap, wrap, webkit moz o);
+            }
+            @media (max-width: 720px) {
+                display: none;
+            }
+        }
+        .row {
+            @media (max-width: 900px) {
+                display: block;
+            }
+        }
+        .cases {
+            position: relative;
+            .case {
+                position: relative;
+                margin: 0 5px;
+                .title-block {
+                    background: $linear-gradient;
+                    text-align: center;
+                    padding: 10px 5px;
+                    color: white;
+                    h3 {
+                        font-size: 1.5rem;
+                        font-family: $font-bold;
+                        margin: 0;
+                    }
+                }
+                .body-block {
+                    margin-top: 5px;
+                    box-shadow: 5px 5px 10px $light-grey;
+                    padding: 15px;
+                    ul {
+                        list-style-type: square;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#customer-insights {
+    .quote {
+        @media (max-width: 900px) {
+            .text {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 660px) {
+            width: 90%;
+            .inner {
+                padding: 35px;
+            }
+            .text {
+                font-size: 1.8rem;
+            }
+            .name {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 120px;
+                height: 120px;
+                padding: 20px;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width: 500px) {
+            .svg-inline--fa {
+                width: 4em;
+                height: 4em;
+                margin-top: -40px;
+                margin-left: -20px;
+            }
+            .text {
+                margin-bottom: 15px;
+                font-size: 1.5rem;
+            }
+            .name {
+                margin-top: 0;
+                left: 15%;
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .logo {
+                margin-right: -40px;
+            }
+        }
+    }
+}

@@ -117,6 +117,18 @@ label {
     font-family: $font-bold;
 }
 
+.primary {
+    color: $primary;
+}
+
+.bold {
+    font-family: $font-bold;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
 %btn {
     display: inline-block;
     padding: 6px 12px;
@@ -207,7 +219,7 @@ a.btn-primary {
     &:hover,
     &:focus,
     &:active {
-        background: $linear-gradient-turned;
+        background: $primary;
         border: none;
         color: white;
     }

@@ -14,7 +14,8 @@
         "slide2title": "\"If opportunity doesn't knock, build a door.\"",
         "slide2author": "- Milton Berle",
         "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
-        "slide3author": "- Phil Pringle"
+        "slide3author": "- Phil Pringle",
+        "scroll": "Scroll verder"
     },
     "menu": {
         "ourreasons": "Onze redenen",
@@ -102,7 +103,9 @@
         "names": "Voor- en achternaam",
         "email": "Email",
         "send": "Verstuur",
-        "sentsuccess": "Je aanvraag is succesvol verzonden!"
+        "sentsuccess": "Je aanvraag is succesvol verzonden!",
+        "attention": "Let op!",
+        "addresschange": "Vanaf 1 oktober is ons bezoekadres Meander 251 in Arnhem"
     },
     "corevalues": {
         "title": "Onze core values"
@@ -142,6 +145,35 @@
             "valuetext": "Geeft inzicht in welke inkoper heeft bijgedragen aan spend reductie of kostenoptimalisatie, welke accountplannen zijn gemaakt en hoe deze zijn uitgevoerd. ",
             "compliancetitle": "Compliance management",
             "compliancetext": "Plannen, business cases, beleid dat nageleefd moet worden, daar begint het. Maar hoe hou je nu dagelijks in de gaten of de organisatie, de systemen en leveranciers afspraken naleven om je doelstellingen te behalen? "
+        },
+        "case": {
+            "title": "Klant case Insights as a Service",
+            "quote": "De dashboards zijn van toegevoegde waarde tijdens de accountgesprekken met de Business Units. Het geeft inzicht en de mogelijkheid om bij te sturen.",
+            "turnover": "Omzet",
+            "suppliers": "Leveranciers",
+            "invoices": "Facturen",
+            "block1title": "De klant",
+            "block1text1": "Europees ingenieursbureau, gericht op milieuadvies en een duurzame leefomgeving",
+            "block1text2": "Ruim 1.000 medewerkers, 28 vestigingen in 6 Europese landen",
+            "block1text3": "Omzet van €118 miljoen in 2017",
+            "block1text4": "Spend van €33 miljoen in 2017",
+            "block1text5": "975 leveranciers en 11.179 facturen in 2017",
+            "block2title": "Opdracht LAKRAN",
+            "block2text1": "Bouw, ontwerp en beheren van spend- en contract dashboards",
+            "block2text2": "Periodiek inladen en verversen van de data",
+            "block2text3": "Structurele doorontwikkeling van de dashboards",
+            "block2text4": "Dashboards afgeschermd beschikbaar stellen aan alle stakeholders",
+            "block3title": "Technologie",
+            "block3text1": "Procurement Control Room omgeving in Microsoft PowerBI",
+            "block3text2": "Systeem contract data: TOPdesk",
+            "block3text3": "ERP systeem spend data: Deltek Maconomy MX2",
+            "block4title": "Waarde",
+            "block4text1": "Inzicht in spend en contracten",
+            "block4text2": "Inkoop wordt steeds belangrijker, de sense of urgency wordt gevoeld",
+            "block4text3": "Vormgeving van spend –en leveranciersmanagement",
+            "block4text4": "Monitoring van contract compliancy",
+            "block4text5": "Grip en sturing op de top N leveranciers wel/niet gecontracteerd",
+            "block4text6": "Monitoring en sturing op eigenaarschap van contracten"
         }
     },
     "solutioningpage": {
@@ -209,6 +241,32 @@
         "wb": {
             "subtitle": "Lees onze whitepapers en blogs over Design Thinking en WOW LAKRAN"
         }
+    },
+    "roadmappage": {
+        "stage1": "Stage 1",
+        "stage1text1": "Je wilt het oorspronkelijke vraagstuk bij de bijbehorende doelgroep goed begrijpen, hoe doe je dat? Bij de start van deze methode verdiep je jezelf in de oorsprong van het vraagstuk. Je zoekt samen met je team naar antwoorden op vragen, zoals: Hoe is het vraagstuk ontstaan? Wanneer treedt het op? Wat maakt dat het vraagstuk moeilijk oplosbaar is? Wat is er eerder gedaan om het vraagstuk op te lossen?",
+        "stage1text2": "Om jouw doelgroep te begrijpen vul je een Empathy map in om zo de Pains & Gains boven tafel te krijgen. Als onderdeel, om extra inzicht te krijgen, bepaal je in welke vorm; observeren, interviews, focusgroepen etc, het empathisch onderzoek wordt uitgevoerd. Dat helpt je om jouw obstakels te overwinnen om bijvoorbeeld de gains (sturing, efficiency, inzicht, besparingen etc.) te verwezenlijken. Alle resultaten worden in kaart gebracht in de Empathy map.",
+        "stage2": "Stage 2",
+        "stage2text1": "Je gaat het overkoepelende vraagstuk achterhalen in deze fase. Het is aan te raden een kernteam samen te stellen en dit team direct bij alle onderdelen te betrekken. Door middel van empathisch onderzoek zal je de doelgroep echt leren begrijpen. Dit kan via observeren, het houden van interviews, het vormen van focusgroepen etc. Verplaats je in de belevingswereld van verschillende stakeholders.",
+        "stage2text2": "Leg de inzichten vast in de Define Map en neem hierbij de uitersten van alle resultaten mee in de volgende fase; het genereren van ideeën. De doelgroep betrekken in deze fase kan van grote waarde zijn. De “gemiddelde” persoon geeft de algemene indruk goed weer, het biedt echter wel minder inspirerende inzichten.",
+        "stage2text3": "De “extreme” of “extroverte” inzichten daarentegen bieden juist kansen voor creatieve, tastbare ideeën. Dus een gouden tip is om veel waarde te hechten aan de kennis van de “gemiddelde” persoon, maar ook “extreme” kanten te zoeken. Verschillende perspectieven zullen het proces van het identificeren van het vraagstuk gemakkelijker maken.",
+        "stage2text4": "Je start met jezelf af te vragen of het een probleem, algemeen vraagstuk, thema, dilemma of een geheel nieuwe uitdaging betreft en werk vervolgens jouw observaties uit. Je kan nu doorgaan naar de volgende fase.",
+        "stage3": "Stage 3",
+        "stage3text1": "Nu het empathisch onderzoek afgerond is ga je een analyse maken van alle opgehaalde inzichten. Alle resultaten ga je categoriseren; welke observaties uit de Define map passen bij elkaar? De overeenkomsten zet je bij elkaar, om zo clusters te vormen. Zo kan je boven water krijgen wat de verschillende thema’s zijn. Als er een oplossing is voor het thema, zouden alle individuele vraagstukken van het betreffende cluster oplost kunnen worden.",
+        "stage3text2": "Je ontwikkelt dus op basis van deze clusters nieuwe, out of the box ideeën voor het overkoepelende vraagstuk. Bedenk hierbij voor jezelf welke associaties er te bedenken zijn buiten de context van de vraag. Probeer zoveel mogelijk oplossingen te genereren, zonder te denken in beperkingen. Het gaat in deze fase dus om de kwantiteit en niet om de kwaliteit! Kijkend door deze nieuwe bril ontstaan tal van creatieve, innovatieve oplossingsrichtingen voor het oorspronkelijke vraagstuk.",
+        "stage3text3": "Leg deze inzichten vervolgens vast in de Ideate map. Per sterpunt kan je de individuele vraagstukken noteren en vervolgens in de kern het thema. Schrijf op basis hiervan ideeën uit, die je meeneemt in de volgende fase. Zo krijg je perspectief op een overzichtelijke manier!",
+        "stage4": "Stage 4",
+        "stage4text1": "Waar je in de vorige fase oplossingsrichtingen hebt ontwikkeld ga je ze nu verder uitwerken. De clusters worden omgezet naar tastbare ideeën en oplossingen. Zo kun je bepalen of je ideeën kansrijk zijn. Dit kan in verschillende vormen, bijvoorbeeld; het ontwikkelen van storyboards, prototypes, het schrijven van (gebruikers)scenario’s, ruwe schetsen of visualisaties.",
+        "stage4text2": "Je bedenkt of je oplossingen rendabel zijn en wat je ervoor moet doen. Is de oplossing haalbaar? Denk realistisch, maar geef ieder idee een eerlijke kans! Uiteindelijk blijven er een aantal kleine ideeën over die een goede kans van slagen hebben. Je zal merken dat deze kleine ideeën samenkomen en kansen bieden. Leg de oplossingen en concrete concepten vast in de Prototype map.",
+        "stage4text3": "Tip: Het testen van jouw oplossing vereist een goede voorbereiding. Beschrijf dan ook altijd wat de nieuwe oplossing(en) aan toegevoegde waarde levert voor jouw doelgroep. Blijf door prototypen tot er een product of oplossing ontstaat die werkt! Dit is een continu proces. Kies in deze fase dus voor de beste oplossing(en), scherp deze aan en ga door naar de laatste fase.",
+        "stage5": "Stage 5",
+        "stage5text1": "Nu een aantal kansrijke en concrete oplossingen zijn gekozen en aangescherpt, komt de laatste fase aan bod. Namelijk; het testen van jouw prototypes.",
+        "stage5text2": "Je test deze prototypes continu in korte periode. Blijf doorgaan met ontwikkelen en verbeter de prototypes op basis van ervaringen van de eindgebruikers. Zo word je oplossing steeds beter en raakt het meer vraagstukken en thema’s. Je kiest uiteindelijk voor de best mogelijke oplossing en legt deze vast in de Test map.",
+        "stage5text3": "Tip: Test jouw prototype zeker bij de belangrijkste stakeholders en beperk je niet alleen tot jouw kernteam. Het betrekken van degene die een rol spelen bij de implementatie kan een succesvolle werking hebben. Toch is dit niet het enige belangrijke. Andere business componenten spelen ook een belangrijke rol. Denk hierbij aan de financiering en de (interne) communicatie met betrekking tot jouw oplossing.",
+        "stage5text4": "Dit was de laatste fase! Je hebt nu succesvol de LAKRAN presents WOW aanpak doorlopen!",
+        "gotoblog": "Ga naar bijbehorende blog",
+        "downloadimg": "Download afbeelding",
+        "morestages": "Meer stages"
     },
     "popup": {
         "text": "Wil je op de hoogte blijven? Schrijf je dan in voor onze nieuwsbrief!",

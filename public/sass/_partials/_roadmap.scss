@@ -1,0 +1,404 @@
+.roadmap-page {
+    .steps {
+        position: relative;
+        top: calc(9vh + 30px);
+        @include displayFlex;
+        .step-hexagons {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            ul {
+                margin: 25%;
+                margin-top: 0;
+                list-style-type: none;
+                padding: 0;
+            }
+        }
+        .section {
+            display: none;
+            .text-container {
+                @include prefix(flex, 1 1 0, webkit moz o);
+                .mobile-header {
+                    display: none;
+                    h2 {
+                        font-family: $font-bold;
+                        background: $primary;
+                        margin: 0;
+                        padding: 10px 0 10px 30px;
+                        color: white;
+                    }
+                    p {
+                        font-family: $font-bold;
+                        margin: 16px 30px;
+                    }
+                }
+                .stage {
+                    padding: 0 30px 30px 30px;
+                    .stage-title {
+                        text-align: right;
+                    }
+                }
+            }
+            .img-container {
+                @include prefix(flex, 1 1 0, webkit moz o);
+                padding: 40px 30px 30px 30px;
+                .column {
+                    @include prefix(align-self, center, webkit moz o);
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .section.show {
+            @include prefix(flex, 5 1 0, webkit moz o);
+            @include prefix(justify-content, space-between, webkit moz o);
+            @include prefix(align-items, flex-start, webkit moz o);
+            @include displayFlex;
+        }
+        #slide-menu-stages {
+            position: relative;
+            padding: 30px 0;
+            text-align: center;
+            width: 100%;
+            .stages-menu-btn {
+                font-family: $font-bold;
+            }
+            .mobile-stages-nav {
+                text-align: left;
+                color: white;
+                list-style: none;
+                z-index: 9999;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 45px;
+                padding: 1% 1% 1% 1%;
+                background-color: white;
+                border: $mobile-nav-border;
+                display: none;
+                li {
+                    float: none;
+                    width: 250px;
+                    background: $mobile-nav-itembg;
+                    padding-top: 6px;
+                    margin-bottom: 0px;
+                    padding-left: 14px;
+                    a {
+                        color: white;
+                        display: block;
+                        width: 100%;
+                        height: 51px;
+                        font-size: 18px;
+                        line-height: 2;
+                        text-decoration: none;
+                    }
+                }
+                li.active {
+                    background: white;
+                    a {
+                        color: $mobile-nav-link;
+                        font-family: $font-xbold;
+                    }
+                }
+            }
+        }
+        @media (max-width: 1000px) {
+            display: block;
+            .step-hexagons {
+                .stappenplan-hexagon {
+                    margin: 0 15px;
+                    @include displayFlex;
+                    @include prefix(justify-content, space-between, webkit moz o);
+                    .stage-hexagon {
+                        width: 18%;
+                        &.active-stage {
+                            margin: -2px;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            .step-hexagons {
+                display: none;
+            }
+            .section.show {
+                display: block;
+                .text-container {
+                    .mobile-header {
+                        display: block;
+                    }
+                    .stage-title {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        @media (max-width: 450px) {
+            .img-container {
+                .row {
+                    display: block;
+                    .column {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    // SASS from Wordpress website
+    li.stage-hexagon {
+        cursor: pointer;
+    }
+
+    .stage-text,
+    .stage-img {
+        padding: 10px 30px;
+    }
+
+    .stage-img {
+        text-align: center;
+    }
+
+    .stage-img .btn-oranje {
+        margin-top: 25px;
+    }
+
+    .stage-img a {
+        font-size: 16px;
+        margin-left: 10%;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 767px) {
+        .stage-img a {
+            margin-left: 0%;
+        }
+    }
+
+
+    .stage-text p {
+        text-align: justify;
+    }
+
+    .text-stage-1,
+    .text-stage-2,
+    .text-stage-3,
+    .text-stage-4 {
+        text-align: center;
+    }
+
+    @media (min-width: 769px) {
+        .stages .stage .col-sm-5 {
+            width: 41.666667%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .stages .stage .col-sm-5 {
+            width: 100%;
+        }
+    }
+
+    .stappenplan-hexagon li {
+        list-style: none;
+    }
+
+    .stappenplan-hexagon .stage-hexagon.active-stage,
+    .stappenplan-hexagon .stage-hexagon.active-stage:hover,
+    .stappenplan-hexagon .stage-hexagon.active-stage:focus,
+    .stappenplan-hexagon .stage-hexagon.active-stage:active {
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.15);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.15);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.15);
+        transition: all 200ms ease-in;
+        transform: scale(1.15);
+        cursor: default;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        .hex-unlocked {
+            stroke-width: 3;
+            transition: all 300ms ease-in;
+        }
+        .stappenplanpage-svg-overlay {
+            stroke-width: 3;
+            transition: all 300ms ease-in;
+            fill: white;
+            fill-opacity: 0.9;
+        }
+    }
+
+    .stappenplan-hexagon .stage-hexagon {
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+        &:hover,
+        &:focus,
+        &:active {
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.15);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.15);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.15);
+            transition: all 200ms ease-in;
+            transform: scale(1.15);
+            margin-bottom: 10px;
+            margin-top: 10px;
+            .hex-unlocked {
+                stroke-width: 3;
+                transition: all 300ms ease-in;
+            }
+            .stappenplanpage-svg-overlay {
+                stroke-width: 3;
+                transition: all 300ms ease-in;
+                fill: white;
+                fill-opacity: 0.9;
+            }
+        }
+    }
+
+    ul.stappenplan-hexagon {
+        margin: 0;
+        margin-top: 0;
+    }
+
+    @media (min-device-width: 1200px) {
+        ul.stappenplan-hexagon {
+            margin: 20%;
+            margin-top: 0;
+        }
+    }
+
+    @media (min-device-width: 1400px) {
+        ul.stappenplan-hexagon {
+            margin: 25%;
+            margin-top: 0;
+        }
+    }
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        /* IE10 & IE11 CSS styles go here */
+        @media (min-device-width: 1200px) {
+            ul.stappenplan-hexagon {
+                transform: scale(0.70);
+                transform-origin: top;
+                margin: 0;
+                margin-top: 0;
+            }
+        }
+        @media (min-device-width: 1400px) {
+            transform: scale(0.65);
+            transform-origin: top;
+            margin: 0;
+            margin-top: 0;
+        }
+    }
+
+
+    .hex-unlocked,
+    .stappenplanpage-svg-overlay {
+        stroke-width: 1;
+        stroke: $primary;
+    }
+
+    .stappenplanpage-svg-overlay {
+        fill-opacity: 0.7;
+        fill: white;
+    }
+
+    .hexagon-stage-2 .hex-unlocked,
+    .hexagon-stage-2 .stappenplanpage-svg-overlay {
+        stroke: $light-blue;
+    }
+    .hexagon-stage-3 .hex-unlocked,
+    .hexagon-stage-3 .stappenplanpage-svg-overlay {
+        stroke: $lime-green;
+    }
+    .hexagon-stage-4 .hex-unlocked,
+    .hexagon-stage-4 .stappenplanpage-svg-overlay {
+        stroke: $yellow;
+    }
+    .hexagon-stage-5 .hex-unlocked,
+    .hexagon-stage-5 .stappenplanpage-svg-overlay {
+        stroke: $dark-grey;
+    }
+
+    .stage-img .btn.btn-oranje.link-label,
+    .stage-img a.btn.btn-oranje-border.link-label {
+        font-size: 12px;
+    }
+
+
+    #stappenplan .col-sm-2 {
+        display: none;
+    }
+
+    .stappenplan-mobile {
+        display: block;
+        font-family: $font-bold;
+    }
+
+    .stappenplan-mobile-header {
+        background: $mobile-nav-itembg;
+        color: white;
+        display: block;
+        padding: 21px 4% 3px 26px;
+        margin-top: -59px;
+        p {
+            font-size: 35px;
+            line-height: 24px;
+        }
+    }
+
+    .stage-text h3 {
+        text-align: left;
+    }
+
+    #mc_display_rewards {
+        display: none;
+    }
+
+
+
+    @media (min-device-width: 769px) {
+
+        .stappenplan-mobile {
+            display: none;
+        }
+
+        .stappenplan-hexagon {
+            display: block;
+        }
+
+        #stappenplan .col-sm-2 {
+            display: block;
+        }
+
+
+        .stappenplan-mobile-header {
+            display: none;
+        }
+        .stage-text h3 {
+            text-align: right;
+        }
+
+        #slide-menu-stages {
+            display: none;
+        }
+    }
+
+    .landingspage br {
+        display: block;
+    }
+}
