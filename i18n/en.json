@@ -1,235 +1,227 @@
 {
     "cookie": {
-        "title": "",
-        "text": "",
-        "btn": "",
-        "moreinfo": "",
+        "title": "How we use cookies",
+        "text": "We place functional cookies for optimal operation of our website. In addition, we use Google Analytics to collect anonymized data to gain insight into visitor statistics. We use this to improve the website.",
+        "btn": "Okay, I understand",
+        "moreinfo": "More information about cookies",
         "link": "https://cookiesandyou.com/"
     },
     "slider": {
-        "ourreasons": "",
-        "ourservices": "",
+        "ourreasons": "Our reasons",
+        "ourservices": "Our services",
         "slide1title": "\"It is possible to fly without motors, but not without knowledge and skill.\"",
         "slide1author": "- Wilbur Wright",
         "slide2title": "\"If opportunity doesn't knock, build a door.\"",
         "slide2author": "- Milton Berle",
         "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
         "slide3author": "- Phil Pringle",
-        "scroll": ""
+        "scroll": "Scroll down"
     },
     "menu": {
-        "ourreasons": "",
-        "ourservices": "",
-        "jobsnewsletter": "",
-        "jobs": "",
-        "blog": "",
-        "contact": "",
-        "lang": ""
+        "ourreasons": "Our reasons",
+        "ourservices": "Our services",
+        "jobsnewsletter": "Jobs and newsletter",
+        "jobs": "Jobs",
+        "blog": "Blogs",
+        "contact": "Contact",
+        "lang": "Language"
     },
     "wowmenu": {
-        "home": "",
-        "welcome": "",
-        "discover": "",
-        "roadmap": "",
-        "whitepapersblogs": "",
-        "contact": ""
+        "home": "Home",
+        "welcome": "Welcome",
+        "discover": "Discover",
+        "roadmap": "Step-by-step plan",
+        "whitepapersblogs": "Whitepapers & Blogs",
+        "contact": "Contact"
     },
     "ourreasons": {
-        "whytext1": "",
-        "whytext2": "",
-        "howtext1": "",
-        "howtext2": "",
-        "howtext3": "",
-        "whattext1": "",
-        "whattext2": ""
+        "whytext1": "Our mission is simple. Building on the procurement success of your organization. In this domain, the daily operational purchasing, receipt and invoice processes have been digitized in many organizations, in some cases automated, but far too often not fully optimized. We do not only focus on the operational side, but also give the necessary attention to contract management, sourcing and spend analysis. We do everything to make sure that this business case will succeed in your organization!",
+        "whytext2": "Our core values are: Creativity, Diversity, Can-do mentality, Taking responsibility, Value, Efficiency and Great experiences. Learn more about our core values:",
+        "howtext1": "We believe in solutions that go beyond the regular way. Our diversity of professionals offer knowledge and skill to overcome your procurement obstacles. We do this by making optimal use of digital innovation. Through the smart use of technology, together we can create more value in a fair supply chain.",
+        "howtext2": "Our daily goal consists of thinking differently within procurement and finance. We do this through our Way of Working. Learn about LAKRAN presents WOW ",
+        "howtext3": ", our vision on Design Thinking",
+        "whattext1": "For over more than 10 years has LAKRAN Procurement Professionals been making improvements in the procurement domain. We are a go-to advisory link between purchasing organizations and software houses that deliver procurement solutions. We do this through business consultancy and software independent technological knowledge.",
+        "whattext2": "Our services are bundled in our procurement blockx."
     },
     "ourservices": {
         "strategytitle": "Strategy as a Service",
         "insightstitle": "Insights as a Service",
         "solutioningtitle": "Solutioning as a Service",
         "managementtitle": "Management as a Service",
-        "strategytext": "",
-        "insightstext": "",
-        "solutioningtext": "",
-        "managementtext": "",
-        "leftbtn": "",
-        "righttitle": "",
-        "strategycasetext": "",
-        "insightscasetext": "",
-        "solutioningcasetext": "",
-        "managementcasetext": "",
-        "rightbtn": ""
-    },
-    "partners": {
-        "choose": "",
-        "sapinfo": "",
-        "coupainfo": "",
-        "baswareinfo": "",
-        "aribainfo": "",
-        "zycusinfo": ""
+        "strategytext": "Need our professionals to help you succeed your Business Case? ",
+        "insightstext": "Need a clear picture of your input, throughput and output?",
+        "solutioningtext": "Need independent software experts for a successful transformation?",
+        "managementtext": "Procurement is clear communication and setting the proper goals, right? ",
+        "leftbtn": "Want to know more?",
+        "righttitle": "Successful customer case",
+        "strategycasetext": "Within our Strategy proposition we do nice, beautiful things for our customers. Curious about our added value?",
+        "insightscasetext": "Within our Insights proposition we do nice, beautiful things for our customers. Curious about our added value?",
+        "solutioningcasetext": "Within our Solutioning proposition we do nice, beautiful things for our customers. Curious about our added value?",
+        "managementcasetext": "Within our Management proposition we do nice, beautiful things for our customers. Curious about our added value?",
+        "rightbtn": "Want to know more?"
     },
     "blogs": {
-        "more": ""
+        "more": "View more blogs"
     },
     "whitepapers": {
-        "title": "",
-        "fillemail": "",
-        "sendwp": "",
-        "sentsuccess": "",
+        "title": "Whitepapers",
+        "fillemail": "Enter your e-mail adress so we can send you the whitepaper.",
+        "sendwp": "Send the whitepaper",
+        "sentsuccess": "The whitepaper has been sent to your e-mail!",
         "dashboarding": {
-            "title": "",
-            "text": ""
+            "title": "P2P Dashboarding and BI-trends",
+            "text": "\"P2P Dashboarding\" is a self explanatory term; the setting up of dashboards around Purchase to Pay. An important question you can ask yourself: how can you optimize the use of dashboards? This whitepaper has been set up to help you on your way! We do this by providing insights on: Business Intelligence (BI) trends for 2017, the strategic role of purchasing and the thoughts surrounding the design of P2P Dashboarding."
         },
         "fiori": {
-            "title": "",
-            "text": ""
+            "title": "A transition to Fiori, experiences and tips",
+            "text": "Fiori is here. Fiori is a highly effective way to personalize and simplify your SAP-applications. The transition from the SAP User Interface (UI) of classic screens and applications to Fiori and UI5 apps is, at this moment, an attention point. SAP using organizations can deliver more user-friendly business applications with the transition. When is it interesting for you? What do you have to think about? What are the pitfalls and what needs to be watched? This whitepaper is designed to give you a little push in the right direction."
         }
     },
     "wow": {
-        "alinea1": "",
-        "alinea2": "",
-        "alinea3": "",
-        "link": "",
-        "whoisdaphne": ""
+        "alinea1": "LAKRAN Procurement Professionals introduces you to WOW, or in other words our Way of Working! Our own vision on Design Thinking!",
+        "alinea2": "You may not hear it too often; Design Thinking in the purchasing sector. Still it can have a lot of added value. Design Thinking is not only a way of thinking as it is name suggest, it is a mindset. A way of working, applied by our team of professionals.",
+        "alinea3": "Read more about our way of thinking on our",
+        "link": "WOW page!",
+        "whoisdaphne": "Who is Daphne?"
     },
     "jobs": {
-        "jobs": "",
-        "jobtext": "",
-        "viewjobs": "",
-        "mailinglist": "",
-        "mailingtext": "",
-        "signup": ""
+        "jobs": "Jobs",
+        "jobtext": "Take a look at our vacancies!",
+        "viewjobs": "Vacancies",
+        "mailinglist": "Mailing list",
+        "mailingtext": "Subscribe to our newsletter!",
+        "signup": "Subscribe"
     },
     "contact": {
-        "fastcontact": "",
-        "knowmore": "",
-        "fillemail": "",
-        "names": "",
-        "email": "",
-        "send": "",
-        "sentsuccess": "",
-        "attention": "",
-        "addresschange": ""
+        "fastcontact": "Reach us quickly",
+        "knowmore": "Do you want to know more about this or do you have another question?",
+        "fillemail": "Enter your e-mail adres quickly and we will be in touch as soon as possible!",
+        "names": "First- and surname",
+        "email": "Email",
+        "send": "Send",
+        "sentsuccess": "Your application has been sent succesfully!",
+        "attention": "Attention!",
+        "addresschange": "Starting October 1st our visiting address is Meander 251"
     },
     "corevalues": {
-        "title": "",
-        "text": ""
+        "title": "Our core values",
+        "text": "Our core values stand for what we do and who we are. It determines how we tackle things together as a team and how we do things differently than others."
     },
     "strategypage": {
         "pagetitle": "Strategy as a Service",
-        "lefttext": "",
-        "righttext": "",
-        "moreinfo": "",
-        "workshop": "",
-        "package": "",
-        "channel": "",
+        "lefttext": "What do you have to focus on when you want to achieve specific objectives in the coming years? Many optimizations fall apart. We think this is due to the lack of a distinctive framework and the right vision. In reality it turns out to be something different than just having it followed in the procurement of finance strategy. The strategy of IT, HR, marketing and all those other users of the profession also count heavily. There are also trends in the market on technology and business level that also play a major role.",
+        "righttext": "We can inform you about existing trends, guide you in drawing up a supported vision by your organization or obtain advice on the right design plan. By putting our heads together you get that extra advantage, and make a bigger leap forward.",
+        "moreinfo": "More info",
+        "workshop": "Strategy workshop",
+        "package": "Package selection",
+        "channel": "Channel strategy",
         "modal": {
-            "workshoptitle": "",
-            "workshoptext": "",
-            "packagetitle": "",
-            "packagetext": "",
-            "channeltitle": "",
-            "channeltext": ""
+            "workshoptitle": "Strategy workshop",
+            "workshoptext": "You know you have to invest in P2P to get a better defined future? We have the ideal jumpstart for you, exactly for that future. Two days with different leadership teams from purchase, finance and IT. All mixed with a good delegation to internal customers. Through our Way of Working, our own vision on Design Thinking, we take you from identifying the issue and lessons learned, through an inspiration session about market trends, towards a clear picture and direct handles for your required change.",
+            "packagetitle": "Package selection",
+            "packagetext": "You want to select a (new) software package from the market to support (a part of) your supply chain? Because as simple as it may seem, there are many traps and bumps on the road. But we as specialists can help you prevent that from happening. We help both contracting authorities and commercial organizations with the best fit.",
+            "channeltitle": "Channel strategy",
+            "channeltext": "Which category do I offer with which way and which supplier? By developing a channel strategy, we help to think about and capture digital ordering paths through which requests, orders, receipts and invoices are settled. Insight into your data by means of a good analysis is indispensable."
         },
         "case": {
-            "title": "",
-            "comingsoon": ""
+            "title": "Customer case Strategy as a Service",
+            "comingsoon": "We are still working on creating a customer case for our Strategy as a Service proposition. Keep an eye on this page!"
         }
     },
     "insightspage": {
-        "pagetitle": "",
-        "lefttext": "",
-        "righttext": "",
-        "moreinfo": "",
-        "spend": "",
-        "contract": "",
-        "value": "",
-        "compliance": "",
+        "pagetitle": "Insighst as a Service",
+        "lefttext": "Business intelligence, the building of insights in your process and in your company, the source for readjustment for your process and your approach. Logical and necessary, but in reality not so simple when procurement appears to be an overarching function of various departments. How do we do the things we do and how do others do it? Simply remove the blinders and understand where and how you should adjust on procurement.",
+        "righttext": "Our \"Procurement Control Room\" is a business intelligence platform (everything in the Cloud, of course), one in which we bundled our knowledge of analyzing data and dashboarding. Within this platform we have different sets or standard dashboards available, to better manage P2P performance. The PCR dashboards give quick insights on the spend and contract information, value creation and process performance. The ultimate tool for intelligent purchasing. ",
+        "moreinfo": "More info",
+        "spend": "Spend dashboard",
+        "contract": "Contract dashboard",
+        "value": "Value dashboard",
+        "compliance": "Compliance management",
         "modal": {
-            "spendtitle": "",
-            "spendtext": "",
-            "contracttitle": "",
-            "contracttext": "",
-            "valuetitle": "",
-            "valuetext": "",
-            "compliancetitle": "",
-            "compliancetext": ""
+            "spendtitle": "Spend dashboard",
+            "spendtext": "Gives insights into the expenses that run through the system of your organization. For example it provides a proper base to shape your spend- and supplier management.",
+            "contracttitle": "Contract dashboard",
+            "contracttext": "Gives insight in the contract information of your organization. It also provides the possibility to monitor the contract compliance.",
+            "valuetitle": "Value dashboard",
+            "valuetext": "Gives insight in which buyer contributed to the spend reduction of cost optimization, which account plans were made and how they were executed. ",
+            "compliancetitle": "Compliance management",
+            "compliancetext": "It all starts with; plans, business cases, policies that have to be upheld. But how do you oversee and manage the systems, the organization and the suppliers to follow the protocol you set up in your P2P plans?"
         },
         "case": {
-            "title": "",
-            "quote": "",
-            "turnover": "",
-            "suppliers": "",
-            "invoices": "",
-            "block1title": "",
-            "block1text1": "",
-            "block1text2": "",
-            "block1text3": "",
-            "block1text4": "",
-            "block1text5": "",
-            "block2title": "",
-            "block2text1": "",
-            "block2text2": "",
-            "block2text3": "",
-            "block2text4": "",
-            "block3title": "",
-            "block3text1": "",
-            "block3text2": "",
-            "block3text3": "",
-            "block4title": "",
-            "block4text1": "",
-            "block4text2": "",
-            "block4text3": "",
-            "block4text4": "",
-            "block4text5": "",
-            "block4text6": ""
+            "title": "Customer case Insights as a Service",
+            "quote": "The dashboards are of added value during the account conversations with the Business Units. It gives insight and the ability to adjust",
+            "turnover": "Turnover",
+            "suppliers": "Suppliers",
+            "invoices": "Invoices",
+            "block1title": "The customer",
+            "block1text1": "European engineering firm, focused on environmental advice and a sustainable living environment",
+            "block1text2": "More than 1,000 employees, 28 branches in 6 European countries",
+            "block1text3": "€118 million revenue in 2017",
+            "block1text4": "Spend of €33 million in 2017",
+            "block1text5": "975 suppliers and 11,169 invoices in 2017",
+            "block2title": "Assignment LAKRAN",
+            "block2text1": "Build, design and manage spend and contract dashboards",
+            "block2text2": "Periodically load and refresh the data",
+            "block2text3": "Structural development of the dashboards",
+            "block2text4": "Make shielded dashboards available to all stakeholders",
+            "block3title": "Technology",
+            "block3text1": "Procurement Control Room environment within Microsoft PowerBI",
+            "block3text2": "System contract data: TOPdesk",
+            "block3text3": "ERP system spend data: Deltek Maconomy  MX2",
+            "block4title": "Value",
+            "block4text1": "Insights in spend and contracts",
+            "block4text2": "Procurement is becoming increasingly important,  the sense of urgency is noticeable",
+            "block4text3": "Shaping the spend and supplier management",
+            "block4text4": "Monitoring of contract compliancy",
+            "block4text5": "Getting a grip and oversee the top N suppliers contracted / non contracted",
+            "block4text6": "Monitoring and control the ownership of contracts"
         }
     },
     "solutioningpage": {
         "pagetitle": "Solutioning as a Service",
-        "lefttext": "",
-        "righttext": "",
-        "moreinfo": "",
-        "integration": "",
-        "transformation": "",
-        "transition": "",
+        "lefttext": "Improve or replace existing software solutions? So many people, so many wishes, and that certainly applies where those people are an organization together. How do you find your way when those wishes result in a huge number of software solutions? How do you make the right choice based on cultural, budgetary and functional 'fit' for your organization?",
+        "righttext": "The number of viable options have increased considerably since the Cloud-solution uprising. It Is only a logical step that we as a company grow with these solutions and increase our knowledge to maintain our broad portfolios, and to make your purchasing experience as simple as possible. Our consultants possess knowledge about all these solutions and have a large network of connections. With this they can make that extra bit of difference, one you have been looking for.",
+        "moreinfo": "More info",
+        "integration": "Integration Services",
+        "transformation": "Transformation Services",
+        "transition": "Transition Services",
         "modal": {
-            "integrationtitle": "",
-            "integrationtext": "",
-            "transformationtitle": "",
-            "transformationtext": "",
-            "transitiontitle": "",
-            "transitiontext": ""
+            "integrationtitle": "Integration Services",
+            "integrationtext": "The future of “managing value of different kinds of platforms and applications” lies in thorough integrations. Our integration architects and developers, in addition to the extensive experience in procurement, also have experience in different techniques, platforms and standards for integration.",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "The software has been purchased, the end goals have been set and the organization is ready: Good, implement away! Or is it not quite that easy? Designing a good P2P transformation is a complex radar work of possibilities, involvement, business case and willingness to change your environment.",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "How do you ensure that the organization around you is actually going to do what was thought of before and what was implemented? What makes people want to adapt with it? Simply explaining the buttons and screens is only one step, it is much more about recognizable data, fast service, feeling the sense of urgency, etcetera. "
         },
         "case": {
-            "title": "",
-            "comingsoon": ""
+            "title": "Customer case Solutioning as a Service",
+            "comingsoon": "We are still working on creating a customer case for our Solutioning as a Service proposition. Keep an eye on this page!"
         }
     },
     "managementpage": {
-        "pagetitle": "",
-        "lefttext": "",
-        "righttext": "",
-        "moreinfo": "",
-        "compliance": "",
-        "transformation": "",
-        "transition": "",
+        "pagetitle": "Management as a Service",
+        "lefttext": "The daily practice, managing suppliers and processes, order documents and receipts. But also the continuous improvement of that situation. We can provide you with strategic support, but if your goals and choices are clear we can also ensure that everything is properly operational.",
+        "righttext": "That starts with a properly executed project in the transformation phase and continues in the transition phase. We can help you with the right approach, planning and of course the execution. We focus on making your plans a success.",
+        "moreinfo": "More info",
+        "compliance": "Compliance management",
+        "transformation": "Transformation Services",
+        "transition": "Transition Services",
         "modal": {
-            "compliancetitle": "",
-            "compliancetext": "",
-            "transformationtitle": "",
-            "transformationtext": "",
-            "transitiontitle": "",
-            "transitiontext": ""
+            "compliancetitle": "Compliance management",
+            "compliancetext": "It all starts with; plans, business cases, policies that have to be upheld. But how do you oversee and manage the systems, the organization and the suppliers to follow the protocol you set up in your P2P plans?",
+            "transformationtitle": "Transformation Services",
+            "transformationtext": "The software has been purchased, the end goals have been set and the organization is ready: Good, implement away! Or is it not quite that easy? Designing a good P2P transformation is a complex radar work of possibilities, involvement, business case and willingness to change your environment.",
+            "transitiontitle": "Transition Services",
+            "transitiontext": "How do you ensure that the organization around you is actually going to do what was thought of before and what was implemented? What makes people want to adapt with it? Simply explaining the buttons and screens is only one step, it is much more about recognizable data, fast service, feeling the sense of urgency, etcetera. "
         },
         "case": {
-            "title": "",
-            "comingsoon": ""
+            "title": "Customer case Management as a Service",
+            "comingsoon": "We are still working on creating a customer case for our Management as a Service proposition. Keep an eye on this page!"
         }
     },
     "404": {
-        "title": "",
-        "text": ""
+        "title": "Sorry, this page can not be found",
+        "text": "Please try again, or go back to"
     },
     "wowpage": {
         "hovertext": "",
