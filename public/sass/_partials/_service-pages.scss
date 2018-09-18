@@ -302,11 +302,15 @@
                 text-align: center;
             }
             a {
+                text-decoration: none;
                 img {
                     width: 19%;
                     max-width: 19%;
                     margin: 0 1%;
                     cursor: pointer;
+                    &.color {
+                        display: none;
+                    }
                 }
                 &:first-child img {
                     margin-left: 0;

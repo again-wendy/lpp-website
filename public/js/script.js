@@ -60,6 +60,21 @@ $(document).ready(function() {
         $("#reasons").css("margin-top", contentHeight + "px");
     }
 
+    if( $(".service-page").length ) {
+        $(".service-page .software-logos a").hover(
+            function() {
+                var comp = $(this).attr('class');
+                $(this).find('.bw.' + comp).hide();
+                $(this).find('.color.' + comp).show();
+            },
+            function() {
+                var comp = $(this).attr('class');
+                $(this).find('.color.' + comp).hide();
+                $(this).find('.bw.' + comp).show();
+            }
+        )
+    }
+
     // Set height for different elements and show/hide mobile menu
     heightElements();
     heightIconBlock('why');
