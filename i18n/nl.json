@@ -7,7 +7,7 @@
         "link": "https://www.consumentenbond.nl/internet-privacy/wat-zijn-cookies"
     },
     "slider": {
-        "ourreasons": "Onze redenen",
+        "ourreasons": "Onze motivatie",
         "ourservices": "Onze diensten",
         "slide1title": "\"It is possible to fly without motors, but not without knowledge and skill.\"",
         "slide1author": "- Wilbur Wright",
@@ -18,12 +18,13 @@
         "scroll": "Scroll verder"
     },
     "menu": {
-        "ourreasons": "Onze redenen",
+        "ourreasons": "Onze motivatie",
         "ourservices": "Onze diensten",
         "jobsnewsletter": "Jobs en nieuwsbrief",
         "jobs": "Jobs",
         "blog": "Blogs",
-        "contact": "Contact"
+        "contact": "Contact",
+        "lang": "Taal"
     },
     "wowmenu": {
         "home": "Home",
@@ -53,7 +54,10 @@
         "managementtext": "Procurement is heldere communicatie en duidelijke doelen stellen, toch?",
         "leftbtn": "Meer weten?",
         "righttitle": "Geslaagde klant case",
-        "righttext": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+        "strategycasetext": "Binnen onze Strategy propositie doen we leuke, mooie dingen bij onze klanten. Benieuwd naar onze toegevoegde waarde?",
+        "insightscasetext": "Binnen onze Insights propositie doen we leuke, mooie dingen bij onze klanten. Benieuwd naar onze toegevoegde waarde?",
+        "solutioningcasetext": "Binnen onze Solutioning propositie doen we leuke, mooie dingen bij onze klanten. Benieuwd naar onze toegevoegde waarde?",
+        "managementcasetext": "Binnen onze Management propositie doen we leuke, mooie dingen bij onze klanten. Benieuwd naar onze toegevoegde waarde?",
         "rightbtn": "Meer weten?"
     },
     "partners": {
@@ -125,6 +129,10 @@
             "packagetext": "Jullie willen een (nieuw) software pakket gaan selecteren uit de markt om (een deel van) je waardeketen te ondersteunen? Hoe eenvoudig het ook lijkt, hier zitten vele valkuilen in die wij als procurement professionals kunnen voorkomen. Zowel aanbestedende diensten als commerciële organisaties helpen wij aan de beste ‘fit’.",
             "channeltitle": "Kanalen strategie",
             "channeltext": "Welke inkoopcategorie bestel ik via welke weg bij welke leverancier? Door het opstellen van een kanalenstrategie helpen wij bij het nadenken over en vastleggen van digitale bestelpaden waarlangs aanvragen, orders, ontvangsten en facturen worden afgewikkeld. Een goede spend analyse is hierbij onmisbaar."
+        },
+        "case": {
+            "title": "Klant case Strategy as a Service",
+            "comingsoon": "We zijn nog bezig met het maken van een klant case voor onze Strategy as a Service. Houd deze pagina in de gaten!"
         }
     },
     "insightspage": {
@@ -191,6 +199,10 @@
             "transformationtext": "De software is gekocht, de einddoelen zijn gesteld en de organisatie is er klaar voor: mooi, implementeren maar! Dit ligt net even wat genuanceerder. Het vormgeven van een goede transformatie is een complex radarwerk van mogelijkheden, betrokkenheid en veranderbereidheid van je omgeving.",
             "transitiontitle": "Transition Services",
             "transitiontext": "Hoe zorg je nu dat de organisatie om je heen ook daadwerkelijk dat gaat doen wat bedacht en geïmplementeerd is? Wat maakt dat mensen willen meebewegen? Het simpelweg uitleggen van de knoppen en schermen is slechts één stapje, het gaat veel meer om herkenbare data, snelle service, voelen van noodzaak, etc. "
+        },
+        "case": {
+            "title": "Klant case Solutioning as a Service",
+            "comingsoon": "We zijn nog bezig met het maken van een klant case voor onze Solutioning as a Service. Houd deze pagina in de gaten!"
         }
     },
     "managementpage": {
@@ -208,7 +220,15 @@
             "transformationtext": "De software is gekocht, de einddoelen zijn gesteld en de organisatie is er klaar voor: mooi, implementeren maar! Dit ligt net even wat genuanceerder. Het vormgeven van een goede transformatie is een complex radarwerk van mogelijkheden, betrokkenheid en veranderbereidheid van je omgeving. ",
             "transitiontitle": "Transition Services",
             "transitiontext": "Hoe zorg je nu dat de organisatie om je heen ook daadwerkelijk dat gaat doen wat bedacht en geïmplementeerd is? Wat maakt dat mensen willen meebewegen? Het simpelweg uitleggen van de knoppen en schermen is slechts één stapje, het gaat veel meer om herkenbare data, snelle service, voelen van noodzaak, etc. "
+        },
+        "case": {
+            "title": "Klant case Management as a Service",
+            "comingsoon": "We zijn nog bezig met het maken van een klant case voor onze Management as a Service. Houd deze pagina in de gaten!"
         }
+    },
+    "404": {
+        "title": "Sorry, deze pagina kan niet gevonden worden",
+        "text": "Probeer het nog eens, of ga terug naar"
     },
     "wowpage": {
         "hovertext": "Hover met je muis op een tegel hier rechts, op een design thinking onderdeel, om er meer over te lezen!",

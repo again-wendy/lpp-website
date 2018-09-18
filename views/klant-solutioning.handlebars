@@ -1,0 +1,31 @@
+{{> navbar}}
+
+<section id="customer-solutioning" class="customer-case">
+    <div class="choose-service">
+        <ul class="services">
+            <li class="notactive strategy">
+                <a href="/customer-case-strategy">Strategy</a>
+            </li>
+            <li class="notactive insights">
+                <a href="/customer-case-insights">Insights</a>
+            </li>
+            <li class="active solutioning">
+                Solutioning<span> as a Service</span>
+            </li>
+            <li class="notactive management">
+                <a href="/customer-case-management">Management</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">{{ tl.solutioningpage.case.title }}</h2>
+    <div class="title-border"></div> 
+    <div class="text-center coming-soon">
+        {{!-- <img src="./public/images/coming-soon.png" alt="Coming soon!"> --}}
+        <p>{{ tl.solutioningpage.case.comingsoon }}</p>
+    </div>
+</section>
+
+{{> contact-extended}}
+
+{{> footer}}

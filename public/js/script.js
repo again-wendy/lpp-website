@@ -8,14 +8,25 @@ $(document).ready(function() {
         $("#nav-bar .right-menu .menu-items").hide();
     }
 
+    $(window).change(function() {
+        if($(window).width() < 769) {
+            $("#nav-bar .right-menu .menu-items").hide();
+            $(".dropdown > .dropdown-menu").hide();
+        } else {
+            $("#nav-bar .right-menu .menu-items").show();
+        }
+    })
+
     // Load right flag in menu to set language
     if(checkLang().indexOf("nl") != -1) {
-        $("#language").append('<a onclick="setLang(\'en\')"><img src="./public/images/en.png" alt="English"></a>');
+        $("#language").find('.current').find('img').attr('src', './public/images/lang/nl.png').attr('alt', 'Nederlands');
         Cookies.set("ulang", "nl");
+        coreValueImg('nl');
     } else {
-        $("#language").append('<a onclick="setLang(\'nl\')"><img src="./public/images/nl.png" alt="Nederlands"></a>');
+        $("#language").find('.current').find('img').attr('src', './public/images/lang/en.png').attr('alt', 'English');;
         Cookies.set("ulang", "en");
         hideBlogsWhitepapers();
+        coreValueImg('en');
     }
 
     // Code for the hero images slider on homepage
@@ -123,6 +134,18 @@ $(document).ready(function() {
     }
 });
 
+// Check for hover on dropdown menu
+if($(window).width() > 768) {
+    $('.dropdown').hover(
+        function() {
+            $(".dropdown > .dropdown-menu").slideDown();
+        }, 
+        function() {
+            $(".dropdown > .dropdown-menu").slideUp();
+        }
+    );
+}
+
 // Hide blogs and whitepaper for now when language is English
 function hideBlogsWhitepapers() {
     $("#blogs").hide();
@@ -166,7 +189,7 @@ function checkConsent() {
 
 // Accept cookies
 function acceptCookies() {
-    Cookies.set("cookies-consent", "true");
+    Cookies.set("cookies-consent", "true", {expires: 365});
     $("#cookie").delay( 500 ).fadeOut();
 }
 
@@ -203,6 +226,13 @@ function setLang($event) {
     }
     console.log(url);
     console.log(path);
+}
+
+// Show right core value image
+function coreValueImg(lang) {
+    if( $(".corevalues").length ) {
+        $(".corevalues .core-values-container ." + lang).show();
+    }
 }
 
 function setActiveNavItem() {
@@ -362,7 +392,9 @@ function puzzleHover() {
             var service = classes.replace('puzzle-piece ', '');
             service = service.replace(' overlay', '');
             $('#ourservices .left-text .text').hide();
+            $('#ourservices .right-text .text').hide();
             $('#ourservices .left-text .' + service).show();
+            $('#ourservices .right-text .' + service).show();
         }, function() {
 
         }
@@ -618,7 +650,8 @@ function randomContactImage() {
                 setContactImage('Luis Gomez', 'Consultant', 'luis')
                 break;
             case 8:
-                setContactImage('Minke Mensink', 'Director LAKRAN VMS Services', 'minke');
+                // For now set on Rene, must be Sandra in the future
+                setContactImage('René Berns', 'Managing consultant', 'rene');
                 break;
             case 9: 
                 setContactImage('René Berns', 'Managing consultant', 'rene');

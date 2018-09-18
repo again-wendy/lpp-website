@@ -102,6 +102,9 @@
                 text-align: center;
                 margin-left: 0;
             }
+            .insights, .solutioning, .management {
+                display: none;
+            }
         }
         h4 {
             color: $primary;

@@ -163,6 +163,34 @@
                     width: 25px;
                 }
             }
+            .dropdown {
+                position: relative;
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    background-color: $light-grey;
+                    min-width: 200px;
+                    z-index: 1;
+                    list-style-type: none;
+                    right: 0;
+                    padding: 0;
+                    margin-top: 3vh;
+                    color: $dark-grey;
+                    li {
+                        a {
+                            font-size: 16px;
+                            padding: 20px 15px;
+                            display: inline-block;
+                            width: 100%;
+                            text-align: left;
+                            color: $dark-grey;
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

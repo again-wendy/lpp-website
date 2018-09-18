@@ -1,4 +1,65 @@
 .customer-case {
+    position: relative;
+    .choose-service {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        @media(max-width: 767px) {
+            top: 0;
+        }
+        .services {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .active {
+                padding: 30px 6px;
+                background: $primary;
+                color: white;
+                font-family: $font-bold;
+                width: 130px;
+                height: 100px;
+                text-align: center;
+                @media(max-width: 900px) {
+                    padding: 20px 6px;
+                    width: 100px;
+                    height: 80px;
+                }
+                @media(max-width: 767px) {
+                    transform: rotateZ(-90deg);
+                    padding: 8px;
+                    border: 2px solid $primary;
+                    background: $primary;
+                    transform-origin: 3px 3px;
+                    width: 130px;
+                    height: 40px;
+                    position: relative;
+                    text-align: center;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            .notactive {
+                transform: rotateZ(-90deg);
+                padding: 3px 8px;
+                border: 2px solid $primary;
+                background: white;
+                transform-origin: 3px 3px;
+                width: 130px;
+                position: relative;
+                text-align: center;
+                &:hover, &:focus, &:active {
+                    background: $linear-gradient;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
     .quote {
         width: 80%;
         margin: 0 auto;
@@ -50,6 +111,9 @@
                 text-align: center;
             }
         }
+    }
+    .coming-soon {
+        height: 30vh;
     }
     .container {
         margin-top: 60px;
@@ -130,7 +194,68 @@
     }
 }
 
+#customer-strategy {
+    .choose-service {
+        .services {
+            .insights {
+                top: 123px;
+            }
+            .solutioning {
+                top: 220px;
+            }
+            .management {
+                top: 320px;
+            }
+            @media(max-width: 767px) {
+                .strategy {
+                    top: 130px;
+                }
+                .insights {
+                    top: 219px;
+                }
+                .solutioning {
+                    top: 319px;
+                }
+                .management {
+                    top: 419px;
+                }
+            }
+        }
+    }
+}
+
 #customer-insights {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 100px;
+                position: relative;
+            }
+            .solutioning {
+                top: 222px;
+            }
+            .management {
+                top: 322px;
+            }
+            @media(max-width: 767px) {
+                .strategy {
+                    top: 125px;
+                }
+                .insights {
+                    top: 225px;
+                }
+                .solutioning {
+                    top: 314px;
+                }
+                .management {
+                    top: 414px;
+                }
+            }
+        }
+    }
     .quote {
         @media (max-width: 900px) {
             .text {
@@ -175,6 +300,74 @@
         @media (max-width: 400px) {
             .logo {
                 margin-right: -40px;
+            }
+        }
+    }
+}
+
+#customer-solutioning {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 225px;
+            }
+            .solutioning {
+                top: 200px;
+                position: relative;
+            }
+            .management {
+                top: 322px;
+            }
+            @media(max-width: 767px) {
+                .strategy {
+                    top: 125px;
+                }
+                .insights {
+                    top: 225px;
+                }
+                .solutioning {
+                    top: 326px;
+                }
+                .management {
+                    top: 414px;
+                }
+            }
+        }
+    }
+}
+
+#customer-management {
+    .choose-service {
+        .services {
+            .strategy {
+                top: 125px;
+            }
+            .insights {
+                top: 225px;
+            }
+            .solutioning {
+                top: 325px;
+            }
+            .management {
+                top: 300px;
+                position: relative;
+            }
+            @media(max-width: 767px) {
+                .strategy {
+                    top: 125px;
+                }
+                .insights {
+                    top: 225px;
+                }
+                .solutioning {
+                    top: 325px;
+                }
+                .management {
+                    top: 425px;
+                }
             }
         }
     }

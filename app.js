@@ -83,9 +83,9 @@ app.get('/strategy-as-a-service', (req, res) => {
         desc: "What do you have to focus on when you want to achieve specific objectives in the coming years?"
     });
 });
-app.get('/klant-case-strategy', (req, res) => {
-    res.render('customer-strategy', {
-        title: "Customer case Strategy as a Service | LAKRAN",
+app.get('/customer-case-strategy', (req, res) => {
+    res.render('klant-strategy', {
+        title: "Customer case Strategy as a  Service | LAKRAN",
         desc: ""
     });
 });
@@ -282,6 +282,14 @@ const sendMailLakran = (subject, email) => {
 
     transporter.sendMail(helperOptions);
 }
+
+// Fallback for wrong urls
+app.get('*', (req, res) => {
+    res.render('404', {
+        title: "Page not found",
+        desc: "404: page not found"
+    });
+});
 
 // Startup server
 var port = process.env.port || 3000;
