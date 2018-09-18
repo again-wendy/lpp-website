@@ -4970,20 +4970,30 @@ footer .container .companies .company {
 }
 
 /* line 3, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values-container p {
+  padding: 0 15%;
+}
+@media (max-width: 900px) {
+  /* line 3, ../sass/_partials/_corevalues.scss */
+  .corevalues .core-values-container p {
+    padding: 0;
+  }
+}
+/* line 9, ../sass/_partials/_corevalues.scss */
 .corevalues .core-values-container img {
   display: none;
 }
-/* line 7, ../sass/_partials/_corevalues.scss */
+/* line 13, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner {
   position: relative;
   top: 5px;
 }
-/* line 10, ../sass/_partials/_corevalues.scss */
+/* line 16, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner .orange-banner {
   height: 65px;
   background: #ef7c14;
 }
-/* line 14, ../sass/_partials/_corevalues.scss */
+/* line 20, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner .black-banner {
   height: 15px;
   background: black;

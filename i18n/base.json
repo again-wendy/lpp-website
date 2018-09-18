@@ -14,7 +14,8 @@
         "slide2title": "\"If opportunity doesn't knock, build a door.\"",
         "slide2author": "- Milton Berle",
         "slide3title": "\"Leaders are creators. They bring their visitors to fruitition through the creative process.\"",
-        "slide3author": "- Phil Pringle"
+        "slide3author": "- Phil Pringle",
+        "scroll": ""
     },
     "menu": {
         "ourreasons": "",
@@ -22,7 +23,8 @@
         "jobsnewsletter": "",
         "jobs": "",
         "blog": "",
-        "contact": ""
+        "contact": "",
+        "lang": ""
     },
     "wowmenu": {
         "home": "",
@@ -42,17 +44,20 @@
         "whattext2": ""
     },
     "ourservices": {
-        "strategytitle": "",
-        "insightstitle": "",
-        "solutioningtitle": "",
-        "managementtitle": "",
+        "strategytitle": "Strategy as a Service",
+        "insightstitle": "Insights as a Service",
+        "solutioningtitle": "Solutioning as a Service",
+        "managementtitle": "Management as a Service",
         "strategytext": "",
         "insightstext": "",
         "solutioningtext": "",
         "managementtext": "",
         "leftbtn": "",
         "righttitle": "",
-        "righttext": "",
+        "strategycasetext": "",
+        "insightscasetext": "",
+        "solutioningcasetext": "",
+        "managementcasetext": "",
         "rightbtn": ""
     },
     "partners": {
@@ -84,7 +89,7 @@
         "alinea1": "",
         "alinea2": "",
         "alinea3": "",
-        "link": "!",
+        "link": "",
         "whoisdaphne": ""
     },
     "jobs": {
@@ -102,13 +107,16 @@
         "names": "",
         "email": "",
         "send": "",
-        "sentsuccess": ""
+        "sentsuccess": "",
+        "attention": "",
+        "addresschange": ""
     },
     "corevalues": {
-        "title": ""
+        "title": "",
+        "text": ""
     },
     "strategypage": {
-        "pagetitle": "",
+        "pagetitle": "Strategy as a Service",
         "lefttext": "",
         "righttext": "",
         "moreinfo": "",
@@ -122,6 +130,10 @@
             "packagetext": "",
             "channeltitle": "",
             "channeltext": ""
+        },
+        "case": {
+            "title": "",
+            "comingsoon": ""
         }
     },
     "insightspage": {
@@ -142,10 +154,39 @@
             "valuetext": "",
             "compliancetitle": "",
             "compliancetext": ""
+        },
+        "case": {
+            "title": "",
+            "quote": "",
+            "turnover": "",
+            "suppliers": "",
+            "invoices": "",
+            "block1title": "",
+            "block1text1": "",
+            "block1text2": "",
+            "block1text3": "",
+            "block1text4": "",
+            "block1text5": "",
+            "block2title": "",
+            "block2text1": "",
+            "block2text2": "",
+            "block2text3": "",
+            "block2text4": "",
+            "block3title": "",
+            "block3text1": "",
+            "block3text2": "",
+            "block3text3": "",
+            "block4title": "",
+            "block4text1": "",
+            "block4text2": "",
+            "block4text3": "",
+            "block4text4": "",
+            "block4text5": "",
+            "block4text6": ""
         }
     },
     "solutioningpage": {
-        "pagetitle": "",
+        "pagetitle": "Solutioning as a Service",
         "lefttext": "",
         "righttext": "",
         "moreinfo": "",
@@ -159,6 +200,10 @@
             "transformationtext": "",
             "transitiontitle": "",
             "transitiontext": ""
+        },
+        "case": {
+            "title": "",
+            "comingsoon": ""
         }
     },
     "managementpage": {
@@ -176,7 +221,15 @@
             "transformationtext": "",
             "transitiontitle": "",
             "transitiontext": ""
+        },
+        "case": {
+            "title": "",
+            "comingsoon": ""
         }
+    },
+    "404": {
+        "title": "",
+        "text": ""
     },
     "wowpage": {
         "hovertext": "",
@@ -209,6 +262,32 @@
         "wb": {
             "subtitle": ""
         }
+    },
+    "roadmappage": {
+        "stage1": "",
+        "stage1text1": "",
+        "stage1text2": "",
+        "stage2": "",
+        "stage2text1": "",
+        "stage2text2": "",
+        "stage2text3": "",
+        "stage2text4": "",
+        "stage3": "",
+        "stage3text1": "",
+        "stage3text2": "",
+        "stage3text3": "",
+        "stage4": "",
+        "stage4text1": "",
+        "stage4text2": "",
+        "stage4text3": "",
+        "stage5": "",
+        "stage5text1": "",
+        "stage5text2": "",
+        "stage5text3": "",
+        "stage5text4": "",
+        "gotoblog": "",
+        "downloadimg": "",
+        "morestages": ""
     },
     "popup": {
         "text": "",

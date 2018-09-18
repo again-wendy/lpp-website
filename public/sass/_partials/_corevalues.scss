@@ -1,5 +1,11 @@
 .corevalues {
     .core-values-container {
+        p {
+            padding: 0 15%;
+            @media (max-width: 900px) {
+                padding: 0;
+            }
+        }
         img {
             display: none;
         }

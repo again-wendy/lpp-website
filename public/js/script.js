@@ -260,7 +260,7 @@ function setActiveNavItem() {
 
 function copyright() {
     var year = (new Date()).getFullYear();
-    var html = `<p class="copyright">&copy; LAKRAN Procurement Professionals ${year}</p>`;
+    var html = "<p class='copyright'>&copy; LAKRAN Procurement Professionals " + year + ">/p>";
     $('footer .container').prepend(html);
 }
 
