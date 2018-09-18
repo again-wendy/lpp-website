@@ -105,7 +105,23 @@
     },
     "corevalues": {
         "title": "Our core values",
-        "text": "Our core values stand for what we do and who we are. It determines how we tackle things together as a team and how we do things differently than others."
+        "text": "Our core values stand for what we do and who we are. It determines how we tackle things together as a team and how we do things differently than others.",
+        "responsibilitytitle": "Responsibility",
+        "responsibilitytext": "We give the right example regarding personal leadership. We take active responsibility for everything we do and what we are responsible for. Whether it's about work, end result for customers, environment or social impact.",
+        "greatexptitle": "Great experience",
+        "greatexptext": "We make projects memorable, we celebrate successes, do fun things and just have daily fun on the work floor. ",
+        "valuetitle": "Value",
+        "valuetext": "We try to think more about value creation in logical ways for our customers, but also on less predictable sides. Saving expenses is not always our first and only reflex.",
+        "efficiencytitle": "Efficiency",
+        "efficiencytext": "We try to do what we do as smart, quick and effective as possible. In any case, we live up to our promises.  ",
+        "diversitytitle": "Diversity",
+        "diversitytext": "We don't just focus on a diverse team, we embrace everyone who thinks differently, and we look for their perspective instead of condemning it. ",
+        "creativitytitle": "Creativity",
+        "creativitytext": "We are actively wondering whether 'that which already exists' and 'that what others do' are the only solutions from which we can choose. We approach matters from alternative angles as much as possible and are gifted in coming up with new solutions.",
+        "candomentalitytitle": "Can-do mentality",
+        "candomentalitytext": "We do not just do what we say, we tend to do what others say that cannot be done. \"impossible\" does not exist with us.",
+        "whatwedo": "What we do",
+        "whoweare": "Who we are"
     },
     "strategypage": {
         "pagetitle": "Strategy as a Service",

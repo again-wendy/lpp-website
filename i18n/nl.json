@@ -113,7 +113,23 @@
     },
     "corevalues": {
         "title": "Onze core values",
-        "text": "Onze core values staan voor wat we doen én wie we zijn. Het bepaalt hoe wij dingen samen als team aanpakken en wij de dingen anders doen dan andere."
+        "text": "Onze core values staan voor wat we doen én wie we zijn. Het bepaalt hoe wij dingen samen als team aanpakken en wij de dingen anders doen dan andere.",
+        "responsibilitytitle": "Responsibility",
+        "responsibilitytext": "Persoonlijk leiderschap, we geven het goede voorbeeld. We nemen actief verantwoordelijkheid voor alles wat we doen en waar we oorzaak in zijn. Of dat nu werk, eindresultaat voor klanten, milieu of sociale impact betreft.",
+        "greatexptitle": "Great experience",
+        "greatexptext": "We maken projecten gedenkwaardig, we vieren successen, doen leuke dingen en hebben gewoon dagelijks plezier op de werkvloer.",
+        "valuetitle": "Value",
+        "valuetext": "We proberen meer te denken in waarde creatie op logische punten bij onze klanten, maar ook op minder voorspelbare fronten. Kostenbesparing is niet altijd onze eerste en enige reflex.",
+        "efficiencytitle": "Efficiency",
+        "efficiencytext": "Dat wat we doen, proberen we zo slim, snel en effectief mogelijk te doen. In ieder geval komen we na wat we beloven.",
+        "diversitytitle": "Diversity",
+        "diversitytext": "We sturen niet alleen op een divers team, we omarmen iedereen die anders denkt en zoeken hun perspectief op in plaats van dit te veroordelen.",
+        "creativitytitle": "Creativity",
+        "creativitytext": "We vragen ons actief af of ‘dat wat al bestaat’ en ‘dat want anderen doen’ wel de enige oplossingen zijn waaruit we kunnen kiezen. We benaderen zaken zoveel mogelijk vanuit alternatieve hoeken en zijn begaafd in bedenken van nieuwe oplossingen.",
+        "candomentalitytitle": "Can-do mentality",
+        "candomentalitytext": "We doen niet alleen wat we zeggen, we hebben de neiging te doen waarvan andere zeggen dat het niet kan. \"Kan niet\" bestaat bij ons dus niet.",
+        "whatwedo": "Dat wat we doen",
+        "whoweare": "Dat wie we zijn"
     },
     "strategypage": {
         "pagetitle": "Strategy as a Service",

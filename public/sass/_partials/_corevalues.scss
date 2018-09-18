@@ -1,13 +1,73 @@
 .corevalues {
-    .core-values-container {
-        p {
-            padding: 0 15%;
-            @media (max-width: 900px) {
-                padding: 0;
+    .core-values {
+        @include displayFlex;
+        padding: 0 5%;
+        .left {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            .item-1 { background: #d9ce00; }
+            .item-2 { background: #ccbd00; }
+            .item-3 { background: #af9a11; }
+            .item-4 { background: #a58913; }
+        }
+        .middle {
+            @include prefix(flex, 2 1 0, webkit moz o);
+            padding: 20px;
+            .text {
+                @include displayFlex;
+                margin-top: 30px;
+                .values {
+                    @include prefix(flex, 1 1 0, webkit moz o);
+                    h4 {
+                        font-size: 1.6rem;
+                        margin: 0;
+                    }
+                    h5 {
+                        font-size: 1.3rem;
+                        margin: 0;
+                    }
+                    .stripe {
+                        height: 5px;
+                        background: $linear-gradient;
+                        margin: 5px 0;
+                    }
+                }
+                .left-text {
+                    text-align: right;
+                    padding-right: 5px;
+                    color: #a48d15;
+                }
+                .right-text {
+                    text-align: left;
+                    padding-left: 5px;
+                    color: $primary;
+                    .stripe {
+                        background: $linear-gradient-turned;
+                    }
+                }
             }
         }
-        img {
-            display: none;
+        .right {
+            @include prefix(flex, 1 1 0, webkit moz o);
+            .item-1 {background: $primary}
+            .item-2 {background: #e96132;}
+            .item-3 {background: #c65317;}
+        }
+        .item {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-bottom: 10px;
+            h5 {
+                font-size: 1.2rem;
+                margin: 3px 0 0 0;
+            }
+            p {
+                margin: 3px 0;
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 767px) {
+            display: block;
         }
     }
     .group-banner {

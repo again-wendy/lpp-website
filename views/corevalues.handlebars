@@ -2,13 +2,55 @@
 
 <div class="corevalues">
     <section id="corevalues">
-        <div class="container">
-            <h2 class="section-title">{{ tl.corevalues.title }}</h2>
-            <div class="title-border"></div>
-            <div class="text-center core-values-container">
-                <p>{{ tl.corevalues.text }}</p>
-                <img class="nl" src="./public/images/corevalues-nl.png" alt="Onze core values">
-                <img class="en" src="./public/images/corevalues-en.png" alt="Our core values">
+        <h2 class="section-title">{{ tl.corevalues.title }}</h2>
+        <div class="title-border"></div>
+        <div class="core-values">
+            <div class="left">
+                <div class="item item-1 responsibility">
+                    <h5>{{ tl.corevalues.responsibilitytitle }}</h5>
+                    <p>{{ tl.corevalues.responsibilitytext }}</p>
+                </div>
+                <div class="item item-2 efficiency">
+                    <h5>{{ tl.corevalues.efficiencytitle }}</h5>
+                    <p>{{ tl.corevalues.efficiencytext }}</p>
+                </div>
+                <div class="item item-3 value">
+                    <h5>{{ tl.corevalues.valuetitle }}</h5>
+                    <p>{{ tl.corevalues.valuetext }}</p>
+                </div>
+                <div class="item item-4 greatexp">
+                    <h5>{{ tl.corevalues.greatexptitle }}</h5>
+                    <p>{{ tl.corevalues.greatexptext }}</p>
+                </div>
+            </div>
+            <div class="middle text-center">
+                <img src="./public/images/corevalues.png" alt="Core values">
+                <div class="text">
+                    <div class="values left-text">
+                        <h4>Result values</h4>
+                        <h5>{{ tl.corevalues.whatwedo }}</h5>
+                        <div class="stripe"></div>
+                    </div>
+                    <div class="values right-text">
+                        <h4>Spirit values</h4>
+                        <h5>{{ tl.corevalues.whoweare }}</h5>
+                        <div class="stripe"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="item item-1">
+                    <h5>{{ tl.corevalues.candomentalitytitle }}</h5>
+                    <p>{{ tl.corevalues.candomentalitytext }}</p>
+                </div>
+                <div class="item item-2">
+                    <h5>{{ tl.corevalues.diversitytitle }}</h5>
+                    <p>{{ tl.corevalues.diversitytext }}</p>
+                </div>
+                <div class="item item-3">
+                    <h5>{{ tl.corevalues.creativitytitle }}</h5>
+                    <p>{{ tl.corevalues.creativitytext }}</p>
+                </div>
             </div>
         </div>
     </section>

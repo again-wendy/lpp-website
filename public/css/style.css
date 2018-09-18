@@ -5010,31 +5010,147 @@ footer .container .companies .company {
   display: block;
 }
 
-/* line 3, ../sass/_partials/_corevalues.scss */
-.corevalues .core-values-container p {
-  padding: 0 15%;
+/* line 2, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 5%;
 }
-@media (max-width: 900px) {
-  /* line 3, ../sass/_partials/_corevalues.scss */
-  .corevalues .core-values-container p {
-    padding: 0;
-  }
+/* line 5, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .left {
+  -webkit-flex: 1 1 0;
+  -moz-flex: 1 1 0;
+  -o-flex: 1 1 0;
+  flex: 1 1 0;
+}
+/* line 7, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .left .item-1 {
+  background: #d9ce00;
+}
+/* line 8, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .left .item-2 {
+  background: #ccbd00;
 }
 /* line 9, ../sass/_partials/_corevalues.scss */
-.corevalues .core-values-container img {
-  display: none;
+.corevalues .core-values .left .item-3 {
+  background: #af9a11;
 }
-/* line 13, ../sass/_partials/_corevalues.scss */
+/* line 10, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .left .item-4 {
+  background: #a58913;
+}
+/* line 12, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle {
+  -webkit-flex: 2 1 0;
+  -moz-flex: 2 1 0;
+  -o-flex: 2 1 0;
+  flex: 2 1 0;
+  padding: 20px;
+}
+/* line 15, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 30px;
+}
+/* line 18, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .values {
+  -webkit-flex: 1 1 0;
+  -moz-flex: 1 1 0;
+  -o-flex: 1 1 0;
+  flex: 1 1 0;
+}
+/* line 20, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .values h4 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+/* line 24, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .values h5 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+/* line 28, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .values .stripe {
+  height: 5px;
+  background: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
+  margin: 5px 0;
+}
+/* line 34, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .left-text {
+  text-align: right;
+  padding-right: 5px;
+  color: #a48d15;
+}
+/* line 39, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .right-text {
+  text-align: left;
+  padding-left: 5px;
+  color: #ef7c14;
+}
+/* line 43, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .middle .text .right-text .stripe {
+  background: linear-gradient(90deg, #e4352e 0%, #eb6232 15%, #ee7616 65%, #ffef23 95%);
+}
+/* line 49, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .right {
+  -webkit-flex: 1 1 0;
+  -moz-flex: 1 1 0;
+  -o-flex: 1 1 0;
+  flex: 1 1 0;
+}
+/* line 51, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .right .item-1 {
+  background: #ef7c14;
+}
+/* line 52, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .right .item-2 {
+  background: #e96132;
+}
+/* line 53, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .right .item-3 {
+  background: #c65317;
+}
+/* line 55, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .item {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 60, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .item h5 {
+  font-size: 1.2rem;
+  margin: 3px 0 0 0;
+}
+/* line 64, ../sass/_partials/_corevalues.scss */
+.corevalues .core-values .item p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+@media (max-width: 767px) {
+  /* line 2, ../sass/_partials/_corevalues.scss */
+  .corevalues .core-values {
+    display: block;
+  }
+}
+/* line 73, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner {
   position: relative;
   top: 5px;
 }
-/* line 16, ../sass/_partials/_corevalues.scss */
+/* line 76, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner .orange-banner {
   height: 65px;
   background: #ef7c14;
 }
-/* line 20, ../sass/_partials/_corevalues.scss */
+/* line 80, ../sass/_partials/_corevalues.scss */
 .corevalues .group-banner .black-banner {
   height: 15px;
   background: black;

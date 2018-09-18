@@ -113,7 +113,22 @@
     },
     "corevalues": {
         "title": "",
-        "text": ""
+        "text": "",
+        "responsibilitytext": "",
+        "greatexptitle": "",
+        "greatexptext": "",
+        "valuetitle": "",
+        "valuetext": "",
+        "efficiencytitle": "",
+        "efficiencytext": "",
+        "diversitytitle": "",
+        "diversitytext": "",
+        "creativitytitle": "",
+        "creativitytext": "",
+        "candomentalitytitle": "",
+        "candomentalitytext": "",
+        "whatwedo": "",
+        "whoweare": ""
     },
     "strategypage": {
         "pagetitle": "Strategy as a Service",

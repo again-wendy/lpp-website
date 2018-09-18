@@ -21,12 +21,10 @@ $(document).ready(function() {
     if(checkLang().indexOf("nl") != -1) {
         $("#language").find('.current').find('img').attr('src', './public/images/lang/nl.png').attr('alt', 'Nederlands');
         Cookies.set("ulang", "nl");
-        coreValueImg('nl');
     } else {
         $("#language").find('.current').find('img').attr('src', './public/images/lang/en.png').attr('alt', 'English');;
         Cookies.set("ulang", "en");
         hideBlogsWhitepapers();
-        coreValueImg('en');
     }
 
     // Code for the hero images slider on homepage
@@ -241,13 +239,6 @@ function setLang($event) {
     }
     console.log(url);
     console.log(path);
-}
-
-// Show right core value image
-function coreValueImg(lang) {
-    if( $(".corevalues").length ) {
-        $(".corevalues .core-values-container ." + lang).show();
-    }
 }
 
 function setActiveNavItem() {
