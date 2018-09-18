@@ -160,6 +160,12 @@
             }
         }
     }
+    .service-circles {
+        padding: 0 10%;
+        @media (max-width: 1150px) {
+            padding: 0;
+        }
+    }
     @media(max-width: 900px) {
         .service-circles {
             display: block;
@@ -290,6 +296,12 @@
                     top: 414px;
                 }
             }
+        }
+    }
+    .service-circles {
+        padding: 0 10%;
+        @media (max-width: 1150px) {
+            padding: 0;
         }
     }
     .page-text {
@@ -439,13 +451,24 @@
             }
         }
     }
-    .service-circle {
-        .circle-title {
-            font-size: 1.2rem;
-            top: 8%;
+    .service-circles {
+        padding: 0 10%;
+        margin-top: 80px;
+        @media (max-width: 1150px) {
+            padding: 0;
         }
-        p {
-            font-size: 1rem;
+        .service-circle {
+            padding: 0 10%;
+            @media (max-width: 1150px) {
+                padding: 0;
+            }
+            .circle-title {
+                font-size: 1.2rem;
+                top: 8%;
+            }
+            p {
+                font-size: 1rem;
+            }
         }
     }
     @media(max-width: 650px) {
