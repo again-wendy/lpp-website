@@ -258,6 +258,10 @@ function setActiveNavItem() {
     }
 }
 
+function goBack() {
+    window.history.back();
+}
+
 function copyright() {
     var year = (new Date()).getFullYear();
     var html = "<p class='copyright'>&copy; LAKRAN Procurement Professionals " + year + ">/p>";

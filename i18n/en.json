@@ -221,7 +221,9 @@
     },
     "404": {
         "title": "Sorry, this page can not be found",
-        "text": "Please try again, or go back to"
+        "text": "Please try again, or go back to",
+        "goback": "Go back",
+        "gohome": "Go to home"
     },
     "wowpage": {
         "hovertext": "",

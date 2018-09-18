@@ -1,12 +1,16 @@
 {{> navbar}}
 
-<section id="404">
+<section id="notfound">
     <div class="container">
         <h2 class="section-title">{{ tl.404.title }}</h2>
         <div class="title-border"></div> 
-        <p class="text-center">
-            {{ tl.404.text }} <a href="/">home</a>.
-        </p>
+        <div class="text-center">
+            <img class="oops-img" src="./public/images/daphne/oops.svg" alt="Page not found">
+        </div>
+        <div class="buttons text-center">
+            <a onclick="goBack()" class="btn-primary-gradient"><span class="fa fa-chevron-left"></span> {{ tl.404.goback }}</a>
+            <a href="/" class="btn-primary-invert"><span class="fa fa-home"></span> {{ tl.404.gohome }}</a>
+        </div>
     </div>
 </section>
 

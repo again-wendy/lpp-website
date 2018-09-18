@@ -229,7 +229,9 @@
     },
     "404": {
         "title": "",
-        "text": ""
+        "text": "",
+        "goback": "",
+        "gohome": ""
     },
     "wowpage": {
         "hovertext": "",

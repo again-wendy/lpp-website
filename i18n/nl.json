@@ -229,7 +229,9 @@
     },
     "404": {
         "title": "Sorry, deze pagina kan niet gevonden worden",
-        "text": "Probeer het nog eens, of ga terug naar"
+        "text": "Probeer het nog eens, of ga terug naar",
+        "goback": "Ga terug",
+        "gohome": "Ga naar home"
     },
     "wowpage": {
         "hovertext": "Hover met je muis op een tegel hier rechts, op een design thinking onderdeel, om er meer over te lezen!",
