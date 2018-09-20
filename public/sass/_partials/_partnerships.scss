@@ -60,17 +60,23 @@
             width: 20%;
             padding: 15px;
             cursor: pointer;
-            @media(max-width: 480px) {
+            &:first-child {
+                width: 15%;
+            }
+            @media(max-width: 520px) {
                 width: 33.333%;
+                &:first-child {
+                    width: 25%;
+                }
             }
             @media(max-width: 400px) {
                 width: 50%;
+                &:first-child {
+                    width: 40%;
+                }
             }
             .color {
                 display: none;
-            }
-            &:first-child {
-                width: 15%;
             }
         }
     }
