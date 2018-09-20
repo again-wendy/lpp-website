@@ -2735,7 +2735,11 @@ section.full-screen .container {
   margin-top: -2px;
   padding: 10px 8px 11px 8px;
 }
-/* line 100, ../sass/_partials/_contact.scss */
+/* line 99, ../sass/_partials/_contact.scss */
+#contact-extended .contact-banner form input[type="submit"]:hover, #contact-extended .contact-banner form input[type="submit"]:active, #contact-extended .contact-banner form input[type="submit"]:focus {
+  background: #f4a45c;
+}
+/* line 103, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner form .antispam {
   display: none;
 }
@@ -2746,13 +2750,13 @@ section.full-screen .container {
     width: 70%;
     padding-left: 25px;
   }
-  /* line 107, ../sass/_partials/_contact.scss */
+  /* line 110, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input {
     padding: 10px 5px;
     width: 45%;
     border: 1px solid #858588;
   }
-  /* line 112, ../sass/_partials/_contact.scss */
+  /* line 115, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     padding: 6px 8px 7px 8px;
     border: none;
@@ -2762,13 +2766,13 @@ section.full-screen .container {
   }
 }
 @media (max-width: 675px) {
-  /* line 121, ../sass/_partials/_contact.scss */
+  /* line 124, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     margin-top: 5%;
   }
 }
 @media (max-width: 620px) {
-  /* line 126, ../sass/_partials/_contact.scss */
+  /* line 129, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     margin-top: 3%;
   }
@@ -2781,12 +2785,12 @@ section.full-screen .container {
     padding: 0 10px;
     text-align: center;
   }
-  /* line 135, ../sass/_partials/_contact.scss */
+  /* line 138, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input {
     width: 38%;
     margin-right: 1%;
   }
-  /* line 139, ../sass/_partials/_contact.scss */
+  /* line 142, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     width: 17%;
     margin: -2px 0 0 0;
@@ -2794,11 +2798,11 @@ section.full-screen .container {
   }
 }
 @media (max-width: 500px) {
-  /* line 146, ../sass/_partials/_contact.scss */
+  /* line 149, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input {
     width: 48%;
   }
-  /* line 149, ../sass/_partials/_contact.scss */
+  /* line 152, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     width: 60%;
     position: absolute;
@@ -2807,44 +2811,44 @@ section.full-screen .container {
   }
 }
 @media (max-width: 435px) {
-  /* line 157, ../sass/_partials/_contact.scss */
+  /* line 160, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     top: 110%;
     padding: 4px 8px;
   }
 }
 @media (max-width: 380px) {
-  /* line 163, ../sass/_partials/_contact.scss */
+  /* line 166, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input {
     width: 100%;
   }
-  /* line 166, ../sass/_partials/_contact.scss */
+  /* line 169, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner form input[type="submit"] {
     top: 105%;
   }
 }
-/* line 171, ../sass/_partials/_contact.scss */
+/* line 174, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person {
   color: white;
   padding-left: 60px;
   overflow: hidden;
 }
-/* line 175, ../sass/_partials/_contact.scss */
+/* line 178, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name {
   position: absolute;
   bottom: 18%;
 }
-/* line 178, ../sass/_partials/_contact.scss */
+/* line 181, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name .names {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-/* line 182, ../sass/_partials/_contact.scss */
+/* line 185, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .name .title {
   margin: 5px 0 0 0;
   font-family: "ZwoOT", Helvetica, Arial, sans-serif;
 }
-/* line 187, ../sass/_partials/_contact.scss */
+/* line 190, ../sass/_partials/_contact.scss */
 #contact-extended .contact-banner .person .image {
   position: absolute;
   width: 50%;
@@ -2852,11 +2856,11 @@ section.full-screen .container {
   top: 8px;
 }
 @media (max-width: 767px) {
-  /* line 194, ../sass/_partials/_contact.scss */
+  /* line 197, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name {
     bottom: 12%;
   }
-  /* line 197, ../sass/_partials/_contact.scss */
+  /* line 200, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .image {
     width: 45%;
     top: auto;
@@ -2864,42 +2868,42 @@ section.full-screen .container {
   }
 }
 @media (max-width: 620px) {
-  /* line 205, ../sass/_partials/_contact.scss */
+  /* line 208, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name .names {
     font-size: 1.6rem;
   }
-  /* line 208, ../sass/_partials/_contact.scss */
+  /* line 211, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name .title {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 530px) {
-  /* line 171, ../sass/_partials/_contact.scss */
+  /* line 174, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person {
     padding-left: 25px;
   }
-  /* line 215, ../sass/_partials/_contact.scss */
+  /* line 218, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name {
     bottom: 8%;
   }
-  /* line 218, ../sass/_partials/_contact.scss */
+  /* line 221, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .image {
     width: 50%;
   }
 }
 @media (max-width: 425px) {
-  /* line 224, ../sass/_partials/_contact.scss */
+  /* line 227, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name .names {
     font-size: 1.2rem;
     font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
   }
-  /* line 228, ../sass/_partials/_contact.scss */
+  /* line 231, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name .title {
     font-size: 1rem;
   }
 }
 @media (max-width: 380px) {
-  /* line 234, ../sass/_partials/_contact.scss */
+  /* line 237, ../sass/_partials/_contact.scss */
   #contact-extended .contact-banner .person .name {
     bottom: 4%;
   }

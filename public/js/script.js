@@ -166,6 +166,8 @@ function hideContent() {
     $(".menu-item-3").hide();
     $("#wow .blog-daphne").hide();
     $("#wow #whitepapersblogs").hide();
+    $("#nav-bar.wow .menu-item-5").hide();
+    $(".roadmap-page .section .stage .btn-primary-invert").hide();
 }
 
 // Mobile menu toggle
@@ -289,6 +291,16 @@ function menuClick(name) {
         }
     } else {
         window.location.href = "/";
+    }
+}
+
+function wowMenuClick(name) {
+    var offsetTop = 70;
+    $("html, body").animate({
+        scrollTop: $(name).offset().top - offsetTop
+    }, 1000);
+    if($(window).width() < 769) {
+        toggleMobileMenu();
     }
 }
 

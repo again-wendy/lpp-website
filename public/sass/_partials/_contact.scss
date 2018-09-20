@@ -96,6 +96,9 @@
                 cursor: pointer;
                 margin-top: -2px;
                 padding: 10px 8px 11px 8px;
+                &:hover, &:active, &:focus {
+                    background: $primary-light;
+                }
             }
             .antispam {
                 display: none;
