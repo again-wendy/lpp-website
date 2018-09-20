@@ -165,6 +165,7 @@ function hideContent() {
     $("#whitepapers").hide();
     $(".menu-item-3").hide();
     $("#wow .blog-daphne").hide();
+    $("#wow #whitepapersblogs").hide();
 }
 
 // Mobile menu toggle
@@ -543,6 +544,16 @@ function changePartnerLogo($event) {
     partnerInfo.find("." + $event).show();
 }
 
+$("#partnerships .mobile .img-wrap").hover(
+    function() {
+        $(this).find(".color").show();
+        $(this).find(".bw").hide();
+    }, function() {
+        $(this).find(".color").hide();
+        $(this).find(".bw").show();
+    }
+)
+
 $("#solutioning-page .software-logos img").hover(
     function() {
         var name = $(this).attr("class");
@@ -714,7 +725,12 @@ function getTextField() {
 		$('.header-item').connections('remove');
 		$('.text-' + hoveredListItem).show();
 		$('.item-' + hoveredListItem).addClass('active');
- 		$('.text-' + hoveredListItem + ' > .con').connections({ to: '.item-' + hoveredListItem});
+ 		$('.text-' + hoveredListItem + ' > .con').connections({ 
+             to: '.item-' + hoveredListItem,
+             css: {
+                 border: '2px solid white'
+             }
+        });
  	} else {
  		$('.text-default').show();
  	}
@@ -792,11 +808,17 @@ function getQueryString() {
 function setRoadmapStage() {
     if( $('.roadmap-page') ) {
         var queryStrings = getQueryString();
-        if( queryStrings.hasOwnProperty('step') ) {
-            var step = queryStrings.step;
-            $(".roadmap-page .section." + step).addClass('show');
-            $(".roadmap-page .stappenplan-hexagon .hexagon-stage-" + step).addClass("active-stage");
-            $("#slide-menu-stages .mobile-stages-nav ." + step).addClass("active");
+        if( queryStrings.step != undefined) {
+            if( queryStrings.hasOwnProperty('step') ) {
+                var step = queryStrings.step;
+                $(".roadmap-page .section." + step).addClass('show');
+                $(".roadmap-page .stappenplan-hexagon .hexagon-stage-" + step).addClass("active-stage");
+                $("#slide-menu-stages .mobile-stages-nav ." + step).addClass("active");
+            }
+        } else {
+            $(".roadmap-page .section.empathy").addClass('show');
+            $(".roadmap-page .stappenplan-hexagon .hexagon-stage-empathy").addClass("active-stage");
+            $("#slide-menu-stages .mobile-stages-nav .empathy").addClass("active");
         }
     }
 }

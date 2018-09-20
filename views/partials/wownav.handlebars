@@ -29,7 +29,21 @@
             <li class="menu-item menu-item-6">
                 <a onclick="menuClick('#contact')">{{ tl.wowmenu.contact }}</a>
             </li>
-            <li id="language" class="menu-item menu-item-7 lang"></li>
+            <li id="language" class="menu-item menu-item-6">
+                <div class="dropdown">
+                    <a class="current"><img src="" alt=""> <span class="fa fa-caret-down"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="item en"><a onclick="setLang('en')"><img src="./public/images/lang/en.png" alt="English"> English</a></li>
+                        <li class="item nl"><a onclick="setLang('nl')"><img src="./public/images/lang/nl.png" alt="Nederlands"> Nederlands</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile-lang en menu-item menu-item-7">
+                <a onclick="setLang('en')"><img src="./public/images/lang/en.png" alt="English"> English</a>
+            </li>
+            <li class="mobile-lang nl menu-item menu-item-8">
+                <a onclick="setLang('nl')"><img src="./public/images/lang/nl.png" alt="Nederlands"> Nederlands</a>
+            </li>
         </ul>
     </div>
 </nav>

@@ -52,10 +52,16 @@
         left: 0;
         top: -20%;
         z-index: 1;
+        @media(min-width: 1400px) {
+            top: -25%;
+        }
+        @media(min-width: 1700px) {
+            top: -30%;
+        }
         @media(max-width: 900px) {
             left: auto;
             right: 10%;
-            top: auto;
+            top: 25%;
             bottom: 15%;
         }
         img {
