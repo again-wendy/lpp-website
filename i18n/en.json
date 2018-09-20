@@ -105,6 +105,7 @@
     },
     "corevalues": {
         "title": "Our core values",
+        "intro": "Our core values stand for what we do and who we are. It determines how we tackle things together as a team and how we do things differently than others.",
         "text": "Our core values stand for what we do and who we are. It determines how we tackle things together as a team and how we do things differently than others.",
         "responsibilitytitle": "Responsibility",
         "responsibilitytext": "We give the right example regarding personal leadership. We take active responsibility for everything we do and what we are responsible for. Whether it's about work, end result for customers, environment or social impact.",
@@ -166,6 +167,7 @@
         "case": {
             "title": "Customer case Insights as a Service",
             "quote": "The dashboards are of added value during the account conversations with the Business Units. It gives insight and the ability to adjust",
+            "numbers": "Tauw numbers 2017:",
             "turnover": "Turnover",
             "suppliers": "Suppliers",
             "invoices": "Invoices",
@@ -232,7 +234,35 @@
         },
         "case": {
             "title": "Customer case Management as a Service",
-            "comingsoon": "We are still working on creating a customer case for our Management as a Service proposition. Keep an eye on this page!"
+            "comingsoon": "We are still working on creating a customer case for our Management as a Service proposition. Keep an eye on this page!",
+            "quote": "The results of the P2P research has confirmed our assumptions and gave us the right focus for the start of a P2P improvement program",
+            "numbers": "CZ numbers 2017:",
+            "turnover": "Turnover",
+            "billion": "BIL",
+            "suppliers": "Suppliers",
+            "invoices": "Invoices",
+            "block1title": "The customer",
+            "block1text1": "Dutch insurance company",
+            "block1text2": "€ 9.35 billion revenue in 2017",
+            "block1text3": "3.6 million insured",
+            "block1text4": "21% market share in the Netherlands",
+            "block1text5": "2,661 FTE employees",
+            "block1text6": "NPR Spend in 2017 €148 million",
+            "block1text7": "1,855 suppliers and 35,925 invoices  in 2017",
+            "block2title": "Assignment LAKRAN",
+            "block2text1": "P2P Pre-Scan focused on decreasing cancelled Invoice processing",
+            "block2text2": "Recommendations for P2P performance improvements",
+            "block2text3": "Defining common set of P2P Guiding Principles",
+            "block2text4": "Creating standard orderprocesses per purchasing category",
+            "block2text5": "Realizing transparency on Spend reporting and compliance",
+            "block3title": "Technology",
+            "block3text1": "Oracle PeopleSoft",
+            "block3text2": "SIMAC for invoice processing",
+            "block4title": "Value",
+            "block4text1": "Detailed cause and effect analysis on non-matching invoices",
+            "block4text2": "P2P Channels revisited ",
+            "block4text3": "Improved P2P Governance and Compliance model",
+            "block4text4": "Redesign of Spend Dashboards for P2P compliance monitoring"
         }
     },
     "404": {
@@ -242,65 +272,65 @@
         "gohome": "Go to home"
     },
     "wowpage": {
-        "hovertext": "",
-        "headerempathy": "",
-        "headerdefine": "",
-        "headerideate": "",
-        "headerprototype": "",
-        "headertest": "",
-        "headerlakran": "",
-        "tagline": "",
+        "hovertext": "Hover over one of our design thinking tiles here on the right, to read more about the subject!",
+        "headerempathy": "You get to know the issue and your target group. You look at the \"dilemma\" from all angles and then speak to the target group and capture their culture and influences in an Empathy map",
+        "headerdefine": "You're going to figure out the overarching issue. You discuss various stakeholders and capture problems, questions and insights in a Define map",
+        "headerideate": "You categorize all results. To create clusters, you put agreements together, and on this foundation you develop out of the box ideas for the overarching issue. Capture this in the Ideate map",
+        "headerprototype": "You convert clusters into tangible solutions. Think realistic; is it profitable and achievable? Capture the promising ideas and specific concepts in the Prototype map",
+        "headertest": "You test the promising and specific prototypes. You involve important stakeholders and ultimately opt for the best possible solution. Capture the experiences in the Test map",
+        "headerlakran": "This landing page is a product by LAKRAN Procurement Professionals. A go-to advisory link between purchasing organizations and software houses that provide P2P solutions. View our website by clicking on the LAKRAN logo!",
+        "tagline": "is a way of thinking by",
         "welcome": {
-            "title": "",
-            "subtitle1": "",
-            "alinea1": "",
-            "alinea2": "",
-            "subtitle2": "",
-            "alinea3": "",
-            "alinea4": "",
-            "alinea5": "",
-            "alinea6": ""
+            "title": "Hey, there you are!",
+            "subtitle1": "How nice!",
+            "alinea1": "You are on the landing page of LAKRAN presents WOW, our vision on Design Thinking. Thank you for your interest! Perhaps you are enjoying a cup of coffee with a specific question in mind or viewing this page without any context. Whatever your reasons are, get to know the vision of LAKRAN",
+            "alinea2": "I hope you find the information you are looking for and your visit to our website contributes to your success!",
+            "subtitle2": "Meet LAKRAN presents WOW",
+            "alinea3": "introduces WOW, our Way of Working",
+            "alinea4": "You may not hear it too often; Design Thinking in the purchasing sector. Still it can have a lot of added value. Design Thinking is not only a way of thinking as its name suggest, it is a mindset. A way of working, applied by our team of professionals.",
+            "alinea5": "You can now also use our",
+            "alinea6": "It can help you on your way to issues or challenges. For example within procurement, but also outside of it. This method is helpful in all kinds of scenarios. It helps you to look at issues and challenges in new and different ways. This results in surprising out of the box insights and actions, embraced by your team. It is not only thinking, but also doing!"
         },
         "discover": {
-            "title": "",
-            "alinea1": "",
-            "goto": ""
+            "title": "Discover!",
+            "alinea1": "This page takes you into our Way of Working. You will find the complete step-by-step plan with our supporting visuals. LAKRAN presents WOW is meant to help you tackle your issues. Take a look at this page, or are you looking for one of our other companies?",
+            "goto": "Go to"
         },
         "roadmap": {
-            "subtitle": ""
+            "subtitle": "Click on a step to learn more about it!"
         },
         "wb": {
-            "subtitle": ""
+            "subtitle": "Read our whitepapers and blogs about Design Thinking and WOW LAKRAN"
         }
     },
     "roadmappage": {
-        "stage1": "",
-        "stage1text1": "",
-        "stage1text2": "",
-        "stage2": "",
-        "stage2text1": "",
-        "stage2text2": "",
-        "stage2text3": "",
-        "stage2text4": "",
-        "stage3": "",
-        "stage3text1": "",
-        "stage3text2": "",
-        "stage3text3": "",
-        "stage4": "",
-        "stage4text1": "",
-        "stage4text2": "",
-        "stage4text3": "",
-        "stage5": "",
-        "stage5text1": "",
-        "stage5text2": "",
-        "stage5text3": "",
-        "stage5text4": "",
-        "gotoblog": "",
-        "downloadimg": "",
-        "morestages": ""
+        "stage1": "Stage 1",
+        "stage1text1": "You want to understand the original issue of the corresponding target group, but how? At the start of this method you will deepen yourself in the origin of the issue. Together with your team you search for answers to questions, such as: How did the issue arise? When does it occur? What makes the issue difficult to solve? What has been done before to solve the issue?",
+        "stage1text2": "To understand your target group, fill in an Empathy map with the aim to gain insight on the Pains & Gains. As a start, to gain extra insight, you determine in what form; observing, interviews, focus groups etc, empathic research is carried out. This helps you to overcome your obstacles. For example to achieve the gains (adjustment, efficiency, insight, savings, etc.). All results are captured in the Empathy map.",
+        "stage2": "Stage 2",
+        "stage2text1": "In this stage you are going to cover the overarching issue. It is advisable to put together a core team and to involve this team directly in all components. Through empathic research you will really understand the target group. This can be done by observing, conducting interviews, forming focus groups, etc. You will empathize with the experiences of different stakeholders.",
+        "stage2text2": "Capture the insights in the Define Map and include the extremes of all results in the next stage; generating ideas. Involving the target group in this stage can offer a lot of added value. The \"average\" person gives a good impression of the general impression, but it offers less inspiring insights than the extremes.",
+        "stage2text3": "On the other hand, the \"extreme\" or \"extrovert\" insights offer opportunities for creative, tangible ideas. It is good to attach a lot of value to the knowledge of the \"average\" person, but also to look for \"extreme\" sides. Different perspectives will make the process of identifying the issue easier.",
+        "stage2text4": "You start by asking yourself whether it concerns a problem, general issue, theme, dilemma or a whole new challenge and capture your observations. Now you can proceed to the next phase.",
+        "stage3": "Stage 3",
+        "stage3text1": "Now that the empathic research has been completed, you will make an analysis of all obtained insights. You categorize all results; which observations from the Define map fit together? You put the agreements together, to form clusters. This way you gain insight into different themes. If there is a solution to the theme, all individual issues of the cluster should be solved.",
+        "stage3text2": "On the basis of these clusters, you develop new, out of the box ideas for the overarching issue. Ask yourself which associations can be thought of outside the context of the question. Try to generate as many solutions as possible, without thinking about limitations. In this stage it is about quantity and not about quality! Looking through these new glasses, many creative, innovative solutions for the original issue arise.",
+        "stage3text3": "Capture these insigths in the Ideate map. Write down the individual issues per star point and the theme in the core. Based on this you remember ideas that you take with you in the next phase. This way you get perspective in a clear way!",
+        "stage4": "Stage 4",
+        "stage4text1": "In the previous stage you have developed solution directions. Now you going to develep them further. The clusters are converted into tangible ideas and solutions. This way you can determine whether your ideas are promising. This can be done in various forms, for example; developing storyboards, prototypes, writing (user) scenarios, rough sketches or visualisations.",
+        "stage4text2": "You consider whether your solutions are profitable, reachable and what you have to do for it. Is the solution achievable? Think realistic, but give every idea a fair chance! Eventually there are a few small ideas that have a good chance of success. You will notice that these small ideas come together and offer opportunities. Capture the solutions and specific concepts in the Prototype map.",
+        "stage4text3": "Tip: Testing your solution requires a good preparation. Always describe the added value of your new solution (s) for your target group. Keep prototyping until there is a product or solution that works! This is a continuous process. So in this stage choose the best solution (s), focus on them and continue to the final stage.",
+        "stage5": "Stage 5",
+        "stage5text1": "Now that a number of promising and specific solutions have been chosen and fine tuned, the final phase is being discussed. Testing your prototypes.",
+        "stage5text2": "Test these prototypes continuously in a short period of time. Continue to develop and improve the prototypes based on experiences from the end users. In this way your solution becomes better and better and it affects more issues and themes. Finally, you choose the best possible solution and capture them in the Test map. ",
+        "stage5text3": "Tip: Be sure to test your prototype with the most important stakeholders and do not just limit yourself to your core team. Involving those who play a role in the implementation can have a successful effect. Yet this is not the only important thing. Other business components also play an important role. For example, the financing and the (internal) communication with regard to your solution.",
+        "stage5text4": "This was the last stage! You have now successfully completed the LAKRAN presents WOW approach!",
+        "gotoblog": "Go to the corresponding blog",
+        "downloadimg": "Download image",
+        "morestages": "More stages"
     },
     "popup": {
-        "text": "",
-        "btn": ""
+        "text": "Do you want to stay informed? Subscribe now for our newsletter!",
+        "btn": "Yes! I would like to subscribe"
     }
 }

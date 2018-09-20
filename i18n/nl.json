@@ -113,6 +113,7 @@
     },
     "corevalues": {
         "title": "Onze core values",
+        "intro": "Onze core values staan voor wat we doen én wie we zijn. Het bepaalt hoe wij dingen samen als team aanpakken en wij de dingen anders doen dan andere.",
         "text": "Onze core values staan voor wat we doen én wie we zijn. Het bepaalt hoe wij dingen samen als team aanpakken en wij de dingen anders doen dan andere.",
         "responsibilitytitle": "Responsibility",
         "responsibilitytext": "Persoonlijk leiderschap, we geven het goede voorbeeld. We nemen actief verantwoordelijkheid voor alles wat we doen en waar we oorzaak in zijn. Of dat nu werk, eindresultaat voor klanten, milieu of sociale impact betreft.",
@@ -174,6 +175,7 @@
         "case": {
             "title": "Klant case Insights as a Service",
             "quote": "De dashboards zijn van toegevoegde waarde tijdens de accountgesprekken met de Business Units. Het geeft inzicht en de mogelijkheid om bij te sturen.",
+            "numbers": "Tauw cijfers 2017:",
             "turnover": "Omzet",
             "suppliers": "Leveranciers",
             "invoices": "Facturen",
@@ -240,7 +242,35 @@
         },
         "case": {
             "title": "Klant case Management as a Service",
-            "comingsoon": "We zijn nog bezig met het maken van een klant case voor onze Management as a Service propositie. Houd deze pagina in de gaten!"
+            "comingsoon": "We zijn nog bezig met het maken van een klant case voor onze Management as a Service propositie. Houd deze pagina in de gaten!",
+            "quote": "De uitkomsten van het P2P vooronderzoek heeft onze vooronderstellingen bevestigd en de juiste focus gegeven voor de start van een P2P verbeterprogramma",
+            "numbers": "CZ cijfers 2017:",
+            "turnover": "Omzet",
+            "billion": "MLD",
+            "suppliers": "Leveranciers",
+            "invoices": "Facturen",
+            "block1title": "De klant",
+            "block1text1": "Nederlandse verzekeringsmaatschappij",
+            "block1text2": "€ 9,35 miljard omzet in 2017",
+            "block1text3": "3,6 miljoen verzekerden",
+            "block1text4": "21% marktaandeel in Nederland",
+            "block1text5": "2.661 fte-werknemers",
+            "block1text6": "NPR Spend in 2017 €148 mijoen",
+            "block1text7": "1.855 leveranciers en  35.925 facturen in 2017",
+            "block2title": "Opdracht LAKRAN",
+            "block2text1": "P2P Pre-Scan gericht op vermindering uitval factuurverwerking",
+            "block2text2": "Doen van aanbevelingen voor P2P-prestatie verbeteringen",
+            "block2text3": "Definiëren gemeenschappelijke set van P2P uitgangspunten",
+            "block2text4": "Creëren standaard bestelprocessen per inkoop categorie",
+            "block2text5": "Realiseren proces compliance rapportages",
+            "block3title": "Technologie",
+            "block3text1": "Oracle PeopleSoft",
+            "block3text2": "SIMAC voor factuur scanning en verwerking",
+            "block4title": "Waarde",
+            "block4text1": "Gedetailleerde oorzaak- gevolg analyse op uitval facturen",
+            "block4text2": "Herijking P2P-kanalenstrategie",
+            "block4text3": "Verbeterd P2P Governance en Compliance-model",
+            "block4text4": "Herontwerp van Spend Dashboards compliance monitoring"
         }
     },
     "404": {

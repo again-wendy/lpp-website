@@ -1,5 +1,25 @@
 .customer-case {
     position: relative;
+    .section-title {
+        @media(max-width: 630px) {
+            padding: 0 8%;
+        }
+        @media(max-width: 470px) {
+            padding: 0 10%;
+        }
+    }
+    .container {
+        @media(max-width: 630px) {
+            width: 90%;
+            margin-left: 7%;
+            margin-right: 3%;
+        }
+        @media(max-width: 470px) {
+            width: 85%;
+            margin-left: 9%;
+            margin-right: 6%;
+        }
+    }
     .choose-service {
         position: absolute;
         left: 0;
@@ -61,7 +81,7 @@
         }
     }
     .quote {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         .inner {
             position: relative;
@@ -110,6 +130,15 @@
                 left: 5%;
                 text-align: center;
             }
+        }
+        @media (max-width: 1060px) {
+            width: 70%;
+        }
+        @media (max-width: 765px) {
+            width: 80%;
+        }
+        @media (max-width: 565px) {
+            width: 70%;
         }
     }
     .coming-soon {
@@ -283,7 +312,7 @@
             }
         }
         @media (max-width: 660px) {
-            width: 90%;
+            width: 80%;
             .inner {
                 padding: 35px;
             }

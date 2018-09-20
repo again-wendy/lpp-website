@@ -65,9 +65,10 @@ const transporter = nodemailer.createTransport({
 
 // Set routes
 app.get('/', (req, res) => {
-    request('http://simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
-    var temp = JSON.parse(body) 
-    temp = temp.slice(0, 4);   
+    request('http://blog.simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+    var temp = JSON.parse(body);
+    temp = removeSorryPost(temp);  
+    temp = temp.slice(0, 4);  
     temp = getFeaturedImage(temp);
     res.render('home', {
             title: "LAKRAN Procurement Professionals",
@@ -76,6 +77,12 @@ app.get('/', (req, res) => {
         });
     });
 });
+
+// app.get('/blogs', (req, res) => {
+//     request('http://blog.simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+//         res.send(body);
+//     });
+// });
 
 app.get('/strategy-as-a-service', (req, res) => {
     res.render('strategy', {
@@ -160,7 +167,7 @@ app.post('/contactform', (req, res) => {
 
     let options = {
         from: '"Contactformulier Simplifying Purchasing" <info@lakran.com>',
-        to: 'wendy.dimmendaal@again.nl',
+        to: 'herman.ursinus@lakran.com; rene.berns@lakran.com',
         subject: 'Aanvraag voor contact',
         text: 'Test 123',
         html: output
@@ -198,7 +205,7 @@ app.post('/get-dashboarding-whitepaper', (req, res) => {
     }
 
     let helperOptions = {
-        from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
+        from: '"Herman Ursinus" <herman.ursinus@lakran.com>',
         to: req.body.email,
         subject: "LAKRAN Whitepaper",
         text: "",
@@ -242,7 +249,7 @@ app.post('/get-fiori-whitepaper', (req, res) => {
     }
 
     let helperOptions = {
-        from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
+        from: '"Herman Ursinus" <herman.ursinus@lakran.com>',
         to: req.body.email,
         subject: "LAKRAN Whitepaper",
         text: "",
@@ -274,7 +281,7 @@ const sendMailLakran = (subject, email) => {
 
     let helperOptions = {
         from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
-        to: "wendy.dimmendaal@again.nl",
+        to: "herman.ursinus@lakran.com; rene.berns@lakran.com",
         subject: "LAKRAN Whitepaper download",
         text: "",
         html: output
@@ -301,6 +308,15 @@ const getFeaturedImage = (arr) => {
     for(var i = 0; i < arr.length; i++) {
         var img = arr[i]._embedded['wp:featuredmedia'][0].source_url;
         arr[i].img = img;
+    }
+    return arr;
+}
+
+const removeSorryPost = (arr) => {
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i].id === 11344) {
+            arr.splice(i, 1);
+        }
     }
     return arr;
 }

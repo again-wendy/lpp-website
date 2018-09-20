@@ -2,6 +2,7 @@
     .core-values {
         @include displayFlex;
         padding: 0 5%;
+        margin-top: 35px;
         .left {
             @include prefix(flex, 1 1 0, webkit moz o);
             .item-1 { background: #d9ce00; }

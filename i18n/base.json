@@ -113,6 +113,7 @@
     },
     "corevalues": {
         "title": "",
+        "intro": "",
         "text": "",
         "responsibilitytext": "",
         "greatexptitle": "",
@@ -173,6 +174,7 @@
         "case": {
             "title": "",
             "quote": "",
+            "numbers": "",
             "turnover": "",
             "suppliers": "",
             "invoices": "",
@@ -239,7 +241,35 @@
         },
         "case": {
             "title": "",
-            "comingsoon": ""
+            "comingsoon": "",
+            "quote": "",
+            "numbers": "",
+            "turnover": "",
+            "billion": "",
+            "suppliers": "",
+            "invoices": "",
+            "block1title": "",
+            "block1text1": "",
+            "block1text2": "",
+            "block1text3": "",
+            "block1text4": "",
+            "block1text5": "",
+            "block1text6": "",
+            "block1text7": "",
+            "block2title": "",
+            "block2text1": "",
+            "block2text2": "",
+            "block2text3": "",
+            "block2text4": "",
+            "block2text5": "",
+            "block3title": "",
+            "block3text1": "",
+            "block3text2": "",
+            "block4title": "",
+            "block4text1": "",
+            "block4text2": "",
+            "block4text3": "",
+            "block4text4": ""
         }
     },
     "404": {

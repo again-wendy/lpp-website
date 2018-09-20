@@ -24,7 +24,7 @@ $(document).ready(function() {
     } else {
         $("#language").find('.current').find('img').attr('src', './public/images/lang/en.png').attr('alt', 'English');;
         Cookies.set("ulang", "en");
-        hideBlogsWhitepapers();
+        hideContent();
     }
 
     // Code for the hero images slider on homepage
@@ -159,11 +159,12 @@ if($(window).width() > 768) {
     );
 }
 
-// Hide blogs and whitepaper for now when language is English
-function hideBlogsWhitepapers() {
+// Hide content for now when language is English
+function hideContent() {
     $("#blogs").hide();
     $("#whitepapers").hide();
     $(".menu-item-3").hide();
+    $("#wow .blog-daphne").hide();
 }
 
 // Mobile menu toggle
@@ -174,10 +175,14 @@ function toggleMobileMenu() {
         // open menu and change icon to cross
         menu.slideDown();
         icon.addClass("open");
+        menu.find("#language").hide();
+        menu.find(".mobile-lang").show();
     } else {
         // close menu and change icon to bars
         menu.slideUp();
         icon.removeClass("open");
+        menu.find("#language").show();
+        menu.find(".mobile-lang").hide();
     }
 }
 
@@ -255,7 +260,7 @@ function goBack() {
 
 function copyright() {
     var year = (new Date()).getFullYear();
-    var html = "<p class='copyright'>&copy; LAKRAN Procurement Professionals " + year + ">/p>";
+    var html = "<p class='copyright'>&copy; LAKRAN Procurement Professionals " + year + "</p>";
     $('footer .container').prepend(html);
 }
 
@@ -551,6 +556,7 @@ $("#solutioning-page .software-logos img").hover(
 function getBlogs() {
     $.getJSON("blogs", function(data) {
         var items = data;
+        console.log(items);
     });
 }
 
