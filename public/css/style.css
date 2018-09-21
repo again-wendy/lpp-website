@@ -487,28 +487,29 @@ a.btn-primary, a.btn-primary-xl {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 99;
 }
-/* line 23, ../sass/_partials/_banners.scss */
+/* line 24, ../sass/_partials/_banners.scss */
 .banner-scroll .banner-text h2 {
   font-size: 3.2rem;
 }
 
-/* line 29, ../sass/_partials/_banners.scss */
+/* line 30, ../sass/_partials/_banners.scss */
 .banner {
   width: 100%;
   position: relative;
 }
 @media (max-width: 400px) {
-  /* line 29, ../sass/_partials/_banners.scss */
+  /* line 30, ../sass/_partials/_banners.scss */
   .banner {
     display: none;
   }
 }
-/* line 35, ../sass/_partials/_banners.scss */
+/* line 36, ../sass/_partials/_banners.scss */
 .banner img {
   position: relative;
 }
-/* line 38, ../sass/_partials/_banners.scss */
+/* line 39, ../sass/_partials/_banners.scss */
 .banner .banner-text {
   color: white;
   position: absolute;
@@ -516,39 +517,40 @@ a.btn-primary, a.btn-primary-xl {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 99;
 }
-/* line 45, ../sass/_partials/_banners.scss */
+/* line 47, ../sass/_partials/_banners.scss */
 .banner .banner-text h2 {
   font-size: 3.2rem;
 }
 
 @media (max-width: 767px) {
-  /* line 52, ../sass/_partials/_banners.scss */
+  /* line 54, ../sass/_partials/_banners.scss */
   .banner.banner-coffee .banner-text h2 {
     margin: 0;
     font-size: 2.6rem;
   }
 }
 @media (max-width: 600px) {
-  /* line 52, ../sass/_partials/_banners.scss */
+  /* line 54, ../sass/_partials/_banners.scss */
   .banner.banner-coffee .banner-text h2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 480px) {
-  /* line 52, ../sass/_partials/_banners.scss */
+  /* line 54, ../sass/_partials/_banners.scss */
   .banner.banner-coffee .banner-text h2 {
     font-size: 1.6rem;
     font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
   }
 }
 
-/* line 67, ../sass/_partials/_banners.scss */
+/* line 69, ../sass/_partials/_banners.scss */
 .banner-keep-learning {
   width: 100%;
   position: relative;
 }
-/* line 70, ../sass/_partials/_banners.scss */
+/* line 72, ../sass/_partials/_banners.scss */
 .banner-keep-learning img {
   position: relative;
 }
@@ -2297,144 +2299,148 @@ section.full-screen .container {
     margin-left: 0;
   }
 }
-/* line 14, ../sass/_partials/_wow.scss */
+/* line 13, ../sass/_partials/_wow.scss */
+#wow .daphne-moving-svg #nose {
+  fill: #725033;
+}
+/* line 17, ../sass/_partials/_wow.scss */
 #wow .wow-text {
   text-align: center;
 }
-/* line 16, ../sass/_partials/_wow.scss */
+/* line 19, ../sass/_partials/_wow.scss */
 #wow .wow-text .btn-primary-gradient {
   margin-right: 15px;
 }
 @media (max-width: 424px) {
-  /* line 16, ../sass/_partials/_wow.scss */
+  /* line 19, ../sass/_partials/_wow.scss */
   #wow .wow-text .btn-primary-gradient {
     margin-right: 0;
   }
 }
 @media (max-width: 406px) {
-  /* line 16, ../sass/_partials/_wow.scss */
+  /* line 19, ../sass/_partials/_wow.scss */
   #wow .wow-text .btn-primary-gradient {
     margin-bottom: 15px;
   }
 }
-/* line 26, ../sass/_partials/_wow.scss */
+/* line 29, ../sass/_partials/_wow.scss */
 #wow .svg-cls-2 {
   fill: #595a5c;
 }
-/* line 30, ../sass/_partials/_wow.scss */
+/* line 33, ../sass/_partials/_wow.scss */
 #wow .backhair {
   fill: #de9b3d;
 }
-/* line 34, ../sass/_partials/_wow.scss */
+/* line 37, ../sass/_partials/_wow.scss */
 #wow .skin {
   fill: #efbd7f;
 }
-/* line 38, ../sass/_partials/_wow.scss */
+/* line 41, ../sass/_partials/_wow.scss */
 #wow .eye-white,
 #wow .teeth-white,
 #wow .reflection-white {
   fill: white;
 }
-/* line 44, ../sass/_partials/_wow.scss */
+/* line 47, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10,
 #wow .svg-cls-23,
 #wow .svg-cls-25 {
   fill: none;
 }
-/* line 50, ../sass/_partials/_wow.scss */
+/* line 53, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10 {
   stroke: #d6a26c;
 }
-/* line 54, ../sass/_partials/_wow.scss */
+/* line 57, ../sass/_partials/_wow.scss */
 #wow .svg-cls-10,
 #wow .svg-cls-23,
 #wow .svg-cls-25 {
   stroke-miterlimit: 10;
   stroke-width: .25px;
 }
-/* line 61, ../sass/_partials/_wow.scss */
+/* line 64, ../sass/_partials/_wow.scss */
 #wow .eye-white,
 #wow .svg-cls-23 {
   stroke: #ce9e6c;
 }
-/* line 66, ../sass/_partials/_wow.scss */
+/* line 69, ../sass/_partials/_wow.scss */
 #wow .svg-cls-12 {
   fill: #ad5557;
 }
-/* line 70, ../sass/_partials/_wow.scss */
+/* line 73, ../sass/_partials/_wow.scss */
 #wow .svg-cls-13 {
   fill: #2cc0d2;
 }
-/* line 74, ../sass/_partials/_wow.scss */
+/* line 77, ../sass/_partials/_wow.scss */
 #wow .eye-black {
   fill: #231f20;
 }
-/* line 78, ../sass/_partials/_wow.scss */
+/* line 81, ../sass/_partials/_wow.scss */
 #wow .svg-cls-25 {
   stroke: #231f20;
 }
-/* line 82, ../sass/_partials/_wow.scss */
+/* line 85, ../sass/_partials/_wow.scss */
 #wow .eyebrows {
   fill: #d49132;
 }
-/* line 86, ../sass/_partials/_wow.scss */
+/* line 89, ../sass/_partials/_wow.scss */
 #wow .shadows {
   fill: #5e4021;
   opacity: .5;
 }
-/* line 91, ../sass/_partials/_wow.scss */
+/* line 94, ../sass/_partials/_wow.scss */
 #wow .svg-lakran-orange {
   fill: #ef7c14;
 }
-/* line 95, ../sass/_partials/_wow.scss */
+/* line 98, ../sass/_partials/_wow.scss */
 #wow .svg-cls-44 {
   fill: #c0d438;
 }
-/* line 99, ../sass/_partials/_wow.scss */
+/* line 102, ../sass/_partials/_wow.scss */
 #wow .svg-cls-45 {
   fill: #e5d741;
 }
-/* line 104, ../sass/_partials/_wow.scss */
+/* line 107, ../sass/_partials/_wow.scss */
 #wow .text-letter {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
-/* line 109, ../sass/_partials/_wow.scss */
+/* line 112, ../sass/_partials/_wow.scss */
 #wow .text-zin,
 #wow .text-letter {
   font-size: 11.595px;
   fill: #5a5b5c;
 }
-/* line 115, ../sass/_partials/_wow.scss */
+/* line 118, ../sass/_partials/_wow.scss */
 #wow .text-zin {
   font-family: MyriadPro-Regular, Myriad Pro;
 }
-/* line 119, ../sass/_partials/_wow.scss */
+/* line 122, ../sass/_partials/_wow.scss */
 #wow .eye {
   animation: squeeze 2.4s infinite;
 }
-/* line 123, ../sass/_partials/_wow.scss */
+/* line 126, ../sass/_partials/_wow.scss */
 #wow .neckdark {
   animation: pulse 3s infinite;
 }
-/* line 127, ../sass/_partials/_wow.scss */
+/* line 130, ../sass/_partials/_wow.scss */
 #wow .upperlip, #wow .mouth-inside {
   animation: smile 5s infinite;
 }
-/* line 131, ../sass/_partials/_wow.scss */
+/* line 134, ../sass/_partials/_wow.scss */
 #wow .black-parts {
   animation: onsmilehide 15s infinite;
 }
-/* line 135, ../sass/_partials/_wow.scss */
+/* line 138, ../sass/_partials/_wow.scss */
 #wow .underlip {
   animation: smileunderlip 15s infinite;
 }
-/* line 139, ../sass/_partials/_wow.scss */
+/* line 142, ../sass/_partials/_wow.scss */
 #wow .arrow {
   animation: bounce 5s infinite;
   cursor: pointer;
 }
-/* line 144, ../sass/_partials/_wow.scss */
+/* line 147, ../sass/_partials/_wow.scss */
 #wow .daphne-moving-svg {
   padding-left: 30px;
 }
@@ -2443,19 +2449,19 @@ section.full-screen .container {
   #wow {
     /* IE10 & IE11 CSS styles go here */
   }
-  /* line 151, ../sass/_partials/_wow.scss */
+  /* line 154, ../sass/_partials/_wow.scss */
   #wow .daphne-moving-svg {
     height: 300px;
   }
 }
-/* line 156, ../sass/_partials/_wow.scss */
+/* line 159, ../sass/_partials/_wow.scss */
 #wow .wow-overlay {
   opacity: 0.7;
   fill: white;
   stroke-width: 1;
   stroke: #ef7c14;
 }
-/* line 166, ../sass/_partials/_wow.scss */
+/* line 169, ../sass/_partials/_wow.scss */
 #wow svg #hexagon:hover .wow-overlay,
 #wow svg #hexagon:focus .wow-overlay,
 #wow svg #hexagon:active .wow-overlay {
@@ -2466,21 +2472,21 @@ section.full-screen .container {
   transition: all 0.3s;
   cursor: pointer;
 }
-/* line 176, ../sass/_partials/_wow.scss */
+/* line 179, ../sass/_partials/_wow.scss */
 #wow .body-daphne a {
   text-decoration: none;
 }
-/* line 180, ../sass/_partials/_wow.scss */
+/* line 183, ../sass/_partials/_wow.scss */
 #wow .maak-kennis text {
   fill-opacity: 0;
 }
-/* line 186, ../sass/_partials/_wow.scss */
+/* line 189, ../sass/_partials/_wow.scss */
 #wow svg .body-daphne:hover,
 #wow svg .body-daphne:focus,
 #wow svg .body-daphne:active {
   cursor: pointer;
 }
-/* line 190, ../sass/_partials/_wow.scss */
+/* line 193, ../sass/_partials/_wow.scss */
 #wow svg .body-daphne:hover .maak-kennis text,
 #wow svg .body-daphne:focus .maak-kennis text,
 #wow svg .body-daphne:active .maak-kennis text {

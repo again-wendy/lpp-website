@@ -20,6 +20,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        z-index: 99;
         h2 {
             font-size: 3.2rem;
         }
@@ -42,6 +43,7 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+        z-index: 99;
         h2 {
             font-size: 3.2rem;
         }

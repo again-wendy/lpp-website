@@ -306,8 +306,13 @@ app.listen(port, () => {
 
 const getFeaturedImage = (arr) => {
     for(var i = 0; i < arr.length; i++) {
-        var img = arr[i]._embedded['wp:featuredmedia'][0].source_url;
-        arr[i].img = img;
+        console.log(arr[i]._embedded);
+        if( arr[i]._embedded['wp:featuredmedia'] != undefined ) {
+            var img = arr[i]._embedded['wp:featuredmedia'][0].source_url;
+            arr[i].img = img;
+        } else {
+            arr[i].img = "./public/images/imgplaceholder.png";
+        }
     }
     return arr;
 }
