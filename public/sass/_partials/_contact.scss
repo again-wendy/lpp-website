@@ -52,9 +52,13 @@
             font-size: 1.6rem;
             margin: 0;
         }
-        @media(max-width: 830px) {
+        @media(max-width: 930px) {
+            position: relative;
+            top: 0;
+            padding: 0 10px;
+            text-align: center;
+            width: 100%;
             padding-left: 25px;
-            top: 90px;
             h3 {
                 font-size: 1.2rem;
             }
@@ -62,13 +66,6 @@
                 margin-top: 5px;
                 font-size: 0.9rem;
             }
-        }
-        @media(max-width: 780px) {
-            position: relative;
-            top: 0;
-            padding: 0 10px;
-            text-align: center;
-            width: 100%;
         }
     }
     #contactsvg {
@@ -79,12 +76,12 @@
         position: relative;
         form {
             position: absolute;
-            top: 34%;
+            top: 30%;
             width: 65%;
             padding-left: 60px;
             z-index: 10;
             input {
-                width: 38%;
+                width: 30%;
                 margin-right: 2%;
                 padding: 14px 8px;
                 border-radius: 8px;
@@ -92,9 +89,10 @@
             }
             input[type="submit"] {
                 width: 18%;
-                margin-right: 0;
+                display: block;
+                margin: 0 auto;
                 cursor: pointer;
-                margin-top: -2px;
+                margin-top: 5px;
                 padding: 10px 8px 11px 8px;
                 &:hover, &:active, &:focus {
                     background: $primary-light;
@@ -103,34 +101,43 @@
             .antispam {
                 display: none;
             }
-            @media(max-width: 767px) {
-                top: 6%;
+            @media(max-width: 1260px) {
+                top: 29%;
+                input {
+                    margin-bottom: 3px;
+                }
+            }
+            @media(max-width: 1130px) {
+                top: 30%;
+                input {
+                    margin-bottom: 0px;
+                    height: 36px;
+                }
+                input[type="submit"] {
+                    padding: 4px 8px;
+                }
+            }
+            @media(max-width: 930px) {
+                top: 0%;
                 width: 70%;
                 padding-left: 25px;
                 input {
                     padding: 10px 5px;
                     width: 45%;
                     border: 1px solid $secondary;
+                    margin-bottom: 0;
+                    height: 32px;
                 }
                 input[type="submit"] {
                     padding: 6px 8px 7px 8px;
                     border: none;
-                    margin-top: 7%;
-                    width: 50%;
-                    margin-left: 21%;
+                    margin: 0;
+                    top: -2px;
+                    display: inline-block;
+                    width: 45%;
                 }
             }
-            @media(max-width: 675px) {
-                input[type="submit"] {
-                    margin-top: 5%;
-                }
-            }
-            @media(max-width: 620px) {
-                input[type="submit"] {
-                    margin-top: 3%;
-                }
-            }
-            @media(max-width: 550px) {
+            @media(max-width: 600px) {
                 position: relative;
                 width: 100%;
                 padding: 0 10px;

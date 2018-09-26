@@ -46,6 +46,7 @@
         "insightstitle": "",
         "solutioningtitle": "",
         "managementtitle": "",
+        "view": "",
         "strategytext": "",
         "insightstext": "",
         "solutioningtext": "",
@@ -101,6 +102,7 @@
         "fillemail": "",
         "names": "",
         "email": "",
+        "phone": "",
         "send": "",
         "sentsuccess": ""
     },

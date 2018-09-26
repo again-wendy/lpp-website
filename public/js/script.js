@@ -15,7 +15,18 @@ $(document).ready(function() {
         } else {
             $("#nav-bar .right-menu .menu-items").show();
         }
-    })
+    });
+
+    $('#ourservices .popups .popup').hover(
+        function() {
+            clearTimeout(puzzleTimeout);
+            $(this).show();
+        }, function() {
+            setTimeout(() => {
+                $(this).fadeOut();
+            }, 1000)
+        }
+    )
 
     // Load right flag in menu to set language
     if(checkLang().indexOf("nl") != -1) {
@@ -146,6 +157,8 @@ $(document).ready(function() {
         placeBlogHoverText();
     }
 });
+
+var puzzleTimeout;
 
 // Check for hover on dropdown menu
 if($(window).width() > 768) {
@@ -418,13 +431,22 @@ function puzzleHover() {
         function() {
             var classes = $(this).attr('class');
             var service = classes.replace('puzzle-piece ', '');
+            $('#ourservices .popups .popup').hide();
+
             service = service.replace(' overlay', '');
             $('#ourservices .left-text .text').hide();
             $('#ourservices .right-text .text').hide();
             $('#ourservices .left-text .' + service).show();
             $('#ourservices .right-text .' + service).show();
-        }, function() {
 
+            $('#ourservices .popups .' + service).fadeIn();
+        }, function() {
+            var classes = $(this).attr('class');
+            var service = classes.replace('puzzle-piece ', '');
+            service = service.replace(' overlay', '');
+            puzzleTimeout = setTimeout(() => {
+                $('#ourservices .popups .' + service).fadeOut();
+            }, 1000);
         }
     );
 }
@@ -579,7 +601,6 @@ $("#solutioning-page .software-logos img").hover(
 function getBlogs() {
     $.getJSON("blogs", function(data) {
         var items = data;
-        console.log(items);
     });
 }
 

@@ -45,6 +45,43 @@
                     }
                 }
             }
+            .popups {
+                .popup {
+                    display: none;
+                    position: absolute;
+                    background: red;
+                    padding: 15px;
+                    background: white;
+                    border: 1px solid $light-grey;
+                    width: 220px;
+                    text-align: center;
+                    p {
+                        margin: 0 0 10px 0;
+                    }
+                    img {
+                        margin: 10px 0;
+                    }
+                    a {
+                        width: 100%;
+                    }
+                    &.strategy {
+                        left: -230px;
+                        top: 24%;
+                    }
+                    &.insights {
+                        right: -230px;
+                        top: 24%;
+                    }
+                    &.solutioning {
+                        left: -230px;
+                        top: 35%;
+                    }
+                    &.management {
+                        right: -230px;
+                        top: 47%;
+                    }
+                }
+            }
         }
     }
     .coffee-daphne {

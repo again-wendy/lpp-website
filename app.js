@@ -65,7 +65,7 @@ const transporter = nodemailer.createTransport({
 
 // Set routes
 app.get('/', (req, res) => {
-    request('http://blog.simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true', (err, resp, body) => {
+    request('http://blog.simplifyingpurchasing.com/wp-json/wp/v2/posts?_embed=true&per_page=5', (err, resp, body) => {
     var temp = JSON.parse(body);
     temp = removeSorryPost(temp);  
     temp = temp.slice(0, 4);  
@@ -306,7 +306,6 @@ app.listen(port, () => {
 
 const getFeaturedImage = (arr) => {
     for(var i = 0; i < arr.length; i++) {
-        console.log(arr[i]._embedded);
         if( arr[i]._embedded['wp:featuredmedia'] != undefined ) {
             var img = arr[i]._embedded['wp:featuredmedia'][0].source_url;
             arr[i].img = img;
