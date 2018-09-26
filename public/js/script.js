@@ -158,6 +158,7 @@ $(document).ready(function() {
     }
 });
 
+// Timeout for puzzlehover
 var puzzleTimeout;
 
 // Check for hover on dropdown menu
