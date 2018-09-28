@@ -47,7 +47,7 @@
             }
             .popups {
                 .popup {
-                    display: none;
+                    //display: none;
                     position: absolute;
                     background: red;
                     padding: 15px;
@@ -67,6 +67,9 @@
                     &.strategy {
                         left: -230px;
                         top: 24%;
+                        // @media (max-width: 1450px) {
+                        //     top: 14%;
+                        // }
                     }
                     &.insights {
                         right: -230px;
