@@ -20,11 +20,15 @@ $(document).ready(function() {
     $('#ourservices .popups .popup').hover(
         function() {
             clearTimeout(puzzleTimeout);
-            $(this).show();
+            if( $(window).width() >= 991 ) {
+                $(this).show();
+            }
         }, function() {
-            setTimeout(() => {
-                $(this).fadeOut();
-            }, 1000)
+            if( $(window).width() >= 991 ) {
+                setTimeout(() => {
+                    $(this).fadeOut();
+                }, 1000)
+            }
         }
     )
 
@@ -180,6 +184,7 @@ function hideContent() {
     $(".menu-item-3").hide();
     $("#wow .blog-daphne").hide();
     $("#wow #whitepapersblogs").hide();
+    $("#wow .mobile-menu-2").hide();
     $("#nav-bar.wow .menu-item-5").hide();
     $(".roadmap-page .section .stage .btn-primary-invert").hide();
 }
@@ -440,7 +445,9 @@ function puzzleHover() {
             $('#ourservices .left-text .' + service).show();
             $('#ourservices .right-text .' + service).show();
 
-            $('#ourservices .popups .' + service).fadeIn();
+            if( $(windows).width() >= 991) {
+                $('#ourservices .popups .' + service).fadeIn();
+            }
         }, function() {
             var classes = $(this).attr('class');
             var service = classes.replace('puzzle-piece ', '');
