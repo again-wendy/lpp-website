@@ -162,6 +162,8 @@ app.post('/contactform', (req, res) => {
         <ul>
             <li>Voor- en achternaam: ${req.body.names}</li>
             <li>Email: <a href="mailto:${req.body.email}">${req.body.email}</a></li>
+            <li>Telefoon: ${req.body.phone}</li>
+            <li>Taal: ${req.cookies.ulang}</li>
         </ul>
     `;
 
