@@ -103,6 +103,9 @@
     },
     "contact": {
         "fastcontact": "",
+        "streetname":"",
+        "postbox":"",
+        "country":"",
         "knowmore": "",
         "fillemail": "",
         "names": "",

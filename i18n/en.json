@@ -95,6 +95,9 @@
     },
     "contact": {
         "fastcontact": "Reach us quickly",
+        "streetname":  "Meander 251, 2nd floor",
+        "postbox":"Postbox 115",
+        "country":"The Netherlands",
         "knowmore": "Do you want to know more about this or do you have another question?",
         "fillemail": "Enter your e-mail adres quickly and we will be in touch as soon as possible!",
         "names": "First- and surname",

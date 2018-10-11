@@ -103,6 +103,9 @@
     },
     "contact": {
         "fastcontact": "Snel in contact",
+        "streetname":  "Meander 251, 2e etage",
+        "postbox":"Postbus 115",
+        "country":"Nederland",
         "knowmore": "Wil je hier meer over weten of heb je een andere vraag?",
         "fillemail": "Vul dan jouw email adres in en wij nemen zo snel mogelijk contact met je op!",
         "names": "Voor- en achternaam",
