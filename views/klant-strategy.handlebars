@@ -4,7 +4,8 @@
     <div class="choose-service">
         <ul class="services">
             <li class="active strategy">
-                Strategy<span> as a Service</span>
+                Strategy
+                <span> as a Service</span>
             </li>
             <li class="notactive insights">
                 <a href="/customer-case-insights">Insights</a>
@@ -19,11 +20,111 @@
     </div>
 
     <h2 class="section-title">{{ tl.strategypage.case.title }}</h2>
-    <div class="title-border"></div> 
-    <div class="container">
-        <div class="text-center coming-soon">
-            <p>{{ tl.strategypage.case.comingsoon }}</p>
-            <img class="coming-soon-img" src="./public/images/daphne/coming_soon.svg" alt="Coming soon!">
+    <div class="title-border"></div>
+    <div class="quote">
+        <div class="inner">
+            <span class="fas fa-quote-left"></span>
+            <h2 class="text">{{ tl.strategypage.case.quote }}</h2>
+            <div class="logo">
+                <img src="./public/images/logos/kramp-logo.png" alt="Kramp logo">
+            </div>
+            <h3 class="name">{{ tl.strategypage.case.quotename }}</h3>
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="text-center">
+            <h4>{{ tl.strategypage.case.numbers }}</h4>
+        </div>
+        <div class="counters">
+            <div class="counter counter-1">
+                <h4 class="name">{{ tl.strategypage.case.turnover }}</h4>
+                <h3>&euro;
+                    <span class="num" data-count="790">0</span> MLN</h3>
+            </div>
+            <div class="counter counter-2">
+                <h4 class="name">{{ tl.strategypage.case.orderlines }}</h4>
+                <h3>
+                    <span class="num" data-count="150">0</span>K+ p.d.</h3>
+            </div>
+            <div class="counter counter-3">
+                <h4 class="name">{{ tl.strategypage.case.suppliers }}</h4>
+                <h3>
+                    <span class="num" data-count="4000">0</span>
+                </h3>
+            </div>
+            <div class="counter counter-4">
+                <h4 class="name">{{ tl.strategypage.case.invoices }}</h4>
+                <h3>
+                    <span class="num" data-count="225">0</span>K</h3>
+            </div>
+        </div>
+        <div class="cases">
+            <div class="row">
+                <div class="case case-1 column">
+                    <div class="title-block">
+                        <h3>{{ tl.strategypage.case.block1title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.strategypage.case.block1text1 }}</li>
+                            <li>{{ tl.strategypage.case.block1text2 }}</li>
+                            <li>{{ tl.strategypage.case.block1text3 }}</li>
+                            <li>{{ tl.strategypage.case.block1text4 }}</li>
+                            <li>{{ tl.strategypage.case.block1text5 }}</li>
+                            <li>{{ tl.strategypage.case.block1text6 }}</li>
+                            <li>{{ tl.strategypage.case.block1text7 }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column case case-2">
+                    <div class="title-block">
+                        <h3>{{ tl.strategypage.case.block2title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.strategypage.case.block2text1 }}</li>
+                            <li>{{ tl.strategypage.case.block2text2 }}</li>
+                            <li>{{ tl.strategypage.case.block2text3 }}</li>
+                            <li>{{ tl.strategypage.case.block2text4 }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column case case-3">
+                    <div class="title-block">
+                        <h3>{{ tl.strategypage.case.block3title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li> {{ tl.strategypage.case.block3text1 }}</li>
+                            <ul>
+                                <li>
+                                    <b>{{ tl.strategypage.case.empathy }}</b> {{ tl.strategypage.case.block3text2 }}</li>
+                                <li>
+                                    <b>{{ tl.strategypage.case.define }}</b> {{ tl.strategypage.case.block3text3 }}</li>
+                                <li>
+                                    <b>{{ tl.strategypage.case.ideate }}</b> {{ tl.strategypage.case.block3text4 }}</li>
+                                <li>
+                                    <b>{{ tl.strategypage.case.prototype }}</b> {{ tl.strategypage.case.block3text5 }}</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column case case-4">
+                    <div class="title-block">
+                        <h3>{{ tl.strategypage.case.block4title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.strategypage.case.block4text1 }}</li>
+                            <li>{{ tl.strategypage.case.block4text2 }}</li>
+                            <li>{{ tl.strategypage.case.block4text3 }}</li>
+                            <li>{{ tl.strategypage.case.block4text4 }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="text-center buttons">
@@ -31,6 +132,4 @@
     </div>
 </section>
 
-{{> contact-extended}}
-
-{{> footer}}
+{{> contact-extended}} {{> footer}}
