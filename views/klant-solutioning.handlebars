@@ -19,13 +19,114 @@
     </div>
 
     <h2 class="section-title">{{ tl.solutioningpage.case.title }}</h2>
-    <div class="title-border"></div> 
-   <div class="container">
-        <div class="text-center coming-soon">
-            <p>{{ tl.solutioningpage.case.comingsoon }}</p>
-            <img class="coming-soon-img" src="./public/images/daphne/coming_soon.svg" alt="Coming soon!">
+    <div class="title-border"></div>
+    <div class="quote">
+        <div class="inner">
+            <span class="fas fa-quote-left"></span>
+            <h2 class="text">{{ tl.solutioningpage.case.quote }}</h2>
+            <div class="logo">
+                <img src="./public/images/logos/uu.png" alt="Kramp logo">
+            </div>
+            <h3 class="name">{{ tl.solutioningpage.case.quotename }}</h3>
         </div>
-   </div>
+    </div>
+    <div class="container clearfix">
+        <div class="text-center">
+            <h4>{{ tl.solutioningpage.case.numbers }}</h4>
+        </div>
+        <div class="counters">
+            <div class="counter counter-1">
+                <h4 class="name">{{ tl.solutioningpage.case.budget }}</h4>
+                <h3>&euro;
+                    <span class="num" data-count="810">0</span>K {{ tl.solutioningpage.case.peryear }}</h3>
+            </div>
+            <div class="counter counter-2">
+                <h4 class="name">{{ tl.solutioningpage.case.orders }}</h4>
+                <h3>
+                    <span class="num" data-count="40000">0</span> {{ tl.solutioningpage.case.peryear }}</h3>
+            </div>
+            <div class="counter counter-3">
+                <h4 class="name">{{ tl.solutioningpage.case.invoices }}</h4>
+                <h3>
+                    <span class="num" data-count="110000">0</span>
+                </h3>
+            </div>
+            <div class="counter counter-4">
+                <h4 class="name">{{ tl.solutioningpage.case.students }}</h4>
+                <h3>
+                    <span class="num" data-count="30000">0</span></h3>
+            </div>
+        </div>
+        <div class="cases">
+            <div class="row">
+                <div class="case case-1 column">
+                    <div class="title-block">
+                        <h3>{{ tl.solutioningpage.case.block1title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.solutioningpage.case.block1text1 }}</li>
+                            <li>{{ tl.solutioningpage.case.block1text2 }}</li>
+                            <li>{{ tl.solutioningpage.case.block1text3 }}</li>
+                            <li>{{ tl.solutioningpage.case.block1text4 }}</li>
+                            <li>{{ tl.solutioningpage.case.block1text5 }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column case case-2">
+                    <div class="title-block">
+                        <h3>{{ tl.solutioningpage.case.block2title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.solutioningpage.case.block2text1 }}</li>
+                            <li>{{ tl.solutioningpage.case.block2text2 }}</li>
+                            <li>{{ tl.solutioningpage.case.block2text3 }}</li>
+                            <li>{{ tl.solutioningpage.case.block2text4 }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column case case-3">
+                    <div class="title-block">
+                        <h3>{{ tl.solutioningpage.case.block3title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li> {{ tl.solutioningpage.case.block3text1 }}</li>
+                            <ul>
+                                <li>{{ tl.solutioningpage.case.block3text2 }}</li>
+                            </ul>
+                            <li>{{ tl.solutioningpage.case.block3text3 }}</li>
+                            <ul> 
+                                <li>{{ tl.solutioningpage.case.block3text4 }}</li>
+                            </ul>   
+                            <li>{{ tl.solutioningpage.case.block3text5 }}</li>
+                            <ul> 
+                                <li>{{ tl.solutioningpage.case.block3text6 }}</li>
+                            </ul>
+                            <li>{{ tl.solutioningpage.case.block3text7 }}</li>
+                            <ul> 
+                                <li>{{ tl.solutioningpage.case.block3text8 }}</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column case case-4">
+                    <div class="title-block">
+                        <h3>{{ tl.solutioningpage.case.block4title }}</h3>
+                    </div>
+                    <div class="body-block">
+                        <ul>
+                            <li>{{ tl.solutioningpage.case.block4text1 }}</li>
+                            <li>{{ tl.solutioningpage.case.block4text2 }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="text-center buttons">
         <a href="/solutioning-as-a-service" class="btn-primary-invert-xl">Solutioning as a Service</a>
     </div>
