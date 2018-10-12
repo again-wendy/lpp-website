@@ -188,7 +188,20 @@
                     text-align: center;
                 }
             }
-            @media (max-width: 830px) {
+            @media (max-width: 1200px) {
+                .counter {
+                    .name {
+                        margin-top: 18px;
+                        margin-bottom: 15px;
+                        font-size: 1.1rem;
+                    }
+                    h3 {
+                        margin-top: 0;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            @media (max-width: 860px) {
                 .counter {
                     .name {
                         margin-top: 18px;

@@ -5538,7 +5538,7 @@ footer .container .companies .company {
   font-size: 1.4rem;
   text-align: center;
 }
-@media (max-width: 830px) {
+@media (max-width: 1200px) {
   /* line 193, ../sass/_partials/_case-pages.scss */
   .customer-case .container .counters .counter .name {
     margin-top: 18px;
@@ -5546,6 +5546,19 @@ footer .container .companies .company {
     font-size: 1.1rem;
   }
   /* line 198, ../sass/_partials/_case-pages.scss */
+  .customer-case .container .counters .counter h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 860px) {
+  /* line 206, ../sass/_partials/_case-pages.scss */
+  .customer-case .container .counters .counter .name {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  /* line 211, ../sass/_partials/_case-pages.scss */
   .customer-case .container .counters .counter h3 {
     margin-top: 0;
     font-size: 1.3rem;
@@ -5567,103 +5580,103 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 900px) {
-  /* line 211, ../sass/_partials/_case-pages.scss */
+  /* line 224, ../sass/_partials/_case-pages.scss */
   .customer-case .container .row {
     display: block;
   }
 }
-/* line 216, ../sass/_partials/_case-pages.scss */
+/* line 229, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases {
   position: relative;
 }
-/* line 218, ../sass/_partials/_case-pages.scss */
+/* line 231, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases .case {
   position: relative;
   margin: 0 5px;
 }
-/* line 221, ../sass/_partials/_case-pages.scss */
+/* line 234, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases .case .title-block {
   background: linear-gradient(90deg, #ffef23 0%, #ee7616 15%, #eb6232 65%, #e4352e 95%);
   text-align: center;
   padding: 10px 5px;
   color: white;
 }
-/* line 226, ../sass/_partials/_case-pages.scss */
+/* line 239, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases .case .title-block h3 {
   font-size: 1.5rem;
   font-family: "ZwoOT-SemiBd", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-/* line 232, ../sass/_partials/_case-pages.scss */
+/* line 245, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases .case .body-block {
   margin-top: 5px;
   box-shadow: 5px 5px 10px #ececec;
   padding: 15px;
 }
-/* line 236, ../sass/_partials/_case-pages.scss */
+/* line 249, ../sass/_partials/_case-pages.scss */
 .customer-case .container .cases .case .body-block ul {
   list-style-type: square;
   padding-left: 18px;
 }
-/* line 244, ../sass/_partials/_case-pages.scss */
+/* line 257, ../sass/_partials/_case-pages.scss */
 .customer-case .buttons {
   margin-top: 30px;
 }
 
-/* line 252, ../sass/_partials/_case-pages.scss */
+/* line 265, ../sass/_partials/_case-pages.scss */
 #customer-strategy .choose-service .services .insights {
   top: 123px;
 }
-/* line 255, ../sass/_partials/_case-pages.scss */
+/* line 268, ../sass/_partials/_case-pages.scss */
 #customer-strategy .choose-service .services .solutioning {
   top: 220px;
 }
-/* line 258, ../sass/_partials/_case-pages.scss */
+/* line 271, ../sass/_partials/_case-pages.scss */
 #customer-strategy .choose-service .services .management {
   top: 320px;
 }
 @media (max-width: 767px) {
-  /* line 262, ../sass/_partials/_case-pages.scss */
+  /* line 275, ../sass/_partials/_case-pages.scss */
   #customer-strategy .choose-service .services .strategy {
     top: 130px;
   }
-  /* line 265, ../sass/_partials/_case-pages.scss */
+  /* line 278, ../sass/_partials/_case-pages.scss */
   #customer-strategy .choose-service .services .insights {
     top: 219px;
   }
-  /* line 268, ../sass/_partials/_case-pages.scss */
+  /* line 281, ../sass/_partials/_case-pages.scss */
   #customer-strategy .choose-service .services .solutioning {
     top: 319px;
   }
-  /* line 271, ../sass/_partials/_case-pages.scss */
+  /* line 284, ../sass/_partials/_case-pages.scss */
   #customer-strategy .choose-service .services .management {
     top: 419px;
   }
 }
 @media (max-width: 900px) {
-  /* line 279, ../sass/_partials/_case-pages.scss */
+  /* line 292, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .text {
     font-size: 2rem;
   }
 }
 @media (max-width: 660px) {
-  /* line 277, ../sass/_partials/_case-pages.scss */
+  /* line 290, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote {
     width: 80%;
   }
-  /* line 285, ../sass/_partials/_case-pages.scss */
+  /* line 298, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .inner {
     padding: 35px;
   }
-  /* line 288, ../sass/_partials/_case-pages.scss */
+  /* line 301, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .text {
     font-size: 1.8rem;
   }
-  /* line 291, ../sass/_partials/_case-pages.scss */
+  /* line 304, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .name {
     font-size: 1.5rem;
   }
-  /* line 294, ../sass/_partials/_case-pages.scss */
+  /* line 307, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .logo {
     width: 120px;
     height: 120px;
@@ -5672,19 +5685,19 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 500px) {
-  /* line 302, ../sass/_partials/_case-pages.scss */
+  /* line 315, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .svg-inline--fa {
     width: 4em;
     height: 4em;
     margin-top: -40px;
     margin-left: -20px;
   }
-  /* line 308, ../sass/_partials/_case-pages.scss */
+  /* line 321, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .text {
     margin-bottom: 15px;
     font-size: 1.5rem;
   }
-  /* line 312, ../sass/_partials/_case-pages.scss */
+  /* line 325, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .name {
     margin-top: 0;
     left: 15%;
@@ -5692,71 +5705,71 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 400px) {
-  /* line 319, ../sass/_partials/_case-pages.scss */
+  /* line 332, ../sass/_partials/_case-pages.scss */
   #customer-strategy .quote .logo {
     margin-right: -40px;
   }
 }
 
-/* line 329, ../sass/_partials/_case-pages.scss */
+/* line 342, ../sass/_partials/_case-pages.scss */
 #customer-insights .choose-service .services .strategy {
   top: 125px;
 }
-/* line 332, ../sass/_partials/_case-pages.scss */
+/* line 345, ../sass/_partials/_case-pages.scss */
 #customer-insights .choose-service .services .insights {
   top: 100px;
   position: relative;
 }
-/* line 336, ../sass/_partials/_case-pages.scss */
+/* line 349, ../sass/_partials/_case-pages.scss */
 #customer-insights .choose-service .services .solutioning {
   top: 222px;
 }
-/* line 339, ../sass/_partials/_case-pages.scss */
+/* line 352, ../sass/_partials/_case-pages.scss */
 #customer-insights .choose-service .services .management {
   top: 322px;
 }
 @media (max-width: 767px) {
-  /* line 343, ../sass/_partials/_case-pages.scss */
+  /* line 356, ../sass/_partials/_case-pages.scss */
   #customer-insights .choose-service .services .strategy {
     top: 125px;
   }
-  /* line 346, ../sass/_partials/_case-pages.scss */
+  /* line 359, ../sass/_partials/_case-pages.scss */
   #customer-insights .choose-service .services .insights {
     top: 225px;
   }
-  /* line 349, ../sass/_partials/_case-pages.scss */
+  /* line 362, ../sass/_partials/_case-pages.scss */
   #customer-insights .choose-service .services .solutioning {
     top: 314px;
   }
-  /* line 352, ../sass/_partials/_case-pages.scss */
+  /* line 365, ../sass/_partials/_case-pages.scss */
   #customer-insights .choose-service .services .management {
     top: 414px;
   }
 }
 @media (max-width: 900px) {
-  /* line 360, ../sass/_partials/_case-pages.scss */
+  /* line 373, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .text {
     font-size: 2rem;
   }
 }
 @media (max-width: 660px) {
-  /* line 358, ../sass/_partials/_case-pages.scss */
+  /* line 371, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote {
     width: 80%;
   }
-  /* line 366, ../sass/_partials/_case-pages.scss */
+  /* line 379, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .inner {
     padding: 35px;
   }
-  /* line 369, ../sass/_partials/_case-pages.scss */
+  /* line 382, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .text {
     font-size: 1.8rem;
   }
-  /* line 372, ../sass/_partials/_case-pages.scss */
+  /* line 385, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .name {
     font-size: 1.5rem;
   }
-  /* line 375, ../sass/_partials/_case-pages.scss */
+  /* line 388, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .logo {
     width: 120px;
     height: 120px;
@@ -5765,19 +5778,19 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 500px) {
-  /* line 383, ../sass/_partials/_case-pages.scss */
+  /* line 396, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .svg-inline--fa {
     width: 4em;
     height: 4em;
     margin-top: -40px;
     margin-left: -20px;
   }
-  /* line 389, ../sass/_partials/_case-pages.scss */
+  /* line 402, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .text {
     margin-bottom: 15px;
     font-size: 1.5rem;
   }
-  /* line 393, ../sass/_partials/_case-pages.scss */
+  /* line 406, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .name {
     margin-top: 0;
     left: 15%;
@@ -5785,71 +5798,71 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 400px) {
-  /* line 400, ../sass/_partials/_case-pages.scss */
+  /* line 413, ../sass/_partials/_case-pages.scss */
   #customer-insights .quote .logo {
     margin-right: -40px;
   }
 }
 
-/* line 410, ../sass/_partials/_case-pages.scss */
+/* line 423, ../sass/_partials/_case-pages.scss */
 #customer-solutioning .choose-service .services .strategy {
   top: 125px;
 }
-/* line 413, ../sass/_partials/_case-pages.scss */
+/* line 426, ../sass/_partials/_case-pages.scss */
 #customer-solutioning .choose-service .services .insights {
   top: 225px;
 }
-/* line 416, ../sass/_partials/_case-pages.scss */
+/* line 429, ../sass/_partials/_case-pages.scss */
 #customer-solutioning .choose-service .services .solutioning {
   top: 200px;
   position: relative;
 }
-/* line 420, ../sass/_partials/_case-pages.scss */
+/* line 433, ../sass/_partials/_case-pages.scss */
 #customer-solutioning .choose-service .services .management {
   top: 322px;
 }
 @media (max-width: 767px) {
-  /* line 424, ../sass/_partials/_case-pages.scss */
+  /* line 437, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .choose-service .services .strategy {
     top: 125px;
   }
-  /* line 427, ../sass/_partials/_case-pages.scss */
+  /* line 440, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .choose-service .services .insights {
     top: 225px;
   }
-  /* line 430, ../sass/_partials/_case-pages.scss */
+  /* line 443, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .choose-service .services .solutioning {
     top: 326px;
   }
-  /* line 433, ../sass/_partials/_case-pages.scss */
+  /* line 446, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .choose-service .services .management {
     top: 414px;
   }
 }
 @media (max-width: 900px) {
-  /* line 441, ../sass/_partials/_case-pages.scss */
+  /* line 454, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .text {
     font-size: 2rem;
   }
 }
 @media (max-width: 660px) {
-  /* line 439, ../sass/_partials/_case-pages.scss */
+  /* line 452, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote {
     width: 80%;
   }
-  /* line 447, ../sass/_partials/_case-pages.scss */
+  /* line 460, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .inner {
     padding: 35px;
   }
-  /* line 450, ../sass/_partials/_case-pages.scss */
+  /* line 463, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .text {
     font-size: 1.8rem;
   }
-  /* line 453, ../sass/_partials/_case-pages.scss */
+  /* line 466, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .name {
     font-size: 1.5rem;
   }
-  /* line 456, ../sass/_partials/_case-pages.scss */
+  /* line 469, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .logo {
     width: 120px;
     height: 120px;
@@ -5858,19 +5871,19 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 500px) {
-  /* line 464, ../sass/_partials/_case-pages.scss */
+  /* line 477, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .svg-inline--fa {
     width: 4em;
     height: 4em;
     margin-top: -40px;
     margin-left: -20px;
   }
-  /* line 470, ../sass/_partials/_case-pages.scss */
+  /* line 483, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .text {
     margin-bottom: 15px;
     font-size: 1.5rem;
   }
-  /* line 474, ../sass/_partials/_case-pages.scss */
+  /* line 487, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .name {
     margin-top: 0;
     left: 15%;
@@ -5878,71 +5891,71 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 400px) {
-  /* line 481, ../sass/_partials/_case-pages.scss */
+  /* line 494, ../sass/_partials/_case-pages.scss */
   #customer-solutioning .quote .logo {
     margin-right: -40px;
   }
 }
 
-/* line 491, ../sass/_partials/_case-pages.scss */
+/* line 504, ../sass/_partials/_case-pages.scss */
 #customer-management .choose-service .services .strategy {
   top: 125px;
 }
-/* line 494, ../sass/_partials/_case-pages.scss */
+/* line 507, ../sass/_partials/_case-pages.scss */
 #customer-management .choose-service .services .insights {
   top: 225px;
 }
-/* line 497, ../sass/_partials/_case-pages.scss */
+/* line 510, ../sass/_partials/_case-pages.scss */
 #customer-management .choose-service .services .solutioning {
   top: 325px;
 }
-/* line 500, ../sass/_partials/_case-pages.scss */
+/* line 513, ../sass/_partials/_case-pages.scss */
 #customer-management .choose-service .services .management {
   top: 300px;
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 505, ../sass/_partials/_case-pages.scss */
+  /* line 518, ../sass/_partials/_case-pages.scss */
   #customer-management .choose-service .services .strategy {
     top: 125px;
   }
-  /* line 508, ../sass/_partials/_case-pages.scss */
+  /* line 521, ../sass/_partials/_case-pages.scss */
   #customer-management .choose-service .services .insights {
     top: 225px;
   }
-  /* line 511, ../sass/_partials/_case-pages.scss */
+  /* line 524, ../sass/_partials/_case-pages.scss */
   #customer-management .choose-service .services .solutioning {
     top: 325px;
   }
-  /* line 514, ../sass/_partials/_case-pages.scss */
+  /* line 527, ../sass/_partials/_case-pages.scss */
   #customer-management .choose-service .services .management {
     top: 425px;
   }
 }
 @media (max-width: 900px) {
-  /* line 522, ../sass/_partials/_case-pages.scss */
+  /* line 535, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .text {
     font-size: 2rem;
   }
 }
 @media (max-width: 660px) {
-  /* line 520, ../sass/_partials/_case-pages.scss */
+  /* line 533, ../sass/_partials/_case-pages.scss */
   #customer-management .quote {
     width: 80%;
   }
-  /* line 528, ../sass/_partials/_case-pages.scss */
+  /* line 541, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .inner {
     padding: 35px;
   }
-  /* line 531, ../sass/_partials/_case-pages.scss */
+  /* line 544, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .text {
     font-size: 1.8rem;
   }
-  /* line 534, ../sass/_partials/_case-pages.scss */
+  /* line 547, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .name {
     font-size: 1.5rem;
   }
-  /* line 537, ../sass/_partials/_case-pages.scss */
+  /* line 550, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .logo {
     width: 120px;
     height: 120px;
@@ -5951,19 +5964,19 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 500px) {
-  /* line 545, ../sass/_partials/_case-pages.scss */
+  /* line 558, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .svg-inline--fa {
     width: 4em;
     height: 4em;
     margin-top: -40px;
     margin-left: -20px;
   }
-  /* line 551, ../sass/_partials/_case-pages.scss */
+  /* line 564, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .text {
     margin-bottom: 15px;
     font-size: 1.5rem;
   }
-  /* line 555, ../sass/_partials/_case-pages.scss */
+  /* line 568, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .name {
     margin-top: 0;
     left: 15%;
@@ -5971,7 +5984,7 @@ footer .container .companies .company {
   }
 }
 @media (max-width: 400px) {
-  /* line 562, ../sass/_partials/_case-pages.scss */
+  /* line 575, ../sass/_partials/_case-pages.scss */
   #customer-management .quote .logo {
     margin-right: -40px;
   }
