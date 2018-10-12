@@ -180,7 +180,7 @@ if($(window).width() > 768) {
 // Hide content for now when language is English
 function hideContent() {
     $("#blogs").hide();
-    $("#whitepapers").hide();
+    // $("#whitepapers").hide();
     $(".menu-item-3").hide();
     $("#wow .blog-daphne").hide();
     $("#wow #whitepapersblogs").hide();
@@ -445,7 +445,7 @@ function puzzleHover() {
             $('#ourservices .left-text .' + service).show();
             $('#ourservices .right-text .' + service).show();
 
-            if( $(windows).width() >= 991) {
+            if( $(window).width() >= 991) {
                 $('#ourservices .popups .' + service).fadeIn();
             }
         }, function() {
