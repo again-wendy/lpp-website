@@ -258,6 +258,9 @@ function setLang($event) {
     var path = window.location.pathname;
     
     Cookies.set("ulang", $event);
+    // if (url.indexOf("roadmap") > -1 ){
+    //     window.location.href = url
+    // } else 
     if( url.indexOf("?clang=") == -1 ) {
         window.location.href = url + "?clang=" + $event;
     } else {
@@ -837,7 +840,7 @@ function placeBlogHoverText() {
 function getQueryString() {
     var vars = [];
     var hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('?');
     for(var i = 0; i < hashes.length; i++) {
         hash = hashes[i].split('=');
         vars.push(hash[0]);
@@ -849,6 +852,7 @@ function getQueryString() {
 function setRoadmapStage() {
     if( $('.roadmap-page') ) {
         var queryStrings = getQueryString();
+        console.log(queryStrings);
         if( queryStrings.step != undefined) {
             if( queryStrings.hasOwnProperty('step') ) {
                 var step = queryStrings.step;

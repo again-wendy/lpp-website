@@ -350,9 +350,13 @@
     "wowpage": {
         "hovertext": "",
         "headerempathy": "",
+        "linkempathy": "",
         "headerdefine": "",
+        "linkdefine": "",
         "headerideate": "",
+        "linkideate": "",
         "headerprototype": "",
+        "linkprototype": "",
         "headertest": "",
         "headerlakran": "",
         "tagline": "",

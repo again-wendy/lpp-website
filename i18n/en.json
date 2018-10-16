@@ -344,10 +344,15 @@
     "wowpage": {
         "hovertext": "Hover over one of our design thinking tiles here on the right, to read more about the subject!",
         "headerempathy": "You get to know the issue and your target group. You look at the \"dilemma\" from all angles and then speak to the target group and capture their culture and influences in an Empathy map",
+        "linkempathy": "./public/images/maps/empathy-map-en.png",
         "headerdefine": "You're going to figure out the overarching issue. You discuss various stakeholders and capture problems, questions and insights in a Define map",
+        "linkdefine": "./public/images/maps/define-map-en.png",
         "headerideate": "You categorize all results. To create clusters, you put agreements together, and on this foundation you develop out of the box ideas for the overarching issue. Capture this in the Ideate map",
+        "linkideate": "./public/images/maps/ideate-map-en.png",
         "headerprototype": "You convert clusters into tangible solutions. Think realistic; is it profitable and achievable? Capture the promising ideas and specific concepts in the Prototype map",
+        "linkprototype":"./public/images/maps/prototype-map-en.png",
         "headertest": "You test the promising and specific prototypes. You involve important stakeholders and ultimately opt for the best possible solution. Capture the experiences in the Test map",
+        "linktest": "./public/images/maps/test-map-en.png",
         "headerlakran": "This landing page is a product by LAKRAN Procurement Professionals. A go-to advisory link between purchasing organizations and software houses that provide P2P solutions. View our website by clicking on the LAKRAN logo!",
         "tagline": "is a way of thinking by",
         "welcome": {

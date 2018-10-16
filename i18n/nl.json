@@ -351,10 +351,15 @@
     "wowpage": {
         "hovertext": "Hover met je muis op een tegel hier rechts, op een design thinking onderdeel, om er meer over te lezen!",
         "headerempathy": "Je leert het vraagstuk en je doelgroep goed kennen. Je bekijkt het \"dilemma\" vanuit allerlei hoeken. Je spreekt vervolgens met de doelgroep en legt hun cultuur en invloeden vast in een",
+        "linkempathy": "./public/images/maps/empathy-map.png",
         "headerdefine": "Je gaat het overkoepelende vraagstuk achterhalen. Je gaat in gesprek met verschillende stakeholders en legt problemen, vraagstellingen en inzichten vast in een",
+        "linkdefine": "./public/images/maps/define-map.png",
         "headerideate": "Je categoriseert alle resultaten. De overeenkomsten zet je bij elkaar, om zo clusters te vormen en op basis hiervan ontwikkel je out of the box ideeën voor het overkoepelende vraagstuk. Leg dit vast in de",
+        "linkideate": "./public/images/maps/ideate-map.png",
         "headerprototype": "Je zet clusters om naar tastbare oplossingen. Denk realistisch; is het rendabel en haalbaar? Leg de kansrijke ideeën en concrete concepten vast in de",
+        "linkprototype":"./public/images/maps/prototype-map.png",
         "headertest": "Je test de kansrijke en concrete prototypes. Je betrekt belangrijke stakeholders en kiest uiteindelijk voor de best mogelijke oplossing. Leg de ervaringen vast in de",
+        "linktest": "./public/images/maps/test-map.png",
         "headerlakran": "Deze landingspage is een product van LAKRAN Procurement Professionals. Een go-to adviserende schakel tussen inkopende organisaties en softwarehuizen die P2P oplossingen leveren. Bekijk onze website door op het LAKRAN logo te klikken!",
         "tagline": "is een denkwijze van",
         "welcome": {
