@@ -169,7 +169,8 @@ app.post('/contactform', (req, res) => {
 
     let options = {
         from: '"Contactformulier Simplifying Purchasing" <info@lakran.com>',
-        to: 'herman.ursinus@lakran.com; rene.berns@lakran.com',
+        to: 'doede.van.haperen@lakran.com',
+        //to: 'wendy.dimmendaal@again.nl',
         subject: 'Aanvraag voor contact',
         text: 'Test 123',
         html: output
@@ -181,7 +182,7 @@ app.post('/contactform', (req, res) => {
                 req.flash('error', 'Something went wrong: ' + error);
             } else {
                 req.flash('success', 'Je aanvraag is verzonden!');
-                res.redirect(req.get('referer'));
+                res.redirect(req.get('referer') + "#contact-extended");
             }
         });
     }
@@ -207,7 +208,7 @@ app.post('/get-dashboarding-whitepaper', (req, res) => {
     }
 
     let helperOptions = {
-        from: '"Herman Ursinus" <herman.ursinus@lakran.com>',
+        from: '"Doede van Haperen" <doede.van.haperen@lakran.com>',
         to: req.body.email,
         subject: "LAKRAN Whitepaper",
         text: "",
@@ -251,7 +252,7 @@ app.post('/get-fiori-whitepaper', (req, res) => {
     }
 
     let helperOptions = {
-        from: '"Herman Ursinus" <herman.ursinus@lakran.com>',
+        from: '"Doede van Haperen" <doede.van.haperen@lakran.com>',
         to: req.body.email,
         subject: "LAKRAN Whitepaper",
         text: "",
@@ -283,7 +284,7 @@ const sendMailLakran = (subject, email) => {
 
     let helperOptions = {
         from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
-        to: "herman.ursinus@lakran.com; rene.berns@lakran.com",
+        to: "doede.van.haperen@lakran.com",
         subject: "LAKRAN Whitepaper download",
         text: "",
         html: output
