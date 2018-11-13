@@ -156,9 +156,14 @@ app.get('/roadmap', (req, res) => {
 
 // Extended contactform
 app.post('/contactform', (req, res) => {
+    let recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
+    recaptcha_url += "secret=" + process.env.RECAPTCHA_SECRET + "&";
+    recaptcha_url += "response=" + req.body["g-recaptcha-response"] + "&";
+    recaptcha_url += "remoteip=" + req.connection.remoteAddress;
+
     let output = `
-        <h1>${req.body.names} heeft het contactformulier op SimplifyingPurchasing.com ingevuld!</h1>
-        <h2>Details:</h2>
+        <h2>${req.body.names} heeft het contactformulier op SimplifyingPurchasing.com ingevuld!</h2>
+        <h3>Details:</h3>
         <ul>
             <li>Voor- en achternaam: ${req.body.names}</li>
             <li>Email: <a href="mailto:${req.body.email}">${req.body.email}</a></li>
@@ -176,16 +181,31 @@ app.post('/contactform', (req, res) => {
         html: output
     }
 
-    if(req.body.url === "" && req.body.url.length == 0) {
-        transporter.sendMail(options, (error, info) => {
-            if(error) {
-                req.flash('error', 'Something went wrong: ' + error);
+    request(recaptcha_url, function(error, resp, body) {
+        body = JSON.parse(body);
+        if(body.success !== undefined && !body.success) {
+            if(req.cookies.ulang == "nl") {
+                req.flash('error', 'Er is iets mis gegaan met de recaptcha: ' + error);
             } else {
-                req.flash('success', 'Je aanvraag is verzonden!');
-                res.redirect(req.get('referer') + "#contact-extended");
+                req.flash('error', 'Something went wrong with recaptcha: ' + error);
             }
-        });
-    }
+            res.redirect(req.get('referer') + "#contact-extended");
+        } else {
+            transporter.sendMail(options, (errorMail, info) => {
+                if(errorMail) {
+                    if(req.cookies.ulang == "nl") {
+                        req.flash('error', 'Er is iets mis gegaan met het verzenden van de email: ' + errorMail)
+                    } else {
+                        req.flash('error', 'Something went wrong with sending the email: ' + errorMail);
+                    }
+                    res.redirect(req.get('referer') + "#contact-extended");
+                } else {
+                    req.flash('success', 'Thanks for the message! We\'ll be in touch');
+                    res.redirect(req.get('referer') + "#contact-extended");
+                }
+            });
+        }
+    });
 });
 
 // Request for whitepapers

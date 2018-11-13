@@ -5,14 +5,28 @@
         {{#if messages.success}}
             <p class="flash flash-success">{{ tl.contact.sentsuccess }}</p>
         {{/if}}
+        {{#if messages.error}}
+            <p class="flash flash-error">{{ messages.error }}</p>
+        {{/if}}
     </div>
     <div class="contact-banner">
         <form method="POST" action="/contactform">
             <input type="text" name="names" placeholder="{{ tl.contact.names }}">
             <input type="email" name="email" placeholder="{{ tl.contact.email }}">
             <input type="text" name="phone" placeholder="{{ tl.contact.phone }}">
-            <p class="antispam">Leave this empty: <input type="text" name="url"></p>
-            <input type="submit" class="btn-primary-gradient" value="{{ tl.contact.send }}">
+            <div class="modal" id="recaptcha">
+                <div class="modal-content">
+                    <div class="modal-title">
+                        <h3 class="title">{{ tl.contact.verifytitle }}</h3>
+                        <span class="fa fa-times close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="g-recaptcha" data-sitekey="6LeFXSYUAAAAAPskg_kCZRtH9t8ASepy8yCf3bwS"></div>
+                        <input type="submit" onclick="closeModal('#recaptcha')" class="btn-primary-gradient" value="{{ tl.contact.send }}">
+                    </div>
+                </div>
+            </div>
+            <input type="button" onclick="openModal('#recaptcha')" class="btn-primary-gradient" value="{{ tl.contact.send }}">
         </form>
         {{> contactsvg}}
         <div class="person">

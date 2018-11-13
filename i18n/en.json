@@ -103,6 +103,7 @@
         "names": "First- and surname",
         "email": "Email",
         "phone": "Phonenumber",
+        "verifytitle": "Final check",
         "send": "Send",
         "sentsuccess": "Your application has been sent succesfully!",
         "attention": "Attention!",

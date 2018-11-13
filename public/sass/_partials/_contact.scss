@@ -87,6 +87,11 @@
                 border-radius: 8px;
                 border: none;
             }
+            .modal {
+                .g-recaptcha > div {
+                    margin: 0 auto;
+                }
+            }
             input[type="submit"] {
                 width: 18%;
                 display: block;

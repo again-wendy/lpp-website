@@ -20,12 +20,17 @@ strong {
     font-family: $font-bold;
 }
 
-.flash.flash-success {
+.flash {
     text-align: left;
-    color: $success;
     font-family: $font-bold;
     font-size: 1.2rem;
     position: relative;
+    &.flash-success {
+        color: $success;  
+    } 
+    &.flash-error {
+        color: $warning;
+    }  
 }
 
 form .antispam {

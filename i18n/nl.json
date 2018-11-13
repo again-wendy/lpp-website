@@ -111,6 +111,7 @@
         "names": "Voor- en achternaam",
         "email": "Email",
         "phone": "Telefoon",
+        "verifytitle": "Laatste check",
         "send": "Verstuur",
         "sentsuccess": "Je aanvraag is succesvol verzonden!",
         "attention": "Let op!",
