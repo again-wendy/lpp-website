@@ -211,6 +211,11 @@ app.post('/contactform', (req, res) => {
 // Request for whitepapers
 // P2P Dashboarding en BI-trends
 app.post('/get-dashboarding-whitepaper', (req, res) => {
+    let recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
+    recaptcha_url += "secret=" + process.env.RECAPTCHA_SECRET + "&";
+    recaptcha_url += "response=" + req.body["g-recaptcha-response"] + "&";
+    recaptcha_url += "remoteip=" + req.connection.remoteAddress;
+
     if(req.cookies.ulang == "nl") {
         output = `
             <h1>Hier is je whitepaper!</h1>
@@ -240,21 +245,41 @@ app.post('/get-dashboarding-whitepaper', (req, res) => {
         ]
     }
 
-    if(req.body.url === "" && req.body.url.length == 0) {
-        transporter.sendMail(helperOptions, (error, info) => {
-            if(error) {
-                req.flash('error', 'Something went wrong: ' + error);
+    request(recaptcha_url, function(error, resp, body) {
+        body = JSON.parse(body);
+        if(body.success !== undefined && !body.success) {
+            if(req.cookies.ulang == "nl") {
+                req.flash('error', 'Er is iets mis gegaan met de recaptcha: ' + error);
             } else {
-                req.flash('success', 'You can find your whitepaper in your mailbox!');
-                res.redirect(req.get('referer') + '#whitepapers');
+                req.flash('error', 'Something went wrong with recaptcha: ' + error);
             }
-        });
-        sendMailLakran("P2P Dashboarding", req.body.email);
-    }
+            res.redirect(req.get('referer') + "#whitepapers");
+        } else {
+            transporter.sendMail(helperOptions, (errorMail, info) => {
+                if(errorMail) {
+                    if(req.cookies.ulang == "nl") {
+                        req.flash('error', 'Er is iets mis gegaan met het verzenden van de email: ' + errorMail)
+                    } else {
+                        req.flash('error', 'Something went wrong with sending the email: ' + errorMail);
+                    }
+                    res.redirect(req.get('referer') + "#whitepapers");
+                } else {
+                    req.flash('success', 'You can find your whitepaper in your mailbox!');
+                    res.redirect(req.get('referer') + '#whitepapers');
+                }
+            });
+            sendMailLakran("P2P Dashboarding", req.body.email);
+        }
+    });
 });
 
 // Een transitie naar Fiori, ervaringen en tips
 app.post('/get-fiori-whitepaper', (req, res) => {
+    let recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?";
+    recaptcha_url += "secret=" + process.env.RECAPTCHA_SECRET + "&";
+    recaptcha_url += "response=" + req.body["g-recaptcha-response"] + "&";
+    recaptcha_url += "remoteip=" + req.connection.remoteAddress;
+
     if(req.cookies.ulang == "nl") {
         output = `
             <h1>Hier is je whitepaper!</h1>
@@ -284,17 +309,32 @@ app.post('/get-fiori-whitepaper', (req, res) => {
         ]
     }
 
-    if(req.body.url === "" && req.body.url.length == 0) {
-        transporter.sendMail(helperOptions, (error, info) => {
-            if(error) {
-                req.flash('error', 'Something went wrong: ' + error);
+    request(recaptcha_url, function(error, resp, body) {
+        body = JSON.parse(body);
+        if(body.success !== undefined && !body.success) {
+            if(req.cookies.ulang == "nl") {
+                req.flash('error', 'Er is iets mis gegaan met de recaptcha: ' + error);
             } else {
-                req.flash('success', 'You can find your whitepaper in your mailbox!');
-                res.redirect(req.get('referer') + '#whitepapers');
+                req.flash('error', 'Something went wrong with recaptcha: ' + error);
             }
-        });
-        sendMailLakran("Fiori", req.body.email);
-    }
+            res.redirect(req.get('referer') + "#whitepapers");
+        } else {
+            transporter.sendMail(helperOptions, (errorMail, info) => {
+                if(errorMail) {
+                    if(req.cookies.ulang == "nl") {
+                        req.flash('error', 'Er is iets mis gegaan met het verzenden van de email: ' + errorMail)
+                    } else {
+                        req.flash('error', 'Something went wrong with sending the email: ' + errorMail);
+                    }
+                    res.redirect(req.get('referer') + "#whitepapers");
+                } else {
+                    req.flash('success', 'You can find your whitepaper in your mailbox!');
+                    res.redirect(req.get('referer') + '#whitepapers');
+                }
+            });
+            sendMailLakran("Fiori", req.body.email);
+        }
+    });
 });
 
 const sendMailLakran = (subject, email) => {
@@ -305,6 +345,7 @@ const sendMailLakran = (subject, email) => {
     let helperOptions = {
         from: '"LAKRAN Procurement Professionals" <info@lakran.com>',
         to: "doede.van.haperen@lakran.com",
+        //to: "wendy.dimmendaal@again.nl",
         subject: "LAKRAN Whitepaper download",
         text: "",
         html: output
